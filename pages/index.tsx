@@ -173,7 +173,7 @@ const Home: NextPage = () => {
                 <img
                   className="relative w-[154.7px] h-[186.5px] overflow-hidden shrink-0 object-cover"
                   alt=""
-                  src="/blur@2x.png"
+                  src="/blur1@2x.png"
                 />
                 <i className="relative leading-[120%] inline-block font-semibold w-[156px] h-[38px] shrink-0">
                   Diet
@@ -336,7 +336,7 @@ const Home: NextPage = () => {
                   <img
                     className="relative w-[45.3px] h-[11.6px] object-cover"
                     alt=""
-                    src="/group@2x.png"
+                    src="/group1@2x.png"
                   />
                 </div>
                 <img
