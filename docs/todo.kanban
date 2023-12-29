@@ -5,69 +5,6 @@
       "title": "backlog",
       "cards": [
         {
-          "id": "eaa7558a-7310-4394-85db-f3570cdebe62",
-          "listId": "58304c9c-ca84-4489-88e7-bd9aa8da7b27",
-          "title": "Create menu component",
-          "description": "",
-          "labels": [],
-          "checkboxes": [],
-          "comments": []
-        },
-        {
-          "id": "d8cf8ee0-eb14-4579-ba21-3fa3a1648342",
-          "listId": "58304c9c-ca84-4489-88e7-bd9aa8da7b27",
-          "title": "Create AboutUs Page",
-          "description": "",
-          "labels": [],
-          "checkboxes": [],
-          "comments": []
-        },
-        {
-          "id": "99810638-4df7-4f60-a2d9-2fd8ecddd324",
-          "listId": "58304c9c-ca84-4489-88e7-bd9aa8da7b27",
-          "title": "Create Doctor Page",
-          "description": "",
-          "labels": [],
-          "checkboxes": [],
-          "comments": []
-        },
-        {
-          "id": "50a6bcd0-50f3-489d-ac7c-58580a0fa801",
-          "listId": "58304c9c-ca84-4489-88e7-bd9aa8da7b27",
-          "title": "Create Faq Page",
-          "description": "",
-          "labels": [],
-          "checkboxes": [],
-          "comments": []
-        },
-        {
-          "id": "e05beb81-b81b-49a9-92b8-324d8c0a697e",
-          "listId": "58304c9c-ca84-4489-88e7-bd9aa8da7b27",
-          "title": "Create Article Page",
-          "description": "",
-          "labels": [],
-          "checkboxes": [],
-          "comments": []
-        },
-        {
-          "id": "8234b8f0-abc6-4701-9e84-15927bbde0e9",
-          "listId": "58304c9c-ca84-4489-88e7-bd9aa8da7b27",
-          "title": "Create Contact Page",
-          "description": "",
-          "labels": [],
-          "checkboxes": [],
-          "comments": []
-        },
-        {
-          "id": "af9441ba-e227-47fa-8ffa-85753581454e",
-          "listId": "58304c9c-ca84-4489-88e7-bd9aa8da7b27",
-          "title": "Create Contact Company Page",
-          "description": "",
-          "labels": [],
-          "checkboxes": [],
-          "comments": []
-        },
-        {
           "id": "d5bc3c49-8583-42c5-b3f4-d4191e399926",
           "listId": "58304c9c-ca84-4489-88e7-bd9aa8da7b27",
           "title": "Create Rotate Carousel in Home Page",
@@ -114,7 +51,80 @@
     {
       "id": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
       "title": "done",
-      "cards": []
+      "cards": [
+        {
+          "id": "2a21dc34-3dd0-451e-8fc9-396154466046",
+          "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
+          "title": "Colocar componentes nas paginas",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "af9441ba-e227-47fa-8ffa-85753581454e",
+          "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
+          "title": "Create Contact Company Page",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "8234b8f0-abc6-4701-9e84-15927bbde0e9",
+          "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
+          "title": "Create Contact Page",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "e05beb81-b81b-49a9-92b8-324d8c0a697e",
+          "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
+          "title": "Create Article Page",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "50a6bcd0-50f3-489d-ac7c-58580a0fa801",
+          "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
+          "title": "Create Faq Page",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "99810638-4df7-4f60-a2d9-2fd8ecddd324",
+          "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
+          "title": "Create Doctor Page",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "d8cf8ee0-eb14-4579-ba21-3fa3a1648342",
+          "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
+          "title": "Create AboutUs Page",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "eaa7558a-7310-4394-85db-f3570cdebe62",
+          "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
+          "title": "Create menu component",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        }
+      ]
     }
   ],
   "archive": {
