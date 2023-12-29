@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { memo } from "react";
+import { memo, useMemo, type CSSProperties } from "react";
 
 type FooterType = {
   lINE?: string;
@@ -7,14 +7,24 @@ type FooterType = {
   group?: string;
   buttonsSocial?: string;
   iconLogin?: string;
+
+  /** Style props */
+  footerZIndex?: CSSProperties["zIndex"];
 };
 
 const Footer: NextPage<FooterType> = memo(
-  ({ lINE, vector, group, buttonsSocial, iconLogin }) => {
+  ({ lINE, vector, group, buttonsSocial, iconLogin, footerZIndex }) => {
+    const footerStyle: CSSProperties = useMemo(() => {
+      return {
+        zIndex: footerZIndex,
+      };
+    }, [footerZIndex]);
+
     return (
       <section
         className="self-stretch h-[28.81rem] flex flex-col items-center justify-center pt-[0rem] px-[0rem] pb-[1.75rem] box-border z-[6] text-left text-[1.25rem] text-grey-prime font-plus-jakarta-sans"
         id="Footer"
+        style={footerStyle}
       >
         <div className="flex flex-col items-center justify-center gap-[7.38rem]">
           <img

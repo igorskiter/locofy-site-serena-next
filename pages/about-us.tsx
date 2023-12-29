@@ -17,6 +17,7 @@ const AboutUs: NextPage = () => {
         logo="/logo1@2x.png"
         vector="/vector11@2x.png"
         iconLogin="/iconlogin1@2x.png"
+        headerZIndex="0"
       />
       <HeroAboutUs />
       <SectionVision />
@@ -29,8 +30,18 @@ const AboutUs: NextPage = () => {
         group="/LogoCare21@2x.png"
         buttonsSocial="/ButtonsSocial11@2x.png"
         iconLogin="/IconLogin41@2x.png"
+        footerZIndex="6"
       />
-      <SideMenu />
+      <SideMenu
+        sideMenuBackgroundImage="url('/sidemenu@3x.png')"
+        sideMenuZIndex="7"
+        sERFOTOMOCKUPQUESTIONARIO="/ser-foto-mockup--questionario-1@2x.png"
+        socialItens="/socialitens@2x.png"
+        sideMenuMargin="0 !important"
+        sideMenuPosition="absolute"
+        sideMenuTop="9.31rem"
+        sideMenuLeft="0.06rem"
+      />
     </div>
   );
 };

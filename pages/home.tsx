@@ -22,7 +22,10 @@ const Doctors: NextPage = () => {
         buttonsSocial="/buttons-social@2x.png"
         iconLogin="/IconLogin11@2x.png"
       />
-      <SideMenu />
+      <SideMenu
+        sERFOTOMOCKUPQUESTIONARIO="/ser-foto-mockup--questionario-1@2x.png"
+        socialItens="/socialitens@2x.png"
+      />
     </div>
   );
 };

@@ -1,5 +1,5 @@
 import type { NextPage } from "next";
-import { memo } from "react";
+import { memo, useMemo, type CSSProperties } from "react";
 
 type HeaderType = {
   menuBurger?: string;
@@ -7,14 +7,24 @@ type HeaderType = {
   logo?: string;
   vector?: string;
   iconLogin?: string;
+
+  /** Style props */
+  headerZIndex?: CSSProperties["zIndex"];
 };
 
 const Header: NextPage<HeaderType> = memo(
-  ({ menuBurger, close1, logo, vector, iconLogin }) => {
+  ({ menuBurger, close1, logo, vector, iconLogin, headerZIndex }) => {
+    const headerStyle: CSSProperties = useMemo(() => {
+      return {
+        zIndex: headerZIndex,
+      };
+    }, [headerZIndex]);
+
     return (
       <header
         className="self-stretch h-[9.38rem] flex flex-row items-center justify-between pt-[3.25rem] px-[6rem] pb-[3.63rem] box-border z-[0] text-left text-[0.88rem] text-grey-prime font-plus-jakarta-sans"
         id="Header"
+        style={headerStyle}
       >
         <div className="flex-1 h-[1.75rem] flex flex-row items-center justify-start gap-[0.63rem]">
           <img
