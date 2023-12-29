@@ -7,7 +7,7 @@ const Doctors: NextPage = () => {
         menuBurger="/menuburger@2x.png"
         close1="/close@2x.png"
         logo="/logo1@2x.png"
-        vector="/vector1@2x.png"
+        vector="/vector11@2x.png"
         iconLogin="/iconlogin1@2x.png"
       />
       <Intro />

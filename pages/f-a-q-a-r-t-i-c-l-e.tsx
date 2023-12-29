@@ -2,7 +2,7 @@ import type { NextPage } from "next";
 
 const FAQARTICLE: NextPage = () => {
   return (
-    <div className="relative w-full overflow-hidden flex flex-col items-end justify-start bg-[url('/faq-article@3x.png')] bg-cover bg-no-repeat bg-[top] text-left text-[2.25rem] text-black-text font-plus-jakarta-sans">
+    <div className="relative w-full overflow-hidden flex flex-col items-end justify-start bg-[url('/faq-article@3x.png')] bg-cover bg-no-repeat bg-[top] text-left text-[1rem] text-grey-prime font-plus-jakarta-sans">
       <header
         className="self-stretch h-[9.38rem] flex flex-row items-center justify-between pt-[3.25rem] px-[6rem] pb-[3.63rem] box-border z-[0] text-left text-[0.88rem] text-grey-prime font-plus-jakarta-sans"
         id="Header"
@@ -32,7 +32,7 @@ const FAQARTICLE: NextPage = () => {
           <img
             className="relative w-[2rem] h-[2rem] object-cover hidden"
             alt=""
-            src="/vector@2x.png"
+            src="/vector1@2x.png"
           />
           <div className="flex flex-row items-center justify-start gap-[0.94rem]">
             <b className="relative tracking-[0.03em] leading-[130%]">Login</b>
@@ -46,8 +46,18 @@ const FAQARTICLE: NextPage = () => {
         </div>
       </header>
       <div className="self-stretch h-[44.25rem] flex flex-col items-center justify-start pt-[4.25rem] px-[0rem] pb-[0rem] box-border z-[1]">
-        <div className="relative w-[71.5rem] h-[30.19rem]">
-          <div className="absolute top-[6.5rem] left-[0rem] flex flex-col items-start justify-start gap-[3rem]">
+        <div className="flex flex-col items-start justify-start gap-[5.38rem]">
+          <div className="shrink-0 flex flex-row items-center justify-start gap-[0.94rem]">
+            <img
+              className="relative w-[0.5rem] h-[1.13rem] object-contain"
+              alt=""
+              src="/back-button@2x.png"
+            />
+            <div className="relative tracking-[0.03em] leading-[130%] font-medium">
+              Back
+            </div>
+          </div>
+          <div className="shrink-0 flex flex-col items-start justify-start gap-[3rem] text-[2.25rem] text-black-text">
             <b className="relative leading-[130%] mix-blend-multiply">
               What is Serena Screening?
             </b>
@@ -74,19 +84,9 @@ const FAQARTICLE: NextPage = () => {
               </p>
             </div>
           </div>
-          <div className="absolute top-[0rem] left-[0rem] flex flex-row items-center justify-start gap-[0.94rem] text-[1rem] text-grey-prime">
-            <img
-              className="relative w-[0.5rem] h-[1.13rem] object-cover"
-              alt=""
-              src="/back-button@2x.png"
-            />
-            <div className="relative tracking-[0.03em] leading-[130%] font-medium">
-              Back
-            </div>
-          </div>
         </div>
       </div>
-      <div className="self-stretch h-[57.44rem] flex flex-col items-center justify-center z-[2] text-darkslategray-200">
+      <div className="self-stretch h-[57.44rem] flex flex-col items-center justify-center z-[2] text-[2.25rem] text-darkslategray-200">
         <div className="flex flex-col items-start justify-start gap-[3.75rem]">
           <div className="relative leading-[110%] mix-blend-multiply">
             Other articles
@@ -113,36 +113,36 @@ const FAQARTICLE: NextPage = () => {
                 <img
                   className="relative w-[0.75rem] h-[0.75rem] object-cover"
                   alt=""
-                  src="/iconcircleselected@2x.png"
+                  src="/iconcircleselected1@2x.png"
                 />
                 <img
                   className="relative w-[0.75rem] h-[0.75rem] object-cover"
                   alt=""
-                  src="/iconcirclenonselected@2x.png"
+                  src="/iconcirclenonselected1@2x.png"
                 />
                 <img
                   className="relative w-[0.75rem] h-[0.75rem] object-cover"
                   alt=""
-                  src="/iconcirclenonselected@2x.png"
+                  src="/iconcirclenonselected1@2x.png"
                 />
               </div>
               <div className="shrink-0 flex flex-row items-start justify-start gap-[1.5rem]">
                 <img
                   className="relative w-[2.25rem] h-[2.25rem] object-cover"
                   alt=""
-                  src="/iconleftarrow@2x.png"
+                  src="/iconleftarrow1@2x.png"
                 />
                 <img
                   className="relative w-[2.25rem] h-[2.25rem] object-cover"
                   alt=""
-                  src="/iconrightarrow@2x.png"
+                  src="/iconrightarrow1@2x.png"
                 />
               </div>
             </div>
           </div>
         </div>
       </div>
-      <div className="my-0 mx-[!important] absolute top-[9.31rem] left-[0.06rem] h-[63.44rem] overflow-hidden shrink-0 hidden flex-col items-start justify-end bg-[url('/sidemenu@3x.png')] bg-cover bg-no-repeat bg-[top] min-w-[120rem] z-[3] text-[1rem] text-grey-prime">
+      <div className="my-0 mx-[!important] absolute top-[9.31rem] left-[0.06rem] h-[63.44rem] overflow-hidden shrink-0 hidden flex-col items-start justify-end bg-[url('/sidemenu@3x.png')] bg-cover bg-no-repeat bg-[top] min-w-[120rem] z-[3]">
         <div className="self-stretch h-[9.38rem] hidden flex-row items-center justify-between pt-[3.25rem] px-[6rem] pb-[3.63rem] box-border">
           <div className="flex-1 h-[1.75rem] flex flex-row items-center justify-start gap-[0.63rem]">
             <img
@@ -306,7 +306,7 @@ const FAQARTICLE: NextPage = () => {
                     className="relative w-[2.5rem] h-[2.5rem] object-cover"
                     alt="IconLogin"
                     id="IconLogin"
-                    src="/IconLogin6@2x.png"
+                    src="/IconLogin61@2x.png"
                   />
                 </div>
                 <div className="rounded-xl bg-grey-prime box-border w-[16rem] h-[3.5rem] flex flex-col items-center justify-center py-[1.31rem] px-[4.94rem] text-[1rem] text-white border-[2px] border-solid border-gray-100">
