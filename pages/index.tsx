@@ -1,6 +1,6 @@
 import type { NextPage } from "next";
 
-const FAQ: NextPage = () => {
+const Faq: NextPage = () => {
   return (
     <div className="relative w-full overflow-hidden flex flex-col items-start justify-start bg-[url('/faq@3x.png')] bg-cover bg-no-repeat bg-[top] text-left text-[2.25rem] text-darkslategray-200 font-plus-jakarta-sans">
       <header
@@ -492,4 +492,4 @@ const FAQ: NextPage = () => {
   );
 };
 
-export default FAQ;
+export default Faq;
