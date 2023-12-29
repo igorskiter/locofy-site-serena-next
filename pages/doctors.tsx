@@ -332,7 +332,7 @@ const FAQ: NextPage = () => {
                     className="relative w-[2.83rem] h-[0.73rem] object-cover"
                     alt="LogoCare"
                     id="LogoCare"
-                    src="/LogoCare@2x.png"
+                    src="/LogoCare41@2x.png"
                   />
                 </div>
                 <img
