@@ -24,11 +24,11 @@ const AboutUs: NextPage = () => {
       <SectionHow />
       <TeamSection />
       <Footer
-        lINE="/line@2x.png"
-        vector="/Logo5@2x.png"
+        lINE="/line1@2x.png"
+        vector="/Logo51@2x.png"
         group="/LogoCare2@2x.png"
-        buttonsSocial="/ButtonsSocial1@2x.png"
-        iconLogin="/IconLogin4@2x.png"
+        buttonsSocial="/ButtonsSocial11@2x.png"
+        iconLogin="/IconLogin41@2x.png"
       />
       <SideMenu />
     </div>

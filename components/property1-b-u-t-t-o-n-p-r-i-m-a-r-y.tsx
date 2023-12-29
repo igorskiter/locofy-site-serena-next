@@ -46,7 +46,7 @@ const Property1BUTTONPRIMARY: NextPage<Property1BUTTONPRIMARYType> = memo(
 
     return (
       <div
-        className="rounded-xl bg-darkslategray flex flex-row items-center justify-center py-[21px] px-[54px] text-center text-lg text-white-prime font-plus-jakarta-sans border-[2px] border-solid border-white-prime"
+        className="rounded-xl bg-darkslategray-100 flex flex-row items-center justify-center py-[21px] px-[54px] text-center text-lg text-white-prime font-plus-jakarta-sans border-[2px] border-solid border-white-prime"
         style={property1BUTTONPRIMARYStyle}
       >
         <b

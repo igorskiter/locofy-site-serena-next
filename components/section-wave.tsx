@@ -11,7 +11,7 @@ const SectionWave: NextPage = memo(() => {
         <img
           className="absolute h-[80.9%] w-full top-[19.1%] right-[0%] bottom-[0%] left-[0%] max-w-full overflow-hidden max-h-full object-cover"
           alt=""
-          src="/group@2x.png"
+          src="/group1@2x.png"
         />
         <div className="absolute h-[4.06%] w-[0.99%] top-[32.83%] right-[35.08%] bottom-[63.1%] left-[63.93%] rounded-[50%] bg-gainsboro box-border border-[3px] border-solid border-salmon-prime" />
         <div className="absolute top-[-0.06rem] left-[71.24rem] rounded-lg bg-grey-25 shadow-[0px_12px_20px_rgba(0,_0,_0,_0.25)] [backdrop-filter:blur(4px)] box-border w-[12.13rem] h-[7.81rem] flex flex-col items-center justify-end py-[1.13rem] px-[0rem] mix-blend-normal border-[2px] border-solid border-salmon-prime">
