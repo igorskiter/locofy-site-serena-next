@@ -402,10 +402,10 @@ const FAQ: NextPage = () => {
       />
       <Footer
         lINE="/line@2x.png"
-        vector="/Logo1@2x.png"
+        vector="/Logo11@2x.png"
         group="/LogoCare41@2x.png"
-        buttonsSocial="/ButtonsSocial@2x.png"
-        iconLogin="/IconLogin1@2x.png"
+        buttonsSocial="/ButtonsSocial2@2x.png"
+        iconLogin="/IconLogin12@2x.png"
         footerZIndex="7"
       />
     </div>

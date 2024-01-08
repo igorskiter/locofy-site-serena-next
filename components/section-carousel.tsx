@@ -4,10 +4,10 @@ import { memo } from "react";
 const SectionCarousel: NextPage = memo(() => {
   return (
     <section
-      className="self-stretch h-[82.94rem] flex flex-col items-center justify-center pt-[0rem] px-[0rem] pb-[16.38rem] box-border z-[4] text-left text-[6rem] text-grey-prime font-plus-jakarta-sans"
+      className="self-stretch h-[82.94rem] flex flex-col items-center justify-center pt-[0rem] px-[0rem] pb-[16.38rem] box-border z-[4] text-left text-[6rem] text-grey-prime font-plus-jakarta-sans md:h-[82.94rem]"
       id="SectionCarousel"
     >
-      <div className="w-full flex flex-row items-center justify-between max-w-[88.25rem] lg:flex-row lg:gap-[7.09rem] lg:items-center lg:justify-between md:flex-col md:gap-[6.25rem] md:items-center md:justify-center sm:flex-col sm:gap-[6.25rem] sm:items-center sm:justify-center">
+      <div className="w-full flex flex-row items-center justify-between max-w-[88.25rem] lg:flex-row lg:gap-[7.09rem] lg:items-center lg:justify-between md:flex-1 md:flex-col md:gap-[6.25rem] md:items-center md:justify-between sm:flex-col sm:gap-[6.25rem] sm:items-center sm:justify-center">
         <div className="shrink-0 flex flex-row items-center justify-center relative gap-[0.63rem]">
           <div className="absolute my-0 mx-[!important] h-[31.3%] w-[75.14%] top-[24.94%] left-[16.78%] tracking-[-0.02em] leading-[100%] inline-block mix-blend-multiply z-[0]">
             <p className="m-0">

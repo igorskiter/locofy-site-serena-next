@@ -27,7 +27,7 @@ const AboutUs: NextPage = () => {
       <Footer
         lINE="/line1@2x.png"
         vector="/Logo51@2x.png"
-        group="/LogoCare21@2x.png"
+        group="/LogoCare211@2x.png"
         buttonsSocial="/ButtonsSocial11@2x.png"
         iconLogin="/IconLogin41@2x.png"
         footerZIndex="6"

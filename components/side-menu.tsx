@@ -45,7 +45,7 @@ const SideMenu: NextPage<SideMenuType> = memo(
 
     return (
       <div
-        className="my-0 mx-[!important] absolute top-[9.31rem] left-[0.06rem] h-[63.44rem] overflow-hidden shrink-0 hidden flex-col items-start justify-end bg-[url('/sidemenu1@3x.png')] bg-cover bg-no-repeat bg-[top] min-w-[120rem] z-[7] text-left text-[1rem] text-grey-prime font-plus-jakarta-sans"
+        className="my-0 mx-[!important] absolute top-[9.31rem] left-[0.06rem] h-[63.44rem] overflow-hidden shrink-0 hidden flex-col items-start justify-end bg-[url('/sidemenu@3x.png')] bg-cover bg-no-repeat bg-[top] min-w-[120rem] z-[7] text-left text-[1rem] text-grey-prime font-plus-jakarta-sans"
         style={sideMenuStyle}
       >
         <div className="self-stretch h-[9.38rem] hidden flex-row items-center justify-between pt-[3.25rem] px-[6rem] pb-[3.63rem] box-border">
@@ -53,7 +53,7 @@ const SideMenu: NextPage<SideMenuType> = memo(
             <img
               className="relative w-[2rem] h-[1.75rem] object-cover hidden"
               alt=""
-              src="/menuburger@2x.png"
+              src="/MenuBurguer@2x.png"
             />
             <img
               className="relative w-[2rem] h-[2rem] object-cover"
@@ -86,10 +86,7 @@ const SideMenu: NextPage<SideMenuType> = memo(
             </div>
           </div>
         </div>
-        <aside
-          className="w-[120rem] h-[58.13rem] flex flex-col items-end justify-end pt-[0rem] pb-[2.88rem] pr-[5.63rem] pl-[0rem] box-border text-left text-[2.5rem] text-grey-prime font-plus-jakarta-sans"
-          id="NavMenu"
-        >
+        <div className="w-[120rem] h-[58.13rem] flex flex-col items-end justify-end pt-[0rem] pb-[2.88rem] pr-[5.63rem] pl-[0rem] box-border text-[2.5rem]">
           <div className="flex flex-col items-end justify-end gap-[17rem]">
             <div className="shrink-0 flex flex-row items-end justify-end">
               <div className="self-stretch shrink-0 flex flex-col items-start justify-end pt-[0rem] px-[0rem] pb-[1rem]">
@@ -140,7 +137,7 @@ const SideMenu: NextPage<SideMenuType> = memo(
               Privacy Policy
             </div>
           </div>
-        </aside>
+        </div>
       </div>
     );
   }

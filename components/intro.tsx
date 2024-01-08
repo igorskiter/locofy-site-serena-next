@@ -4,9 +4,9 @@ import Property1BUTTONPRIMARY from "./property1-b-u-t-t-o-n-p-r-i-m-a-r-y";
 
 const Intro: NextPage = memo(() => {
   return (
-    <section className="self-stretch h-[60rem] flex flex-col items-center justify-center py-[0rem] px-[6rem] box-border z-[1] text-center text-[9.68rem] text-whitesmoke-100 font-plus-jakarta-sans">
-      <div className="self-stretch h-[60rem] flex flex-col items-center justify-center pt-[7.88rem] px-[0rem] pb-[0rem] box-border gap-[6.44rem] bg-[url('/content1@3x.png')] bg-cover bg-no-repeat bg-[top]">
-        <div className="relative leading-[110%] whitespace-pre-wrap inline-block w-[69.81rem] mix-blend-hard-light">
+    <section className="self-stretch h-[60rem] flex flex-col items-center justify-center py-[0rem] px-[6rem] box-border z-[1] text-center text-[9.68rem] text-whitesmoke-100 font-plus-jakarta-sans md:pl-[1.5rem] md:pr-[1.5rem] md:box-border">
+      <div className="self-stretch rounded-3xl h-[60rem] flex flex-col items-center justify-center pt-[7.88rem] px-[0rem] pb-[0rem] box-border gap-[6.44rem] bg-[url('/content@3x.png')] bg-cover bg-no-repeat bg-[top] md:gap-[0rem] md:items-center md:justify-center md:pl-[6.25rem] md:pt-[0rem] md:pr-[6.25rem] md:box-border sm:rounded-2xl">
+        <div className="relative leading-[110%] whitespace-pre-wrap inline-block w-[69.81rem] mix-blend-hard-light lg:w-[69.81rem]">
           <p className="m-0">
             <span>
               <span className="tracking-[-0.02em] font-extralight">{`Redefining `}</span>
@@ -22,7 +22,7 @@ const Intro: NextPage = memo(() => {
             <i className="text-[10.25rem] font-medium font-lora">with health</i>
           </p>
         </div>
-        <div className="flex flex-row items-start justify-start gap-[1.5rem]">
+        <div className="flex flex-row items-start justify-start gap-[1.5rem] md:hidden">
           <Property1BUTTONPRIMARY
             doctorSpecialty="FOR doctorS"
             property1BUTTONPRIMARYBoxSizing="border-box"
