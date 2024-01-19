@@ -1,0 +1,211 @@
+.chapeu1 {
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: var(--font-lora);
+  mix-blend-mode: normal;
+}
+.joinThe {
+  font-weight: 300;
+}
+.comMunity {
+  font-weight: 600;
+  font-family: var(--font-lora);
+}
+.h2,
+.p4 {
+  align-self: stretch;
+  position: relative;
+  font-size: var(--font-size-53xl);
+  letter-spacing: -0.02em;
+  line-height: 90%;
+  mix-blend-mode: multiply;
+}
+.p4 {
+  font-size: var(--font-size-5xl);
+  letter-spacing: 0.01em;
+  line-height: 150%;
+}
+.description {
+  width: 30.94rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-29xl);
+}
+.joinTheCommunity {
+  position: relative;
+  letter-spacing: 0.14em;
+  line-height: 130%;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.button {
+  border-radius: var(--br-xs);
+  background-color: var(--green-link);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-mid) var(--padding-72xl);
+  text-align: center;
+  font-size: var(--font-size-base);
+}
+.left {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-55xl) 0;
+  gap: var(--gap-45xl);
+}
+.subtractIcon {
+  position: relative;
+  width: 32.56rem;
+  height: 21.88rem;
+}
+.groupIcon,
+.vectorIcon {
+  width: 9.46rem;
+  position: relative;
+  height: 1.5rem;
+}
+.groupIcon {
+  width: 2.79rem;
+  height: 0.53rem;
+}
+.logoSerenaCircle {
+  position: absolute;
+  top: 10.19rem;
+  left: 5rem;
+  width: 12.71rem;
+  height: 1.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--gap-6xs);
+}
+.subtractParent {
+  width: 32.56rem;
+  position: relative;
+  height: 21.88rem;
+}
+.content,
+.right,
+.section {
+  display: flex;
+  align-items: center;
+}
+.right {
+  flex: 1;
+  border-radius: var(--br-5xl);
+  height: 44.13rem;
+  flex-direction: column;
+  justify-content: center;
+  background-image: url(/right1@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  mix-blend-mode: multiply;
+}
+.content,
+.section {
+  justify-content: flex-start;
+}
+.content {
+  width: 100%;
+  flex-direction: row;
+  gap: var(--gap-217xl);
+  max-width: 89.81rem;
+}
+.section {
+  align-self: stretch;
+  flex-direction: column;
+  padding: 0 var(--padding-223xl) var(--padding-393xl);
+  z-index: 5;
+  text-align: left;
+  font-size: var(--font-size-17xl);
+  color: var(--grey-prime);
+  font-family: var(--font-plus-jakarta-sans);
+}
+@media screen and (max-width: 1200px) {
+  .content {
+    gap: var(--gap-5xl);
+  }
+  .section {
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 960px) {
+  .chapeu1 {
+    font-size: var(--font-size-5xl);
+  }
+  .h2 {
+    font-size: var(--font-size-21xl);
+  }
+  .p4 {
+    font-size: var(--font-size-base);
+  }
+  .description {
+    max-width: 20.38rem;
+  }
+  .button {
+    padding: var(--padding-3xs) var(--padding-15xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 420px) {
+  .button,
+  .description {
+    align-self: stretch;
+    width: auto;
+  }
+  .button {
+    align-items: center;
+    justify-content: center;
+  }
+  .left {
+    flex: 1;
+  }
+  .subtractIcon {
+    width: 18.75rem;
+    height: 11.81rem;
+  }
+  .vectorIcon {
+    width: 5.06rem;
+    height: 0.75rem;
+  }
+  .groupIcon {
+    width: 1.5rem;
+    height: 0.25rem;
+  }
+  .logoSerenaCircle {
+    width: 6.81rem;
+    height: 0.75rem;
+    gap: var(--gap-0);
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .subtractParent {
+    width: 18.75rem;
+    height: 11.81rem;
+  }
+  .right {
+    max-height: 21.38rem;
+  }
+  .content {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: var(--gap-13xl);
+  }
+  .section {
+    padding-bottom: var(--padding-121xl);
+    box-sizing: border-box;
+  }
+}

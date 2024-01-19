@@ -1,0 +1,127 @@
+.imageaboutushowIcon {
+  width: 44.13rem;
+  position: relative;
+  border-radius: var(--br-5xl);
+  height: 55.63rem;
+  object-fit: cover;
+}
+.chapeu2 {
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: var(--font-lora);
+  mix-blend-mode: normal;
+}
+.weAreDesigning {
+  letter-spacing: -0.02em;
+  font-weight: 300;
+}
+.better,
+.i {
+  font-family: var(--font-lora);
+}
+.better {
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+.i {
+  font-weight: 500;
+}
+.healthcare1 {
+  font-weight: 300;
+}
+.healthcare {
+  letter-spacing: -0.02em;
+}
+.h1,
+.p3 {
+  width: 100%;
+  position: relative;
+  font-size: var(--font-size-45xl);
+  line-height: 120%;
+  display: inline-block;
+  mix-blend-mode: multiply;
+  max-width: 33.44rem;
+}
+.p3 {
+  font-size: var(--font-size-5xl);
+  line-height: 150%;
+  mix-blend-mode: normal;
+  max-width: 31.94rem;
+}
+.description {
+  align-self: stretch;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-29xl);
+}
+.content,
+.section {
+  align-self: stretch;
+  display: flex;
+  justify-content: flex-start;
+}
+.content {
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--gap-154xl);
+}
+.section {
+  height: 73.13rem;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 var(--padding-234xl) var(--padding-261xl);
+  box-sizing: border-box;
+  z-index: 4;
+  text-align: left;
+  font-size: var(--font-size-17xl);
+  color: var(--grey-prime);
+  font-family: var(--font-plus-jakarta-sans);
+}
+@media screen and (max-width: 1200px) {
+  .imageaboutushowIcon {
+    flex: 1;
+    align-self: stretch;
+    height: auto;
+    min-width: 24.06rem;
+    max-width: 50%;
+  }
+  .chapeu2 {
+    font-size: var(--font-size-5xl);
+  }
+  .h1 {
+    font-size: var(--font-size-17xl);
+  }
+  .p3 {
+    font-size: var(--font-size-base);
+  }
+  .description {
+    max-width: 20.38rem;
+  }
+  .content {
+    flex-direction: row;
+    gap: var(--gap-56xl);
+  }
+  .section {
+    padding-left: var(--padding-93xl);
+    padding-right: var(--padding-93xl);
+    padding-bottom: var(--padding-170xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 960px) {
+  .description {
+    flex: unset;
+    align-self: stretch;
+  }
+  .content {
+    flex-direction: column;
+    gap: var(--gap-154xl);
+    align-items: center;
+    justify-content: center;
+  }
+}

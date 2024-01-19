@@ -1,0 +1,20 @@
+.ctaText {
+  position: relative;
+  letter-spacing: 0.14em;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+.property1buttonPrimary {
+  border-radius: var(--br-xs);
+  background-color: var(--color-darkslategray-200);
+  border: 2px solid var(--white-prime);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-2xl) var(--padding-35xl);
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--white-prime);
+  font-family: var(--font-plus-jakarta-sans);
+}

@@ -1,0 +1,360 @@
+.groupIcon,
+.lineIcon,
+.vectorIcon {
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.lineIcon {
+  align-self: stretch;
+  position: relative;
+}
+.groupIcon,
+.vectorIcon {
+  position: absolute;
+  height: 34.94%;
+  width: 17.14%;
+  top: 38.55%;
+  right: 0;
+  bottom: 26.51%;
+  left: 82.86%;
+}
+.vectorIcon {
+  height: 100%;
+  width: 79.02%;
+  top: 0;
+  right: 20.98%;
+  bottom: 0;
+  left: 0;
+}
+.logomobile {
+  width: 8.31rem;
+  position: relative;
+  height: 1.04rem;
+  display: none;
+}
+.groupIcon1,
+.vectorIcon1 {
+  width: 13.04rem;
+  position: relative;
+  height: 2.06rem;
+  object-fit: cover;
+}
+.groupIcon1 {
+  width: 2.83rem;
+  height: 0.73rem;
+}
+.logoSerenacare,
+.logotablet {
+  height: 2.06rem;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--gap-3xs);
+}
+.logotablet {
+  width: 108rem;
+  display: none;
+  justify-content: flex-start;
+  padding: 0 var(--padding-65xl);
+  box-sizing: border-box;
+}
+.logoSerenacare {
+  width: 16.5rem;
+  display: flex;
+  justify-content: flex-end;
+}
+.buttonssocialIcon {
+  width: 15.66rem;
+  position: relative;
+  height: 2.16rem;
+  object-fit: cover;
+}
+.left {
+  height: 18.69rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-72xl);
+}
+.about,
+.home {
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 130%;
+}
+.home {
+  font-size: var(--font-size-5xl);
+}
+.about {
+  font-weight: 500;
+}
+.right {
+  flex-direction: column;
+  gap: var(--gap-30xl);
+}
+.center,
+.links,
+.right {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.links {
+  flex-direction: row;
+  gap: var(--gap-109xl);
+}
+.center {
+  flex: 1;
+  height: 18.06rem;
+  flex-direction: column;
+  padding: 0 0 0 var(--padding-161xl);
+  box-sizing: border-box;
+}
+.login {
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 130%;
+}
+.iconlogin {
+  width: 2.5rem;
+  position: relative;
+  height: 2.5rem;
+  object-fit: cover;
+}
+.buttonlogin {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+}
+.contact {
+  position: relative;
+  letter-spacing: 0.14em;
+  line-height: 130%;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.button {
+  align-self: stretch;
+  border-radius: var(--br-xs);
+  background-color: var(--grey-prime);
+  border: 2px solid var(--color-gray-100);
+  box-sizing: border-box;
+  height: 3.5rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: var(--padding-2xl) var(--padding-60xl);
+  font-size: var(--font-size-base);
+  color: var(--color-white);
+}
+.box,
+.right1 {
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-start;
+}
+.right1 {
+  height: 18.63rem;
+  flex-direction: column;
+  gap: var(--gap-41xl);
+  font-size: var(--font-size-sm);
+}
+.box {
+  align-self: stretch;
+  flex-direction: row;
+}
+.iconinstagram {
+  width: 2rem;
+  position: relative;
+  height: 2rem;
+}
+.box1,
+.box2 {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.box2 {
+  justify-content: center;
+}
+.iconspotify {
+  width: 2.16rem;
+  position: relative;
+  height: 2.16rem;
+}
+.buttonssocial {
+  width: 21.13rem;
+  display: none;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-21xl);
+}
+.menu6 {
+  position: relative;
+  font-size: var(--font-size-xs);
+  line-height: 130%;
+  color: var(--color-gray-200);
+}
+.footer1 {
+  align-items: center;
+  padding: 0 var(--padding-65xl) var(--padding-lg);
+  gap: var(--gap-xl);
+}
+.content,
+.footer,
+.footer1 {
+  align-self: stretch;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.content {
+  align-items: flex-start;
+  gap: var(--gap-109xl);
+}
+.footer {
+  height: 30.31rem;
+  align-items: center;
+  padding: 0 var(--padding-77xl);
+  box-sizing: border-box;
+  z-index: 6;
+  text-align: left;
+  font-size: var(--font-size-xl);
+  color: var(--grey-prime);
+  font-family: var(--font-plus-jakarta-sans);
+}
+@media screen and (max-width: 1200px) {
+  .center,
+  .footer1 {
+    box-sizing: border-box;
+  }
+  .center {
+    padding-left: var(--padding-61xl);
+  }
+  .footer1 {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media screen and (max-width: 960px) {
+  .logotablet {
+    display: flex;
+    gap: var(--gap-0);
+  }
+  .left {
+    display: none;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding-right: 0;
+  }
+  .box,
+  .left,
+  .right1 {
+    padding-left: 0;
+    box-sizing: border-box;
+  }
+  .right1 {
+    padding-right: var(--padding-61xl);
+  }
+  .box {
+    padding-right: 0;
+  }
+  .buttonssocial {
+    display: flex;
+  }
+  .content,
+  .footer {
+    box-sizing: border-box;
+  }
+  .content {
+    gap: var(--gap-35xl);
+    padding-left: 0;
+  }
+  .footer {
+    height: auto;
+    padding-left: var(--padding-11xl);
+    padding-right: var(--padding-11xl);
+  }
+}
+@media screen and (max-width: 420px) {
+  .logomobile {
+    display: flex;
+  }
+  .logotablet {
+    display: none;
+    align-self: stretch;
+    width: auto;
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+  .left {
+    display: none;
+    height: auto;
+  }
+  .center,
+  .links {
+    align-self: stretch;
+  }
+  .links {
+    width: auto;
+    gap: var(--gap-0);
+    align-items: flex-start;
+    justify-content: space-between;
+  }
+  .center {
+    padding-left: 0;
+    box-sizing: border-box;
+    flex: unset;
+  }
+  .buttonlogin {
+    display: none;
+  }
+  .button,
+  .right1 {
+    align-self: stretch;
+    width: auto;
+    align-items: center;
+    box-sizing: border-box;
+  }
+  .button {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-0);
+    justify-content: center;
+    padding-left: var(--padding-60xl);
+    padding-right: var(--padding-60xl);
+  }
+  .right1 {
+    height: auto;
+    gap: var(--gap-xs);
+    justify-content: flex-end;
+    padding-right: 0;
+  }
+  .box {
+    flex-direction: column;
+  }
+  .box,
+  .content,
+  .footer {
+    align-self: stretch;
+    width: auto;
+  }
+  .content {
+    gap: var(--gap-26xl);
+  }
+  .footer {
+    height: auto;
+    padding-left: var(--padding-base);
+    padding-right: var(--padding-base);
+    box-sizing: border-box;
+  }
+}

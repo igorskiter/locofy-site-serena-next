@@ -1,0 +1,303 @@
+.imagegradient {
+  width: 34.44rem;
+  position: relative;
+  border-radius: var(--br-xl);
+  background-color: var(--grey-25);
+  backdrop-filter: blur(25px);
+  border: 2px solid var(--grey-prime);
+  box-sizing: border-box;
+  height: 51.13rem;
+  opacity: 0.5;
+  mix-blend-mode: multiply;
+}
+.gradient {
+  margin: 0 !important;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs);
+  z-index: 0;
+}
+.doctorsIcon,
+.p6 {
+  mix-blend-mode: normal;
+}
+.doctorsIcon {
+  width: 34.19rem;
+  margin: 0 !important;
+  position: absolute;
+  top: 0.63rem;
+  left: 0.63rem;
+  border-radius: var(--br-base);
+  height: 51rem;
+  object-fit: cover;
+  opacity: 0.9;
+  z-index: 1;
+}
+.p6 {
+  position: relative;
+  letter-spacing: 0.1em;
+  line-height: 100%;
+}
+.subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xs);
+}
+.yourHealth {
+  font-weight: 600;
+  font-family: var(--font-lora);
+}
+.h4 {
+  width: 23.88rem;
+  position: relative;
+  font-size: var(--font-size-29xl);
+  line-height: 110%;
+  display: inline-block;
+  height: 5.56rem;
+  flex-shrink: 0;
+}
+.cardtitle {
+  align-self: stretch;
+  height: 13.38rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-46xl) var(--padding-30xl);
+  box-sizing: border-box;
+  gap: var(--gap-13xl);
+  z-index: 2;
+}
+.experienceSerenaScreening {
+  width: 27.25rem;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 150%;
+  display: inline-block;
+  height: 7.88rem;
+  flex-shrink: 0;
+}
+.description {
+  width: 34.56rem;
+  height: 17.94rem;
+  display: none;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 0 0 var(--padding-123xl) var(--padding-30xl);
+  box-sizing: border-box;
+  z-index: 3;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+}
+.ctaText {
+  position: relative;
+  font-size: var(--font-size-lg);
+  letter-spacing: 0.14em;
+  line-height: 130%;
+  text-transform: uppercase;
+  font-family: var(--font-plus-jakarta-sans);
+  color: var(--grey-prime);
+  text-align: center;
+}
+.buttonprimary {
+  cursor: pointer;
+  border: 1px solid var(--grey-prime);
+  padding: 0;
+  background-color: var(--color-whitesmoke-200);
+  width: 31.06rem;
+  border-radius: var(--br-xs);
+  box-sizing: border-box;
+  height: 3.56rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.boundingBox {
+  width: 31rem;
+  position: relative;
+  border-radius: var(--br-xs);
+  background-color: var(--white-prime-65);
+  height: 3.5rem;
+}
+.ctaText1 {
+  position: relative;
+  letter-spacing: 0.14em;
+  line-height: 130%;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: -2.12rem;
+}
+.buttonClic {
+  width: 31rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.boundingBox1 {
+  width: 31.13rem;
+  position: relative;
+  border-radius: var(--br-xs);
+  background-color: var(--green-prime);
+  box-shadow: 0 8px 12px 2px rgba(11, 62, 60, 0.65);
+  border: 2px solid var(--white-prime);
+  box-sizing: border-box;
+  height: 3.63rem;
+}
+.button,
+.buttonHover {
+  width: 31rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--white-prime);
+}
+.button {
+  width: 34.56rem;
+  height: 6rem;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  z-index: 4;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--green-prime);
+}
+.cardcontent,
+.carddoctor {
+  display: flex;
+  flex-direction: column;
+}
+.cardcontent {
+  width: 35.44rem;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  gap: var(--gap-3xs);
+}
+.carddoctor {
+  height: 52.13rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.imagepatientsIcon {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-base);
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: contain;
+}
+.button1,
+.patients {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.patients {
+  width: 34.19rem;
+  margin: 0 !important;
+  position: absolute;
+  top: 0.63rem;
+  left: 0.63rem;
+  height: 50.88rem;
+  display: flex;
+  align-items: flex-start;
+  z-index: 1;
+}
+.button1 {
+  width: 34.56rem;
+  height: 6rem;
+  display: none;
+  align-items: center;
+  gap: var(--gap-3xs);
+  z-index: 4;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--green-prime);
+}
+.companiesIcon {
+  width: 34.19rem;
+  margin: 0 !important;
+  position: absolute;
+  top: 0.63rem;
+  left: 0.63rem;
+  border-radius: var(--br-base);
+  height: 50.88rem;
+  object-fit: cover;
+  z-index: 1;
+}
+.fromReactive {
+  margin: 0;
+}
+.toProactive1 {
+  font-weight: 600;
+}
+.toProactive {
+  margin: 0;
+  font-family: var(--font-lora);
+}
+.cards,
+.sectioncards {
+  align-self: stretch;
+  display: flex;
+  align-items: center;
+}
+.cards {
+  flex-direction: row;
+  justify-content: center;
+  gap: var(--gap-lg);
+}
+.sectioncards {
+  height: 67.13rem;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 5;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--white-prime);
+  font-family: var(--font-plus-jakarta-sans);
+}
+@media screen and (max-width: 1200px) {
+  .cards {
+    flex-direction: row;
+    gap: var(--gap-lg);
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 960px) {
+  .button:hover {
+    display: none;
+  }
+  .cards {
+    flex-direction: row;
+    gap: var(--gap-lg);
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .sectioncards {
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 420px) {
+  .cards {
+    flex-direction: row;
+    gap: var(--gap-lg);
+    align-items: center;
+    justify-content: center;
+  }
+}

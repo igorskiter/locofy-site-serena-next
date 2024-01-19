@@ -1,0 +1,229 @@
+@keyframes slide-in-left {
+  0% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+.closeIcon,
+.menuburgerIcon {
+  width: 2rem;
+  position: relative;
+}
+.menuburgerIcon {
+  height: 1.75rem;
+  display: none;
+}
+.closeIcon {
+  height: 2rem;
+}
+.lefet {
+  flex: 1;
+  height: 1.75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.logoIcon {
+  width: 14rem;
+  position: relative;
+  height: 1.83rem;
+}
+.center {
+  flex: 1;
+  height: 1.83rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 130%;
+  font-weight: 500;
+  opacity: 0.1;
+}
+.iconlogin {
+  width: 2.5rem;
+  position: relative;
+  height: 2.5rem;
+}
+.buttonlogin {
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+}
+.buttonlogin,
+.header,
+.right {
+  flex-direction: row;
+  align-items: center;
+}
+.right {
+  flex: 1;
+  height: 2.5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--gap-3xs);
+}
+.header {
+  width: 120rem;
+  height: 9.38rem;
+  display: none;
+  justify-content: space-between;
+  padding: var(--padding-33xl) var(--padding-77xl) var(--padding-39xl);
+  box-sizing: border-box;
+}
+.home {
+  position: relative;
+  font-size: var(--font-size-39xl);
+  line-height: 130%;
+  font-weight: 700;
+  font-family: var(--font-lora);
+}
+.about {
+  letter-spacing: -0.01em;
+}
+.about,
+.forDoctors {
+  position: relative;
+  line-height: 130%;
+  font-weight: 300;
+}
+.left,
+.menu1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.menu1 {
+  height: 24.44rem;
+  justify-content: flex-start;
+  gap: var(--gap-21xl);
+}
+.left {
+  align-self: stretch;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-base);
+}
+.serFotoMockupQuestionario {
+  position: absolute;
+  top: 6.38rem;
+  left: 0;
+  border-radius: var(--br-base);
+  width: 19.5rem;
+  height: 24.19rem;
+  object-fit: cover;
+  mix-blend-mode: darken;
+}
+.redefining {
+  margin: 0;
+}
+.ourRelationship,
+.redefining {
+  letter-spacing: -0.02em;
+  font-weight: 200;
+}
+.withHealth {
+  font-weight: 600;
+  font-family: var(--font-lora);
+}
+.ourRelationshipWithHealth {
+  margin: 0;
+}
+.redefiningOurRelationshipContainer {
+  position: absolute;
+  width: 79.44%;
+  top: 0;
+  left: 20.56%;
+  line-height: 110%;
+  white-space: pre-wrap;
+  display: inline-block;
+  mix-blend-mode: multiply;
+}
+.content1 {
+  width: 40.13rem;
+  position: relative;
+  height: 30.56rem;
+}
+.center1 {
+  width: 68.06rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-45xl);
+}
+.socialitensIcon {
+  width: 3rem;
+  position: relative;
+  height: 15.88rem;
+}
+.menu,
+.right1 {
+  display: flex;
+  justify-content: flex-end;
+}
+.right1 {
+  align-self: stretch;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 0 var(--padding-65xl);
+}
+.menu {
+  flex-direction: row;
+  align-items: flex-end;
+}
+.privacyPolicy {
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 130%;
+  font-weight: 300;
+}
+.content,
+.drawer,
+.navmenu {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.content {
+  align-items: flex-end;
+  gap: var(--gap-253xl);
+}
+.drawer,
+.navmenu {
+  width: 120rem;
+}
+.navmenu {
+  height: 58.13rem;
+  align-items: flex-end;
+  padding: 0 var(--padding-71xl) var(--padding-27xl) 0;
+  box-sizing: border-box;
+  font-size: var(--font-size-21xl);
+}
+.drawer {
+  position: relative;
+  overflow: hidden;
+  align-items: flex-start;
+  background-image: url(/drawer@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  opacity: 0;
+  height: 100%;
+  max-width: 90%;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--grey-prime);
+  font-family: var(--font-plus-jakarta-sans);
+}
+.drawer.animate {
+  animation: 0.25s ease 0s 1 normal forwards slide-in-left;
+}

@@ -1,0 +1,89 @@
+.redefining {
+  margin: 0;
+}
+.ourRelationship {
+  letter-spacing: -0.02em;
+  font-weight: 200;
+}
+.i,
+.withHealth {
+  font-weight: 600;
+  font-family: var(--font-lora);
+}
+.withHealth {
+  font-size: var(--font-size-145xl);
+  font-weight: 500;
+}
+.title {
+  width: 69.81rem;
+  position: relative;
+  line-height: 110%;
+  white-space: pre-wrap;
+  display: inline-block;
+  mix-blend-mode: hard-light;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-5xl);
+}
+.content,
+.hero {
+  align-self: stretch;
+  height: 60rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+}
+.content {
+  border-radius: var(--br-5xl);
+  padding: var(--padding-107xl) 0 0;
+  gap: var(--gap-84xl);
+  background-image: url(/content1@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+}
+.hero {
+  padding: 0 var(--padding-77xl);
+  z-index: 1;
+  text-align: center;
+  font-size: var(--font-size-135xl-9);
+  color: var(--color-whitesmoke-100);
+  font-family: var(--font-plus-jakarta-sans);
+}
+@media screen and (max-width: 1200px) {
+  .title {
+    width: 69.81rem;
+  }
+}
+@media screen and (max-width: 960px) {
+  .buttons {
+    display: none;
+  }
+  .content,
+  .hero {
+    box-sizing: border-box;
+  }
+  .content {
+    gap: var(--gap-0);
+    align-items: center;
+    justify-content: center;
+    padding-left: var(--padding-81xl);
+    padding-top: 0;
+    padding-right: var(--padding-81xl);
+  }
+  .hero {
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+  }
+}
+@media screen and (max-width: 420px) {
+  .content {
+    border-radius: var(--br-base);
+  }
+}

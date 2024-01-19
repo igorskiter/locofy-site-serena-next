@@ -8,6 +8,7 @@ import {
 } from "react";
 import Drawer from "./drawer";
 import PortalDrawer from "./portal-drawer";
+import styles from "./header.module.css";
 
 type HeaderType = {
   menuBurger?: string;
@@ -40,55 +41,36 @@ const Header: NextPage<HeaderType> = memo(
 
     return (
       <>
-        <header
-          className="self-stretch h-[9.38rem] flex flex-row items-center justify-between pt-[3.25rem] px-[6rem] pb-[3.63rem] box-border z-[0] text-left text-[0.88rem] text-grey-prime font-plus-jakarta-sans md:py-[1.88rem] md:px-[1.63rem] md:box-border sm:py-[1.5rem] sm:px-[1rem] sm:box-border"
-          id="Header"
-          style={headerStyle}
-        >
-          <div className="flex-1 h-[1.75rem] flex flex-row items-center justify-start gap-[0.63rem]">
+        <header className={styles.header} id="Header" style={headerStyle}>
+          <div className={styles.lefet}>
             <img
-              className="relative w-[2rem] h-[1.75rem] object-cover cursor-pointer"
+              className={styles.menuburgerIcon}
               id="MenuBurguer"
               alt=""
               src={menuBurger}
               onClick={openDrawer}
             />
+            <img className={styles.closeIcon} alt="" src={close1} />
+          </div>
+          <div className={styles.center}>
+            <img className={styles.logoIcon} alt="Logo" id="Logo" src={logo} />
             <img
-              className="relative w-[2rem] h-[2rem] object-cover hidden"
+              className={styles.logotabletIcon}
               alt=""
-              src={close1}
+              src="/logotablet.svg"
+            />
+            <img
+              className={styles.logomobileIcon}
+              alt=""
+              src="/logomobile.svg"
             />
           </div>
-          <div className="flex-1 h-[1.83rem] flex flex-col items-center justify-center gap-[0.63rem]">
-            <img
-              className="relative w-[14rem] h-[1.83rem] object-cover md:hidden"
-              alt="Logo"
-              id="Logo"
-              src={logo}
-            />
-            <img
-              className="relative w-[11.31rem] h-[1.5rem] object-cover hidden md:flex"
-              alt=""
-              src="/logotablet@2x.png"
-            />
-            <img
-              className="relative w-[8.06rem] h-[1.06rem] object-cover hidden"
-              alt=""
-              src="/logomobile@2x.png"
-            />
-          </div>
-          <div className="flex-1 h-[2.5rem] flex flex-row items-center justify-end gap-[0.63rem]">
-            <img
-              className="relative w-[2rem] h-[2rem] object-cover hidden"
-              alt=""
-              src={vector}
-            />
-            <div className="flex flex-row items-center justify-start gap-[0.94rem]">
-              <b className="relative tracking-[0.03em] leading-[130%] sm:hidden">
-                Login
-              </b>
+          <div className={styles.right}>
+            <img className={styles.closeIcon} alt="" src={vector} />
+            <div className={styles.buttonlogin}>
+              <b className={styles.login}>Login</b>
               <img
-                className="relative w-[2.5rem] h-[2.5rem] object-cover"
+                className={styles.iconlogin}
                 alt="IconLogin"
                 id="IconLogin"
                 src={iconLogin}

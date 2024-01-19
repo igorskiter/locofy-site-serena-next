@@ -1,38 +1,43 @@
 import type { NextPage } from "next";
 import Header from "../components/header";
-import Intro from "../components/intro";
-import HeroUnderstandLifestyle from "../components/hero-understand-lifestyle";
-import SectionWave from "../components/section-wave";
-import SectionCarousel from "../components/section-carousel";
-import SectionCards from "../components/section-cards";
-import Footer from "../components/footer";
+import SectionAskedQUestionSearch from "../components/section-asked-question-search";
+import SectionFrequentlyAskedQuestion from "../components/section-frequently-asked-question";
+import SectionOtherArticleContact from "../components/section-other-article-contact";
 import SideMenu from "../components/side-menu";
+import Footer from "../components/footer";
+import styles from "./faq.module.css";
 
 const Home: NextPage = () => {
   return (
-    <div className="relative w-full overflow-hidden flex flex-col items-start justify-start bg-[url('/home@3x.png')] bg-cover bg-no-repeat bg-[top]">
+    <div className={styles.faq}>
       <Header
-        menuBurger="/MenuBurguer@2x.png"
-        close1="/close@2x.png"
-        logo="/logo1@2x.png"
-        vector="/vector11@2x.png"
-        iconLogin="/iconlogin1@2x.png"
+        menuBurger="/menuburger1@2x.png"
+        close1="/close.svg"
+        logo="/logo3@2x.png"
+        vector="/vector2.svg"
+        iconLogin="/iconlogin2@2x.png"
+        headerZIndex="0"
       />
-      <Intro />
-      <HeroUnderstandLifestyle />
-      <SectionWave />
-      <SectionCarousel />
-      <SectionCards />
-      <Footer
-        lINE="/line@2x.png"
-        vector="/Logo2@2x.png"
-        group="/LogoCare1@2x.png"
-        buttonsSocial="/ButtonsSocial@2x.png"
-        iconLogin="/IconLogin1@2x.png"
-      />
+      <SectionAskedQUestionSearch />
+      <SectionFrequentlyAskedQuestion />
+      <SectionOtherArticleContact />
       <SideMenu
+        sideMenuBackgroundImage="url('/sidemenu@3x.png')"
+        sideMenuZIndex="4"
         sERFOTOMOCKUPQUESTIONARIO="/ser-foto-mockup--questionario-1@2x.png"
-        socialItens="/socialitens@2x.png"
+        socialItens="/socialitens.svg"
+        sideMenuMargin="0 !important"
+        sideMenuPosition="absolute"
+        sideMenuTop="9.31rem"
+        sideMenuLeft="0.06rem"
+      />
+      <Footer
+        lINE="/line1.svg"
+        vector="/Logo7@2x.png"
+        group="/LogoCare7@2x.png"
+        buttonsSocial="/ButtonsSocial2@2x.png"
+        iconLogin="/IconLogin@2x.png"
+        footerZIndex="5"
       />
     </div>
   );

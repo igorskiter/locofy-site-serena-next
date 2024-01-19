@@ -1,0 +1,139 @@
+.chapeu1 {
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  font-weight: 700;
+  mix-blend-mode: normal;
+}
+.iconplans {
+  width: 7.63rem;
+  position: relative;
+  height: 7.63rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.personalized {
+  margin: 0;
+}
+.chapeu2,
+.p5 {
+  align-self: stretch;
+  position: relative;
+}
+.chapeu2 {
+  line-height: 120%;
+  font-weight: 600;
+}
+.p5 {
+  font-size: var(--font-size-xl);
+  line-height: 150%;
+}
+.tile {
+  display: flex;
+  justify-content: flex-start;
+  max-width: 26.25rem;
+}
+.tile,
+.tile1,
+.tile2 {
+  width: 26.25rem;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--gap-13xl);
+}
+.tile1 {
+  display: flex;
+  justify-content: flex-start;
+  min-width: 26.25rem;
+}
+.tile2 {
+  max-width: 26.25rem;
+}
+.content,
+.content1,
+.section,
+.tile2 {
+  display: flex;
+  justify-content: flex-start;
+}
+.content1 {
+  align-self: stretch;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--gap-143xl);
+  color: var(--black-text);
+  font-family: var(--font-plus-jakarta-sans);
+}
+.content,
+.section {
+  flex-direction: column;
+}
+.content {
+  width: 100%;
+  align-items: flex-start;
+  gap: var(--gap-110xl);
+  max-width: 99rem;
+}
+.section {
+  align-self: stretch;
+  align-items: center;
+  padding: var(--padding-38xl) var(--padding-149xl) var(--padding-201xl);
+  z-index: 3;
+  text-align: left;
+  font-size: var(--font-size-17xl);
+  color: var(--grey-prime);
+  font-family: var(--font-lora);
+}
+@media screen and (max-width: 1200px) {
+  .section {
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 960px) {
+  .tile {
+    width: 100%;
+  }
+  .content1 {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 420px) {
+  .iconplans {
+    width: 3rem;
+    height: 3rem;
+  }
+  .chapeu2 {
+    font-size: var(--font-size-13xl);
+  }
+  .p5 {
+    font-size: var(--font-size-base);
+    max-width: 21.44rem;
+  }
+  .tile {
+    width: 100%;
+    gap: var(--gap-5xl);
+  }
+  .tile1 {
+    flex: 1;
+  }
+  .tile1,
+  .tile2 {
+    gap: var(--gap-5xl);
+  }
+  .content1 {
+    gap: var(--gap-62xl);
+    padding-left: 0;
+    padding-right: 0;
+    box-sizing: border-box;
+  }
+  .content {
+    gap: var(--gap-41xl);
+  }
+  .section {
+    padding-bottom: var(--padding-157xl);
+    box-sizing: border-box;
+  }
+}

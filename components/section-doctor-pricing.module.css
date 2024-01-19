@@ -1,0 +1,336 @@
+.basic {
+  position: relative;
+  letter-spacing: 0.1em;
+  line-height: 100%;
+  mix-blend-mode: multiply;
+}
+.mo1 {
+  font-size: var(--font-size-xl);
+}
+.mo {
+  position: relative;
+  line-height: 100%;
+  mix-blend-mode: multiply;
+  font-size: var(--font-size-53xl);
+}
+.price {
+  align-self: stretch;
+  border-radius: var(--br-5xl) var(--br-5xl) 0 0;
+  background-color: var(--grey-25);
+  border: 4px solid var(--white-prime);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-29xl) var(--padding-27xl);
+  gap: var(--gap-29xl);
+}
+.serenaScreenings {
+  align-self: stretch;
+  position: relative;
+  line-height: 150%;
+}
+.div,
+.serenaScreeningsMonth {
+  width: 24.56rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.div {
+  width: 3.13rem;
+  align-items: flex-end;
+  text-align: right;
+}
+.topic1Child {
+  width: 30.69rem;
+  position: relative;
+  height: 0.13rem;
+  object-fit: contain;
+}
+.topic1 {
+  width: 30.69rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.patientScoreEvolutionMonito {
+  width: 24.56rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.iconCheck {
+  width: 1.5rem;
+  position: relative;
+  height: 1.5rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.list,
+.topics {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.topics {
+  width: 30.69rem;
+  height: 20.69rem;
+  gap: var(--gap-5xl);
+}
+.list {
+  width: 34.81rem;
+  font-size: var(--font-size-xl);
+  color: var(--black-text);
+}
+.boundingBox {
+  width: 31rem;
+  position: relative;
+  border-radius: var(--br-xs);
+  background-color: var(--white-prime-65);
+  height: 3.5rem;
+}
+.ctaText {
+  position: relative;
+  letter-spacing: 0.14em;
+  line-height: 130%;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-top: -2.12rem;
+}
+.buttonClic {
+  position: absolute;
+  top: 5.56rem;
+  left: 0;
+  width: 31rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+.boundingBox1 {
+  width: 31.13rem;
+  position: relative;
+  border-radius: var(--br-xs);
+  background-color: var(--green-prime);
+  box-shadow: 0 8px 12px 2px rgba(11, 62, 60, 0.65);
+  border: 2px solid var(--white-prime);
+  box-sizing: border-box;
+  height: 3.63rem;
+}
+.buttonHover {
+  position: absolute;
+  top: 5.56rem;
+  left: 0;
+  width: 31rem;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--white-prime);
+}
+.ctaText2 {
+  position: relative;
+  letter-spacing: 0.14em;
+  line-height: 130%;
+  text-transform: uppercase;
+}
+.buttoprimary {
+  position: absolute;
+  top: -0.03rem;
+  left: -0.03rem;
+  border-radius: var(--br-xs);
+  background-color: var(--color-whitesmoke-200);
+  border: 1px solid var(--grey-prime);
+  box-sizing: border-box;
+  width: 31.06rem;
+  height: 3.56rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--grey-prime);
+}
+.button {
+  width: 31rem;
+  position: relative;
+  height: 3.5rem;
+}
+.card,
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+.footer {
+  width: 34.94rem;
+  height: 6.31rem;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--green-prime);
+}
+.card {
+  flex: 1;
+  border-radius: var(--br-5xl);
+  background-color: var(--grey-25);
+  gap: var(--gap-3xs);
+  max-width: 35rem;
+}
+.personalizedTreatmentPlansParent {
+  width: 30.69rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.topics1 {
+  width: 30.69rem;
+  height: 20.69rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--gap-5xl);
+}
+.footer1,
+.list1,
+.topics1 {
+  flex-direction: column;
+}
+.list1 {
+  width: 34.81rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--font-size-xl);
+  color: var(--black-text);
+}
+.footer1 {
+  width: 34.94rem;
+  height: 6.31rem;
+  justify-content: flex-start;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--green-prime);
+}
+.card1,
+.footer1,
+.vip {
+  display: flex;
+  align-items: center;
+}
+.card1 {
+  width: 35rem;
+  border-radius: var(--br-5xl);
+  background-color: var(--grey-25);
+  flex-shrink: 0;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+  max-width: 35rem;
+}
+.vip {
+  width: 7.94rem;
+  position: relative;
+  letter-spacing: 0.1em;
+  line-height: 100%;
+  mix-blend-mode: multiply;
+}
+.price2 {
+  align-self: stretch;
+  border-radius: var(--br-5xl) var(--br-5xl) 0 0;
+  background-color: var(--color-darkturquoise-100);
+  border: 4px solid var(--color-white);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-29xl) var(--padding-27xl);
+  gap: var(--gap-29xl);
+}
+.buttonClic2,
+.buttonprimary1 {
+  position: absolute;
+  left: 0;
+  width: 31rem;
+  flex-direction: column;
+  align-items: center;
+}
+.buttonClic2 {
+  top: 5.56rem;
+  display: none;
+  justify-content: flex-end;
+  color: var(--green-prime);
+}
+.buttonprimary1 {
+  top: 0;
+  border-radius: var(--br-xs);
+  background-color: var(--green-link);
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+}
+.cards,
+.footer2,
+.section {
+  display: flex;
+  justify-content: flex-start;
+}
+.footer2 {
+  width: 34.94rem;
+  border-radius: 0 0 var(--br-5xl) var(--br-5xl);
+  height: 6.31rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--white-prime);
+}
+.cards,
+.section {
+  align-self: stretch;
+}
+.cards {
+  overflow-x: auto;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: var(--gap-5xl);
+}
+.section {
+  flex-direction: column;
+  align-items: center;
+  padding: 0 var(--padding-77xl) var(--padding-341xl);
+  z-index: 4;
+  text-align: left;
+  font-size: var(--font-size-5xl);
+  color: var(--grey-prime);
+  font-family: var(--font-plus-jakarta-sans);
+}
+@media screen and (max-width: 1200px) {
+  .section {
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 420px) {
+  .serenaScreeningsMonth {
+    width: auto;
+    align-self: unset;
+  }
+  .list,
+  .topics {
+    align-self: stretch;
+    width: auto;
+  }
+  .cards {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}

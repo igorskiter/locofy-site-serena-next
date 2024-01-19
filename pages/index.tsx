@@ -1,33 +1,42 @@
 import type { NextPage } from "next";
+import Header from "../components/header";
+import SideMenu from "../components/side-menu";
+import SectionContactCompany from "../components/section-contact-company";
+import Footer from "../components/footer";
+import styles from "./index.module.css";
 
-const Doctors: NextPage = () => {
+const ContactCompany: NextPage = () => {
   return (
-    <div className="relative w-full overflow-hidden flex flex-col items-start justify-start bg-[url('/home@3x.png')] bg-cover bg-no-repeat bg-[top]">
+    <div className={styles.contactcompany}>
       <Header
-        menuBurger="/MenuBurguer@2x.png"
-        close1="/close@2x.png"
+        menuBurger="/menuburger1@2x.png"
+        close1="/close.svg"
         logo="/logo1@2x.png"
-        vector="/vector11@2x.png"
-        iconLogin="/iconlogin1@2x.png"
-      />
-      <Intro />
-      <HeroUnderstandLifestyle />
-      <SectionWave />
-      <SectionCarousel />
-      <SectionCards />
-      <Footer
-        lINE="/line@2x.png"
-        vector="/Logo2@2x.png"
-        group="/LogoCare1@2x.png"
-        buttonsSocial="/ButtonsSocial@2x.png"
-        iconLogin="/IconLogin1@2x.png"
+        vector="/vector.svg"
+        iconLogin="/IconLogin51@2x.png"
+        headerZIndex="0"
       />
       <SideMenu
+        sideMenuBackgroundImage="url('/sidemenu@3x.png')"
+        sideMenuZIndex="1"
         sERFOTOMOCKUPQUESTIONARIO="/ser-foto-mockup--questionario-1@2x.png"
-        socialItens="/socialitens@2x.png"
+        socialItens="/socialitens.svg"
+        sideMenuMargin="0 !important"
+        sideMenuPosition="absolute"
+        sideMenuTop="9.31rem"
+        sideMenuLeft="0.06rem"
+      />
+      <SectionContactCompany />
+      <Footer
+        lINE="/line.svg"
+        vector="/Logo3@2x.png"
+        group="/LogoCare3@2x.png"
+        buttonsSocial="/ButtonsSocial1@2x.png"
+        iconLogin="/IconLogin51@2x.png"
+        footerZIndex="3"
       />
     </div>
   );
 };
 
-export default Doctors;
+export default ContactCompany;

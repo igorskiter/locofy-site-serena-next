@@ -1,0 +1,129 @@
+.chapeu2 {
+  position: relative;
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  font-weight: 700;
+  font-family: var(--font-lora);
+  mix-blend-mode: normal;
+}
+.empowerDoctorsAnd {
+  letter-spacing: -0.02em;
+  font-weight: 300;
+}
+.valuableData1 {
+  letter-spacing: -0.01em;
+}
+.span {
+  letter-spacing: -0.02em;
+}
+.valuableData {
+  font-weight: 600;
+  font-family: var(--font-lora);
+}
+.and1 {
+  font-weight: 300;
+}
+.information {
+  letter-spacing: -0.01em;
+  font-weight: 600;
+  font-family: var(--font-lora);
+}
+.h1 {
+  width: 100%;
+  position: relative;
+  font-size: var(--font-size-45xl);
+  line-height: 120%;
+  display: inline-block;
+  mix-blend-mode: multiply;
+  max-width: 33.44rem;
+}
+.description,
+.p3 {
+  align-self: stretch;
+}
+.p3 {
+  position: relative;
+  font-size: var(--font-size-5xl);
+  line-height: 150%;
+  mix-blend-mode: normal;
+}
+.description {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: var(--gap-29xl);
+}
+.imageabouturwhyIcon {
+  flex: 1;
+  position: relative;
+  border-radius: var(--br-5xl);
+  max-width: 100%;
+  overflow: hidden;
+  height: 55.63rem;
+  object-fit: cover;
+}
+.content,
+.section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: center;
+}
+.content {
+  flex: 1;
+  gap: var(--gap-5xl);
+}
+.section {
+  align-self: stretch;
+  padding: 0 var(--padding-220xl) var(--padding-314xl);
+  z-index: 3;
+  text-align: left;
+  font-size: var(--font-size-17xl);
+  color: var(--grey-prime);
+  font-family: var(--font-plus-jakarta-sans);
+}
+@media screen and (max-width: 1200px) {
+  .chapeu2 {
+    font-size: var(--font-size-5xl);
+  }
+  .h1 {
+    font-size: var(--font-size-17xl);
+  }
+  .p3 {
+    font-size: var(--font-size-base);
+  }
+  .description {
+    max-width: 20.38rem;
+  }
+  .imageabouturwhyIcon {
+    align-self: stretch;
+    height: auto;
+    min-width: 24.06rem;
+    max-width: 50%;
+  }
+  .content {
+    width: auto;
+    align-self: unset;
+    gap: var(--gap-56xl);
+  }
+  .section {
+    padding-left: var(--padding-93xl);
+    padding-right: var(--padding-12xs);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 960px) {
+  .description,
+  .imageabouturwhyIcon {
+    flex: unset;
+    align-self: stretch;
+  }
+  .content {
+    flex-direction: column;
+    gap: var(--gap-0);
+    align-items: flex-start;
+    justify-content: center;
+  }
+}

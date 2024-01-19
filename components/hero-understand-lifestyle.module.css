@@ -1,0 +1,95 @@
+.understand {
+  font-weight: 600;
+}
+.andMesureThe {
+  font-weight: 300;
+  font-family: var(--font-plus-jakarta-sans);
+}
+.lifestyleFactors {
+  font-weight: 600;
+  font-family: var(--font-lora);
+}
+.onTheOnset {
+  font-weight: 300;
+}
+.andMesureTheInfluenceOfLi {
+  font-size: var(--font-size-53xl);
+  font-family: var(--font-plus-jakarta-sans);
+}
+.h2,
+.p4 {
+  flex: 1;
+  position: relative;
+  height: 34.44rem;
+  mix-blend-mode: multiply;
+}
+.h2 {
+  letter-spacing: -0.02em;
+  line-height: 130%;
+  display: inline-block;
+}
+.p4 {
+  font-size: var(--font-size-5xl);
+  line-height: 140%;
+  font-weight: 300;
+  font-family: var(--font-plus-jakarta-sans);
+  display: flex;
+  align-items: flex-end;
+  max-width: 34.69rem;
+}
+.box,
+.herounderstandlifestyle {
+  align-self: stretch;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.herounderstandlifestyle {
+  height: 67.5rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0 var(--padding-236xl);
+  box-sizing: border-box;
+  z-index: 2;
+  text-align: left;
+  font-size: var(--font-size-59xl);
+  color: var(--grey-prime);
+  font-family: var(--font-lora);
+}
+@media screen and (max-width: 1200px) {
+  .box {
+    flex-direction: row;
+    gap: var(--gap-0);
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
+@media screen and (max-width: 960px) {
+  .box {
+    height: auto;
+    flex-direction: row;
+    gap: var(--gap-0);
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+  .herounderstandlifestyle {
+    padding-left: var(--padding-108xl);
+    padding-right: var(--padding-17xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 420px) {
+  .h2,
+  .p4 {
+    flex: unset;
+    align-self: stretch;
+  }
+  .box {
+    flex-direction: column;
+    gap: var(--gap-0);
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+}
