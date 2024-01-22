@@ -35,6 +35,15 @@ const Home: NextPage = () => {
         sERFOTOMOCKUPQUESTIONARIO="/ser-foto-mockup--questionario-1@2x.png"
         socialItens="/socialitens.svg"
       />
+      <SectionContactCompany />
+      <Footer
+        lINE="/line.svg"
+        vector="/Logo31@2x.png"
+        group="/LogoCare3@2x.png"
+        buttonsSocial="/ButtonsSocial1@2x.png"
+        iconLogin="/IconLogin51@2x.png"
+        footerZIndex="3"
+      />
     </div>
   );
 };

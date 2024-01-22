@@ -15,6 +15,7 @@
 }
 .menuburgerIcon {
   height: 1.75rem;
+  object-fit: cover;
   display: none;
 }
 .closeIcon {
@@ -33,6 +34,18 @@
   width: 14rem;
   position: relative;
   height: 1.83rem;
+  object-fit: cover;
+}
+.logomobileIcon,
+.logotabletIcon {
+  width: 11.31rem;
+  position: relative;
+  height: 1.5rem;
+  display: none;
+}
+.logomobileIcon {
+  width: 8.06rem;
+  height: 1.06rem;
 }
 .center {
   flex: 1;
@@ -41,44 +54,52 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: var(--gap-3xs);
 }
-.text {
+.vectorIcon {
+  width: 2rem;
+  position: relative;
+  height: 2rem;
+  display: none;
+}
+.login {
   position: relative;
   letter-spacing: 0.03em;
   line-height: 130%;
-  font-weight: 500;
-  opacity: 0.1;
 }
 .iconlogin {
   width: 2.5rem;
   position: relative;
   height: 2.5rem;
+  object-fit: cover;
 }
 .buttonlogin {
-  display: flex;
   justify-content: flex-start;
   gap: var(--gap-mini);
 }
 .buttonlogin,
 .header,
 .right {
+  display: flex;
   flex-direction: row;
   align-items: center;
 }
 .right {
   flex: 1;
   height: 2.5rem;
-  display: flex;
   justify-content: flex-end;
   gap: var(--gap-3xs);
 }
 .header {
-  width: 120rem;
+  align-self: stretch;
   height: 9.38rem;
-  display: none;
   justify-content: space-between;
   padding: var(--padding-33xl) var(--padding-77xl) var(--padding-39xl);
   box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--grey-prime);
+  font-family: var(--font-plus-jakarta-sans);
 }
 .home {
   position: relative;
@@ -206,7 +227,6 @@
   align-items: flex-end;
   padding: 0 var(--padding-71xl) var(--padding-27xl) 0;
   box-sizing: border-box;
-  font-size: var(--font-size-21xl);
 }
 .drawer {
   position: relative;
@@ -220,10 +240,32 @@
   height: 100%;
   max-width: 90%;
   text-align: left;
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-21xl);
   color: var(--grey-prime);
   font-family: var(--font-plus-jakarta-sans);
 }
 .drawer.animate {
   animation: 0.25s ease 0s 1 normal forwards slide-in-left;
+}
+@media screen and (max-width: 960px) {
+  .logoIcon {
+    display: none;
+  }
+  .logotabletIcon {
+    display: flex;
+  }
+  .header {
+    padding: var(--padding-11xl) var(--padding-7xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 420px) {
+  .login,
+  .logoIcon {
+    display: none;
+  }
+  .header {
+    padding: var(--padding-5xl) var(--padding-base);
+    box-sizing: border-box;
+  }
 }

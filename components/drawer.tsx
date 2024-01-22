@@ -38,22 +38,39 @@ const Drawer: NextPage<DrawerType> = memo(({ onClose }) => {
   }, []);
   return (
     <div className={styles.drawer} data-animate-on-scroll>
-      <div className={styles.header}>
+      <header className={styles.header} id="Header">
         <div className={styles.lefet}>
-          <img className={styles.menuburgerIcon} alt="" src="/menuburger.svg" />
+          <img
+            className={styles.menuburgerIcon}
+            id="MenuBurguer"
+            alt=""
+            src="/menuburger1@2x.png"
+          />
           <img className={styles.closeIcon} alt="" src="/close.svg" />
         </div>
         <div className={styles.center}>
-          <img className={styles.logoIcon} alt="" src="/logo.svg" />
+          <img
+            className={styles.logoIcon}
+            alt="Logo"
+            id="Logo"
+            src="/Logo1@2x.png"
+          />
+          <img className={styles.logotabletIcon} alt="" src="/logotablet.svg" />
+          <img className={styles.logomobileIcon} alt="" src="/logomobile.svg" />
         </div>
         <div className={styles.right}>
-          <img className={styles.closeIcon} alt="" src="/vector.svg" />
+          <img className={styles.vectorIcon} alt="" src="/vector.svg" />
           <div className={styles.buttonlogin}>
-            <div className={styles.text}>Login</div>
-            <img className={styles.iconlogin} alt="" src="/iconlogin.svg" />
+            <b className={styles.login}>Login</b>
+            <img
+              className={styles.iconlogin}
+              alt="IconLogin"
+              id="IconLogin"
+              src="/iconlogin1@2x.png"
+            />
           </div>
         </div>
-      </div>
+      </header>
       <div className={styles.navmenu}>
         <div className={styles.content}>
           <div className={styles.menu}>

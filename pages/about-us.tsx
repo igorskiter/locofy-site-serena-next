@@ -28,7 +28,7 @@ const AboutUs: NextPage = () => {
       <TeamSection />
       <Footer
         lINE="/line.svg"
-        vector="/Logo3@2x.png"
+        vector="/Logo31@2x.png"
         group="/LogoCare9@2x.png"
         buttonsSocial="/ButtonsSocial@2x.png"
         iconLogin="/iconlogin1@2x.png"

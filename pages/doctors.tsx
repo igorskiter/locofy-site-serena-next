@@ -37,7 +37,7 @@ const FAQ: NextPage = () => {
       />
       <Footer
         lINE="/line1.svg"
-        vector="/Logo3@2x.png"
+        vector="/Logo31@2x.png"
         group="/LogoCare5@2x.png"
         buttonsSocial="/ButtonsSocial1@2x.png"
         iconLogin="/iconlogin2@2x.png"
