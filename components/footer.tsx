@@ -61,12 +61,48 @@ const Footer: NextPage<FooterType> = memo(
                     src={group}
                   />
                 </div>
-                <img
-                  className={styles.buttonssocialIcon}
-                  alt="ButtonsSocial"
-                  id="ButtonsSocial"
-                  src={buttonsSocial}
-                />
+                <div className={styles.buttonssocial} src={buttonsSocial}>
+                  <a
+                    className={styles.linksocial}
+                    href="https://blog.serenacare.com.br/"
+                  >
+                    <img
+                      className={styles.iconspotify}
+                      alt=""
+                      src="/iconspotify.svg"
+                    />
+                  </a>
+                  <a
+                    className={styles.linksocial1}
+                    href="https://blog.serenacare.com.br/"
+                  >
+                    <img
+                      className={styles.iconspotify}
+                      alt=""
+                      src="/iconlinkedin.svg"
+                    />
+                  </a>
+                  <a
+                    className={styles.linksocial2}
+                    href="https://blog.serenacare.com.br/"
+                  >
+                    <img
+                      className={styles.iconspotify}
+                      alt=""
+                      src="/iconfacebook.svg"
+                    />
+                  </a>
+                  <a
+                    className={styles.linksocial3}
+                    href="https://blog.serenacare.com.br/"
+                  >
+                    <img
+                      className={styles.iconspotify}
+                      alt=""
+                      src="/iconinstagram.svg"
+                    />
+                  </a>
+                </div>
               </div>
               <div className={styles.center}>
                 <div className={styles.links}>
@@ -115,31 +151,31 @@ const Footer: NextPage<FooterType> = memo(
                 </Link>
               </div>
             </div>
-            <div className={styles.buttonssocial}>
+            <div className={styles.buttonssocial1}>
               <div className={styles.box1}>
                 <img
-                  className={styles.iconinstagram}
+                  className={styles.iconinstagram1}
                   alt=""
                   src="/iconinstagram.svg"
                 />
               </div>
               <div className={styles.box2}>
                 <img
-                  className={styles.iconinstagram}
+                  className={styles.iconinstagram1}
                   alt=""
                   src="/iconfacebook.svg"
                 />
               </div>
               <div className={styles.box2}>
                 <img
-                  className={styles.iconinstagram}
+                  className={styles.iconinstagram1}
                   alt=""
                   src="/iconlinkedin.svg"
                 />
               </div>
               <div className={styles.box2}>
                 <img
-                  className={styles.iconspotify}
+                  className={styles.iconspotify1}
                   alt=""
                   src="/iconspotify.svg"
                 />

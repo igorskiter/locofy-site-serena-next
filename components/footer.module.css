@@ -63,13 +63,52 @@
   display: flex;
   justify-content: flex-end;
 }
-.buttonssocialIcon {
+.iconspotify,
+.linksocial {
+  position: absolute;
+  top: 0;
+  overflow: hidden;
+}
+.iconspotify {
+  height: 100%;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+.linksocial {
+  text-decoration: none;
+  left: 13.49rem;
+  width: 2.16rem;
+  height: 2.16rem;
+}
+.linksocial1 {
+  left: 8.99rem;
+}
+.linksocial1,
+.linksocial2,
+.linksocial3 {
+  text-decoration: none;
+  position: absolute;
+  top: 0.08rem;
+  width: 2rem;
+  height: 2rem;
+  overflow: hidden;
+}
+.linksocial2 {
+  left: 4.5rem;
+}
+.linksocial3 {
+  left: 0;
+}
+.buttonssocial {
   width: 15.66rem;
   position: relative;
   height: 2.16rem;
   overflow: hidden;
   flex-shrink: 0;
-  object-fit: cover;
 }
 .left {
   height: 18.69rem;
@@ -185,7 +224,7 @@
   align-self: stretch;
   flex-direction: row;
 }
-.iconinstagram {
+.iconinstagram1 {
   width: 2rem;
   position: relative;
   height: 2rem;
@@ -201,12 +240,12 @@
 .box2 {
   justify-content: center;
 }
-.iconspotify {
+.iconspotify1 {
   width: 2.16rem;
   position: relative;
   height: 2.16rem;
 }
-.buttonssocial {
+.buttonssocial1 {
   width: 21.13rem;
   display: none;
   flex-direction: row;
@@ -285,7 +324,7 @@
   .box {
     padding-right: 0;
   }
-  .buttonssocial {
+  .buttonssocial1 {
     display: flex;
   }
   .content,

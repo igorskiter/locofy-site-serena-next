@@ -32,7 +32,7 @@ const Home: NextPage = () => {
         lINE="/line.svg"
         vector="/Logo21@2x.png"
         group="/LogoCare11@2x.png"
-        buttonsSocial="/ButtonsSocial3@2x.png"
+        buttonsSocial="250.46x34.61x-1180024328"
         iconLogin="/IconLogin1@2x.png"
       />
       <SideMenu

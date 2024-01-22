@@ -11,7 +11,7 @@ const SectionCards: NextPage = memo(() => {
             <div className={styles.gradient}>
               <div className={styles.imagegradient} />
             </div>
-            <img className={styles.doctorsIcon} alt="" src="/doctors1@2x.png" />
+            <img className={styles.doctorsIcon} alt="" src="/doctors@2x.png" />
             <div className={styles.cardtitle}>
               <div className={styles.subtitle}>
                 <b className={styles.p6}>PATIENTS</b>
@@ -43,8 +43,8 @@ const SectionCards: NextPage = memo(() => {
             </div>
           </div>
         </div>
-        <div className={styles.carddoctor}>
-          <div className={styles.cardcontent}>
+        <div className={styles.cardpatients}>
+          <div className={styles.cardcontent1}>
             <div className={styles.gradient}>
               <div className={styles.imagegradient} />
             </div>
@@ -64,7 +64,7 @@ const SectionCards: NextPage = memo(() => {
                 <i className={styles.yourHealth}>your health.</i>
               </div>
             </div>
-            <div className={styles.description}>
+            <div className={styles.description1}>
               <div className={styles.experienceSerenaScreening}>
                 Experience Serena Screening, a tool that provides instant
                 understanding on how lifestyle factors impact your patients'
@@ -86,8 +86,8 @@ const SectionCards: NextPage = memo(() => {
             </div>
           </div>
         </div>
-        <div className={styles.carddoctor}>
-          <div className={styles.cardcontent}>
+        <div className={styles.cardpatients}>
+          <div className={styles.cardcontent2}>
             <div className={styles.gradient}>
               <div className={styles.imagegradient} />
             </div>
@@ -107,7 +107,7 @@ const SectionCards: NextPage = memo(() => {
                 </p>
               </div>
             </div>
-            <div className={styles.description}>
+            <div className={styles.description1}>
               <div className={styles.experienceSerenaScreening}>
                 Experience Serena Screening, a tool that provides instant
                 understanding on how lifestyle factors impact your patients'

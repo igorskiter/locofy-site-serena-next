@@ -223,7 +223,12 @@ const SideMenu: NextPage<SideMenuType> = memo(
                 </div>
               </div>
             </div>
-            <div className={styles.privacyPolicy}>Privacy Policy</div>
+            <a
+              className={styles.privacyPolicy}
+              href="https://blog.serenacare.com.br/"
+            >
+              Privacy Policy
+            </a>
           </div>
         </div>
       </div>

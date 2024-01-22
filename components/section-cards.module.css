@@ -1,3 +1,13 @@
+@keyframes slide-in-bottom {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
 .imagegradient {
   width: 34.44rem;
   position: relative;
@@ -85,7 +95,7 @@
   flex-shrink: 0;
 }
 .description {
-  width: 34.56rem;
+  width: 35.44rem;
   height: 17.94rem;
   display: none;
   flex-direction: row;
@@ -154,39 +164,54 @@
   height: 3.63rem;
 }
 .button,
+.buttonHover,
+.cardcontent {
+  flex-direction: column;
+  align-items: center;
+}
 .buttonHover {
   width: 31rem;
   display: none;
-  flex-direction: column;
-  align-items: center;
   justify-content: flex-end;
   color: var(--white-prime);
+}
+.button,
+.cardcontent {
+  gap: var(--gap-3xs);
 }
 .button {
   width: 34.56rem;
   height: 6rem;
+  display: none;
   justify-content: flex-start;
-  gap: var(--gap-3xs);
   z-index: 4;
   text-align: center;
   font-size: var(--font-size-lg);
   color: var(--green-prime);
 }
-.cardcontent,
-.carddoctor {
-  display: flex;
-  flex-direction: column;
-}
 .cardcontent {
   width: 35.44rem;
   flex: 1;
-  align-items: center;
+  display: flex;
   justify-content: flex-end;
   position: relative;
-  gap: var(--gap-3xs);
+}
+.cardcontent:hover .description {
+  display: flex;
+  animation: 1s ease 0s 1 normal backwards slide-in-bottom;
+  opacity: 1;
+}
+.cardcontent:hover .button,
+.carddoctor {
+  display: flex;
+}
+.cardcontent:hover .doctorsIcon {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    linear-gradient(0.46deg, rgba(0, 0, 0, 0.2), transparent);
 }
 .carddoctor {
   height: 52.13rem;
+  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
 }
@@ -200,11 +225,6 @@
   max-height: 100%;
   object-fit: contain;
 }
-.button1,
-.patients {
-  flex-direction: column;
-  justify-content: flex-start;
-}
 .patients {
   width: 34.19rem;
   margin: 0 !important;
@@ -213,19 +233,64 @@
   left: 0.63rem;
   height: 50.88rem;
   display: flex;
+  flex-direction: column;
   align-items: flex-start;
+  justify-content: flex-start;
   z-index: 1;
 }
-.button1 {
+.button1,
+.description1 {
   width: 34.56rem;
-  height: 6rem;
   display: none;
   align-items: center;
+  justify-content: flex-start;
+}
+.description1 {
+  height: 17.94rem;
+  flex-direction: row;
+  padding: 0 0 var(--padding-123xl) var(--padding-30xl);
+  box-sizing: border-box;
+  z-index: 3;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+}
+.button1 {
+  height: 6rem;
+  flex-direction: column;
   gap: var(--gap-3xs);
   z-index: 4;
   text-align: center;
   font-size: var(--font-size-lg);
   color: var(--green-prime);
+}
+.cardcontent1,
+.cardpatients {
+  display: flex;
+  flex-direction: column;
+}
+.cardcontent1 {
+  width: 35.44rem;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  gap: var(--gap-3xs);
+}
+.cardcontent1:hover .description1 {
+  display: flex;
+  animation: 1s ease 0s 1 normal backwards slide-in-bottom;
+  opacity: 1;
+}
+.cardcontent1:hover .button1 {
+  display: flex;
+}
+.cardcontent1:hover .patients {
+  background-color: var(--color-gray-300);
+}
+.cardpatients {
+  height: 52.13rem;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 .companiesIcon {
   width: 34.19rem;
@@ -247,6 +312,28 @@
 .toProactive {
   margin: 0;
   font-family: var(--font-lora);
+}
+.cardcontent2 {
+  width: 35.44rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  position: relative;
+  gap: var(--gap-3xs);
+}
+.cardcontent2:hover .button1 {
+  display: flex;
+}
+.cardcontent2:hover .description1 {
+  display: flex;
+  animation: 1s ease 0s 1 normal backwards slide-in-bottom;
+  opacity: 1;
+}
+.cardcontent2:hover .companiesIcon {
+  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.2));
 }
 .cards,
 .sectioncards {

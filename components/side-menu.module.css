@@ -250,10 +250,12 @@
   align-items: flex-end;
 }
 .privacyPolicy {
+  text-decoration: none;
   position: relative;
   font-size: var(--font-size-base);
   line-height: 130%;
   font-weight: 300;
+  color: inherit;
 }
 .content {
   display: flex;
