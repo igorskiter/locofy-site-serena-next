@@ -1,11 +1,7 @@
 import type { NextPage } from "next";
-import Header from "../components/header";
-import Intro from "../components/intro";
-import HeroUnderstandLifestyle from "../components/hero-understand-lifestyle";
-import SectionWave from "../components/section-wave";
-import SectionCarousel from "../components/section-carousel";
-import SectionCards from "../components/section-cards";
 import Footer from "../components/footer";
+import Header from "../components/header";
+import SectionContactCompany from "../components/section-contact-company";
 import SideMenu from "../components/side-menu";
 import styles from "./index.module.css";
 
@@ -23,18 +19,6 @@ const Home: NextPage = () => {
         closeIcon={false}
         logoTablet="/logotablet.svg"
         logoMobile="/logomobile.svg"
-      />
-      <Intro />
-      <HeroUnderstandLifestyle />
-      <SectionWave />
-      <SectionCarousel />
-      <SectionCards />
-      <Footer
-        lINE="/line.svg"
-        vector="/Logo21@2x.png"
-        group="/LogoCare11@2x.png"
-        buttonsSocial="/ButtonsSocial3@2x.png"
-        iconLogin="/IconLogin1@2x.png"
       />
       <SideMenu
         sideMenuBackgroundImage="url('/sidemenu1@3x.png')"
