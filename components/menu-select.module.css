@@ -1,0 +1,11 @@
+.home {
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  font-size: var(--font-size-39xl);
+  line-height: 130%;
+  font-style: italic;
+  font-weight: 700;
+  font-family: var(--font-lora);
+  color: inherit;
+}

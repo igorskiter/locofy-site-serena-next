@@ -18,6 +18,10 @@ const Home: NextPage = () => {
         logo="/logo1@2x.png"
         vector="/vector.svg"
         iconLogin="/iconlogin1@2x.png"
+        showMenuBurgerIcon
+        closeIcon={false}
+        logoTablet="/logotablet.svg"
+        logoMobile="/logomobile.svg"
       />
       <Intro />
       <HeroUnderstandLifestyle />

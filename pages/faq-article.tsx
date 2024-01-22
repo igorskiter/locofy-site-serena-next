@@ -16,6 +16,10 @@ const FAQARTICLE: NextPage = () => {
         vector="/vector.svg"
         iconLogin="/IconLogin51@2x.png"
         headerZIndex="0"
+        showMenuBurgerIcon
+        closeIcon={false}
+        logoTablet="/logotablet.svg"
+        logoMobile="/logomobile.svg"
       />
       <SectionFaqDetail />
       <SectionOtherArticle />

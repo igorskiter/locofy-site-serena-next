@@ -14,8 +14,8 @@ body {
   --font-size-45xl: 4rem;
   --font-size-21xl: 2.5rem;
   --font-size-39xl: 3.63rem;
-  --font-size-xs: 0.75rem;
   --font-size-sm: 0.88rem;
+  --font-size-xs: 0.75rem;
   --font-size-xl: 1.25rem;
   --font-size-5xl: 1.5rem;
   --font-size-lg: 1.13rem;
@@ -113,12 +113,13 @@ body {
   --padding-77xl: 6rem;
   --padding-39xl: 3.63rem;
   --padding-11xl: 1.88rem;
+  --padding-7xl: 1.63rem;
+  --padding-5xl: 1.5rem;
   --padding-lg: 1.13rem;
   --padding-61xl: 5rem;
   --padding-2xl: 1.31rem;
   --padding-60xl: 4.94rem;
   --padding-161xl: 11.25rem;
-  --padding-5xl: 1.5rem;
   --padding-123xl: 8.88rem;
   --padding-30xl: 3.06rem;
   --padding-46xl: 4.06rem;
@@ -134,7 +135,6 @@ body {
   --padding-107xl: 7.88rem;
   --padding-81xl: 6.25rem;
   --padding-35xl: 3.38rem;
-  --padding-7xl: 1.63rem;
   --padding-9xl: 1.75rem;
   --padding-43xl: 3.88rem;
   --padding-45xl: 4rem;

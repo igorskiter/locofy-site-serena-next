@@ -8,115 +8,6 @@
     opacity: 1;
   }
 }
-.closeIcon,
-.menuburgerIcon {
-  width: 2rem;
-  position: relative;
-}
-.menuburgerIcon {
-  height: 1.75rem;
-  object-fit: cover;
-  display: none;
-}
-.closeIcon {
-  height: 2rem;
-}
-.lefet {
-  flex: 1;
-  height: 1.75rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-3xs);
-}
-.logoIcon {
-  width: 14rem;
-  position: relative;
-  height: 1.83rem;
-  object-fit: cover;
-}
-.logomobileIcon,
-.logotabletIcon {
-  width: 11.31rem;
-  position: relative;
-  height: 1.5rem;
-  display: none;
-}
-.logomobileIcon {
-  width: 8.06rem;
-  height: 1.06rem;
-}
-.center {
-  flex: 1;
-  height: 1.83rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gap-3xs);
-}
-.vectorIcon {
-  width: 2rem;
-  position: relative;
-  height: 2rem;
-  display: none;
-}
-.login {
-  position: relative;
-  letter-spacing: 0.03em;
-  line-height: 130%;
-}
-.iconlogin {
-  width: 2.5rem;
-  position: relative;
-  height: 2.5rem;
-  object-fit: cover;
-}
-.buttonlogin {
-  justify-content: flex-start;
-  gap: var(--gap-mini);
-}
-.buttonlogin,
-.header,
-.right {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-.right {
-  flex: 1;
-  height: 2.5rem;
-  justify-content: flex-end;
-  gap: var(--gap-3xs);
-}
-.header {
-  align-self: stretch;
-  height: 9.38rem;
-  justify-content: space-between;
-  padding: var(--padding-33xl) var(--padding-77xl) var(--padding-39xl);
-  box-sizing: border-box;
-  text-align: left;
-  font-size: var(--font-size-sm);
-  color: var(--grey-prime);
-  font-family: var(--font-plus-jakarta-sans);
-}
-.home {
-  position: relative;
-  font-size: var(--font-size-39xl);
-  line-height: 130%;
-  font-weight: 700;
-  font-family: var(--font-lora);
-}
-.about {
-  letter-spacing: -0.01em;
-}
-.about,
-.forDoctors {
-  position: relative;
-  line-height: 130%;
-  font-weight: 300;
-}
 .left,
 .menu1 {
   display: flex;
@@ -124,7 +15,6 @@
   align-items: flex-start;
 }
 .menu1 {
-  height: 24.44rem;
   justify-content: flex-start;
   gap: var(--gap-21xl);
 }
@@ -173,7 +63,7 @@
   position: relative;
   height: 30.56rem;
 }
-.center1 {
+.center {
   width: 68.06rem;
   display: flex;
   flex-direction: column;
@@ -181,17 +71,63 @@
   justify-content: center;
   font-size: var(--font-size-45xl);
 }
-.socialitensIcon {
+.iconSocialMediaSpotify,
+.linksocial {
+  position: absolute;
+  width: 100%;
+  right: 0;
+  left: 0;
+}
+.iconSocialMediaSpotify {
+  height: 100%;
+  top: 0;
+  bottom: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+}
+.linksocial {
+  text-decoration: none;
+  height: 18.9%;
+  top: 21.65%;
+  bottom: 59.45%;
+}
+.linksocial1,
+.linksocial2,
+.linksocial3 {
+  text-decoration: none;
+  position: absolute;
+  height: 17.32%;
+  width: 91.67%;
+  top: -5.12%;
+  right: 4.17%;
+  bottom: 87.8%;
+  left: 4.17%;
+}
+.linksocial2,
+.linksocial3 {
+  top: -31.89%;
+  bottom: 114.57%;
+}
+.linksocial3 {
+  height: 18.11%;
+  width: 95.83%;
+  top: -59.45%;
+  right: 2.08%;
+  bottom: 141.34%;
+  left: 2.08%;
+}
+.socialitens {
   width: 3rem;
   position: relative;
   height: 15.88rem;
 }
 .menu,
-.right1 {
+.right {
   display: flex;
   justify-content: flex-end;
 }
-.right1 {
+.right {
   align-self: stretch;
   flex-direction: column;
   align-items: center;
@@ -207,6 +143,10 @@
   line-height: 130%;
   font-weight: 300;
 }
+.content {
+  align-items: flex-end;
+  gap: var(--gap-253xl);
+}
 .content,
 .drawer,
 .navmenu {
@@ -214,21 +154,15 @@
   flex-direction: column;
   justify-content: flex-end;
 }
-.content {
-  align-items: flex-end;
-  gap: var(--gap-253xl);
-}
-.drawer,
 .navmenu {
-  width: 120rem;
-}
-.navmenu {
+  align-self: stretch;
   height: 58.13rem;
   align-items: flex-end;
   padding: 0 var(--padding-71xl) var(--padding-27xl) 0;
   box-sizing: border-box;
 }
 .drawer {
+  width: 120rem;
   position: relative;
   overflow: hidden;
   align-items: flex-start;
@@ -246,26 +180,4 @@
 }
 .drawer.animate {
   animation: 0.25s ease 0s 1 normal forwards slide-in-left;
-}
-@media screen and (max-width: 960px) {
-  .logoIcon {
-    display: none;
-  }
-  .logotabletIcon {
-    display: flex;
-  }
-  .header {
-    padding: var(--padding-11xl) var(--padding-7xl);
-    box-sizing: border-box;
-  }
-}
-@media screen and (max-width: 420px) {
-  .login,
-  .logoIcon {
-    display: none;
-  }
-  .header {
-    padding: var(--padding-5xl) var(--padding-base);
-    box-sizing: border-box;
-  }
 }

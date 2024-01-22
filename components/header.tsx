@@ -16,13 +16,28 @@ type HeaderType = {
   logo?: string;
   vector?: string;
   iconLogin?: string;
+  showMenuBurgerIcon?: boolean;
+  closeIcon?: boolean;
+  logoTablet?: string;
+  logoMobile?: string;
 
   /** Style props */
   headerZIndex?: CSSProperties["zIndex"];
 };
 
 const Header: NextPage<HeaderType> = memo(
-  ({ menuBurger, close1, logo, vector, iconLogin, headerZIndex }) => {
+  ({
+    menuBurger,
+    close1,
+    logo,
+    vector,
+    iconLogin,
+    headerZIndex,
+    showMenuBurgerIcon,
+    closeIcon,
+    logoTablet,
+    logoMobile,
+  }) => {
     const headerStyle: CSSProperties = useMemo(() => {
       return {
         zIndex: headerZIndex,
@@ -43,27 +58,23 @@ const Header: NextPage<HeaderType> = memo(
       <>
         <header className={styles.header} id="Header" style={headerStyle}>
           <div className={styles.lefet}>
-            <img
-              className={styles.menuburgerIcon}
-              id="MenuBurguer"
-              alt=""
-              src={menuBurger}
-              onClick={openDrawer}
-            />
-            <img className={styles.closeIcon} alt="" src={close1} />
+            {showMenuBurgerIcon && (
+              <img
+                className={styles.menuburgerIcon}
+                id="MenuBurguer"
+                alt=""
+                src={menuBurger}
+                onClick={openDrawer}
+              />
+            )}
+            {!closeIcon && (
+              <img className={styles.closeIcon} alt="" src={close1} />
+            )}
           </div>
           <div className={styles.center}>
             <img className={styles.logoIcon} alt="Logo" id="Logo" src={logo} />
-            <img
-              className={styles.logotabletIcon}
-              alt=""
-              src="/logotablet.svg"
-            />
-            <img
-              className={styles.logomobileIcon}
-              alt=""
-              src="/logomobile.svg"
-            />
+            <img className={styles.logotabletIcon} alt="" src={logoTablet} />
+            <img className={styles.logomobileIcon} alt="" src={logoMobile} />
           </div>
           <div className={styles.right}>
             <img className={styles.closeIcon} alt="" src={vector} />
@@ -80,7 +91,7 @@ const Header: NextPage<HeaderType> = memo(
         </header>
         {isDrawerOpen && (
           <PortalDrawer
-            overlayColor="rgba(113, 113, 113, 0.3)"
+            overlayColor="rgba(236, 236, 236, 0.3)"
             placement="Left"
             onOutsideClick={closeDrawer}
           >

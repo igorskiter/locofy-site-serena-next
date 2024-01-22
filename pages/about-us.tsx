@@ -20,6 +20,10 @@ const AboutUs: NextPage = () => {
         vector="/vector.svg"
         iconLogin="/iconlogin1@2x.png"
         headerZIndex="0"
+        showMenuBurgerIcon
+        closeIcon={false}
+        logoTablet="/logotablet.svg"
+        logoMobile="/logomobile.svg"
       />
       <HeroAboutUs />
       <SectionVision />

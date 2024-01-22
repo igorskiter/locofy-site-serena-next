@@ -17,6 +17,10 @@ const Home: NextPage = () => {
         vector="/vector2.svg"
         iconLogin="/iconlogin2@2x.png"
         headerZIndex="0"
+        showMenuBurgerIcon
+        closeIcon={false}
+        logoTablet="/logotablet.svg"
+        logoMobile="/logomobile.svg"
       />
       <SectionAskedQUestionSearch />
       <SectionFrequentlyAskedQuestion />

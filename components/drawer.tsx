@@ -1,5 +1,9 @@
 import type { NextPage } from "next";
-import { memo, useEffect } from "react";
+import { memo, useCallback, useEffect } from "react";
+import { useRouter } from "next/router";
+import Header from "./header";
+import MenuSelect from "./menu-select";
+import Menu from "./menu";
 import styles from "./drawer.module.css";
 
 type DrawerType = {
@@ -7,6 +11,29 @@ type DrawerType = {
 };
 
 const Drawer: NextPage<DrawerType> = memo(({ onClose }) => {
+  const router = useRouter();
+
+  const onAboutClick = useCallback(() => {
+    router.push("/about-us");
+  }, [router]);
+
+  const onForDoctorsClick = useCallback(() => {
+    router.push("/doctors");
+  }, [router]);
+
+  const onBlogClick = useCallback(() => {
+    window.open("https://blog.serenacare.com.br/");
+    onClose && onClose();
+  }, []);
+
+  const onContactClick = useCallback(() => {
+    router.push("/contact");
+  }, [router]);
+
+  const onFAQClick = useCallback(() => {
+    router.push("/faq");
+  }, [router]);
+
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
       "[data-animate-on-scroll]"
@@ -38,53 +65,47 @@ const Drawer: NextPage<DrawerType> = memo(({ onClose }) => {
   }, []);
   return (
     <div className={styles.drawer} data-animate-on-scroll>
-      <header className={styles.header} id="Header">
-        <div className={styles.lefet}>
-          <img
-            className={styles.menuburgerIcon}
-            id="MenuBurguer"
-            alt=""
-            src="/menuburger1@2x.png"
-          />
-          <img className={styles.closeIcon} alt="" src="/close.svg" />
-        </div>
-        <div className={styles.center}>
-          <img
-            className={styles.logoIcon}
-            alt="Logo"
-            id="Logo"
-            src="/Logo1@2x.png"
-          />
-          <img className={styles.logotabletIcon} alt="" src="/logotablet.svg" />
-          <img className={styles.logomobileIcon} alt="" src="/logomobile.svg" />
-        </div>
-        <div className={styles.right}>
-          <img className={styles.vectorIcon} alt="" src="/vector.svg" />
-          <div className={styles.buttonlogin}>
-            <b className={styles.login}>Login</b>
-            <img
-              className={styles.iconlogin}
-              alt="IconLogin"
-              id="IconLogin"
-              src="/iconlogin1@2x.png"
-            />
-          </div>
-        </div>
-      </header>
+      <Header
+        menuBurger="/menuburger1@2x.png"
+        close1="/close.svg"
+        logo="/Logo1@2x.png"
+        vector="/vector.svg"
+        iconLogin="/iconlogin1@2x.png"
+        showMenuBurgerIcon={false}
+        closeIcon
+        logoTablet="/logotablet.svg"
+        logoMobile="/logomobile.svg"
+      />
       <div className={styles.navmenu}>
         <div className={styles.content}>
           <div className={styles.menu}>
             <div className={styles.left}>
               <div className={styles.menu1}>
-                <i className={styles.home}>Home</i>
-                <div className={styles.about}>About</div>
-                <div className={styles.forDoctors}>For Doctors</div>
-                <div className={styles.forDoctors}>Blog</div>
-                <div className={styles.forDoctors}>Contact</div>
-                <div className={styles.forDoctors}>FAQ</div>
+                <MenuSelect />
+                <Menu about="About" onAboutTextClick={onAboutClick} />
+                <Menu
+                  about="For Doctors"
+                  onAboutTextClick={onForDoctorsClick}
+                  aboutLetterSpacing="unset"
+                />
+                <Menu
+                  about="Blog"
+                  onAboutTextClick={onClose}
+                  aboutLetterSpacing="unset"
+                />
+                <Menu
+                  about="Contact"
+                  onAboutTextClick={onContactClick}
+                  aboutLetterSpacing="unset"
+                />
+                <Menu
+                  about="FAQ"
+                  onAboutTextClick={onFAQClick}
+                  aboutLetterSpacing="unset"
+                />
               </div>
             </div>
-            <div className={styles.center1}>
+            <div className={styles.center}>
               <div className={styles.content1}>
                 <img
                   className={styles.serFotoMockupQuestionario}
@@ -102,12 +123,49 @@ const Drawer: NextPage<DrawerType> = memo(({ onClose }) => {
                 </div>
               </div>
             </div>
-            <div className={styles.right1}>
-              <img
-                className={styles.socialitensIcon}
-                alt=""
-                src="/socialitens.svg"
-              />
+            <div className={styles.right}>
+              <div className={styles.socialitens}>
+                <a
+                  className={styles.linksocial}
+                  href="https://blog.serenacare.com.br/"
+                >
+                  <img
+                    className={styles.iconSocialMediaSpotify}
+                    alt=""
+                    src="/icon-social-media--spotify.svg"
+                  />
+                </a>
+                <a
+                  className={styles.linksocial1}
+                  href="https://blog.serenacare.com.br/"
+                >
+                  <img
+                    className={styles.iconSocialMediaSpotify}
+                    alt=""
+                    src="/icon-social-media--linkedin.svg"
+                  />
+                </a>
+                <a
+                  className={styles.linksocial2}
+                  href="https://blog.serenacare.com.br/"
+                >
+                  <img
+                    className={styles.iconSocialMediaSpotify}
+                    alt=""
+                    src="/icon-social-media--facebook.svg"
+                  />
+                </a>
+                <a
+                  className={styles.linksocial3}
+                  href="https://blog.serenacare.com.br/"
+                >
+                  <img
+                    className={styles.iconSocialMediaSpotify}
+                    alt=""
+                    src="/icon-social-media--instagram.svg"
+                  />
+                </a>
+              </div>
             </div>
           </div>
           <div className={styles.privacyPolicy}>Privacy Policy</div>
