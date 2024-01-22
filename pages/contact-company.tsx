@@ -37,7 +37,9 @@ const Home: NextPage = () => {
         iconLogin="/IconLogin1@2x.png"
       />
       <SideMenu
-        sERFOTOMOCKUPQUESTIONARIO="/ser-foto-mockup--questionario-1@2x.png"
+        sideMenuBackgroundImage="url('/sidemenu@3x.png')"
+        sideMenuZIndex="1"
+        sERFOTOMOCKUPQUESTIONARIO="/ser-foto-mockup--questionario-11@2x.png"
         socialItens="/socialitens.svg"
       />
       <SectionContactCompany />

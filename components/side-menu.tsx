@@ -1,5 +1,7 @@
 import type { NextPage } from "next";
-import { memo, useMemo, type CSSProperties } from "react";
+import { memo, useMemo, type CSSProperties, useCallback } from "react";
+import Link from "next/link";
+import { useRouter } from "next/router";
 import styles from "./side-menu.module.css";
 
 type SideMenuType = {
@@ -44,39 +46,118 @@ const SideMenu: NextPage<SideMenuType> = memo(
       sideMenuLeft,
     ]);
 
+    const router = useRouter();
+
+    const onHomeClick = useCallback(() => {
+      router.push("/");
+    }, [router]);
+
+    const onAboutClick = useCallback(() => {
+      router.push("/about-us");
+    }, [router]);
+
+    const onForDoctorsClick = useCallback(() => {
+      router.push("/doctors");
+    }, [router]);
+
+    const onBlogClick = useCallback(() => {
+      window.open("https://blog.serenacare.com.br/");
+    }, []);
+
+    const onContactClick = useCallback(() => {
+      router.push("/contact");
+    }, [router]);
+
+    const onFAQClick = useCallback(() => {
+      router.push("/faq");
+    }, [router]);
+
     return (
       <div className={styles.sidemenu} style={sideMenuStyle}>
-        <div className={styles.header}>
+        <header className={styles.header} id="Header">
           <div className={styles.lefet}>
             <img
               className={styles.menuburgerIcon}
+              id="MenuBurguer"
               alt=""
-              src="/menuburger.svg"
+              src="/menuburger1@2x.png"
             />
             <img className={styles.closeIcon} alt="" src="/close.svg" />
           </div>
           <div className={styles.center}>
-            <img className={styles.logoIcon} alt="" src="/logo2.svg" />
+            <img
+              className={styles.logoIcon}
+              alt="Logo"
+              id="Logo"
+              src="/logo3@2x.png"
+            />
+            <img
+              className={styles.logotabletIcon}
+              alt=""
+              src="/logotablet1.svg"
+            />
+            <img
+              className={styles.logomobileIcon}
+              alt=""
+              src="/logomobile1.svg"
+            />
           </div>
           <div className={styles.right}>
-            <img className={styles.closeIcon} alt="" src="/vector2.svg" />
+            <img className={styles.vectorIcon} alt="" src="/vector2.svg" />
             <div className={styles.buttonlogin}>
-              <div className={styles.text}>Login</div>
-              <img className={styles.iconlogin} alt="" src="/iconlogin.svg" />
+              <b className={styles.login}>Login</b>
+              <img
+                className={styles.iconlogin}
+                alt="IconLogin"
+                id="IconLogin"
+                src="/iconlogin2@2x.png"
+              />
             </div>
           </div>
-        </div>
+        </header>
         <div className={styles.navmenu}>
           <div className={styles.content}>
             <div className={styles.menu}>
               <div className={styles.left}>
                 <div className={styles.menu1}>
-                  <i className={styles.home}>Home</i>
-                  <div className={styles.about}>About</div>
-                  <div className={styles.forDoctors}>For Doctors</div>
-                  <div className={styles.forDoctors}>Blog</div>
-                  <div className={styles.forDoctors}>Contact</div>
-                  <div className={styles.forDoctors}>FAQ</div>
+                  <Link className={styles.home} href="/" onClick={onHomeClick}>
+                    Home
+                  </Link>
+                  <Link
+                    className={styles.about}
+                    href="/about-us"
+                    onClick={onAboutClick}
+                  >
+                    About
+                  </Link>
+                  <Link
+                    className={styles.forDoctors}
+                    href="/doctors"
+                    onClick={onForDoctorsClick}
+                  >
+                    For Doctors
+                  </Link>
+                  <a
+                    className={styles.blog}
+                    href="https://blog.serenacare.com.br/"
+                    onClick={onBlogClick}
+                  >
+                    Blog
+                  </a>
+                  <Link
+                    className={styles.forDoctors}
+                    href="/contact"
+                    onClick={onContactClick}
+                  >
+                    Contact
+                  </Link>
+                  <Link
+                    className={styles.forDoctors}
+                    href="/faq"
+                    onClick={onFAQClick}
+                  >
+                    FAQ
+                  </Link>
                 </div>
               </div>
               <div className={styles.center1}>
@@ -98,11 +179,48 @@ const SideMenu: NextPage<SideMenuType> = memo(
                 </div>
               </div>
               <div className={styles.right1}>
-                <img
-                  className={styles.socialitensIcon}
-                  alt=""
-                  src={socialItens}
-                />
+                <div className={styles.socialitens} src={socialItens}>
+                  <a
+                    className={styles.linksocial}
+                    href="https://blog.serenacare.com.br/"
+                  >
+                    <img
+                      className={styles.iconSocialMediaSpotify}
+                      alt=""
+                      src="/icon-social-media--spotify.svg"
+                    />
+                  </a>
+                  <a
+                    className={styles.linksocial1}
+                    href="https://blog.serenacare.com.br/"
+                  >
+                    <img
+                      className={styles.iconSocialMediaSpotify}
+                      alt=""
+                      src="/icon-social-media--linkedin.svg"
+                    />
+                  </a>
+                  <a
+                    className={styles.linksocial2}
+                    href="https://blog.serenacare.com.br/"
+                  >
+                    <img
+                      className={styles.iconSocialMediaSpotify}
+                      alt=""
+                      src="/icon-social-media--facebook.svg"
+                    />
+                  </a>
+                  <a
+                    className={styles.linksocial3}
+                    href="https://blog.serenacare.com.br/"
+                  >
+                    <img
+                      className={styles.iconSocialMediaSpotify}
+                      alt=""
+                      src="/icon-social-media--instagram.svg"
+                    />
+                  </a>
+                </div>
               </div>
             </div>
             <div className={styles.privacyPolicy}>Privacy Policy</div>

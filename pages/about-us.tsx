@@ -41,7 +41,7 @@ const AboutUs: NextPage = () => {
       <SideMenu
         sideMenuBackgroundImage="url('/sidemenu@3x.png')"
         sideMenuZIndex="7"
-        sERFOTOMOCKUPQUESTIONARIO="/ser-foto-mockup--questionario-1@2x.png"
+        sERFOTOMOCKUPQUESTIONARIO="/ser-foto-mockup--questionario-11@2x.png"
         socialItens="/socialitens.svg"
         sideMenuMargin="0 !important"
         sideMenuPosition="absolute"

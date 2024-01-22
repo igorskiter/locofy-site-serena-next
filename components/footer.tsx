@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import { memo, useMemo, type CSSProperties } from "react";
+import Link from "next/link";
 import styles from "./footer.module.css";
 
 type FooterType = {
@@ -70,14 +71,32 @@ const Footer: NextPage<FooterType> = memo(
               <div className={styles.center}>
                 <div className={styles.links}>
                   <div className={styles.right}>
-                    <b className={styles.home}>Home</b>
-                    <div className={styles.about}>About</div>
-                    <div className={styles.about}>For Doctors</div>
+                    <Link className={styles.home} href="/">
+                      Home
+                    </Link>
+                    <Link className={styles.about} href="/about-us">
+                      About
+                    </Link>
+                    <Link className={styles.about} href="/doctors">
+                      For Doctors
+                    </Link>
                   </div>
                   <div className={styles.right}>
-                    <div className={styles.about}>Blog</div>
-                    <div className={styles.about}>FAQ</div>
-                    <div className={styles.about}>Privacy Policy</div>
+                    <a
+                      className={styles.blog}
+                      href="https://blog.serenacare.com.br/"
+                    >
+                      Blog
+                    </a>
+                    <Link className={styles.about} href="/faq">
+                      FAQ
+                    </Link>
+                    <a
+                      className={styles.blog}
+                      href="https://blog.serenacare.com.br/"
+                    >
+                      Privacy Policy
+                    </a>
                   </div>
                 </div>
               </div>
@@ -91,9 +110,9 @@ const Footer: NextPage<FooterType> = memo(
                     src={iconLogin}
                   />
                 </div>
-                <div className={styles.button}>
+                <Link className={styles.button} href="/contact">
                   <div className={styles.contact}>CONTAct</div>
-                </div>
+                </Link>
               </div>
             </div>
             <div className={styles.buttonssocial}>

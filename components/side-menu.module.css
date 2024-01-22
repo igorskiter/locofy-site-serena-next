@@ -5,6 +5,7 @@
 }
 .menuburgerIcon {
   height: 1.75rem;
+  object-fit: cover;
   display: none;
 }
 .closeIcon {
@@ -23,6 +24,18 @@
   width: 14rem;
   position: relative;
   height: 1.83rem;
+  object-fit: cover;
+}
+.logomobileIcon,
+.logotabletIcon {
+  width: 11.31rem;
+  position: relative;
+  height: 1.5rem;
+  display: none;
+}
+.logomobileIcon {
+  width: 8.06rem;
+  height: 1.06rem;
 }
 .center {
   flex: 1;
@@ -31,60 +44,79 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: var(--gap-3xs);
 }
-.text {
+.vectorIcon {
+  width: 2rem;
+  position: relative;
+  height: 2rem;
+  display: none;
+}
+.login {
   position: relative;
   letter-spacing: 0.03em;
   line-height: 130%;
-  font-weight: 500;
-  opacity: 0.1;
 }
 .iconlogin {
   width: 2.5rem;
   position: relative;
   height: 2.5rem;
+  object-fit: cover;
 }
 .buttonlogin {
-  display: flex;
   justify-content: flex-start;
   gap: var(--gap-mini);
 }
 .buttonlogin,
 .header,
 .right {
+  display: flex;
   flex-direction: row;
   align-items: center;
 }
 .right {
   flex: 1;
   height: 2.5rem;
-  display: flex;
   justify-content: flex-end;
   gap: var(--gap-3xs);
 }
 .header {
-  width: 120rem;
+  align-self: stretch;
   height: 9.38rem;
-  display: none;
   justify-content: space-between;
   padding: var(--padding-33xl) var(--padding-77xl) var(--padding-39xl);
   box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-sm);
+  color: var(--grey-prime);
+  font-family: var(--font-plus-jakarta-sans);
+}
+.about,
+.home {
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  line-height: 130%;
+  color: inherit;
 }
 .home {
-  position: relative;
   font-size: var(--font-size-39xl);
-  line-height: 130%;
+  font-style: italic;
   font-weight: 700;
   font-family: var(--font-lora);
 }
 .about {
   letter-spacing: -0.01em;
+  font-weight: 300;
 }
-.about,
+.blog,
 .forDoctors {
+  text-decoration: none;
   position: relative;
   line-height: 130%;
   font-weight: 300;
+  color: inherit;
+  cursor: pointer;
 }
 .left,
 .menu1 {
@@ -93,7 +125,6 @@
   align-items: flex-start;
 }
 .menu1 {
-  height: 24.44rem;
   justify-content: flex-start;
   gap: var(--gap-21xl);
 }
@@ -150,10 +181,58 @@
   justify-content: center;
   font-size: var(--font-size-45xl);
 }
-.socialitensIcon {
+.iconSocialMediaSpotify,
+.linksocial {
+  position: absolute;
+  left: 0;
+  overflow: hidden;
+}
+.iconSocialMediaSpotify {
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+.linksocial {
+  text-decoration: none;
+  top: 12.88rem;
+  width: 3rem;
+  height: 3rem;
+}
+.linksocial1 {
+  top: 8.63rem;
+  left: 0.13rem;
+  width: 2.75rem;
+  height: 2.75rem;
+}
+.linksocial1,
+.linksocial2,
+.linksocial3 {
+  text-decoration: none;
+  position: absolute;
+  overflow: hidden;
+}
+.linksocial2 {
+  top: 4.38rem;
+  left: 0.13rem;
+  width: 2.75rem;
+  height: 2.75rem;
+}
+.linksocial3 {
+  top: 0;
+  left: 0.06rem;
+  width: 2.88rem;
+  height: 2.88rem;
+}
+.socialitens {
   width: 3rem;
   position: relative;
   height: 15.88rem;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 .menu,
 .right1 {
@@ -188,13 +267,12 @@
   justify-content: flex-end;
 }
 .navmenu {
-  width: 120rem;
+  align-self: stretch;
   height: 58.13rem;
   display: flex;
   align-items: flex-end;
   padding: 0 var(--padding-71xl) var(--padding-27xl) 0;
   box-sizing: border-box;
-  font-size: var(--font-size-21xl);
 }
 .sidemenu {
   margin: 0 !important;
@@ -213,7 +291,29 @@
   min-width: 120rem;
   z-index: 7;
   text-align: left;
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-21xl);
   color: var(--grey-prime);
   font-family: var(--font-plus-jakarta-sans);
+}
+@media screen and (max-width: 960px) {
+  .logoIcon {
+    display: none;
+  }
+  .logotabletIcon {
+    display: flex;
+  }
+  .header {
+    padding: var(--padding-11xl) var(--padding-7xl);
+    box-sizing: border-box;
+  }
+}
+@media screen and (max-width: 420px) {
+  .login,
+  .logoIcon {
+    display: none;
+  }
+  .header {
+    padding: var(--padding-5xl) var(--padding-base);
+    box-sizing: border-box;
+  }
 }

@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import { memo } from "react";
+import Link from "next/link";
 import Property1BUTTONPRIMARY from "./button-primary";
 import styles from "./intro.module.css";
 

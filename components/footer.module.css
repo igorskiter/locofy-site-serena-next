@@ -67,6 +67,8 @@
   width: 15.66rem;
   position: relative;
   height: 2.16rem;
+  overflow: hidden;
+  flex-shrink: 0;
   object-fit: cover;
 }
 .left {
@@ -79,23 +81,37 @@
 }
 .about,
 .home {
+  cursor: pointer;
+  text-decoration: none;
   position: relative;
   letter-spacing: 0.03em;
   line-height: 130%;
+  color: inherit;
 }
 .home {
   font-size: var(--font-size-5xl);
+  font-weight: 700;
 }
 .about {
   font-weight: 500;
 }
 .right {
+  display: flex;
   flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   gap: var(--gap-30xl);
 }
+.blog {
+  text-decoration: none;
+  position: relative;
+  letter-spacing: 0.03em;
+  line-height: 130%;
+  font-weight: 500;
+  color: inherit;
+}
 .center,
-.links,
-.right {
+.links {
   display: flex;
   align-items: flex-start;
   justify-content: flex-start;
@@ -137,6 +153,8 @@
   font-weight: 600;
 }
 .button {
+  cursor: pointer;
+  text-decoration: none;
   align-self: stretch;
   border-radius: var(--br-xs);
   background-color: var(--grey-prime);

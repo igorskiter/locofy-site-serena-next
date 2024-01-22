@@ -21,8 +21,8 @@ const FAQ: NextPage = () => {
         headerZIndex="0"
         showMenuBurgerIcon
         closeIcon={false}
-        logoTablet="/logotablet.svg"
-        logoMobile="/logomobile.svg"
+        logoTablet="/logotablet1.svg"
+        logoMobile="/logomobile1.svg"
       />
       <HeroDoctors />
       <SectionDoctorFreeTrial />
@@ -32,7 +32,7 @@ const FAQ: NextPage = () => {
       <SideMenu
         sideMenuBackgroundImage="url('/sidemenu@3x.png')"
         sideMenuZIndex="6"
-        sERFOTOMOCKUPQUESTIONARIO="/ser-foto-mockup--questionario-1@2x.png"
+        sERFOTOMOCKUPQUESTIONARIO="/ser-foto-mockup--questionario-11@2x.png"
         socialItens="/socialitens.svg"
         sideMenuMargin="0 !important"
         sideMenuPosition="absolute"

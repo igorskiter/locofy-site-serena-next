@@ -74,53 +74,55 @@
 .iconSocialMediaSpotify,
 .linksocial {
   position: absolute;
-  width: 100%;
-  right: 0;
   left: 0;
+  overflow: hidden;
 }
 .iconSocialMediaSpotify {
   height: 100%;
+  width: 100%;
   top: 0;
+  right: 0;
   bottom: 0;
   max-width: 100%;
-  overflow: hidden;
   max-height: 100%;
 }
 .linksocial {
   text-decoration: none;
-  height: 18.9%;
-  top: 21.65%;
-  bottom: 59.45%;
+  top: 12.88rem;
+  width: 3rem;
+  height: 3rem;
+}
+.linksocial1 {
+  top: 8.63rem;
+  left: 0.13rem;
+  width: 2.75rem;
+  height: 2.75rem;
 }
 .linksocial1,
 .linksocial2,
 .linksocial3 {
   text-decoration: none;
   position: absolute;
-  height: 17.32%;
-  width: 91.67%;
-  top: -5.12%;
-  right: 4.17%;
-  bottom: 87.8%;
-  left: 4.17%;
+  overflow: hidden;
 }
-.linksocial2,
-.linksocial3 {
-  top: -31.89%;
-  bottom: 114.57%;
+.linksocial2 {
+  top: 4.38rem;
+  left: 0.13rem;
+  width: 2.75rem;
+  height: 2.75rem;
 }
 .linksocial3 {
-  height: 18.11%;
-  width: 95.83%;
-  top: -59.45%;
-  right: 2.08%;
-  bottom: 141.34%;
-  left: 2.08%;
+  top: 0;
+  left: 0.06rem;
+  width: 2.88rem;
+  height: 2.88rem;
 }
 .socialitens {
   width: 3rem;
   position: relative;
   height: 15.88rem;
+  overflow: hidden;
+  flex-shrink: 0;
 }
 .menu,
 .right {
