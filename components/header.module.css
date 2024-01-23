@@ -81,7 +81,6 @@
   justify-content: space-between;
   padding: var(--padding-33xl) var(--padding-77xl) var(--padding-39xl);
   box-sizing: border-box;
-  z-index: 0;
   text-align: left;
   font-size: var(--font-size-sm);
   color: var(--grey-prime);

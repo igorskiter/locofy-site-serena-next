@@ -1,8 +1,12 @@
 import type { NextPage } from "next";
-import { memo } from "react";
+import { memo, useCallback } from "react";
 import styles from "./team-section.module.css";
 
 const TeamSection: NextPage = memo(() => {
+  const onButtonContainerClick = useCallback(() => {
+    window.location.href = "https://www.serenacare.com.br/";
+  }, []);
+
   return (
     <section className={styles.section} id="SectionOurTeam">
       <div className={styles.content}>
@@ -16,7 +20,7 @@ const TeamSection: NextPage = memo(() => {
               solution that will help transform how we look at healthcare.
             </div>
           </div>
-          <div className={styles.button}>
+          <div className={styles.button} onClick={onButtonContainerClick}>
             <div className={styles.text}>Jobs at Serena</div>
           </div>
         </div>

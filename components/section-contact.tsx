@@ -20,46 +20,56 @@ const SectionContact: NextPage = memo(() => {
         <div className={styles.right}>
           <div className={styles.form}>
             <div className={styles.line}>
-              <div className={styles.input}>
-                <div className={styles.name}>Name*</div>
-              </div>
-              <div className={styles.input}>
-                <div className={styles.name}>Surname*</div>
-              </div>
+              <input
+                className={styles.input}
+                name="name"
+                id="name"
+                placeholder="Name*"
+                type="text"
+                required="true"
+              />
+              <input
+                className={styles.input}
+                name="surname"
+                id="surname"
+                placeholder="Surname*"
+                type="text"
+                required="true"
+              />
             </div>
-            <div className={styles.line1}>
-              <div className={styles.input2}>
-                <div className={styles.name}>E-mail*</div>
-              </div>
-            </div>
-            <div className={styles.line1}>
-              <div className={styles.input2}>
-                <div className={styles.name}>Phone number (Optional)</div>
-              </div>
-            </div>
+            <input
+              className={styles.line1}
+              name="email"
+              id="email"
+              placeholder="E-mail*"
+              type="email"
+              requiered="true"
+            />
+            <input
+              className={styles.line1}
+              name="phone"
+              id="phone"
+              placeholder="Phone number (Optional)"
+              type="text"
+              required="true"
+            />
             <div className={styles.line3}>
               <div className={styles.input2}>
-                <div className={styles.name}>Company Name*</div>
+                <div className={styles.companyName}>Company Name*</div>
               </div>
             </div>
-            <div className={styles.line1}>
-              <div className={styles.input5}>
-                <img
-                  className={styles.chevronDownIcon}
-                  alt=""
-                  src="/chevrondown1.svg"
-                />
-                <div className={styles.name}>Subject*</div>
-              </div>
-            </div>
-            <div className={styles.line5}>
-              <div className={styles.input6}>
-                <div className={styles.name}>Type your message here.*</div>
-              </div>
-            </div>
-            <div className={styles.button}>
+            <select className={styles.line4} required={true}>
+              <option value="teste1">teste1</option>
+              <option value="teste2">teste2</option>
+            </select>
+            <textarea
+              className={styles.line5}
+              placeholder="Type your message here.*"
+              required={true}
+            />
+            <button className={styles.button}>
               <div className={styles.send}>Send</div>
-            </div>
+            </button>
           </div>
         </div>
       </div>

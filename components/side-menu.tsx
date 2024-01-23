@@ -167,14 +167,16 @@ const SideMenu: NextPage<SideMenuType> = memo(
                     alt=""
                     src={sERFOTOMOCKUPQUESTIONARIO}
                   />
-                  <div className={styles.redefiningOurRelationshipContainer}>
-                    <p className={styles.redefining}>{`Redefining `}</p>
-                    <p className={styles.ourRelationshipWithHealth}>
-                      <span className={styles.ourRelationship}>
-                        our relationship
-                      </span>
-                      <i className={styles.withHealth}> with health</i>
-                    </p>
+                  <div className={styles.h2}>
+                    <div className={styles.redefiningOurRelationshipContainer}>
+                      <p className={styles.redefining}>{`Redefining `}</p>
+                      <p className={styles.ourRelationshipWithHealth}>
+                        <span className={styles.ourRelationship}>
+                          our relationship
+                        </span>
+                        <i className={styles.withHealth}> with health</i>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -185,9 +187,9 @@ const SideMenu: NextPage<SideMenuType> = memo(
                     href="https://blog.serenacare.com.br/"
                   >
                     <img
-                      className={styles.iconSocialMediaSpotify}
+                      className={styles.iconSocialMediaInstagram}
                       alt=""
-                      src="/icon-social-media--spotify.svg"
+                      src="/icon-social-media--instagram.svg"
                     />
                   </a>
                   <a
@@ -195,19 +197,19 @@ const SideMenu: NextPage<SideMenuType> = memo(
                     href="https://blog.serenacare.com.br/"
                   >
                     <img
-                      className={styles.iconSocialMediaSpotify}
+                      className={styles.iconSocialMediaInstagram}
                       alt=""
-                      src="/icon-social-media--linkedin.svg"
+                      src="/icon-social-media--facebook.svg"
                     />
                   </a>
                   <a
-                    className={styles.linksocial2}
+                    className={styles.linksocial1}
                     href="https://blog.serenacare.com.br/"
                   >
                     <img
-                      className={styles.iconSocialMediaSpotify}
+                      className={styles.iconSocialMediaInstagram}
                       alt=""
-                      src="/icon-social-media--facebook.svg"
+                      src="/icon-social-media--linkedin.svg"
                     />
                   </a>
                   <a
@@ -215,12 +217,56 @@ const SideMenu: NextPage<SideMenuType> = memo(
                     href="https://blog.serenacare.com.br/"
                   >
                     <img
-                      className={styles.iconSocialMediaSpotify}
+                      className={styles.iconSocialMediaInstagram}
                       alt=""
-                      src="/icon-social-media--instagram.svg"
+                      src="/icon-social-media--spotify.svg"
                     />
                   </a>
                 </div>
+              </div>
+            </div>
+            <div className={styles.footersocial}>
+              <div className={styles.socialitens1}>
+                <a
+                  className={styles.linksocial}
+                  href="https://blog.serenacare.com.br/"
+                >
+                  <img
+                    className={styles.iconSocialMediaInstagram}
+                    alt=""
+                    src="/icon-social-media--instagram.svg"
+                  />
+                </a>
+                <a
+                  className={styles.linksocial1}
+                  href="https://blog.serenacare.com.br/"
+                >
+                  <img
+                    className={styles.iconSocialMediaInstagram}
+                    alt=""
+                    src="/icon-social-media--facebook.svg"
+                  />
+                </a>
+                <a
+                  className={styles.linksocial1}
+                  href="https://blog.serenacare.com.br/"
+                >
+                  <img
+                    className={styles.iconSocialMediaInstagram}
+                    alt=""
+                    src="/icon-social-media--linkedin.svg"
+                  />
+                </a>
+                <a
+                  className={styles.linksocial3}
+                  href="https://blog.serenacare.com.br/"
+                >
+                  <img
+                    className={styles.iconSocialMediaInstagram}
+                    alt=""
+                    src="/icon-social-media--spotify.svg"
+                  />
+                </a>
               </div>
             </div>
             <a
@@ -229,6 +275,9 @@ const SideMenu: NextPage<SideMenuType> = memo(
             >
               Privacy Policy
             </a>
+            <div className={styles.textSerenaCare}>
+              © Serena Care 2023 . Todos os direitos reservados
+            </div>
           </div>
         </div>
       </div>

@@ -37,6 +37,7 @@
   justify-content: flex-start;
   padding: var(--padding-17xl) var(--padding-23xl);
   gap: var(--gap-29xl);
+  cursor: pointer;
 }
 .p21,
 .p61 {
@@ -71,6 +72,7 @@
   flex-direction: column;
   padding: var(--padding-17xl) var(--padding-23xl);
   gap: var(--gap-29xl);
+  cursor: pointer;
 }
 .articles {
   align-self: stretch;
@@ -81,6 +83,17 @@
   color: var(--grey-prime);
 }
 .iconcircleselected {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0.75rem;
+  height: 0.75rem;
+}
+.buttoncircle {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
   width: 0.75rem;
   position: relative;
   height: 0.75rem;
@@ -92,10 +105,46 @@
   align-items: center;
   justify-content: space-between;
 }
+.iconleftarrowChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+.iconleftarrowItem {
+  position: absolute;
+  top: 0.75rem;
+  left: 0.88rem;
+  width: 0.38rem;
+  height: 0.75rem;
+  object-fit: contain;
+}
 .iconleftarrow {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: transparent;
   width: 2.25rem;
   position: relative;
   height: 2.25rem;
+}
+.iconrightarrowChild {
+  position: absolute;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+  border: 2px solid var(--grey-prime);
+  box-sizing: border-box;
+  width: 2.25rem;
+  height: 2.25rem;
+}
+.iconrightarrowItem {
+  position: absolute;
+  top: 0.75rem;
+  left: 1rem;
+  width: 0.38rem;
+  height: 0.75rem;
 }
 .buttons {
   display: flex;
@@ -148,6 +197,7 @@
   flex-direction: row;
   justify-content: center;
   padding: var(--padding-2xl) var(--padding-35xl);
+  cursor: pointer;
   font-size: var(--font-size-base);
   color: var(--color-white);
 }

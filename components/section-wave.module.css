@@ -407,7 +407,6 @@
   align-items: center;
   justify-content: center;
   gap: var(--gap-3xs);
-  z-index: 3;
   text-align: left;
   font-size: var(--font-size-17xl);
   color: var(--salmon-prime);

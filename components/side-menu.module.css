@@ -64,25 +64,27 @@
   object-fit: cover;
 }
 .buttonlogin {
+  display: flex;
   justify-content: flex-start;
   gap: var(--gap-mini);
 }
 .buttonlogin,
 .header,
 .right {
-  display: flex;
   flex-direction: row;
   align-items: center;
 }
 .right {
   flex: 1;
   height: 2.5rem;
+  display: flex;
   justify-content: flex-end;
   gap: var(--gap-3xs);
 }
 .header {
-  align-self: stretch;
+  width: 120rem;
   height: 9.38rem;
+  display: none;
   justify-content: space-between;
   padding: var(--padding-33xl) var(--padding-77xl) var(--padding-39xl);
   box-sizing: border-box;
@@ -159,14 +161,22 @@
   margin: 0;
 }
 .redefiningOurRelationshipContainer {
-  position: absolute;
-  width: 79.44%;
-  top: 0;
-  left: 20.56%;
+  width: 31.88rem;
+  position: relative;
   line-height: 110%;
   white-space: pre-wrap;
   display: inline-block;
+  flex-shrink: 0;
   mix-blend-mode: multiply;
+}
+.h2 {
+  position: absolute;
+  top: 0;
+  left: 8.25rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .content1 {
   width: 40.13rem;
@@ -174,93 +184,105 @@
   height: 30.56rem;
 }
 .center1 {
-  width: 68.06rem;
+  flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: var(--font-size-45xl);
 }
-.iconSocialMediaSpotify,
-.linksocial {
+.iconSocialMediaInstagram {
   position: absolute;
-  left: 0;
-  overflow: hidden;
-}
-.iconSocialMediaSpotify {
   height: 100%;
   width: 100%;
   top: 0;
   right: 0;
   bottom: 0;
+  left: 0;
   max-width: 100%;
+  overflow: hidden;
   max-height: 100%;
 }
-.linksocial {
-  text-decoration: none;
-  top: 12.88rem;
-  width: 3rem;
-  height: 3rem;
-}
-.linksocial1 {
-  top: 8.63rem;
-  left: 0.13rem;
-  width: 2.75rem;
-  height: 2.75rem;
-}
+.linksocial,
 .linksocial1,
-.linksocial2,
 .linksocial3 {
   text-decoration: none;
-  position: absolute;
-  overflow: hidden;
-}
-.linksocial2 {
-  top: 4.38rem;
-  left: 0.13rem;
-  width: 2.75rem;
-  height: 2.75rem;
-}
-.linksocial3 {
-  top: 0;
-  left: 0.06rem;
   width: 2.88rem;
-  height: 2.88rem;
-}
-.socialitens {
-  width: 3rem;
   position: relative;
-  height: 15.88rem;
+  height: 2.88rem;
   overflow: hidden;
   flex-shrink: 0;
 }
-.menu,
-.right1 {
+.linksocial1,
+.linksocial3 {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+.linksocial3 {
+  width: 3rem;
+  height: 3rem;
+}
+.right1,
+.socialitens {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: flex-end;
+}
+.socialitens {
+  overflow: hidden;
+  gap: var(--gap-5xl);
 }
 .right1 {
   align-self: stretch;
-  flex-direction: column;
-  align-items: center;
   padding: 0 0 var(--padding-65xl);
 }
-.menu {
+.footersocial,
+.menu,
+.socialitens1 {
   flex-direction: row;
   align-items: flex-end;
 }
+.menu {
+  width: 85.13rem;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 0 var(--padding-253xl);
+  box-sizing: border-box;
+}
+.footersocial,
+.socialitens1 {
+  justify-content: center;
+}
+.socialitens1 {
+  overflow: hidden;
+  display: flex;
+  gap: var(--gap-5xl);
+}
+.footersocial {
+  width: 85.13rem;
+  display: none;
+}
+.privacyPolicy,
+.textSerenaCare {
+  position: relative;
+  line-height: 130%;
+}
 .privacyPolicy {
   text-decoration: none;
-  position: relative;
   font-size: var(--font-size-base);
-  line-height: 130%;
   font-weight: 300;
   color: inherit;
+}
+.textSerenaCare {
+  width: 17.88rem;
+  font-size: var(--font-size-xs);
+  color: var(--color-gray-200);
+  display: none;
 }
 .content {
   display: flex;
   align-items: flex-end;
-  gap: var(--gap-253xl);
 }
 .content,
 .navmenu,
@@ -270,11 +292,10 @@
 }
 .navmenu {
   align-self: stretch;
-  height: 58.13rem;
+  flex: 1;
   display: flex;
   align-items: flex-end;
   padding: 0 var(--padding-71xl) var(--padding-27xl) 0;
-  box-sizing: border-box;
 }
 .sidemenu {
   margin: 0 !important;
@@ -286,6 +307,8 @@
   flex-shrink: 0;
   display: none;
   align-items: flex-start;
+  padding: var(--padding-131xl) 0 0;
+  box-sizing: border-box;
   background-image: url(/sidemenu@3x.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -296,6 +319,19 @@
   font-size: var(--font-size-21xl);
   color: var(--grey-prime);
   font-family: var(--font-plus-jakarta-sans);
+}
+@media screen and (max-width: 1200px) {
+  .content1 {
+    width: 40.13rem;
+  }
+  .center1 {
+    width: auto;
+    align-self: unset;
+    max-width: 50%;
+  }
+  .content {
+    gap: var(--gap-0);
+  }
 }
 @media screen and (max-width: 960px) {
   .logoIcon {
@@ -308,6 +344,47 @@
     padding: var(--padding-11xl) var(--padding-7xl);
     box-sizing: border-box;
   }
+  .serFotoMockupQuestionario {
+    width: 18rem;
+    height: 22.25rem;
+  }
+  .redefiningOurRelationshipContainer {
+    font-size: var(--font-size-29xl);
+    width: 22.56rem;
+  }
+  .content1 {
+    width: 22.56rem;
+  }
+  .center1 {
+    max-width: 30%;
+  }
+  .socialitens {
+    width: 2.19rem;
+  }
+  .menu,
+  .right1 {
+    padding-bottom: 0;
+    box-sizing: border-box;
+  }
+  .socialitens1 {
+    width: 2.19rem;
+  }
+  .footersocial {
+    padding-bottom: 0;
+    box-sizing: border-box;
+  }
+  .privacyPolicy {
+    display: none;
+  }
+  .textSerenaCare {
+    display: flex;
+    align-self: stretch;
+    width: auto;
+  }
+  .content {
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 @media screen and (max-width: 420px) {
   .login,
@@ -317,5 +394,37 @@
   .header {
     padding: var(--padding-5xl) var(--padding-base);
     box-sizing: border-box;
+  }
+  .about,
+  .blog,
+  .forDoctors,
+  .home {
+    font-size: var(--font-size-21xl);
+  }
+  .serFotoMockupQuestionario {
+    width: 9rem;
+    height: 11.13rem;
+  }
+  .h2 {
+    display: none;
+  }
+  .content1 {
+    width: 9rem;
+    flex: 1;
+  }
+  .center1 {
+    display: flex;
+    width: auto;
+    align-self: stretch;
+    height: auto;
+    align-items: flex-end;
+    justify-content: flex-start;
+    max-width: 9rem;
+  }
+  .right1 {
+    display: none;
+  }
+  .footersocial {
+    display: flex;
   }
 }

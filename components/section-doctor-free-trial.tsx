@@ -1,8 +1,12 @@
 import type { NextPage } from "next";
-import { memo } from "react";
+import { memo, useCallback } from "react";
 import styles from "./section-doctor-free-trial.module.css";
 
 const SectionDoctorFreeTrial: NextPage = memo(() => {
+  const onButtonContainerClick = useCallback(() => {
+    window.location.href = "https://practitioner.serenacare.app/";
+  }, []);
+
   return (
     <section className={styles.section} id="SectionScreening">
       <div className={styles.content}>
@@ -18,7 +22,7 @@ const SectionDoctorFreeTrial: NextPage = memo(() => {
               >{`move from reactive treatments to proactive, `}</i>
               <span>preventive care.</span>
             </div>
-            <div className={styles.button}>
+            <div className={styles.button} onClick={onButtonContainerClick}>
               <div className={styles.startYourFree}>Start Your Free Trial</div>
             </div>
           </div>

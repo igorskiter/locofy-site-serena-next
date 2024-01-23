@@ -50,6 +50,7 @@
   align-items: center;
   justify-content: center;
   padding: var(--padding-mid) var(--padding-72xl);
+  cursor: pointer;
   text-align: center;
   font-size: var(--font-size-base);
 }

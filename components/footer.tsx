@@ -156,28 +156,28 @@ const Footer: NextPage<FooterType> = memo(
                 <img
                   className={styles.iconinstagram1}
                   alt=""
-                  src="/iconinstagram.svg"
+                  src="/iconinstagram1.svg"
                 />
               </div>
               <div className={styles.box2}>
                 <img
                   className={styles.iconinstagram1}
                   alt=""
-                  src="/iconfacebook.svg"
+                  src="/iconfacebook1.svg"
                 />
               </div>
               <div className={styles.box2}>
                 <img
                   className={styles.iconinstagram1}
                   alt=""
-                  src="/iconlinkedin.svg"
+                  src="/iconlinkedin1.svg"
                 />
               </div>
               <div className={styles.box2}>
                 <img
                   className={styles.iconspotify1}
                   alt=""
-                  src="/iconspotify.svg"
+                  src="/iconspotify1.svg"
                 />
               </div>
             </div>

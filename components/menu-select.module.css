@@ -9,3 +9,8 @@
   font-family: var(--font-lora);
   color: inherit;
 }
+@media screen and (max-width: 420px) {
+  .home {
+    font-size: var(--font-size-21xl);
+  }
+}

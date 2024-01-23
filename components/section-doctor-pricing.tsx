@@ -1,8 +1,23 @@
 import type { NextPage } from "next";
-import { memo } from "react";
+import { memo, useCallback } from "react";
 import styles from "./section-doctor-pricing.module.css";
 
 const SectionDoctorPricing: NextPage = memo(() => {
+  const onButtonContainerClick = useCallback(() => {
+    window.location.href =
+      "https://auth.serenacare.app/realms/serena-app-practitioner/protocol/openid-connect/registrations?client_id=practitioner-auth&response_type=code&scope=openid&redirect_uri=https%3A%2F%2Fpractitioner.serenacare.app?registration=true";
+  }, []);
+
+  const onButtonContainer2Click = useCallback(() => {
+    window.location.href =
+      "https://auth.serenacare.app/realms/serena-app-practitioner/protocol/openid-connect/registrations?client_id=practitioner-auth&response_type=code&scope=openid&redirect_uri=https%3A%2F%2Fpractitioner.serenacare.app?registration=true";
+  }, []);
+
+  const onButtonContainer3Click = useCallback(() => {
+    window.location.href =
+      "https://auth.serenacare.app/realms/serena-app-practitioner/protocol/openid-connect/registrations?client_id=practitioner-auth&response_type=code&scope=openid&redirect_uri=https%3A%2F%2Fpractitioner.serenacare.app?registration=true";
+  }, []);
+
   return (
     <div className={styles.section}>
       <div className={styles.cards}>
@@ -65,7 +80,7 @@ const SectionDoctorPricing: NextPage = memo(() => {
             </div>
           </div>
           <div className={styles.footer}>
-            <div className={styles.button}>
+            <div className={styles.button} onClick={onButtonContainerClick}>
               <div className={styles.buttonClic}>
                 <div className={styles.boundingBox} />
                 <b className={styles.ctaText}>DISCOVER</b>
@@ -141,7 +156,7 @@ const SectionDoctorPricing: NextPage = memo(() => {
             </div>
           </div>
           <div className={styles.footer1}>
-            <div className={styles.button}>
+            <div className={styles.button} onClick={onButtonContainer2Click}>
               <div className={styles.buttonClic}>
                 <div className={styles.boundingBox} />
                 <b className={styles.ctaText}>DISCOVER</b>
@@ -217,7 +232,7 @@ const SectionDoctorPricing: NextPage = memo(() => {
             </div>
           </div>
           <div className={styles.footer2}>
-            <div className={styles.button}>
+            <div className={styles.button} onClick={onButtonContainer3Click}>
               <div className={styles.buttonClic2}>
                 <div className={styles.boundingBox} />
                 <b className={styles.ctaText}>DISCOVER</b>

@@ -48,6 +48,7 @@
   justify-content: space-between;
   padding: var(--padding-lgi) var(--padding-92xl);
   box-sizing: border-box;
+  cursor: pointer;
   text-align: center;
   font-size: var(--font-size-base);
   color: var(--color-white);

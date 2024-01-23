@@ -160,6 +160,7 @@
   width: 31rem;
   position: relative;
   height: 3.5rem;
+  cursor: pointer;
 }
 .card,
 .footer {

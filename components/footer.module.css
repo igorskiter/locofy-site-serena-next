@@ -282,7 +282,6 @@
   align-items: center;
   padding: 0 var(--padding-77xl);
   box-sizing: border-box;
-  z-index: 6;
   text-align: left;
   font-size: var(--font-size-xl);
   color: var(--grey-prime);

@@ -27,7 +27,7 @@ const FAQARTICLE: NextPage = () => {
         sideMenuBackgroundImage="url('/sidemenu@3x.png')"
         sideMenuZIndex="3"
         sERFOTOMOCKUPQUESTIONARIO="/ser-foto-mockup--questionario-11@2x.png"
-        socialItens="/socialitens.svg"
+        socialItens="48x254x-1043458600"
         sideMenuMargin="0 !important"
         sideMenuPosition="absolute"
         sideMenuTop="9.31rem"

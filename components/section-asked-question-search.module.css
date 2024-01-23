@@ -3,21 +3,6 @@
   line-height: 110%;
   mix-blend-mode: multiply;
 }
-.iconsearch,
-.p5 {
-  position: relative;
-  flex-shrink: 0;
-}
-.iconsearch {
-  width: 1.5rem;
-  height: 1.5rem;
-  overflow: hidden;
-}
-.p5 {
-  width: 17.91rem;
-  line-height: 120%;
-  display: inline-block;
-}
 .content,
 .searchbar,
 .section {
@@ -26,14 +11,16 @@
   justify-content: flex-start;
 }
 .searchbar {
-  border-radius: var(--br-xs);
+  border: 0;
+  outline: 0;
+  font-family: var(--font-plus-jakarta-sans);
+  font-size: var(--font-size-xl);
   background-color: var(--grey-25);
+  border-radius: var(--br-xs);
   flex-direction: row;
   align-items: center;
   padding: var(--padding-xl) var(--padding-6xl) var(--padding-xl)
     var(--padding-lg);
-  gap: var(--gap-3xs);
-  font-size: var(--font-size-xl);
   color: var(--low-contrast-gre);
 }
 .content,

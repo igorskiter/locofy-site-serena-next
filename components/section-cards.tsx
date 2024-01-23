@@ -1,12 +1,27 @@
 import type { NextPage } from "next";
-import { memo } from "react";
+import { memo, useCallback } from "react";
+import { useRouter } from "next/router";
 import styles from "./section-cards.module.css";
 
 const SectionCards: NextPage = memo(() => {
+  const router = useRouter();
+
+  const onCardDoctorClick = useCallback(() => {
+    window.open("https://screening.serenacare.app/");
+  }, []);
+
+  const onCardPatientsClick = useCallback(() => {
+    router.push("/doctors");
+  }, [router]);
+
+  const onCardCompaniesClick = useCallback(() => {
+    router.push("/contact");
+  }, [router]);
+
   return (
     <section className={styles.sectioncards} id="SectionCards">
       <div className={styles.cards}>
-        <div className={styles.carddoctor}>
+        <div className={styles.carddoctor} onClick={onCardDoctorClick}>
           <div className={styles.cardcontent}>
             <div className={styles.gradient}>
               <div className={styles.imagegradient} />
@@ -43,7 +58,7 @@ const SectionCards: NextPage = memo(() => {
             </div>
           </div>
         </div>
-        <div className={styles.cardpatients}>
+        <div className={styles.cardpatients} onClick={onCardPatientsClick}>
           <div className={styles.cardcontent1}>
             <div className={styles.gradient}>
               <div className={styles.imagegradient} />
@@ -86,7 +101,7 @@ const SectionCards: NextPage = memo(() => {
             </div>
           </div>
         </div>
-        <div className={styles.cardpatients}>
+        <div className={styles.cardpatients} onClick={onCardCompaniesClick}>
           <div className={styles.cardcontent2}>
             <div className={styles.gradient}>
               <div className={styles.imagegradient} />

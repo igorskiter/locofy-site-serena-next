@@ -1,8 +1,12 @@
 import type { NextPage } from "next";
-import { memo } from "react";
+import { memo, useCallback } from "react";
 import styles from "./section-doctor-circle.module.css";
 
 const SectionDoctorCircle: NextPage = memo(() => {
+  const onButtonContainerClick = useCallback(() => {
+    window.location.href = "https://www.serenacare.com.br/comunidade/";
+  }, []);
+
   return (
     <section className={styles.section} id="SectionCircle">
       <div className={styles.content}>
@@ -20,7 +24,7 @@ const SectionDoctorCircle: NextPage = memo(() => {
               most of our platform.
             </div>
           </div>
-          <div className={styles.button}>
+          <div className={styles.button} onClick={onButtonContainerClick}>
             <div className={styles.joinTheCommunity}>JOIN THE COMMUNITY</div>
           </div>
         </div>

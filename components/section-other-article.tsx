@@ -25,33 +25,49 @@ const SectionOtherArticle: NextPage = memo(() => {
         </div>
         <div className={styles.footer}>
           <div className={styles.selection}>
-            <img
-              className={styles.iconcircleselected}
-              alt=""
-              src="/iconcircleselected.svg"
-            />
-            <img
-              className={styles.iconcircleselected}
-              alt=""
-              src="/iconcirclenonselected.svg"
-            />
-            <img
-              className={styles.iconcircleselected}
-              alt=""
-              src="/iconcirclenonselected.svg"
-            />
+            <button className={styles.buttoncircle}>
+              <img
+                className={styles.iconcircleselected}
+                alt=""
+                src="/iconcircleselected.svg"
+              />
+            </button>
+            <button className={styles.buttoncircle}>
+              <img
+                className={styles.iconcircleselected}
+                alt=""
+                src="/iconcirclenonselected.svg"
+              />
+            </button>
+            <button className={styles.buttoncircle}>
+              <img
+                className={styles.iconcircleselected}
+                alt=""
+                src="/iconcirclenonselected.svg"
+              />
+            </button>
           </div>
           <div className={styles.buttons}>
-            <img
-              className={styles.iconleftarrow}
-              alt=""
-              src="/iconleftarrow.svg"
-            />
-            <img
-              className={styles.iconleftarrow}
-              alt=""
-              src="/iconrightarrow.svg"
-            />
+            <button className={styles.iconleftarrow}>
+              <img
+                className={styles.iconleftarrowChild}
+                alt=""
+                src="/ellipse-42.svg"
+              />
+              <img
+                className={styles.iconleftarrowItem}
+                alt=""
+                src="/vector-6.svg"
+              />
+            </button>
+            <button className={styles.iconleftarrow}>
+              <div className={styles.iconrightarrowChild} />
+              <img
+                className={styles.iconrightarrowItem}
+                alt=""
+                src="/vector-5.svg"
+              />
+            </button>
           </div>
         </div>
       </div>

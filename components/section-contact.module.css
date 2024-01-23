@@ -27,49 +27,71 @@
   color: var(--black-text);
   max-width: 32.25rem;
 }
+.input,
+.left,
+.line,
+.line1 {
+  display: flex;
+  justify-content: flex-start;
+}
 .left {
   align-self: stretch;
   flex: 1;
-  display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: flex-start;
   gap: var(--gap-77xl);
 }
-.name {
+.input,
+.line,
+.line1 {
+  flex-direction: row;
+}
+.input {
+  border: 0;
+  outline: 0;
+  font-family: var(--font-plus-jakarta-sans);
+  font-size: var(--font-size-xl);
+  background-color: var(--grey-25);
+  flex: 1;
+  border-radius: var(--br-xs);
+  align-items: center;
+  padding: var(--padding-5xl) var(--padding-6xl) var(--padding-5xl)
+    var(--padding-lg);
+  color: var(--low-contrast-gre);
+}
+.line,
+.line1 {
+  align-self: stretch;
+  align-items: flex-start;
+}
+.line {
+  gap: var(--gap-base);
+}
+.line1 {
+  border: 0;
+  outline: 0;
+  font-family: var(--font-plus-jakarta-sans);
+  font-size: var(--font-size-xl);
+  background-color: var(--grey-25);
+  border-radius: var(--br-xs);
+  height: 3.94rem;
+  padding: var(--padding-5xl) var(--padding-lg);
+  box-sizing: border-box;
+  color: var(--low-contrast-gre);
+}
+.companyName {
   width: 17.91rem;
   position: relative;
   line-height: 120%;
   display: inline-block;
   flex-shrink: 0;
 }
-.input {
-  flex: 1;
-  border-radius: var(--br-xs);
-  background-color: var(--grey-25);
-  display: flex;
-  align-items: center;
-  padding: var(--padding-5xl) var(--padding-6xl) var(--padding-5xl)
-    var(--padding-lg);
-}
-.input,
 .input2,
-.line,
-.line1,
-.line3 {
+.line3,
+.line4 {
+  height: 3.94rem;
   flex-direction: row;
   justify-content: flex-start;
-}
-.line {
-  align-self: stretch;
-  display: flex;
-  align-items: flex-start;
-  gap: var(--gap-base);
-}
-.input2,
-.line1,
-.line3 {
-  height: 3.94rem;
 }
 .input2 {
   flex: 1;
@@ -81,75 +103,67 @@
     var(--padding-lg);
   box-sizing: border-box;
 }
-.line1,
-.line3 {
+.line3,
+.line4 {
   align-items: flex-start;
-}
-.line1 {
-  align-self: stretch;
-  display: flex;
 }
 .line3 {
   width: 42.66rem;
   display: none;
 }
-.chevronDownIcon {
-  width: 1.5rem;
-  position: relative;
-  height: 1.5rem;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.input5 {
-  flex: 1;
+.line4 {
+  align-self: stretch;
   border-radius: var(--br-xs);
   background-color: var(--grey-25);
-  height: 3.94rem;
-  align-items: center;
-  padding: var(--padding-5xl) var(--padding-6xl) var(--padding-5xl)
-    var(--padding-lg);
+  border: 0;
+  display: flex;
+  padding: var(--padding-5xl) var(--padding-33xl);
   box-sizing: border-box;
   gap: var(--gap-3xs);
+  font-size: var(--font-size-xl);
+  color: var(--low-contrast-gre);
 }
-.input5,
-.input6,
+.line4,
+.line5,
+.send {
+  font-family: var(--font-plus-jakarta-sans);
+}
 .line5 {
+  border: 0;
+  background-color: var(--grey-25);
+  font-size: var(--font-size-xl);
+  outline: 0;
+  align-self: stretch;
+  border-radius: var(--br-xs);
   display: flex;
   flex-direction: row;
-  justify-content: flex-start;
-}
-.input6 {
-  flex: 1;
-  border-radius: var(--br-xs);
-  background-color: var(--grey-25);
-  align-items: center;
-  padding: var(--padding-5xl) var(--padding-6xl) var(--padding-221xl)
-    var(--padding-lg);
-}
-.line5 {
-  align-self: stretch;
   align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-5xl) var(--padding-lg);
+  color: var(--low-contrast-gre);
 }
 .send {
   position: relative;
+  font-size: var(--font-size-base);
   letter-spacing: 0.14em;
   line-height: 130%;
   text-transform: uppercase;
   font-weight: 600;
+  color: var(--color-white);
+  text-align: left;
 }
 .button {
-  border-radius: var(--br-xs);
-  background-color: var(--grey-prime);
+  cursor: pointer;
   border: 2px solid var(--color-gray-100);
+  padding: var(--padding-3xl) var(--padding-83xl);
+  background-color: var(--grey-prime);
+  border-radius: var(--br-xs);
   box-sizing: border-box;
   height: 3.5rem;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: var(--padding-3xl) var(--padding-83xl);
-  font-size: var(--font-size-base);
-  color: var(--color-white);
 }
 .form,
 .right {
