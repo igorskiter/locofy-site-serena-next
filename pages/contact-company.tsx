@@ -30,7 +30,7 @@ const Home: NextPage = () => {
       <Footer
         lINE="/line.svg"
         vector="/Logo31@2x.png"
-        group="/LogoCare3@2x.png"
+        group="/LogoCare31@2x.png"
         buttonsSocial="/ButtonsSocial1@2x.png"
         iconLogin="/IconLogin51@2x.png"
         footerZIndex="3"

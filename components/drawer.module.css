@@ -8,101 +8,6 @@
     opacity: 1;
   }
 }
-.closeIcon,
-.menuburgerIcon {
-  width: 2rem;
-  position: relative;
-}
-.menuburgerIcon {
-  height: 1.75rem;
-  object-fit: cover;
-  display: none;
-}
-.closeIcon {
-  height: 2rem;
-}
-.lefet {
-  flex: 1;
-  height: 1.75rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-3xs);
-}
-.logoIcon {
-  width: 14rem;
-  position: relative;
-  height: 1.83rem;
-  object-fit: cover;
-}
-.logomobileIcon,
-.logotabletIcon {
-  width: 11.31rem;
-  position: relative;
-  height: 1.5rem;
-  display: none;
-}
-.logomobileIcon {
-  width: 8.06rem;
-  height: 1.06rem;
-}
-.center {
-  flex: 1;
-  height: 1.83rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: var(--gap-3xs);
-}
-.vectorIcon {
-  width: 2rem;
-  position: relative;
-  height: 2rem;
-  display: none;
-}
-.login {
-  position: relative;
-  letter-spacing: 0.03em;
-  line-height: 130%;
-}
-.iconlogin {
-  width: 2.5rem;
-  position: relative;
-  height: 2.5rem;
-  object-fit: cover;
-}
-.buttonlogin {
-  display: flex;
-  justify-content: flex-start;
-  gap: var(--gap-mini);
-}
-.buttonlogin,
-.header,
-.right {
-  flex-direction: row;
-  align-items: center;
-}
-.right {
-  flex: 1;
-  height: 2.5rem;
-  display: flex;
-  justify-content: flex-end;
-  gap: var(--gap-3xs);
-}
-.header {
-  width: 120rem;
-  height: 9.38rem;
-  display: none;
-  justify-content: space-between;
-  padding: var(--padding-33xl) var(--padding-77xl) var(--padding-39xl);
-  box-sizing: border-box;
-  text-align: left;
-  font-size: var(--font-size-sm);
-  color: var(--grey-prime);
-  font-family: var(--font-plus-jakarta-sans);
-}
 .left,
 .menu1 {
   display: flex;
@@ -144,27 +49,29 @@
   margin: 0;
 }
 .redefiningOurRelationshipContainer {
-  position: absolute;
-  top: 0;
-  left: -8.25rem;
+  width: 31.88rem;
+  position: relative;
   line-height: 110%;
   white-space: pre-wrap;
   display: inline-block;
-  width: 31.88rem;
+  flex-shrink: 0;
   mix-blend-mode: multiply;
 }
 .h2 {
   position: absolute;
   top: 0;
   left: 8.25rem;
-  height: 11.75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
 }
 .content1 {
   width: 40.13rem;
   position: relative;
   height: 30.56rem;
 }
-.center1 {
+.center {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -203,7 +110,7 @@
   width: 3rem;
   height: 3rem;
 }
-.right1,
+.right,
 .socialitens {
   display: flex;
   flex-direction: column;
@@ -214,7 +121,7 @@
   overflow: hidden;
   gap: var(--gap-5xl);
 }
-.right1 {
+.right {
   align-self: stretch;
   padding: 0 0 var(--padding-65xl);
 }
@@ -283,8 +190,6 @@
   position: relative;
   overflow: hidden;
   align-items: flex-start;
-  padding: var(--padding-131xl) 0 0;
-  box-sizing: border-box;
   background-image: url(/drawer@3x.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -303,7 +208,7 @@
   .content1 {
     width: 40.13rem;
   }
-  .center1 {
+  .center {
     width: auto;
     align-self: unset;
     max-width: 50%;
@@ -313,16 +218,6 @@
   }
 }
 @media screen and (max-width: 960px) {
-  .logoIcon {
-    display: none;
-  }
-  .logotabletIcon {
-    display: flex;
-  }
-  .header {
-    padding: var(--padding-11xl) var(--padding-7xl);
-    box-sizing: border-box;
-  }
   .serFotoMockupQuestionario {
     width: 18rem;
     height: 22.25rem;
@@ -334,14 +229,14 @@
   .content1 {
     width: 22.56rem;
   }
-  .center1 {
+  .center {
     max-width: 30%;
   }
   .socialitens {
     width: 2.19rem;
   }
   .menu,
-  .right1 {
+  .right {
     padding-bottom: 0;
     box-sizing: border-box;
   }
@@ -366,14 +261,6 @@
   }
 }
 @media screen and (max-width: 420px) {
-  .login,
-  .logoIcon {
-    display: none;
-  }
-  .header {
-    padding: var(--padding-5xl) var(--padding-base);
-    box-sizing: border-box;
-  }
   .serFotoMockupQuestionario {
     width: 9rem;
     height: 11.13rem;
@@ -385,7 +272,7 @@
     width: 9rem;
     flex: 1;
   }
-  .center1 {
+  .center {
     display: flex;
     width: auto;
     align-self: stretch;
@@ -394,7 +281,7 @@
     justify-content: flex-start;
     max-width: 9rem;
   }
-  .right1 {
+  .right {
     display: none;
   }
   .footersocial {

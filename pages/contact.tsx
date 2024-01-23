@@ -34,7 +34,7 @@ const Contact: NextPage = () => {
       <Footer
         lINE="/line.svg"
         vector="/Logo31@2x.png"
-        group="/LogoCare3@2x.png"
+        group="/LogoCare31@2x.png"
         buttonsSocial="/ButtonsSocial1@2x.png"
         iconLogin="/iconlogin1@2x.png"
         footerZIndex="3"

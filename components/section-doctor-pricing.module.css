@@ -256,39 +256,39 @@
   gap: var(--gap-29xl);
 }
 .buttonClic2,
-.buttonprimary1 {
-  position: absolute;
-  left: 0;
-  width: 31rem;
+.buttonprimary1,
+.footer2 {
   flex-direction: column;
   align-items: center;
 }
 .buttonClic2 {
+  position: absolute;
   top: 5.56rem;
+  left: 0;
+  width: 31rem;
   display: none;
   justify-content: flex-end;
   color: var(--green-prime);
 }
+.buttonprimary1,
+.footer2 {
+  display: flex;
+}
 .buttonprimary1 {
+  position: absolute;
   top: 0;
+  left: 0;
   border-radius: var(--br-xs);
   background-color: var(--green-link);
+  width: 31rem;
   height: 3.5rem;
-  display: flex;
   justify-content: center;
-}
-.cards,
-.footer2,
-.section {
-  display: flex;
-  justify-content: flex-start;
 }
 .footer2 {
   width: 34.94rem;
   border-radius: 0 0 var(--br-5xl) var(--br-5xl);
   height: 6.31rem;
-  flex-direction: column;
-  align-items: center;
+  justify-content: flex-start;
   text-align: center;
   font-size: var(--font-size-lg);
   color: var(--white-prime);
@@ -296,16 +296,19 @@
 .cards,
 .section {
   align-self: stretch;
+  display: flex;
 }
 .cards {
   overflow-x: auto;
   flex-direction: row;
   align-items: flex-start;
+  justify-content: center;
   gap: var(--gap-5xl);
 }
 .section {
   flex-direction: column;
   align-items: center;
+  justify-content: flex-start;
   padding: 0 var(--padding-77xl) var(--padding-341xl);
   z-index: 4;
   text-align: left;

@@ -64,39 +64,6 @@ const Drawer: NextPage<DrawerType> = memo(({ onClose }) => {
   }, []);
   return (
     <div className={styles.drawer} data-animate-on-scroll>
-      <header className={styles.header} id="Header">
-        <div className={styles.lefet}>
-          <img
-            className={styles.menuburgerIcon}
-            id="MenuBurguer"
-            alt=""
-            src="/menuburger1@2x.png"
-          />
-          <img className={styles.closeIcon} alt="" src="/close.svg" />
-        </div>
-        <div className={styles.center}>
-          <img
-            className={styles.logoIcon}
-            alt="Logo"
-            id="Logo"
-            src="/Logo1@2x.png"
-          />
-          <img className={styles.logotabletIcon} alt="" src="/logotablet.svg" />
-          <img className={styles.logomobileIcon} alt="" src="/logomobile.svg" />
-        </div>
-        <div className={styles.right}>
-          <img className={styles.vectorIcon} alt="" src="/vector.svg" />
-          <div className={styles.buttonlogin}>
-            <b className={styles.login}>Login</b>
-            <img
-              className={styles.iconlogin}
-              alt="IconLogin"
-              id="IconLogin"
-              src="/iconlogin1@2x.png"
-            />
-          </div>
-        </div>
-      </header>
       <div className={styles.navmenu}>
         <div className={styles.content}>
           <div className={styles.menu}>
@@ -126,7 +93,7 @@ const Drawer: NextPage<DrawerType> = memo(({ onClose }) => {
                 />
               </div>
             </div>
-            <div className={styles.center1}>
+            <div className={styles.center}>
               <div className={styles.content1}>
                 <img
                   className={styles.serFotoMockupQuestionario}
@@ -146,7 +113,7 @@ const Drawer: NextPage<DrawerType> = memo(({ onClose }) => {
                 </div>
               </div>
             </div>
-            <div className={styles.right1}>
+            <div className={styles.right}>
               <div className={styles.socialitens}>
                 <a
                   className={styles.linksocial}
