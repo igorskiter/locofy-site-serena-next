@@ -110,79 +110,106 @@
   width: 3rem;
   height: 3rem;
 }
+.socialitens {
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--gap-5xl);
+}
+.menu,
 .right,
 .socialitens {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: flex-end;
-}
-.socialitens {
-  overflow: hidden;
-  gap: var(--gap-5xl);
 }
 .right {
   align-self: stretch;
+  flex-direction: column;
+  align-items: center;
   padding: 0 0 var(--padding-65xl);
-}
-.footersocial,
-.menu,
-.socialitens1 {
-  flex-direction: row;
-  align-items: flex-end;
 }
 .menu {
   width: 85.13rem;
-  display: flex;
-  justify-content: flex-end;
-  padding: 0 0 var(--padding-253xl);
-  box-sizing: border-box;
+  flex-direction: row;
+  align-items: flex-end;
 }
-.footersocial,
-.socialitens1 {
-  justify-content: center;
+.privacyPolicy {
+  text-decoration: none;
+  width: 6.5rem;
+  position: relative;
+  font-size: var(--font-size-base);
+  line-height: 130%;
+  font-weight: 300;
+  color: inherit;
+  display: inline-block;
+  height: 0.75rem;
+  flex-shrink: 0;
+}
+.linksocial4,
+.linksocial5,
+.linksocial7 {
+  text-decoration: none;
+  width: 2.88rem;
+  position: relative;
+  height: 2.88rem;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.linksocial5,
+.linksocial7 {
+  width: 2.75rem;
+  height: 2.75rem;
+}
+.linksocial7 {
+  width: 3rem;
+  height: 3rem;
 }
 .socialitens1 {
   overflow: hidden;
   display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
   gap: var(--gap-5xl);
 }
-.footersocial {
-  width: 85.13rem;
+.footersocial,
+.textSerenaCare {
+  width: 114.38rem;
   display: none;
+  justify-content: center;
 }
-.privacyPolicy,
+.footersocial {
+  flex-direction: row;
+  align-items: flex-end;
+}
 .textSerenaCare {
   position: relative;
-  line-height: 130%;
-}
-.privacyPolicy {
-  text-decoration: none;
-  font-size: var(--font-size-base);
-  font-weight: 300;
-  color: inherit;
-}
-.textSerenaCare {
-  width: 17.88rem;
   font-size: var(--font-size-xs);
+  line-height: 130%;
   color: var(--color-gray-200);
-  display: none;
+  text-align: center;
+  align-items: center;
+  height: 1rem;
+  flex-shrink: 0;
 }
 .content {
+  align-self: stretch;
   align-items: flex-end;
+  justify-content: flex-start;
+  gap: var(--gap-217xl);
 }
 .content,
 .drawer,
 .navmenu {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
 }
 .navmenu {
   align-self: stretch;
   flex: 1;
   align-items: flex-end;
-  padding: 0 var(--padding-71xl) var(--padding-27xl) 0;
+  justify-content: center;
+  padding: 4.13rem var(--padding-71xl) 0 0;
 }
 .drawer {
   width: 120rem;
@@ -190,6 +217,7 @@
   position: relative;
   overflow: hidden;
   align-items: flex-start;
+  justify-content: flex-end;
   background-image: url(/drawer@3x.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -216,8 +244,16 @@
   .content {
     gap: var(--gap-0);
   }
+  .navmenu {
+    padding-top: 0;
+    padding-right: var(--padding-7xl);
+    box-sizing: border-box;
+  }
 }
 @media screen and (max-width: 960px) {
+  .menu1 {
+    gap: var(--gap-21xl);
+  }
   .serFotoMockupQuestionario {
     width: 18rem;
     height: 22.25rem;
@@ -232,6 +268,15 @@
   .center {
     max-width: 30%;
   }
+  .linksocial {
+    width: 2.06rem;
+    height: 2.13rem;
+  }
+  .linksocial1,
+  .linksocial3 {
+    width: 2.06rem;
+    height: 2rem;
+  }
   .socialitens {
     width: 2.19rem;
   }
@@ -240,6 +285,13 @@
     padding-bottom: 0;
     box-sizing: border-box;
   }
+  .menu {
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .privacyPolicy {
+    display: none;
+  }
   .socialitens1 {
     width: 2.19rem;
   }
@@ -247,20 +299,30 @@
     padding-bottom: 0;
     box-sizing: border-box;
   }
-  .privacyPolicy {
-    display: none;
-  }
   .textSerenaCare {
     display: flex;
     align-self: stretch;
     width: auto;
   }
+  .content,
+  .navmenu {
+    padding-top: 0;
+    box-sizing: border-box;
+  }
   .content {
+    height: auto;
+    gap: 6.5rem;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: space-between;
+  }
+  .navmenu {
+    padding-right: 0;
   }
 }
 @media screen and (max-width: 420px) {
+  .left {
+    width: 11.25rem;
+  }
   .serFotoMockupQuestionario {
     width: 9rem;
     height: 11.13rem;
@@ -284,7 +346,19 @@
   .right {
     display: none;
   }
+  .menu {
+    gap: var(--gap-21xl);
+  }
+  .socialitens1 {
+    flex: 1;
+  }
   .footersocial {
     display: flex;
+    padding-top: var(--padding-77xl);
+    padding-bottom: var(--padding-29xl);
+    box-sizing: border-box;
+  }
+  .content {
+    gap: var(--gap-0);
   }
 }

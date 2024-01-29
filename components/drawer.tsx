@@ -158,10 +158,16 @@ const Drawer: NextPage<DrawerType> = memo(({ onClose }) => {
               </div>
             </div>
           </div>
+          <a
+            className={styles.privacyPolicy}
+            href="https://blog.serenacare.com.br/"
+          >
+            Privacy Policy
+          </a>
           <div className={styles.footersocial}>
             <div className={styles.socialitens1}>
               <a
-                className={styles.linksocial}
+                className={styles.linksocial4}
                 href="https://blog.serenacare.com.br/"
               >
                 <img
@@ -171,7 +177,7 @@ const Drawer: NextPage<DrawerType> = memo(({ onClose }) => {
                 />
               </a>
               <a
-                className={styles.linksocial1}
+                className={styles.linksocial5}
                 href="https://blog.serenacare.com.br/"
               >
                 <img
@@ -181,7 +187,7 @@ const Drawer: NextPage<DrawerType> = memo(({ onClose }) => {
                 />
               </a>
               <a
-                className={styles.linksocial1}
+                className={styles.linksocial5}
                 href="https://blog.serenacare.com.br/"
               >
                 <img
@@ -191,7 +197,7 @@ const Drawer: NextPage<DrawerType> = memo(({ onClose }) => {
                 />
               </a>
               <a
-                className={styles.linksocial3}
+                className={styles.linksocial7}
                 href="https://blog.serenacare.com.br/"
               >
                 <img
@@ -202,12 +208,6 @@ const Drawer: NextPage<DrawerType> = memo(({ onClose }) => {
               </a>
             </div>
           </div>
-          <a
-            className={styles.privacyPolicy}
-            href="https://blog.serenacare.com.br/"
-          >
-            Privacy Policy
-          </a>
           <div className={styles.textSerenaCare}>
             © Serena Care 2023 . Todos os direitos reservados
           </div>
