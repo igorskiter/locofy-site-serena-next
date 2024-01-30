@@ -16,53 +16,69 @@
   font-size: var(--font-size-53xl);
   font-family: var(--font-plus-jakarta-sans);
 }
-.h2,
-.p4 {
-  flex: 1;
-  position: relative;
-  height: 34.44rem;
-  mix-blend-mode: multiply;
-}
 .h2 {
+  align-self: stretch;
+  width: 53.44rem;
+  position: relative;
   letter-spacing: -0.02em;
   line-height: 130%;
   display: inline-block;
+  flex-shrink: 0;
+  mix-blend-mode: multiply;
+  min-height: 34.44rem;
+}
+.box,
+.p4 {
+  display: flex;
 }
 .p4 {
+  align-self: stretch;
+  flex: 1;
+  position: relative;
   font-size: var(--font-size-5xl);
   line-height: 140%;
   font-weight: 300;
   font-family: var(--font-plus-jakarta-sans);
-  display: flex;
   align-items: flex-end;
+  mix-blend-mode: multiply;
   max-width: 34.69rem;
 }
-.box,
-.herounderstandlifestyle {
-  align-self: stretch;
-  display: flex;
+.box {
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
 }
 .herounderstandlifestyle {
-  height: 67.5rem;
+  align-self: stretch;
+  display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0 var(--padding-236xl);
-  box-sizing: border-box;
+  padding: var(--padding-245xl) var(--padding-5xl);
   text-align: left;
   font-size: var(--font-size-59xl);
   color: var(--grey-prime);
   font-family: var(--font-lora);
 }
 @media screen and (max-width: 1200px) {
+  .h2 {
+    flex: 1;
+  }
+  .p4 {
+    width: 100%;
+    align-self: stretch;
+    height: auto;
+  }
   .box {
     flex-direction: row;
     gap: var(--gap-0);
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: flex-end;
+    justify-content: flex-end;
+  }
+  .herounderstandlifestyle {
+    padding: var(--padding-89xl) var(--padding-17xl) var(--padding-178xl)
+      var(--padding-108xl);
+    box-sizing: border-box;
   }
 }
 @media screen and (max-width: 960px) {
@@ -80,15 +96,24 @@
   }
 }
 @media screen and (max-width: 420px) {
-  .h2,
+  .h2 {
+    font-size: var(--font-size-13xl);
+    width: 21.44rem;
+  }
   .p4 {
+    text-align: left;
+    max-width: 15.81rem;
     flex: unset;
     align-self: stretch;
   }
   .box {
     flex-direction: column;
     gap: var(--gap-0);
-    align-items: flex-start;
-    justify-content: flex-start;
+    align-items: flex-end;
+    justify-content: center;
+  }
+  .herounderstandlifestyle {
+    padding: var(--padding-80xl) var(--padding-base) var(--padding-110xl);
+    box-sizing: border-box;
   }
 }

@@ -282,9 +282,6 @@
   animation: 1s ease 0s 1 normal backwards slide-in-bottom;
   opacity: 1;
 }
-.cardcontent1:hover .button1 {
-  display: flex;
-}
 .cardcontent1:hover .patients {
   background-color: var(--color-gray-300);
 }
@@ -344,6 +341,7 @@
   align-items: center;
 }
 .cards {
+  overflow-x: auto;
   flex-direction: row;
   justify-content: center;
   gap: var(--gap-lg);
@@ -363,6 +361,11 @@
     gap: var(--gap-lg);
     align-items: center;
     justify-content: flex-start;
+  }
+  .sectioncards {
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
   }
 }
 @media screen and (max-width: 960px) {

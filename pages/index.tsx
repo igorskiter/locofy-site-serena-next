@@ -29,10 +29,10 @@ const Home: NextPage = () => {
       <SectionCards />
       <Footer
         lINE="/line.svg"
-        vector="/Logo21@2x.png"
-        group="/LogoCare11@2x.png"
+        vector="/Logo1@2x.png"
+        group="/LogoCare1@2x.png"
         buttonsSocial="250.46x34.61x-1180024328"
-        iconLogin="/IconLogin1@2x.png"
+        iconLogin="/IconLogin@2x.png"
       />
     </div>
   );

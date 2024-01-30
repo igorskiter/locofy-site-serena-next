@@ -36,7 +36,7 @@ const SectionCarousel: NextPage = memo(() => {
                   src="/IconSleepQuality@2x.png"
                 />
               </div>
-              <div className={styles.pq}>Sono de qualidade</div>
+              <div className={styles.p4}>Sono de qualidade</div>
             </div>
             <div className={styles.physicalactivities}>
               <div className={styles.blur2}>
@@ -47,7 +47,7 @@ const SectionCarousel: NextPage = memo(() => {
                   src="/IconPhysicalActivities@2x.png"
                 />
               </div>
-              <div className={styles.p4}>Atividades físicas</div>
+              <div className={styles.p41}>Atividades físicas</div>
             </div>
             <div className={styles.social}>
               <img
@@ -56,7 +56,7 @@ const SectionCarousel: NextPage = memo(() => {
                 id="IconSocial"
                 src="/IconSocial@2x.png"
               />
-              <div className={styles.p41}>Conexões emocionais</div>
+              <div className={styles.p42}>Conexões emocionais</div>
             </div>
             <div className={styles.diet}>
               <img
@@ -65,7 +65,7 @@ const SectionCarousel: NextPage = memo(() => {
                 id="IconDiet"
                 src="/IconDiet@2x.png"
               />
-              <i className={styles.p42}>Diet</i>
+              <i className={styles.p43}>Diet</i>
             </div>
             <div className={styles.controltoxic}>
               <div className={styles.blur3}>
@@ -75,7 +75,7 @@ const SectionCarousel: NextPage = memo(() => {
                   src="/iconcontroltoxic.svg"
                 />
               </div>
-              <div className={styles.p43}>Controle de tóxicos</div>
+              <div className={styles.p44}>Controle de tóxicos</div>
             </div>
           </div>
         </div>

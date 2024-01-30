@@ -47,10 +47,11 @@ const SectionWave: NextPage = memo(() => {
         <div className={styles.waveChild7} />
       </div>
       <div className={styles.wavemobile}>
-        <img className={styles.groupIcon2} alt="" src="/group4.svg" />
+        <img className={styles.groupIcon2} alt="" src="/group.svg" />
         <div className={styles.ellipseParent}>
-          <div className={styles.frameChild} />
-          <div className={styles.frameWrapper}>
+          <div className={styles.groupChild} />
+          <div className={styles.rectangleParent}>
+            <div className={styles.groupItem} />
             <div className={styles.container}>
               <div className={styles.div2}>93%</div>
               <div className={styles.ofPatientsWith2}>
@@ -58,12 +59,12 @@ const SectionWave: NextPage = memo(() => {
               </div>
             </div>
           </div>
-          <div className={styles.frameItem} />
+          <div className={styles.groupInner} />
         </div>
-        <div className={styles.wavemobileChild} />
-        <div className={styles.wavemobileItem} />
-        <div className={styles.wavemobileInner} />
-        <div className={styles.wavemobileChild1} />
+        <img className={styles.wavemobileChild} alt="" src="/group-191.svg" />
+        <img className={styles.wavemobileItem} alt="" src="/group-191.svg" />
+        <img className={styles.wavemobileInner} alt="" src="/group-191.svg" />
+        <img className={styles.wavemobileChild1} alt="" src="/group-193.svg" />
       </div>
     </section>
   );
