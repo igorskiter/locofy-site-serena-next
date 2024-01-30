@@ -1,29 +1,90 @@
-.about,
-.home {
-  cursor: pointer;
-  text-decoration: none;
+.closeIcon,
+.menuburgerIcon {
+  width: 2rem;
   position: relative;
+}
+.menuburgerIcon {
+  height: 1.75rem;
+  display: none;
+}
+.closeIcon {
+  height: 2rem;
+}
+.lefet {
+  flex: 1;
+  height: 1.75rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  gap: var(--gap-3xs);
+}
+.logoIcon {
+  width: 14rem;
+  position: relative;
+  height: 1.83rem;
+}
+.center {
+  flex: 1;
+  height: 1.83rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.text {
+  position: relative;
+  letter-spacing: 0.03em;
   line-height: 130%;
-  color: inherit;
+  font-weight: 500;
+  opacity: 0.1;
+}
+.iconlogin {
+  width: 2.5rem;
+  position: relative;
+  height: 2.5rem;
+}
+.buttonlogin {
+  display: flex;
+  justify-content: flex-start;
+  gap: var(--gap-mini);
+}
+.buttonlogin,
+.header,
+.right {
+  flex-direction: row;
+  align-items: center;
+}
+.right {
+  flex: 1;
+  height: 2.5rem;
+  display: flex;
+  justify-content: flex-end;
+  gap: var(--gap-3xs);
+}
+.header {
+  width: 120rem;
+  height: 9.38rem;
+  display: none;
+  justify-content: space-between;
+  padding: var(--padding-33xl) var(--padding-77xl) var(--padding-39xl);
+  box-sizing: border-box;
 }
 .home {
+  position: relative;
   font-size: var(--font-size-39xl);
-  font-style: italic;
+  line-height: 130%;
   font-weight: 700;
   font-family: var(--font-lora);
 }
 .about {
   letter-spacing: -0.01em;
-  font-weight: 300;
 }
-.blog,
+.about,
 .forDoctors {
-  text-decoration: none;
   position: relative;
   line-height: 130%;
   font-weight: 300;
-  color: inherit;
-  cursor: pointer;
 }
 .left,
 .menu1 {
@@ -32,6 +93,7 @@
   align-items: flex-start;
 }
 .menu1 {
+  height: 24.44rem;
   justify-content: flex-start;
   gap: var(--gap-21xl);
 }
@@ -66,168 +128,73 @@
   margin: 0;
 }
 .redefiningOurRelationshipContainer {
-  width: 31.88rem;
-  position: relative;
+  position: absolute;
+  width: 79.44%;
+  top: 0;
+  left: 20.56%;
   line-height: 110%;
   white-space: pre-wrap;
   display: inline-block;
-  flex-shrink: 0;
   mix-blend-mode: multiply;
-}
-.h2 {
-  position: absolute;
-  top: 0;
-  left: 8.25rem;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
 }
 .content1 {
   width: 40.13rem;
   position: relative;
   height: 30.56rem;
 }
-.center {
-  flex: 1;
+.center1 {
+  width: 68.06rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: var(--font-size-45xl);
 }
-.iconSocialMediaInstagram {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
-.linksocial,
-.linksocial1,
-.linksocial3 {
-  text-decoration: none;
-  width: 2.88rem;
-  position: relative;
-  height: 2.88rem;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.linksocial1,
-.linksocial3 {
-  width: 2.75rem;
-  height: 2.75rem;
-}
-.linksocial3 {
+.socialitensIcon {
   width: 3rem;
-  height: 3rem;
-}
-.socialitens {
-  overflow: hidden;
-  flex-direction: column;
-  align-items: center;
-  gap: var(--gap-5xl);
+  position: relative;
+  height: 15.88rem;
 }
 .menu,
-.right,
-.socialitens {
+.right1 {
   display: flex;
   justify-content: flex-end;
 }
-.right {
+.right1 {
   align-self: stretch;
   flex-direction: column;
   align-items: center;
   padding: 0 0 var(--padding-65xl);
 }
 .menu {
-  width: 85.13rem;
   flex-direction: row;
   align-items: flex-end;
 }
 .privacyPolicy {
-  text-decoration: none;
-  width: 6.5rem;
   position: relative;
   font-size: var(--font-size-base);
   line-height: 130%;
   font-weight: 300;
-  color: inherit;
-  display: inline-block;
-  height: 0.75rem;
-  flex-shrink: 0;
-}
-.linksocial4,
-.linksocial5,
-.linksocial7 {
-  text-decoration: none;
-  width: 2.88rem;
-  position: relative;
-  height: 2.88rem;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-.linksocial5,
-.linksocial7 {
-  width: 2.75rem;
-  height: 2.75rem;
-}
-.linksocial7 {
-  width: 3rem;
-  height: 3rem;
-}
-.socialitens1 {
-  overflow: hidden;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  justify-content: center;
-  gap: var(--gap-5xl);
-}
-.footersocial,
-.textSerenaCare {
-  width: 114.38rem;
-  display: none;
-  justify-content: center;
-}
-.footersocial {
-  flex-direction: row;
-  align-items: flex-end;
-}
-.textSerenaCare {
-  position: relative;
-  font-size: var(--font-size-xs);
-  line-height: 130%;
-  color: var(--color-gray-200);
-  text-align: center;
-  align-items: center;
-  height: 1rem;
-  flex-shrink: 0;
 }
 .content {
-  align-self: stretch;
   display: flex;
   align-items: flex-end;
-  justify-content: flex-start;
-  gap: var(--gap-217xl);
+  gap: var(--gap-253xl);
 }
 .content,
 .navmenu,
 .sidemenu {
   flex-direction: column;
+  justify-content: flex-end;
 }
 .navmenu {
-  align-self: stretch;
-  flex: 1;
+  width: 120rem;
+  height: 58.13rem;
   display: flex;
   align-items: flex-end;
-  justify-content: center;
-  padding: var(--padding-47xl) var(--padding-71xl) 0 0;
+  padding: 0 var(--padding-71xl) var(--padding-27xl) 0;
+  box-sizing: border-box;
+  font-size: var(--font-size-21xl);
 }
 .sidemenu {
   margin: 0 !important;
@@ -239,153 +206,14 @@
   flex-shrink: 0;
   display: none;
   align-items: flex-start;
-  justify-content: flex-end;
-  background-image: url(/sidemenu@3x.png);
+  background-image: url(/sidemenu1@3x.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   min-width: 120rem;
-  z-index: 7;
+  z-index: 1;
   text-align: left;
-  font-size: var(--font-size-21xl);
+  font-size: var(--font-size-base);
   color: var(--grey-prime);
   font-family: var(--font-plus-jakarta-sans);
-}
-@media screen and (max-width: 1200px) {
-  .content1 {
-    width: 40.13rem;
-  }
-  .center {
-    width: auto;
-    align-self: unset;
-    max-width: 50%;
-  }
-  .content {
-    gap: var(--gap-0);
-  }
-  .navmenu {
-    padding-top: 0;
-    padding-right: var(--padding-7xl);
-    box-sizing: border-box;
-  }
-}
-@media screen and (max-width: 960px) {
-  .menu1 {
-    gap: var(--gap-21xl);
-  }
-  .serFotoMockupQuestionario {
-    width: 18rem;
-    height: 22.25rem;
-  }
-  .redefiningOurRelationshipContainer {
-    font-size: var(--font-size-29xl);
-    width: 22.56rem;
-  }
-  .content1 {
-    width: 22.56rem;
-  }
-  .center {
-    max-width: 30%;
-  }
-  .linksocial {
-    width: 2.06rem;
-    height: 2.13rem;
-  }
-  .linksocial1,
-  .linksocial3 {
-    width: 2.06rem;
-    height: 2rem;
-  }
-  .socialitens {
-    width: 2.19rem;
-  }
-  .menu,
-  .right {
-    padding-bottom: 0;
-    box-sizing: border-box;
-  }
-  .menu {
-    align-items: flex-end;
-    justify-content: center;
-  }
-  .privacyPolicy {
-    display: none;
-  }
-  .socialitens1 {
-    width: 2.19rem;
-  }
-  .footersocial {
-    padding-bottom: 0;
-    box-sizing: border-box;
-  }
-  .textSerenaCare {
-    display: flex;
-    align-self: stretch;
-    width: auto;
-  }
-  .content,
-  .navmenu {
-    padding-top: 0;
-    box-sizing: border-box;
-  }
-  .content {
-    height: auto;
-    gap: var(--gap-85xl);
-    align-items: center;
-    justify-content: space-between;
-  }
-  .navmenu {
-    padding-right: 0;
-  }
-}
-@media screen and (max-width: 420px) {
-  .home {
-    font-size: var(--font-size-21xl);
-  }
-  .about,
-  .blog,
-  .forDoctors {
-    font-size: var(--font-size-13xl);
-  }
-  .left {
-    width: 11.25rem;
-  }
-  .serFotoMockupQuestionario {
-    width: 9rem;
-    height: 11.13rem;
-  }
-  .h2 {
-    display: none;
-  }
-  .content1 {
-    width: 9rem;
-    flex: 1;
-  }
-  .center {
-    display: flex;
-    width: auto;
-    align-self: stretch;
-    height: auto;
-    align-items: flex-end;
-    justify-content: flex-start;
-    max-width: 9rem;
-  }
-  .right {
-    display: none;
-  }
-  .menu {
-    gap: var(--gap-21xl);
-  }
-  .socialitens1 {
-    flex: 1;
-  }
-  .footersocial {
-    display: flex;
-    padding-top: var(--padding-77xl);
-    padding-bottom: var(--padding-29xl);
-    box-sizing: border-box;
-  }
-  .content {
-    gap: var(--gap-0);
-  }
 }

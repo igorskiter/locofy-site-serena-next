@@ -7,46 +7,86 @@
 }
 .iconplans {
   width: 7.63rem;
-  position: relative;
   height: 7.63rem;
   overflow: hidden;
   flex-shrink: 0;
 }
-.personalized {
-  margin: 0;
-}
 .chapeu2,
+.iconplans,
 .p5 {
-  align-self: stretch;
   position: relative;
 }
 .chapeu2 {
+  width: 100%;
   line-height: 120%;
   font-weight: 600;
+  white-space: pre-wrap;
+  display: inline-block;
+  max-width: 14.19rem;
 }
 .p5 {
+  align-self: stretch;
   font-size: var(--font-size-xl);
   line-height: 150%;
 }
 .tile {
+  width: 26.25rem;
   display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   justify-content: flex-start;
+  gap: var(--gap-13xl);
   max-width: 26.25rem;
 }
-.tile,
-.tile1,
+.strengthen {
+  margin: 0;
+}
+.chapeu21,
+.p51 {
+  position: relative;
+}
+.chapeu21 {
+  width: 100%;
+  line-height: 120%;
+  font-weight: 600;
+  display: inline-block;
+  max-width: 18.63rem;
+}
+.p51 {
+  align-self: stretch;
+  font-size: var(--font-size-xl);
+  line-height: 150%;
+}
+.tile1 {
+  width: 26.25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: var(--gap-13xl);
+  min-width: 26.25rem;
+}
+.chapeu22,
+.p52 {
+  position: relative;
+}
+.chapeu22 {
+  width: 100%;
+  line-height: 120%;
+  font-weight: 600;
+  display: inline-block;
+  max-width: 12.25rem;
+}
+.p52 {
+  align-self: stretch;
+  font-size: var(--font-size-xl);
+  line-height: 150%;
+}
 .tile2 {
   width: 26.25rem;
   flex-direction: column;
   align-items: flex-start;
   gap: var(--gap-13xl);
-}
-.tile1 {
-  display: flex;
-  justify-content: flex-start;
-  min-width: 26.25rem;
-}
-.tile2 {
   max-width: 26.25rem;
 }
 .content,
@@ -78,26 +118,94 @@
   align-self: stretch;
   align-items: center;
   padding: var(--padding-38xl) var(--padding-149xl) var(--padding-201xl);
-  z-index: 3;
   text-align: left;
   font-size: var(--font-size-17xl);
   color: var(--grey-prime);
   font-family: var(--font-lora);
 }
 @media screen and (max-width: 1200px) {
+  .tile {
+    min-width: 33%;
+  }
+  .tile1 {
+    max-width: 26.25rem;
+  }
+  .tile1,
+  .tile2 {
+    min-width: 33%;
+  }
+  .content1 {
+    flex-direction: row;
+    gap: var(--gap-xs);
+  }
   .section {
     padding-left: var(--padding-5xl);
     padding-right: var(--padding-5xl);
+    padding-bottom: var(--padding-139xl);
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 960px) {
+  .iconplans {
+    width: 4rem;
+    height: 4rem;
+  }
+  .chapeu2 {
+    font-size: var(--font-size-13xl);
+    text-align: left;
+    min-width: 28.5rem;
+    max-width: 14.19rem;
+  }
+  .p5 {
+    font-size: var(--font-size-sm);
+    max-width: 28.5rem;
+  }
   .tile {
     width: 100%;
+    min-width: 100%;
+  }
+  .chapeu21 {
+    font-size: var(--font-size-13xl);
+    max-width: 32.94rem;
+  }
+  .p51 {
+    font-size: var(--font-size-sm);
+    min-width: 28.5rem;
+    max-width: 28.5rem;
+  }
+  .tile1 {
+    min-width: 100%;
+  }
+  .chapeu22 {
+    font-size: var(--font-size-13xl);
+    max-width: 39.19rem;
+  }
+  .p52 {
+    font-size: var(--font-size-base);
+    min-width: 28.5rem;
+    max-width: 28.5rem;
+  }
+  .tile2 {
+    min-width: 100%;
   }
   .content1 {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: var(--gap-41xl);
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .content,
+  .content1,
+  .section {
+    box-sizing: border-box;
+  }
+  .content {
+    gap: var(--gap-41xl);
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .section {
+    padding-bottom: var(--padding-138xl);
   }
 }
 @media screen and (max-width: 420px) {
@@ -107,6 +215,8 @@
   }
   .chapeu2 {
     font-size: var(--font-size-13xl);
+    width: 100%;
+    max-width: 7.94rem;
   }
   .p5 {
     font-size: var(--font-size-base);
@@ -115,13 +225,31 @@
   .tile {
     width: 100%;
     gap: var(--gap-5xl);
+    max-width: 26.25rem;
+  }
+  .chapeu21 {
+    font-size: var(--font-size-13xl);
+  }
+  .p51 {
+    font-size: var(--font-size-base);
+    max-width: 21.44rem;
   }
   .tile1 {
-    flex: 1;
+    align-self: stretch;
+    width: auto;
+    gap: var(--gap-5xl);
+    max-width: 26.25rem;
   }
-  .tile1,
+  .chapeu22 {
+    font-size: var(--font-size-13xl);
+  }
+  .p52 {
+    font-size: var(--font-size-base);
+    max-width: 21.44rem;
+  }
   .tile2 {
     gap: var(--gap-5xl);
+    max-width: 26.25rem;
   }
   .content1 {
     gap: var(--gap-62xl);

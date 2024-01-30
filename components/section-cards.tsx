@@ -26,7 +26,7 @@ const SectionCards: NextPage = memo(() => {
             <div className={styles.gradient}>
               <div className={styles.imagegradient} />
             </div>
-            <img className={styles.doctorsIcon} alt="" src="/doctors@2x.png" />
+            <img className={styles.doctorsIcon} alt="" src="/doctors1@2x.png" />
             <div className={styles.cardtitle}>
               <div className={styles.subtitle}>
                 <b className={styles.p6}>PATIENTS</b>

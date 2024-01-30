@@ -127,7 +127,6 @@
   align-self: stretch;
   flex-direction: column;
   padding: 0 var(--padding-223xl) var(--padding-393xl);
-  z-index: 5;
   text-align: left;
   font-size: var(--font-size-17xl);
   color: var(--grey-prime);
@@ -140,6 +139,7 @@
   .section {
     padding-left: var(--padding-5xl);
     padding-right: var(--padding-5xl);
+    padding-bottom: var(--padding-143xl);
     box-sizing: border-box;
   }
 }
@@ -154,11 +154,30 @@
     font-size: var(--font-size-base);
   }
   .description {
+    gap: var(--gap-13xl);
     max-width: 20.38rem;
   }
   .button {
     padding: var(--padding-3xs) var(--padding-15xl);
     box-sizing: border-box;
+  }
+  .left {
+    gap: var(--gap-20xl);
+  }
+  .subtractIcon {
+    width: 21.31rem;
+  }
+  .logoSerenaCircle {
+    width: 7.56rem;
+    height: 0.88rem;
+  }
+  .subtractParent {
+    width: 21.31rem;
+    height: 20.06rem;
+  }
+  .right {
+    flex: 1;
+    height: 23.75rem;
   }
 }
 @media screen and (max-width: 420px) {

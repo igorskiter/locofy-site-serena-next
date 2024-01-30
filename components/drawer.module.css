@@ -209,7 +209,7 @@
   flex: 1;
   align-items: flex-end;
   justify-content: center;
-  padding: var(--padding-47xl) var(--padding-71xl) 0 0;
+  padding: 4.13rem var(--padding-71xl) 0 0;
 }
 .drawer {
   width: 120rem;
@@ -311,7 +311,7 @@
   }
   .content {
     height: auto;
-    gap: var(--gap-85xl);
+    gap: 6.5rem;
     align-items: center;
     justify-content: space-between;
   }

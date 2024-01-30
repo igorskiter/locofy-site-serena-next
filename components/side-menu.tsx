@@ -1,7 +1,5 @@
 import type { NextPage } from "next";
-import { memo, useMemo, type CSSProperties, useCallback } from "react";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import { memo, useMemo, type CSSProperties } from "react";
 import styles from "./side-menu.module.css";
 
 type SideMenuType = {
@@ -46,197 +44,68 @@ const SideMenu: NextPage<SideMenuType> = memo(
       sideMenuLeft,
     ]);
 
-    const router = useRouter();
-
-    const onHomeClick = useCallback(() => {
-      router.push("/");
-    }, [router]);
-
-    const onAboutClick = useCallback(() => {
-      router.push("/about-us");
-    }, [router]);
-
-    const onForDoctorsClick = useCallback(() => {
-      router.push("/doctors");
-    }, [router]);
-
-    const onBlogClick = useCallback(() => {
-      window.open("https://blog.serenacare.com.br/");
-    }, []);
-
-    const onContactClick = useCallback(() => {
-      router.push("/contact");
-    }, [router]);
-
-    const onFAQClick = useCallback(() => {
-      router.push("/faq");
-    }, [router]);
-
     return (
       <div className={styles.sidemenu} style={sideMenuStyle}>
+        <div className={styles.header}>
+          <div className={styles.lefet}>
+            <img
+              className={styles.menuburgerIcon}
+              alt=""
+              src="/menuburger.svg"
+            />
+            <img className={styles.closeIcon} alt="" src="/close.svg" />
+          </div>
+          <div className={styles.center}>
+            <img className={styles.logoIcon} alt="" src="/logo.svg" />
+          </div>
+          <div className={styles.right}>
+            <img className={styles.closeIcon} alt="" src="/vector2.svg" />
+            <div className={styles.buttonlogin}>
+              <div className={styles.text}>Login</div>
+              <img className={styles.iconlogin} alt="" src="/iconlogin.svg" />
+            </div>
+          </div>
+        </div>
         <div className={styles.navmenu}>
           <div className={styles.content}>
             <div className={styles.menu}>
               <div className={styles.left}>
                 <div className={styles.menu1}>
-                  <Link className={styles.home} href="/" onClick={onHomeClick}>
-                    Home
-                  </Link>
-                  <Link
-                    className={styles.about}
-                    href="/about-us"
-                    onClick={onAboutClick}
-                  >
-                    About
-                  </Link>
-                  <Link
-                    className={styles.forDoctors}
-                    href="/doctors"
-                    onClick={onForDoctorsClick}
-                  >
-                    For Doctors
-                  </Link>
-                  <a
-                    className={styles.blog}
-                    href="https://blog.serenacare.com.br/"
-                    onClick={onBlogClick}
-                  >
-                    Blog
-                  </a>
-                  <Link
-                    className={styles.forDoctors}
-                    href="/contact"
-                    onClick={onContactClick}
-                  >
-                    Contact
-                  </Link>
-                  <Link
-                    className={styles.forDoctors}
-                    href="/faq"
-                    onClick={onFAQClick}
-                  >
-                    FAQ
-                  </Link>
+                  <i className={styles.home}>Home</i>
+                  <div className={styles.about}>About</div>
+                  <div className={styles.forDoctors}>For Doctors</div>
+                  <div className={styles.forDoctors}>Blog</div>
+                  <div className={styles.forDoctors}>Contact</div>
+                  <div className={styles.forDoctors}>FAQ</div>
                 </div>
               </div>
-              <div className={styles.center}>
+              <div className={styles.center1}>
                 <div className={styles.content1}>
                   <img
                     className={styles.serFotoMockupQuestionario}
                     alt=""
                     src={sERFOTOMOCKUPQUESTIONARIO}
                   />
-                  <div className={styles.h2}>
-                    <div className={styles.redefiningOurRelationshipContainer}>
-                      <p className={styles.redefining}>{`Redefining `}</p>
-                      <p className={styles.ourRelationshipWithHealth}>
-                        <span className={styles.ourRelationship}>
-                          our relationship
-                        </span>
-                        <i className={styles.withHealth}> with health</i>
-                      </p>
-                    </div>
+                  <div className={styles.redefiningOurRelationshipContainer}>
+                    <p className={styles.redefining}>{`Redefining `}</p>
+                    <p className={styles.ourRelationshipWithHealth}>
+                      <span className={styles.ourRelationship}>
+                        our relationship
+                      </span>
+                      <i className={styles.withHealth}> with health</i>
+                    </p>
                   </div>
                 </div>
               </div>
-              <div className={styles.right}>
-                <div className={styles.socialitens} src={socialItens}>
-                  <a
-                    className={styles.linksocial}
-                    href="https://blog.serenacare.com.br/"
-                  >
-                    <img
-                      className={styles.iconSocialMediaInstagram}
-                      alt=""
-                      src="/icon-social-media--instagram.svg"
-                    />
-                  </a>
-                  <a
-                    className={styles.linksocial1}
-                    href="https://blog.serenacare.com.br/"
-                  >
-                    <img
-                      className={styles.iconSocialMediaInstagram}
-                      alt=""
-                      src="/icon-social-media--facebook.svg"
-                    />
-                  </a>
-                  <a
-                    className={styles.linksocial1}
-                    href="https://blog.serenacare.com.br/"
-                  >
-                    <img
-                      className={styles.iconSocialMediaInstagram}
-                      alt=""
-                      src="/icon-social-media--linkedin.svg"
-                    />
-                  </a>
-                  <a
-                    className={styles.linksocial3}
-                    href="https://blog.serenacare.com.br/"
-                  >
-                    <img
-                      className={styles.iconSocialMediaInstagram}
-                      alt=""
-                      src="/icon-social-media--spotify.svg"
-                    />
-                  </a>
-                </div>
+              <div className={styles.right1}>
+                <img
+                  className={styles.socialitensIcon}
+                  alt=""
+                  src={socialItens}
+                />
               </div>
             </div>
-            <a
-              className={styles.privacyPolicy}
-              href="https://blog.serenacare.com.br/"
-            >
-              Privacy Policy
-            </a>
-            <div className={styles.footersocial}>
-              <div className={styles.socialitens1}>
-                <a
-                  className={styles.linksocial4}
-                  href="https://blog.serenacare.com.br/"
-                >
-                  <img
-                    className={styles.iconSocialMediaInstagram}
-                    alt=""
-                    src="/icon-social-media--instagram.svg"
-                  />
-                </a>
-                <a
-                  className={styles.linksocial5}
-                  href="https://blog.serenacare.com.br/"
-                >
-                  <img
-                    className={styles.iconSocialMediaInstagram}
-                    alt=""
-                    src="/icon-social-media--facebook.svg"
-                  />
-                </a>
-                <a
-                  className={styles.linksocial5}
-                  href="https://blog.serenacare.com.br/"
-                >
-                  <img
-                    className={styles.iconSocialMediaInstagram}
-                    alt=""
-                    src="/icon-social-media--linkedin.svg"
-                  />
-                </a>
-                <a
-                  className={styles.linksocial7}
-                  href="https://blog.serenacare.com.br/"
-                >
-                  <img
-                    className={styles.iconSocialMediaInstagram}
-                    alt=""
-                    src="/icon-social-media--spotify.svg"
-                  />
-                </a>
-              </div>
-            </div>
-            <div className={styles.textSerenaCare}>
-              © Serena Care 2023 . Todos os direitos reservados
-            </div>
+            <div className={styles.privacyPolicy}>Privacy Policy</div>
           </div>
         </div>
       </div>

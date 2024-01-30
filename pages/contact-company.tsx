@@ -25,12 +25,13 @@ const Home: NextPage = () => {
         sideMenuZIndex="1"
         sERFOTOMOCKUPQUESTIONARIO="/ser-foto-mockup--questionario-11@2x.png"
         socialItens="/socialitens.svg"
+
       />
       <SectionContactCompany />
       <Footer
         lINE="/line.svg"
         vector="/Logo31@2x.png"
-        group="/LogoCare31@2x.png"
+        group="/LogoCare311@2x.png"
         buttonsSocial="/ButtonsSocial1@2x.png"
         iconLogin="/IconLogin51@2x.png"
         footerZIndex="3"

@@ -10,11 +10,7 @@ const SectionDoctorBenefits: NextPage = memo(() => {
         <div className={styles.content1}>
           <div className={styles.tile}>
             <img className={styles.iconplans} alt="" src="/iconplans.svg" />
-            <div className={styles.chapeu2}>
-              <p className={styles.personalized}>{`Personalized `}</p>
-              <p className={styles.personalized}>Treatment</p>
-              <p className={styles.personalized}>Plans</p>
-            </div>
+            <div className={styles.chapeu2}>Personalized Treatment Plans</div>
             <div className={styles.p5}>
               Understanding how lifestyle factors affect health allows you to
               create personalized treatment plans. With Serena Screening, you
@@ -28,13 +24,11 @@ const SectionDoctorBenefits: NextPage = memo(() => {
               alt=""
               src="/iconrelationships.svg"
             />
-            <div className={styles.chapeu2}>
-              <p className={styles.personalized}>{`Strengthen `}</p>
-              <p className={styles.personalized}>
-                Doctor-Patient Relationships
-              </p>
+            <div className={styles.chapeu21}>
+              <p className={styles.strengthen}>{`Strengthen `}</p>
+              <p className={styles.strengthen}>Doctor-Patient Relationships</p>
             </div>
-            <div className={styles.p5}>
+            <div className={styles.p51}>
               Serena Screening not only improves health outcomes but also
               strengthens the doctor-patient relationship. By providing a
               comprehensive understanding of each patient's health, you can
@@ -44,12 +38,8 @@ const SectionDoctorBenefits: NextPage = memo(() => {
           </div>
           <div className={styles.tile2}>
             <img className={styles.iconplans} alt="" src="/iconproactive.svg" />
-            <div className={styles.chapeu2}>
-              <p className={styles.personalized}>{`From `}</p>
-              <p className={styles.personalized}>Reactive to</p>
-              <p className={styles.personalized}>Proactive</p>
-            </div>
-            <div className={styles.p5}>
+            <div className={styles.chapeu22}>From Reactive to Proactive</div>
+            <div className={styles.p52}>
               Serena Screening empowers you to shift from reactive to proactive
               healthcare. By identifying potential health risks early, you can
               intervene before they become serious issues, promoting overall

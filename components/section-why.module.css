@@ -78,7 +78,6 @@
 .section {
   align-self: stretch;
   padding: 0 var(--padding-220xl) var(--padding-314xl);
-  z-index: 3;
   text-align: left;
   font-size: var(--font-size-17xl);
   color: var(--grey-prime);

@@ -5,7 +5,6 @@ import SectionDoctorFreeTrial from "../components/section-doctor-free-trial";
 import SectionDoctorBenefits from "../components/section-doctor-benefits";
 import SectionDoctorPricing from "../components/section-doctor-pricing";
 import SectionDoctorCircle from "../components/section-doctor-circle";
-import SideMenu from "../components/side-menu";
 import Footer from "../components/footer";
 import styles from "./doctors.module.css";
 
@@ -18,7 +17,7 @@ const FAQ: NextPage = () => {
         logo="/logo3@2x.png"
         vector="/vector2.svg"
         iconLogin="/iconlogin2@2x.png"
-        headerZIndex="0"
+        headerZIndex="unset"
         showMenuBurgerIcon
         closeIcon={false}
         logoTablet="/logotablet1.svg"
@@ -29,23 +28,13 @@ const FAQ: NextPage = () => {
       <SectionDoctorBenefits />
       <SectionDoctorPricing />
       <SectionDoctorCircle />
-      <SideMenu
-        sideMenuBackgroundImage="url('/sidemenu@3x.png')"
-        sideMenuZIndex="6"
-        sERFOTOMOCKUPQUESTIONARIO="/ser-foto-mockup--questionario-11@2x.png"
-        socialItens="48x254x-1043458600"
-        sideMenuMargin="0 !important"
-        sideMenuPosition="absolute"
-        sideMenuTop="9.31rem"
-        sideMenuLeft="0.06rem"
-      />
       <Footer
         lINE="/line1.svg"
         vector="/Logo31@2x.png"
         group="/LogoCare5@2x.png"
         buttonsSocial="/ButtonsSocial1@2x.png"
         iconLogin="/iconlogin2@2x.png"
-        footerZIndex="7"
+        footerZIndex="unset"
       />
     </div>
   );

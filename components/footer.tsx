@@ -41,7 +41,7 @@ const Footer: NextPage<FooterType> = memo(
               className={styles.groupIcon1}
               alt="LogoCare"
               id="LogoCare"
-              src="/LogoCare3@2x.png"
+              src="/LogoCare31@2x.png"
             />
           </div>
           <div className={styles.footer1}>
