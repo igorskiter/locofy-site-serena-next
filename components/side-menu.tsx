@@ -74,47 +74,6 @@ const SideMenu: NextPage<SideMenuType> = memo(
 
     return (
       <div className={styles.sidemenu} style={sideMenuStyle}>
-        <header className={styles.header} id="Header">
-          <div className={styles.lefet}>
-            <img
-              className={styles.menuburgerIcon}
-              id="MenuBurguer"
-              alt=""
-              src="/menuburger1@2x.png"
-            />
-            <img className={styles.closeIcon} alt="" src="/close.svg" />
-          </div>
-          <div className={styles.center}>
-            <img
-              className={styles.logoIcon}
-              alt="Logo"
-              id="Logo"
-              src="/logo3@2x.png"
-            />
-            <img
-              className={styles.logotabletIcon}
-              alt=""
-              src="/logotablet1.svg"
-            />
-            <img
-              className={styles.logomobileIcon}
-              alt=""
-              src="/logomobile1.svg"
-            />
-          </div>
-          <div className={styles.right}>
-            <img className={styles.vectorIcon} alt="" src="/vector2.svg" />
-            <div className={styles.buttonlogin}>
-              <b className={styles.login}>Login</b>
-              <img
-                className={styles.iconlogin}
-                alt="IconLogin"
-                id="IconLogin"
-                src="/iconlogin2@2x.png"
-              />
-            </div>
-          </div>
-        </header>
         <div className={styles.navmenu}>
           <div className={styles.content}>
             <div className={styles.menu}>
@@ -160,7 +119,7 @@ const SideMenu: NextPage<SideMenuType> = memo(
                   </Link>
                 </div>
               </div>
-              <div className={styles.center1}>
+              <div className={styles.center}>
                 <div className={styles.content1}>
                   <img
                     className={styles.serFotoMockupQuestionario}
@@ -180,7 +139,7 @@ const SideMenu: NextPage<SideMenuType> = memo(
                   </div>
                 </div>
               </div>
-              <div className={styles.right1}>
+              <div className={styles.right}>
                 <div className={styles.socialitens} src={socialItens}>
                   <a
                     className={styles.linksocial}
@@ -225,10 +184,16 @@ const SideMenu: NextPage<SideMenuType> = memo(
                 </div>
               </div>
             </div>
+            <a
+              className={styles.privacyPolicy}
+              href="https://blog.serenacare.com.br/"
+            >
+              Privacy Policy
+            </a>
             <div className={styles.footersocial}>
               <div className={styles.socialitens1}>
                 <a
-                  className={styles.linksocial}
+                  className={styles.linksocial4}
                   href="https://blog.serenacare.com.br/"
                 >
                   <img
@@ -238,7 +203,7 @@ const SideMenu: NextPage<SideMenuType> = memo(
                   />
                 </a>
                 <a
-                  className={styles.linksocial1}
+                  className={styles.linksocial5}
                   href="https://blog.serenacare.com.br/"
                 >
                   <img
@@ -248,7 +213,7 @@ const SideMenu: NextPage<SideMenuType> = memo(
                   />
                 </a>
                 <a
-                  className={styles.linksocial1}
+                  className={styles.linksocial5}
                   href="https://blog.serenacare.com.br/"
                 >
                   <img
@@ -258,7 +223,7 @@ const SideMenu: NextPage<SideMenuType> = memo(
                   />
                 </a>
                 <a
-                  className={styles.linksocial3}
+                  className={styles.linksocial7}
                   href="https://blog.serenacare.com.br/"
                 >
                   <img
@@ -269,12 +234,6 @@ const SideMenu: NextPage<SideMenuType> = memo(
                 </a>
               </div>
             </div>
-            <a
-              className={styles.privacyPolicy}
-              href="https://blog.serenacare.com.br/"
-            >
-              Privacy Policy
-            </a>
             <div className={styles.textSerenaCare}>
               © Serena Care 2023 . Todos os direitos reservados
             </div>

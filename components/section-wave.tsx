@@ -47,7 +47,7 @@ const SectionWave: NextPage = memo(() => {
         <div className={styles.waveChild7} />
       </div>
       <div className={styles.wavemobile}>
-        <img className={styles.groupIcon2} alt="" src="/group.svg" />
+        <img className={styles.groupIcon2} alt="" src="/group1.svg" />
         <div className={styles.ellipseParent}>
           <div className={styles.groupChild} />
           <div className={styles.rectangleParent}>

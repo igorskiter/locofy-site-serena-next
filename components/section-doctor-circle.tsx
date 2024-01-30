@@ -33,7 +33,7 @@ const SectionDoctorCircle: NextPage = memo(() => {
             <img className={styles.subtractIcon} alt="" src="/subtract.svg" />
             <div className={styles.logoSerenaCircle}>
               <img className={styles.vectorIcon} alt="" src="/vector3.svg" />
-              <img className={styles.groupIcon} alt="" src="/group1.svg" />
+              <img className={styles.groupIcon} alt="" src="/group11.svg" />
             </div>
           </div>
         </div>

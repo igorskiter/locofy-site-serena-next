@@ -29,8 +29,8 @@ const Home: NextPage = () => {
       <SectionCards />
       <Footer
         lINE="/line.svg"
-        vector="/Logo1@2x.png"
-        group="/LogoCare1@2x.png"
+        vector="/Logo11@2x.png"
+        group="/LogoCare11@2x.png"
         buttonsSocial="250.46x34.61x-1180024328"
         iconLogin="/IconLogin@2x.png"
       />

@@ -35,13 +35,13 @@ const Footer: NextPage<FooterType> = memo(
               className={styles.vectorIcon1}
               alt="Logo"
               id="Logo"
-              src="/Logo@2x.png"
+              src="/Logo4@2x.png"
             />
             <img
               className={styles.groupIcon1}
               alt="LogoCare"
               id="LogoCare"
-              src="/LogoCare@2x.png"
+              src="/LogoCare3@2x.png"
             />
           </div>
           <div className={styles.footer1}>

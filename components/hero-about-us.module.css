@@ -44,17 +44,25 @@
   }
 }
 @media screen and (max-width: 960px) {
-  .content,
-  .hero {
+  .title {
+    font-size: var(--font-size-46xl);
+  }
+  .content {
     height: 29.5rem;
+    align-items: center;
+    justify-content: center;
   }
   .hero {
+    height: 29.5rem;
     padding-left: var(--padding-5xl);
     padding-right: var(--padding-5xl);
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 420px) {
+  .title {
+    font-size: var(--font-size-30xl);
+  }
   .content {
     height: 41.63rem;
     border-radius: var(--br-base);
