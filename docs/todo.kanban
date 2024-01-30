@@ -7,16 +7,7 @@
         {
           "id": "ed20a42d-0c1c-45b6-aec4-7a77e5bbc464",
           "listId": "58304c9c-ca84-4489-88e7-bd9aa8da7b27",
-          "title": "Create component Button",
-          "description": "",
-          "labels": [],
-          "checkboxes": [],
-          "comments": []
-        },
-        {
-          "id": "701e77c9-8ee1-45e8-bd5a-38d78c991338",
-          "listId": "58304c9c-ca84-4489-88e7-bd9aa8da7b27",
-          "title": "Create component Input",
+          "title": "Adjusting component Button",
           "description": "",
           "labels": [],
           "checkboxes": [],
@@ -32,18 +23,36 @@
           "comments": []
         },
         {
-          "id": "db86e7d6-cb0e-4a27-bd97-d4ae96ca11c4",
+          "id": "411f6dfb-a12a-407e-8c15-3ce9b4979503",
           "listId": "58304c9c-ca84-4489-88e7-bd9aa8da7b27",
-          "title": "Create Hover card in home",
+          "title": "Create Wave Animation",
           "description": "",
           "labels": [],
           "checkboxes": [],
           "comments": []
         },
         {
-          "id": "411f6dfb-a12a-407e-8c15-3ce9b4979503",
+          "id": "7726aace-b11f-4706-a5d9-d149563da33f",
           "listId": "58304c9c-ca84-4489-88e7-bd9aa8da7b27",
-          "title": "Create Wave Animation",
+          "title": "Pegar arquivo das traduções de texto",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "ad7a3388-1419-47b6-a724-86912c74713a",
+          "listId": "58304c9c-ca84-4489-88e7-bd9aa8da7b27",
+          "title": "Pegar textos do faq",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "2cb14001-4a63-4d6c-a59d-8c2320ca3dcf",
+          "listId": "58304c9c-ca84-4489-88e7-bd9aa8da7b27",
+          "title": "Saber qual link abre ao clicar em login",
           "description": "",
           "labels": [],
           "checkboxes": [],
@@ -59,17 +68,7 @@
     {
       "id": "3ecf1828-0563-4cf9-a929-f98bb54b556e",
       "title": "todo",
-      "cards": [
-        {
-          "id": "e163cece-27e4-49d4-940f-6b4cc9f24dcb",
-          "listId": "3ecf1828-0563-4cf9-a929-f98bb54b556e",
-          "title": "Ajusting Drawer",
-          "description": "- With in full screen\n- Header\n",
-          "labels": [],
-          "checkboxes": [],
-          "comments": []
-        }
-      ]
+      "cards": []
     },
     {
       "id": "62326f2b-8e93-4aa7-bded-1ef0e467b2e1",
@@ -80,6 +79,87 @@
       "id": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
       "title": "done",
       "cards": [
+        {
+          "id": "98e44d99-b3c3-4fad-85ec-6a865b7fe3d8",
+          "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
+          "title": "Finalizar a responsividade Contact",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "594b76d2-51a3-4422-ad0b-56516d42b3b9",
+          "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
+          "title": "Finalizar a responsividade Faq Detalhe",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "7e8ed58a-c63f-4dc9-a329-a9097cd973fa",
+          "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
+          "title": "Finalizar a responsividade Faq",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "aaa65389-4fc6-483d-9811-822e1f7a29a8",
+          "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
+          "title": "Finalizar a responsividade Doctors",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "bc91ea6c-70d2-4e4c-8e98-fa1815ba2295",
+          "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
+          "title": "Finalizar a responsividade AboutUs",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "43d2427b-ec1b-451c-b97f-c6e56939b34c",
+          "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
+          "title": "Finalizar a responsividade home",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "e163cece-27e4-49d4-940f-6b4cc9f24dcb",
+          "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
+          "title": "Finalizar a responsividade Ajusting Drawer",
+          "description": "- With in full screen\n- Header\n",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "db86e7d6-cb0e-4a27-bd97-d4ae96ca11c4",
+          "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
+          "title": "Create Hover card in home",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "701e77c9-8ee1-45e8-bd5a-38d78c991338",
+          "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
+          "title": "Create component Input",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
         {
           "id": "2a21dc34-3dd0-451e-8fc9-396154466046",
           "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
