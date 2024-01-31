@@ -11,8 +11,8 @@ const SectionCards: NextPage = memo(() => {
   }, []);
 
   const onCardPatientsClick = useCallback(() => {
-    router.push("/doctors");
-  }, [router]);
+    window.open("https://screening.serenacare.app/");
+  }, []);
 
   const onCardCompaniesClick = useCallback(() => {
     router.push("/contact");
@@ -29,7 +29,7 @@ const SectionCards: NextPage = memo(() => {
             <img className={styles.doctorsIcon} alt="" src="/doctors1@2x.png" />
             <div className={styles.cardtitle}>
               <div className={styles.subtitle}>
-                <b className={styles.p6}>PATIENTS</b>
+                <b className={styles.p6}>DOCTORS</b>
               </div>
               <div className={styles.h4}>
                 <span>{`Take control of `}</span>
@@ -79,14 +79,14 @@ const SectionCards: NextPage = memo(() => {
                 <i className={styles.yourHealth}>your health.</i>
               </div>
             </div>
-            <div className={styles.description1}>
+            <div className={styles.description}>
               <div className={styles.experienceSerenaScreening}>
                 Experience Serena Screening, a tool that provides instant
                 understanding on how lifestyle factors impact your patients'
                 health.
               </div>
             </div>
-            <div className={styles.button1}>
+            <div className={styles.button}>
               <button className={styles.buttonprimary} id="ButtonPrimary">
                 <b className={styles.ctaText}>learn more</b>
               </button>
@@ -101,7 +101,7 @@ const SectionCards: NextPage = memo(() => {
             </div>
           </div>
         </div>
-        <div className={styles.cardpatients} onClick={onCardCompaniesClick}>
+        <div className={styles.cardcompanies} onClick={onCardCompaniesClick}>
           <div className={styles.cardcontent2}>
             <div className={styles.gradient}>
               <div className={styles.imagegradient} />
@@ -122,14 +122,14 @@ const SectionCards: NextPage = memo(() => {
                 </p>
               </div>
             </div>
-            <div className={styles.description1}>
+            <div className={styles.description2}>
               <div className={styles.experienceSerenaScreening}>
                 Experience Serena Screening, a tool that provides instant
                 understanding on how lifestyle factors impact your patients'
                 health.
               </div>
             </div>
-            <div className={styles.button1}>
+            <div className={styles.button2}>
               <button className={styles.buttonprimary} id="ButtonPrimary">
                 <b className={styles.ctaText}>learn more</b>
               </button>

@@ -6,9 +6,11 @@
   font-family: var(--font-lora);
 }
 .title {
-  align-self: stretch;
+  width: 100%;
   position: relative;
   line-height: 100%;
+  display: inline-block;
+  max-width: 73.13rem;
 }
 .content,
 .hero {

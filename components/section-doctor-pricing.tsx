@@ -1,8 +1,20 @@
 import type { NextPage } from "next";
-import { memo } from "react";
+import { memo, useCallback } from "react";
 import styles from "./section-doctor-pricing.module.css";
 
 const SectionDoctorPricing: NextPage = memo(() => {
+  const onButtoPrimaryClick = useCallback(() => {
+    window.location.href = "https://practitioner.serenacare.app/";
+  }, []);
+
+  const onButtoPrimary1Click = useCallback(() => {
+    window.location.href = "https://practitioner.serenacare.app/";
+  }, []);
+
+  const onButtonPrimaryClick = useCallback(() => {
+    window.location.href = "https://practitioner.serenacare.app/";
+  }, []);
+
   return (
     <div className={styles.section}>
       <div className={styles.cards}>
@@ -73,9 +85,12 @@ const SectionDoctorPricing: NextPage = memo(() => {
             </div>
           </div>
           <div className={styles.footer}>
-            <div className={styles.buttoprimary}>
+            <button
+              className={styles.buttoprimary}
+              onClick={onButtoPrimaryClick}
+            >
               <b className={styles.ctaText}>sign up</b>
-            </div>
+            </button>
           </div>
         </div>
         <div className={styles.card}>
@@ -147,9 +162,12 @@ const SectionDoctorPricing: NextPage = memo(() => {
             </div>
           </div>
           <div className={styles.footer}>
-            <div className={styles.buttoprimary}>
+            <button
+              className={styles.buttoprimary}
+              onClick={onButtoPrimary1Click}
+            >
               <b className={styles.ctaText}>sign up</b>
-            </div>
+            </button>
           </div>
         </div>
         <div className={styles.card2}>
@@ -221,9 +239,12 @@ const SectionDoctorPricing: NextPage = memo(() => {
             </div>
           </div>
           <div className={styles.footer2}>
-            <div className={styles.buttonprimary}>
-              <b className={styles.ctaText}>sign up</b>
-            </div>
+            <button
+              className={styles.buttonprimary}
+              onClick={onButtonPrimaryClick}
+            >
+              <b className={styles.ctaText2}>sign up</b>
+            </button>
           </div>
         </div>
       </div>

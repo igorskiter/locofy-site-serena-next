@@ -201,13 +201,13 @@
   animation: 1s ease 0s 1 normal backwards slide-in-bottom;
   opacity: 1;
 }
-.cardcontent:hover .button,
-.carddoctor {
-  display: flex;
-}
 .cardcontent:hover .doctorsIcon {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     linear-gradient(0.46deg, rgba(0, 0, 0, 0.2), transparent);
+}
+.cardcontent:hover .button,
+.carddoctor {
+  display: flex;
 }
 .carddoctor {
   height: 52.13rem;
@@ -233,39 +233,13 @@
   top: 0.63rem;
   left: 0.63rem;
   height: 50.88rem;
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
   z-index: 1;
 }
-.button1,
-.description1 {
-  width: 34.56rem;
-  display: none;
-  align-items: center;
-  justify-content: flex-start;
-}
-.description1 {
-  height: 17.94rem;
-  flex-direction: row;
-  padding: 0 0 var(--padding-123xl) var(--padding-30xl);
-  box-sizing: border-box;
-  z-index: 3;
-  font-size: var(--font-size-5xl);
-  color: var(--color-white);
-}
-.button1 {
-  height: 6rem;
-  flex-direction: column;
-  gap: var(--gap-3xs);
-  z-index: 4;
-  text-align: center;
-  font-size: var(--font-size-lg);
-  color: var(--green-prime);
-}
 .cardcontent1,
-.cardpatients {
+.cardpatients,
+.patients {
   display: flex;
   flex-direction: column;
 }
@@ -277,13 +251,14 @@
   position: relative;
   gap: var(--gap-3xs);
 }
-.cardcontent1:hover .description1 {
+.cardcontent1:hover .description {
   display: flex;
   animation: 1s ease 0s 1 normal backwards slide-in-bottom;
   opacity: 1;
 }
-.cardcontent1:hover .patients {
-  background-color: var(--color-gray-300);
+.cardcontent1:hover .button,
+.cardcontent2:hover .button2 {
+  display: flex;
 }
 .cardpatients {
   height: 52.13rem;
@@ -312,20 +287,45 @@
   margin: 0;
   font-family: var(--font-lora);
 }
+.button2,
+.description2 {
+  width: 34.56rem;
+  display: none;
+  align-items: center;
+  justify-content: flex-start;
+}
+.description2 {
+  height: 17.94rem;
+  flex-direction: row;
+  padding: 0 0 var(--padding-123xl) var(--padding-30xl);
+  box-sizing: border-box;
+  z-index: 3;
+  font-size: var(--font-size-5xl);
+  color: var(--color-white);
+}
+.button2 {
+  height: 6rem;
+  flex-direction: column;
+  gap: var(--gap-3xs);
+  z-index: 4;
+  text-align: center;
+  font-size: var(--font-size-lg);
+  color: var(--green-prime);
+}
+.cardcompanies,
+.cardcontent2 {
+  display: flex;
+  flex-direction: column;
+}
 .cardcontent2 {
   width: 35.44rem;
   flex: 1;
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: flex-end;
   position: relative;
   gap: var(--gap-3xs);
 }
-.cardcontent2:hover .button1 {
-  display: flex;
-}
-.cardcontent2:hover .description1 {
+.cardcontent2:hover .description2 {
   display: flex;
   animation: 1s ease 0s 1 normal backwards slide-in-bottom;
   opacity: 1;
@@ -333,6 +333,12 @@
 .cardcontent2:hover .companiesIcon {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
     linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.2));
+}
+.cardcompanies {
+  height: 52.13rem;
+  align-items: flex-start;
+  justify-content: flex-start;
+  cursor: pointer;
 }
 .cards,
 .sectioncards {

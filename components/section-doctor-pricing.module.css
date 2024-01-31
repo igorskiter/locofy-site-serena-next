@@ -95,9 +95,13 @@
 }
 .ctaText {
   position: relative;
+  font-size: var(--font-size-lg);
   letter-spacing: 0.14em;
   line-height: 130%;
   text-transform: uppercase;
+  font-family: var(--font-plus-jakarta-sans);
+  color: var(--grey-prime);
+  text-align: center;
 }
 .buttoprimary,
 .footer {
@@ -106,9 +110,11 @@
   box-sizing: border-box;
 }
 .buttoprimary {
-  border-radius: var(--br-xs);
-  background-color: var(--color-whitesmoke-200);
+  cursor: pointer;
   border: 1px solid var(--grey-prime);
+  padding: 0;
+  background-color: var(--color-whitesmoke-200);
+  border-radius: var(--br-xs);
   height: 3.56rem;
   display: flex;
   align-items: center;
@@ -118,8 +124,6 @@
   height: 6.31rem;
   justify-content: flex-start;
   padding: 0 var(--padding-13xl);
-  text-align: center;
-  font-size: var(--font-size-lg);
 }
 .card,
 .footer,
@@ -155,6 +159,16 @@
   padding: var(--padding-29xl) var(--padding-27xl);
   gap: var(--gap-29xl);
 }
+.ctaText2 {
+  position: relative;
+  font-size: var(--font-size-lg);
+  letter-spacing: 0.14em;
+  line-height: 130%;
+  text-transform: uppercase;
+  font-family: var(--font-plus-jakarta-sans);
+  color: var(--white-prime);
+  text-align: center;
+}
 .buttonprimary,
 .card2,
 .footer2 {
@@ -163,9 +177,12 @@
   align-items: center;
 }
 .buttonprimary {
+  cursor: pointer;
+  border: 0;
+  padding: 0;
+  background-color: var(--green-link);
   align-self: stretch;
   border-radius: var(--br-xs);
-  background-color: var(--green-link);
   height: 3.5rem;
   justify-content: center;
 }
@@ -179,9 +196,6 @@
   height: 6.31rem;
   padding: 0 var(--padding-13xl);
   box-sizing: border-box;
-  text-align: center;
-  font-size: var(--font-size-lg);
-  color: var(--white-prime);
 }
 .card2 {
   width: 35rem;
