@@ -68,7 +68,17 @@
     {
       "id": "3ecf1828-0563-4cf9-a929-f98bb54b556e",
       "title": "todo",
-      "cards": []
+      "cards": [
+        {
+          "id": "4b6d2f5d-6fc2-41a5-b132-6b8dc202b1ab",
+          "listId": "3ecf1828-0563-4cf9-a929-f98bb54b556e",
+          "title": "Adjusting position in Drawer",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        }
+      ]
     },
     {
       "id": "62326f2b-8e93-4aa7-bded-1ef0e467b2e1",
