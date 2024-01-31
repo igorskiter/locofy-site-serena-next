@@ -16,9 +16,6 @@ const Home: NextPage = () => {
         logo="/logo3@2x.png"
         vector="/vector2.svg"
         iconLogin="/iconlogin2@2x.png"
-        headerZIndex="0"
-        showMenuBurgerIcon
-        closeIcon={false}
         logoTablet="/logotablet1.svg"
         logoMobile="/logomobile1.svg"
       />

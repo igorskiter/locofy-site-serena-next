@@ -10,7 +10,7 @@
 }
 .closeIcon {
   height: 2rem;
-  display: none;
+  cursor: pointer;
 }
 .lefet {
   flex: 1;
@@ -76,6 +76,9 @@
   gap: var(--gap-3xs);
 }
 .header {
+  position: sticky;
+  top: 0;
+  z-index: 200;
   align-self: stretch;
   height: 9.38rem;
   justify-content: space-between;
@@ -86,6 +89,7 @@
   color: var(--grey-prime);
   font-family: var(--font-plus-jakarta-sans);
 }
+
 @media screen and (max-width: 960px) {
   .logoIcon {
     display: none;

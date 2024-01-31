@@ -14,7 +14,6 @@ const ContactCompany: NextPage = () => {
         logo="/logo1@2x.png"
         vector="/vector.svg"
         iconLogin="/IconLogin51@2x.png"
-        headerZIndex="0"
       />
       <SideMenu
         sideMenuBackgroundImage="url('/sidemenu@3x.png')"

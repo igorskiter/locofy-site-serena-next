@@ -144,6 +144,7 @@
   display: inline-block;
   height: 0.75rem;
   flex-shrink: 0;
+  padding-bottom: 3rem;
 }
 .linksocial4,
 .linksocial5,
@@ -195,8 +196,9 @@
 .content {
   align-self: stretch;
   align-items: flex-end;
-  justify-content: flex-start;
-  gap: var(--gap-217xl);
+  justify-content: space-between;
+  height: 100%;
+  /* gap: var(--gap-217xl); */
 }
 .content,
 .drawer,
@@ -208,22 +210,22 @@
   align-self: stretch;
   flex: 1;
   align-items: flex-end;
-  justify-content: center;
-  padding: 4.13rem var(--padding-71xl) 0 0;
+  justify-content: start;
+  padding: 13.51rem var(--padding-71xl) 0 0;
 }
 .drawer {
-  width: 120rem;
+  width: 100%;
   height: 100%;
   position: relative;
   overflow: hidden;
   align-items: flex-start;
   justify-content: flex-end;
   background-image: url(/drawer@3x.png);
+  background-color: white;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
   opacity: 0;
-  max-width: 90%;
   text-align: left;
   font-size: var(--font-size-21xl);
   color: var(--grey-prime);
@@ -245,7 +247,7 @@
     gap: var(--gap-0);
   }
   .navmenu {
-    padding-top: 0;
+    padding-top: 9.38rem;
     padding-right: var(--padding-7xl);
     box-sizing: border-box;
   }
@@ -306,7 +308,7 @@
   }
   .content,
   .navmenu {
-    padding-top: 0;
+    padding-top: 17,44rem;
     box-sizing: border-box;
   }
   .content {

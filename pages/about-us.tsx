@@ -18,9 +18,6 @@ const AboutUs: NextPage = () => {
         logo="/logo1@2x.png"
         vector="/vector.svg"
         iconLogin="/iconlogin1@2x.png"
-        headerZIndex="unset"
-        showMenuBurgerIcon
-        closeIcon={false}
         logoTablet="/logotablet.svg"
         logoMobile="/logomobile.svg"
       />

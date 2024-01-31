@@ -1,14 +1,14 @@
 import type { NextPage } from "next";
 import {
   memo,
-  useState,
-  useMemo,
-  type CSSProperties,
   useCallback,
+  useMemo,
+  useState,
+  type CSSProperties,
 } from "react";
 import Drawer from "./drawer";
-import PortalDrawer from "./portal-drawer";
 import styles from "./header.module.css";
+import PortalDrawer from "./portal-drawer";
 
 type HeaderType = {
   menuBurger?: string;
@@ -16,35 +16,18 @@ type HeaderType = {
   logo?: string;
   vector?: string;
   iconLogin?: string;
-  showMenuBurgerIcon?: boolean;
-  closeIcon?: boolean;
   logoTablet?: string;
   logoMobile?: string;
-
-  /** Style props */
-  headerZIndex?: CSSProperties["zIndex"];
 };
 
 const Header: NextPage<HeaderType> = memo(
-  ({
-    menuBurger,
-    close1,
-    logo,
-    vector,
-    iconLogin,
-    headerZIndex,
-    showMenuBurgerIcon,
-    closeIcon,
-    logoTablet,
-    logoMobile,
-  }) => {
+  ({ menuBurger, close1, logo, vector, iconLogin, logoTablet, logoMobile }) => {
+    const [isDrawerOpen, setDrawerOpen] = useState(false);
     const headerStyle: CSSProperties = useMemo(() => {
       return {
-        zIndex: headerZIndex,
+        backgroundColor: isDrawerOpen ? "transparent" : "white"
       };
-    }, [headerZIndex]);
-
-    const [isDrawerOpen, setDrawerOpen] = useState(false);
+    }, [isDrawerOpen]);
 
     const openDrawer = useCallback(() => {
       setDrawerOpen(true);
@@ -54,11 +37,13 @@ const Header: NextPage<HeaderType> = memo(
       setDrawerOpen(false);
     }, []);
 
+    // const headerStyle = [styles.header]
+
     return (
       <>
         <header className={styles.header} id="Header" style={headerStyle}>
           <div className={styles.lefet}>
-            {showMenuBurgerIcon && (
+            {!isDrawerOpen && (
               <img
                 className={styles.menuburgerIcon}
                 id="MenuBurguer"
@@ -67,8 +52,13 @@ const Header: NextPage<HeaderType> = memo(
                 onClick={openDrawer}
               />
             )}
-            {!closeIcon && (
-              <img className={styles.closeIcon} alt="" src={close1} />
+            {isDrawerOpen && (
+              <img
+                className={styles.closeIcon}
+                alt=""
+                src={close1}
+                onClick={closeDrawer}
+              />
             )}
           </div>
           <div className={styles.center}>

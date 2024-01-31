@@ -17,9 +17,6 @@ const FAQ: NextPage = () => {
         logo="/logo3@2x.png"
         vector="/vector2.svg"
         iconLogin="/iconlogin2@2x.png"
-        headerZIndex="unset"
-        showMenuBurgerIcon
-        closeIcon={false}
         logoTablet="/logotablet1.svg"
         logoMobile="/logomobile1.svg"
       />

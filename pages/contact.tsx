@@ -14,9 +14,6 @@ const Contact: NextPage = () => {
         logo="/logo1@2x.png"
         vector="/vector.svg"
         iconLogin="/IconLogin51@2x.png"
-        headerZIndex="0"
-        showMenuBurgerIcon
-        closeIcon={false}
         logoTablet="/logotablet.svg"
         logoMobile="/logomobile.svg"
       />
