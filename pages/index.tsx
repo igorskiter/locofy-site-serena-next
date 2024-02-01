@@ -10,7 +10,7 @@ import styles from "./index.module.css";
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.home}>
+    <main className={styles.home}>
       <Header
         menuBurger="/menuburger1@2x.png"
         close1="/close.svg"
@@ -32,7 +32,7 @@ const Home: NextPage = () => {
         buttonsSocial="250.46x34.61x-1180024328"
         iconLogin="/IconLogin@2x.png"
       />
-    </div>
+    </main>
   );
 };
 

@@ -11,7 +11,7 @@ import styles from "./about-us.module.css";
 
 const AboutUs: NextPage = () => {
   return (
-    <div className={styles.aboutus}>
+    <main className={styles.aboutus}>
       <Header
         menuBurger="/menuburger1@2x.png"
         close1="/close.svg"
@@ -34,7 +34,7 @@ const AboutUs: NextPage = () => {
         iconLogin="/iconlogin1@2x.png"
         footerZIndex="unset"
       />
-    </div>
+    </main>
   );
 };
 

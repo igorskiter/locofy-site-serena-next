@@ -8,7 +8,7 @@ import styles from "./faq-article.module.css";
 
 const FAQARTICLE: NextPage = () => {
   return (
-    <div className={styles.faqarticle}>
+    <main className={styles.faqarticle}>
       <Header
         menuBurger="/menuburger1@2x.png"
         close1="/close.svg"
@@ -38,7 +38,7 @@ const FAQARTICLE: NextPage = () => {
         iconLogin="/iconlogin1@2x.png"
         footerZIndex="4"
       />
-    </div>
+    </main>
   );
 };
 

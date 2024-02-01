@@ -347,6 +347,7 @@
   align-items: center;
 }
 .cards {
+  overflow-y: hidden;
   overflow-x: auto;
   flex-direction: row;
   justify-content: center;

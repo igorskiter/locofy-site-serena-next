@@ -5,15 +5,6 @@
       "title": "backlog",
       "cards": [
         {
-          "id": "69cc05f3-4c2a-4831-8c3f-6d711bdefed4",
-          "listId": "58304c9c-ca84-4489-88e7-bd9aa8da7b27",
-          "title": "Adding Drawer in MasterContext",
-          "description": "",
-          "labels": [],
-          "checkboxes": [],
-          "comments": []
-        },
-        {
           "id": "d5bc3c49-8583-42c5-b3f4-d4191e399926",
           "listId": "58304c9c-ca84-4489-88e7-bd9aa8da7b27",
           "title": "Create Rotate Carousel in Home Page",
@@ -77,17 +68,7 @@
     {
       "id": "3ecf1828-0563-4cf9-a929-f98bb54b556e",
       "title": "todo",
-      "cards": [
-        {
-          "id": "4b6d2f5d-6fc2-41a5-b132-6b8dc202b1ab",
-          "listId": "3ecf1828-0563-4cf9-a929-f98bb54b556e",
-          "title": "Adjusting position in Drawer",
-          "description": "",
-          "labels": [],
-          "checkboxes": [],
-          "comments": []
-        }
-      ]
+      "cards": []
     },
     {
       "id": "62326f2b-8e93-4aa7-bded-1ef0e467b2e1",
@@ -98,6 +79,15 @@
       "id": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
       "title": "done",
       "cards": [
+        {
+          "id": "4b6d2f5d-6fc2-41a5-b132-6b8dc202b1ab",
+          "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
+          "title": "Adjusting position in Drawer",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
         {
           "id": "98e44d99-b3c3-4fad-85ec-6a865b7fe3d8",
           "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",

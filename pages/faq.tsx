@@ -9,7 +9,7 @@ import styles from "./faq.module.css";
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.faq}>
+    <main className={styles.faq}>
       <Header
         menuBurger="/menuburger1@2x.png"
         close1="/close.svg"
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
         iconLogin="/IconLogin1@2x.png"
         footerZIndex="5"
       />
-    </div>
+    </main>
   );
 };
 

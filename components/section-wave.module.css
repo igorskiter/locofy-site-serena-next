@@ -1,8 +1,9 @@
 .groupIcon {
   position: absolute;
   top: calc(50% - 144.45px);
-  left: calc(50% - 960px);
-  width: 120rem;
+  /* left: calc(50% - 960px); */
+  width: 100%;
+
   height: 23.64rem;
 }
 .waveChild {
@@ -46,8 +47,8 @@
 }
 .waveInner {
   position: absolute;
-  top: -0.06rem;
-  left: 71.24rem;
+  bottom: 15px;
+  left: 15px;
   border-radius: var(--br-5xs);
   background-color: var(--grey-25);
   box-shadow: 0 12px 20px rgba(0, 0, 0, 0.25);
@@ -63,12 +64,12 @@
 }
 .waveItem {
   position: absolute;
-  height: 1.71%;
-  width: 0.42%;
-  top: 34.01%;
-  right: 34.95%;
-  bottom: 64.28%;
-  left: 64.63%;
+  height: 7px;
+  width: 7px;
+  top: 83.5%;
+  /* right: 0; */
+  /* bottom: 0; */
+  left: 84.5%;
   border-radius: 50%;
   background-color: var(--salmon-prime);
   transform: rotate(180deg);
@@ -347,7 +348,7 @@
   position: absolute;
   height: 4.73%;
   width: 4.21%;
-  top: 93.02%;
+  top: 98.02%;
   right: 43.73%;
   bottom: 2.25%;
   left: 52.05%;
@@ -420,6 +421,11 @@
   font-size: var(--font-size-17xl);
   color: var(--salmon-prime);
   font-family: var(--font-plus-jakarta-sans);
+}
+
+.sectionwave>div {
+  width: 100%;
+  max-width: 100%;
 }
 @media screen and (max-width: 1200px) {
   .wave {

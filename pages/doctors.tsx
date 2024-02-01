@@ -10,7 +10,7 @@ import styles from "./doctors.module.css";
 
 const FAQ: NextPage = () => {
   return (
-    <div className={styles.doctors}>
+    <main className={styles.doctors}>
       <Header
         menuBurger="/menuburger1@2x.png"
         close1="/close.svg"
@@ -33,7 +33,7 @@ const FAQ: NextPage = () => {
         iconLogin="/iconlogin2@2x.png"
         footerZIndex="unset"
       />
-    </div>
+    </main>
   );
 };
 

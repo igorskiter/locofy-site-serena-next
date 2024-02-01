@@ -1,13 +1,13 @@
 import type { NextPage } from "next";
-import { memo, useMemo, type CSSProperties } from "react";
 import Link from "next/link";
+import { memo, useMemo, type CSSProperties } from "react";
 import styles from "./footer.module.css";
 
 type FooterType = {
   lINE?: string;
   vector?: string;
   group?: string;
-  buttonsSocial?: string;
+  buttonsSocial?: any;
   iconLogin?: string;
 
   /** Style props */
@@ -61,7 +61,7 @@ const Footer: NextPage<FooterType> = memo(
                     src={group}
                   />
                 </div>
-                <div className={styles.buttonssocial} src={buttonsSocial}>
+                <div className={styles.buttonssocial}>
                   <a
                     className={styles.linksocial}
                     href="https://blog.serenacare.com.br/"

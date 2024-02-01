@@ -7,7 +7,7 @@ import styles from "./contact.module.css";
 
 const Contact: NextPage = () => {
   return (
-    <div className={styles.contact}>
+    <main className={styles.contact}>
       <Header
         menuBurger="/menuburger1@2x.png"
         close1="/close.svg"
@@ -36,7 +36,7 @@ const Contact: NextPage = () => {
         iconLogin="/iconlogin1@2x.png"
         footerZIndex="3"
       />
-    </div>
+    </main>
   );
 };
 

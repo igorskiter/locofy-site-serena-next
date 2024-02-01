@@ -52,7 +52,7 @@
   gap: var(--gap-3xs);
 }
 .logotablet {
-  width: 108rem;
+  width: 100%;
   display: none;
   justify-content: flex-start;
   padding: 0 var(--padding-65xl);

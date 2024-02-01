@@ -7,7 +7,7 @@ import styles from "./index.module.css";
 
 const Home: NextPage = () => {
   return (
-    <div className={styles.home}>
+    <main className={styles.home}>
       <Header
         menuBurger="/menuburger1@2x.png"
         close1="/close.svg"
@@ -33,7 +33,7 @@ const Home: NextPage = () => {
         iconLogin="/IconLogin51@2x.png"
         footerZIndex="3"
       />
-    </div>
+    </main>
   );
 };
 

@@ -7,16 +7,17 @@ const SectionWave: NextPage = memo(() => {
     <section className={styles.sectionwave} id="SectionWave">
       <div className={styles.wave}>
         <img className={styles.groupIcon} alt="" src="/group2.svg" />
-        <div className={styles.waveChild} />
-        <div className={styles.waveInner}>
-          <div className={styles.parent}>
-            <div className={styles.div}>93%</div>
-            <div className={styles.ofPatientsWith}>
-              of patients with improved quality of life.
+        <div className={styles.waveChild}>
+          <div className={styles.waveInner}>
+            <div className={styles.parent}>
+              <div className={styles.div}>93%</div>
+              <div className={styles.ofPatientsWith}>
+                of patients with improved quality of life.
+              </div>
             </div>
           </div>
+          <div className={styles.waveItem} />
         </div>
-        <div className={styles.waveItem} />
         <div className={styles.ellipseDiv} />
         <div className={styles.waveChild1} />
         <div className={styles.waveChild2} />
@@ -28,15 +29,17 @@ const SectionWave: NextPage = memo(() => {
       </div>
       <div className={styles.wavetablet}>
         <img className={styles.groupIcon1} alt="" src="/group3.svg" />
-        <div className={styles.wavetabletInner}>
-          <div className={styles.group}>
-            <div className={styles.div1}>93%</div>
-            <div className={styles.ofPatientsWith1}>
-              of patients with improved quality of life.
+        <div className={styles.waveChild}>
+          <div className={styles.waveInner}>
+            <div className={styles.parent}>
+              <div className={styles.div}>93%</div>
+              <div className={styles.ofPatientsWith}>
+                of patients with improved quality of life.
+              </div>
             </div>
           </div>
+          <div className={styles.waveItem} />
         </div>
-        <img className={styles.wavetabletChild} alt="" src="/group-186.svg" />
         <img className={styles.wavetabletItem} alt="" src="/group-187.svg" />
         <img className={styles.wavetabletChild1} alt="" src="/group-187.svg" />
         <img className={styles.wavetabletChild2} alt="" src="/group-190.svg" />

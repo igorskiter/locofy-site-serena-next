@@ -234,3 +234,6 @@ body {
   --br-5xs: 8px;
   --br-5xl: 24px;
 }
+main{
+  overflow-x: clip;
+}
