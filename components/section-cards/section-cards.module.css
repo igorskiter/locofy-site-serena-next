@@ -9,16 +9,17 @@
   }
 }
 .imagegradient {
-  width: 34.44rem;
+  width: 100%;
   position: relative;
   border-radius: var(--br-xl);
   background-color: var(--grey-25);
   backdrop-filter: blur(25px);
-  border: 2px solid var(--grey-prime);
+  border: 2px solid rgba(68, 70, 77, .5);
   box-sizing: border-box;
   height: 51.13rem;
-  opacity: 0.5;
+  opacity: 0.9;
   mix-blend-mode: multiply;
+  object-fit: cover;
 }
 .gradient {
   margin: 0 !important;
@@ -32,22 +33,6 @@
   padding: var(--padding-5xs);
   z-index: 0;
 }
-.doctorsIcon,
-.p6 {
-  mix-blend-mode: normal;
-}
-.doctorsIcon {
-  width: 34.19rem;
-  margin: 0 !important;
-  position: absolute;
-  top: 0.63rem;
-  left: 0.63rem;
-  border-radius: var(--br-base);
-  height: 51rem;
-  object-fit: cover;
-  opacity: 0.9;
-  z-index: 1;
-}
 .p6 {
   position: relative;
   letter-spacing: 0.1em;
@@ -60,18 +45,20 @@
   justify-content: flex-start;
   padding: var(--padding-5xs);
 }
-.yourHealth {
+.subTitleEmphasis {
   font-weight: 600;
   font-family: var(--font-lora);
 }
 .h4 {
-  width: 23.88rem;
+  width: 100%;
   position: relative;
   font-size: var(--font-size-29xl);
   line-height: 110%;
   display: inline-block;
   height: 5.56rem;
   flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
 }
 .cardtitle {
   align-self: stretch;
@@ -80,13 +67,13 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  padding: 0 0 var(--padding-46xl) var(--padding-30xl);
+  padding: 0 0 var(--padding-46xl) var(--padding-3xl);
   box-sizing: border-box;
   gap: var(--gap-13xl);
   z-index: 2;
 }
-.experienceSerenaScreening {
-  width: 27.25rem;
+.descriptionText {
+  width: 100%;
   position: relative;
   letter-spacing: 0.03em;
   line-height: 150%;
@@ -95,13 +82,13 @@
   flex-shrink: 0;
 }
 .description {
-  width: 35.44rem;
+  width: 100%;
   height: 17.94rem;
   display: none;
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  padding: 0 0 var(--padding-123xl) var(--padding-30xl);
+  padding: 0 0 var(--padding-123xl) var(--padding-3xl);
   box-sizing: border-box;
   z-index: 3;
   font-size: var(--font-size-5xl);
@@ -122,7 +109,7 @@
   border: 1px solid var(--grey-prime);
   padding: 0;
   background-color: var(--color-whitesmoke-200);
-  width: 31.06rem;
+  width: 100%;
   border-radius: var(--br-xs);
   box-sizing: border-box;
   height: 3.56rem;
@@ -131,38 +118,6 @@
   align-items: center;
   justify-content: center;
 }
-.boundingBox {
-  width: 31rem;
-  position: relative;
-  border-radius: var(--br-xs);
-  background-color: var(--white-prime-65);
-  height: 3.5rem;
-}
-.ctaText1 {
-  position: relative;
-  letter-spacing: 0.14em;
-  line-height: 130%;
-  text-transform: uppercase;
-  display: inline-block;
-  margin-top: -2.12rem;
-}
-.buttonClic {
-  width: 31rem;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-end;
-}
-.boundingBox1 {
-  width: 31.13rem;
-  position: relative;
-  border-radius: var(--br-xs);
-  background-color: var(--green-prime);
-  box-shadow: 0 8px 12px 2px rgba(11, 62, 60, 0.65);
-  border: 2px solid var(--white-prime);
-  box-sizing: border-box;
-  height: 3.63rem;
-}
 .button,
 .buttonHover,
 .cardcontent {
@@ -170,7 +125,7 @@
   align-items: center;
 }
 .buttonHover {
-  width: 31rem;
+  width: 100%;
   display: none;
   justify-content: flex-end;
   color: var(--white-prime);
@@ -180,7 +135,7 @@
   gap: var(--gap-3xs);
 }
 .button {
-  width: 34.56rem;
+  width: -webkit-fill-available;
   height: 6rem;
   display: none;
   justify-content: flex-start;
@@ -188,9 +143,11 @@
   text-align: center;
   font-size: var(--font-size-lg);
   color: var(--green-prime);
+  padding: 0 1.5rem;
 }
 .cardcontent {
-  width: 35.44rem;
+  width: 100%;
+  max-width: 34.44rem;
   flex: 1;
   display: flex;
   justify-content: flex-end;
@@ -201,141 +158,15 @@
   animation: 1s ease 0s 1 normal backwards slide-in-bottom;
   opacity: 1;
 }
-.cardcontent:hover .doctorsIcon {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    linear-gradient(0.46deg, rgba(0, 0, 0, 0.2), transparent);
-}
 .cardcontent:hover .button,
-.carddoctor {
+.card {
   display: flex;
 }
-.carddoctor {
+.card {
+  width: 33%;
+  max-width: 34.44rem;
   height: 52.13rem;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  cursor: pointer;
-}
-.imagepatientsIcon {
-  align-self: stretch;
-  flex: 1;
-  position: relative;
-  border-radius: var(--br-base);
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-  object-fit: contain;
-}
-.patients {
-  width: 34.19rem;
-  margin: 0 !important;
-  position: absolute;
-  top: 0.63rem;
-  left: 0.63rem;
-  height: 50.88rem;
-  align-items: flex-start;
-  justify-content: flex-start;
-  z-index: 1;
-}
-.cardcontent1,
-.cardpatients,
-.patients {
-  display: flex;
-  flex-direction: column;
-}
-.cardcontent1 {
-  width: 35.44rem;
-  flex: 1;
-  align-items: center;
-  justify-content: flex-end;
-  position: relative;
-  gap: var(--gap-3xs);
-}
-.cardcontent1:hover .description {
-  display: flex;
-  animation: 1s ease 0s 1 normal backwards slide-in-bottom;
-  opacity: 1;
-}
-.cardcontent1:hover .button,
-.cardcontent2:hover .button2 {
-  display: flex;
-}
-.cardpatients {
-  height: 52.13rem;
-  align-items: flex-start;
-  justify-content: flex-start;
-  cursor: pointer;
-}
-.companiesIcon {
-  width: 34.19rem;
-  margin: 0 !important;
-  position: absolute;
-  top: 0.63rem;
-  left: 0.63rem;
-  border-radius: var(--br-base);
-  height: 50.88rem;
-  object-fit: cover;
-  z-index: 1;
-}
-.fromReactive {
-  margin: 0;
-}
-.toProactive1 {
-  font-weight: 600;
-}
-.toProactive {
-  margin: 0;
-  font-family: var(--font-lora);
-}
-.button2,
-.description2 {
-  width: 34.56rem;
-  display: none;
-  align-items: center;
-  justify-content: flex-start;
-}
-.description2 {
-  height: 17.94rem;
-  flex-direction: row;
-  padding: 0 0 var(--padding-123xl) var(--padding-30xl);
-  box-sizing: border-box;
-  z-index: 3;
-  font-size: var(--font-size-5xl);
-  color: var(--color-white);
-}
-.button2 {
-  height: 6rem;
-  flex-direction: column;
-  gap: var(--gap-3xs);
-  z-index: 4;
-  text-align: center;
-  font-size: var(--font-size-lg);
-  color: var(--green-prime);
-}
-.cardcompanies,
-.cardcontent2 {
-  display: flex;
-  flex-direction: column;
-}
-.cardcontent2 {
-  width: 35.44rem;
-  flex: 1;
-  align-items: center;
-  justify-content: flex-end;
-  position: relative;
-  gap: var(--gap-3xs);
-}
-.cardcontent2:hover .description2 {
-  display: flex;
-  animation: 1s ease 0s 1 normal backwards slide-in-bottom;
-  opacity: 1;
-}
-.cardcontent2:hover .companiesIcon {
-  background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    linear-gradient(180deg, transparent, rgba(0, 0, 0, 0.2));
-}
-.cardcompanies {
-  height: 52.13rem;
   align-items: flex-start;
   justify-content: flex-start;
   cursor: pointer;
@@ -396,6 +227,9 @@
     flex-direction: row;
     gap: var(--gap-lg);
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
+  }
+  .card{
+    min-width: 100%;
   }
 }

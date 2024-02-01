@@ -8,8 +8,8 @@
 }
 .waveChild {
   position: absolute;
-  height: 4.06%;
-  width: 0.99%;
+  height: 1.3rem;
+  width: 1.3rem;
   top: 32.83%;
   right: 35.08%;
   bottom: 63.1%;
@@ -43,7 +43,7 @@
   height: 5.06rem;
   align-items: flex-start;
   justify-content: flex-start;
-  gap: var(--gap-5xl);
+  /* gap: var(--gap-5xl); */
 }
 .waveInner {
   position: absolute;
@@ -63,13 +63,13 @@
   mix-blend-mode: normal;
 }
 .waveItem {
-  position: absolute;
+  position: relative;
   height: 7px;
   width: 7px;
-  top: 83.5%;
+  top: .65rem;
   /* right: 0; */
   /* bottom: 0; */
-  left: 84.5%;
+  left: .65rem;
   border-radius: 50%;
   background-color: var(--salmon-prime);
   transform: rotate(180deg);
