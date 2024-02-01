@@ -9,11 +9,11 @@ const Intro: NextPage = memo(() => {
     <section className={styles.hero}>
       <div className={styles.content}>
         <div className={styles.title}>
-          <i className={styles.title1}>with health</i>
           <div className={styles.title2}>
             <p className={styles.redefining}>{`Redefining `}</p>
             <p className={styles.redefining}>our relationship</p>
           </div>
+          <i className={styles.title1}>with health</i>
         </div>
         <div className={styles.buttons}>
           <Property1BUTTONPRIMARY

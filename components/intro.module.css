@@ -1,7 +1,4 @@
 .title1 {
-  position: absolute;
-  top: 21.44rem;
-  left: 0;
   line-height: 110%;
   display: inline-block;
   font-weight: 500;
@@ -12,9 +9,6 @@
   margin: 0;
 }
 .title2 {
-  position: absolute;
-  top: 0;
-  left: 0;
   font-size: var(--font-size-135xl-9);
   letter-spacing: -0.02em;
   line-height: 110%;
@@ -30,6 +24,10 @@
   height: 28.63rem;
   position: relative;
   mix-blend-mode: normal;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 .buttons {
   display: flex;
