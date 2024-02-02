@@ -67,7 +67,7 @@ const Header: NextPage<HeaderType> = memo(
             <img className={styles.logomobileIcon} alt="" src={logoMobile} />
           </div>
           <div className={styles.right}>
-            <img className={styles.closeIcon} alt="" src={vector} />
+            {/* <img className={styles.closeIcon} alt="" src={vector} /> */}
             <div className={styles.buttonlogin}>
               <b className={styles.login}>Login</b>
               <img
