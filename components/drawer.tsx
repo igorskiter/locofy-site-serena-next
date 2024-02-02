@@ -3,7 +3,6 @@ import { useRouter } from "next/router";
 import { memo, useCallback, useEffect } from "react";
 import styles from "./drawer.module.css";
 import Menu from "./menu";
-import MenuSelect from "./menu-select";
 
 type DrawerType = {
   onClose?: () => void;
