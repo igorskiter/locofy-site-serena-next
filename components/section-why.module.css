@@ -103,7 +103,7 @@
     max-width: 50%;
   }
   .content {
-    width: auto;
+    width: 100%;
     align-self: unset;
     gap: var(--gap-56xl);
   }
@@ -152,9 +152,10 @@
     height: 21.44rem;
     flex: unset;
     align-self: stretch;
+    min-width: inherit;
   }
   .content {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: var(--gap-13xl);
     align-items: center;
     justify-content: flex-start;

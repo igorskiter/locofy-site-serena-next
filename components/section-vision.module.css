@@ -22,7 +22,7 @@
   position: relative;
   height: 50.88rem;
   background-image: url(/left1@3x.png);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
 }
@@ -134,7 +134,7 @@
     align-self: stretch;
   }
   .content {
-    flex-direction: column;
+    flex-direction: column-reverse;
     gap: var(--gap-60xl);
     align-items: flex-start;
     justify-content: flex-start;
@@ -142,7 +142,7 @@
   .section {
     padding-left: var(--padding-base);
     padding-top: var(--padding-80xl);
-    padding-bottom: var(--padding-90xl);
+    padding-bottom: var(--padding-61xl);
     box-sizing: border-box;
   }
 }

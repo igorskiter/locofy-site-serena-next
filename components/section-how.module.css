@@ -134,6 +134,8 @@
   .imageaboutushowIcon {
     width: 21.44rem;
     height: 21.44rem;
+    min-width: initial;
+    max-width: initial;
   }
   .chapeu2 {
     font-size: var(--font-size-lgi);
