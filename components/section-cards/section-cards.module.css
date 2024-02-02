@@ -184,8 +184,7 @@
   justify-content: center;
   gap: var(--gap-lg);
 }
-.sectioncards {
-  height: 67.13rem;
+.sectioncards {padding-bottom: var(--padding-221xl);
   flex-direction: column;
   justify-content: flex-start;
   text-align: left;
@@ -217,12 +216,16 @@
     justify-content: flex-start;
   }
   .sectioncards {
+    padding-bottom: var(--padding-127xl);
     padding-left: var(--padding-5xl);
     padding-right: var(--padding-5xl);
     box-sizing: border-box;
   }
 }
 @media screen and (max-width: 420px) {
+  .sectioncards{
+    padding-bottom: var(--padding-77xl);
+  }
   .cards {
     flex-direction: row;
     gap: var(--gap-lg);

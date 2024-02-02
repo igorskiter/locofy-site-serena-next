@@ -5,20 +5,16 @@ import styles from "./hero-understand-lifestyle.module.css";
 const HeroUnderstandLifestyle: NextPage = memo(() => {
   return (
     <section
-      className={styles.herounderstandlifestyle}
+      className={styles.container}
       id="HeroUnderstandLifestyle"
     >
       <div className={styles.box}>
         <div className={styles.h2}>
-          <i className={styles.understand}>Understand</i>
-          <span className={styles.andMesureTheInfluenceOfLi}>
-            <span
-              className={styles.andMesureThe}
-            >{` and mesure the influence of `}</span>
-            <i className={styles.lifestyleFactors}>{`lifestyle factors `}</i>
-            <span className={styles.onTheOnset}>
-              on the onset of disease and chronic conditions.
-            </span>
+          <i>Understand</i>
+          <span>
+            <span>{` and mesure the influence of `}</span>
+            <i>{`lifestyle factors `}</i>
+            <span>on the onset of disease and chronic conditions.</span>
           </span>
         </div>
         <div className={styles.p4}>

@@ -336,15 +336,13 @@
     align-items: center;
     justify-content: space-between;
   }
-  .sectioncarousel {
-    height: 82.94rem;
-  }
 }
 @media screen and (max-width: 420px) {
   .p1 {
     font-size: var(--font-size-39xl);
     text-align: left;
     max-width: 21rem;
+    left: initial;
   }
   .blur {
     max-width: 6.94rem;
@@ -371,7 +369,18 @@
     font-size: var(--font-size-16xl);
   }
   .blurIcon1 {
-    max-width: 6.94rem;
+    /* max-width: 6.94rem; */
+    width: 100px;
+    height: 122px;
+  }
+  .diet, .sleepquality{
+    left: 40%;
+  }
+  .social, .controltoxic{
+    left: 70%;
+  }
+  .stressmanagement, .physicalactivities{
+    left: 10%;
   }
   .p43 {
     font-size: var(--font-size-16xl);
@@ -400,12 +409,13 @@
   }
   .pilars {
     flex-direction: column;
-    gap: var(--gap-81xl);
+    gap: var(--gap-29xl);
     align-items: center;
     justify-content: center;
   }
   .sectioncarousel {
     padding-top: 0;
     box-sizing: border-box;
+    padding-bottom: var(--padding-89xl);
   }
 }

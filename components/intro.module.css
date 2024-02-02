@@ -33,8 +33,9 @@
   display: flex;
   flex-direction: row;
   align-items: flex-start;
-  justify-content: flex-start;
+  justify-content: center;
   gap: var(--gap-5xl);
+  width: 100%;
 }
 .content,
 .hero {
@@ -87,9 +88,7 @@
     gap: var(--gap-0);
     align-items: center;
     justify-content: center;
-    padding-left: var(--padding-81xl);
     padding-top: 0;
-    padding-right: var(--padding-81xl);
   }
   .hero {
     padding-left: var(--padding-5xl);
@@ -97,6 +96,16 @@
   }
 }
 @media screen and (max-width: 420px) {
+  .title{
+    flex: 1;
+  }
+  .buttons{
+    display: flex;
+    padding-bottom: 18px;
+    gap: var(--gap-xs);
+    padding: 0 var(--padding-xs) var(--padding-xl) var(--padding-xs);
+    width: -webkit-fill-available;
+  }
   .title1 {
     font-size: var(--font-size-27xl);
   }

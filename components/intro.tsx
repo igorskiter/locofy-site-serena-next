@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import { memo } from "react";
-import Link from "next/link";
-import Property1BUTTONPRIMARY from "./button-primary";
+import Button from "./ui/button";
 import styles from "./intro.module.css";
 
 const Intro: NextPage = memo(() => {
@@ -16,24 +15,24 @@ const Intro: NextPage = memo(() => {
           <i className={styles.title1}>with health</i>
         </div>
         <div className={styles.buttons}>
-          <Property1BUTTONPRIMARY
-            doctorSpecialty="FOR doctorS"
-            property1BUTTONPRIMARYBoxSizing="border-box"
-            property1BUTTONPRIMARYPadding="var(--padding-2xl) var(--padding-35xl)"
-            property1BUTTONPRIMARYCursor="pointer"
-            property1BUTTONPRIMARYFlexShrink="unset"
-            cTATEXTFontSize="18px"
-            cTATEXTDisplay="inline-block"
-          />
-          <Property1BUTTONPRIMARY
-            doctorSpecialty="FOR COMPANIES"
-            property1BUTTONPRIMARYBoxSizing="border-box"
-            property1BUTTONPRIMARYPadding="var(--padding-2xl) var(--padding-35xl)"
-            property1BUTTONPRIMARYCursor="pointer"
-            property1BUTTONPRIMARYFlexShrink="unset"
-            cTATEXTFontSize="18px"
-            cTATEXTDisplay="inline-block"
-          />
+          <Button
+            style={{
+              boxSizing:"border-box",
+              cursor: "pointer",
+              flexShrink:"18px",
+            }}
+          >
+            FOR doctorS
+          </Button>
+          <Button
+            style={{
+              boxSizing:"border-box",
+              cursor: "pointer",
+              flexShrink:"18px",
+            }}
+          >
+            FOR COMPANIES
+          </Button>
         </div>
       </div>
     </section>

@@ -1,20 +1,13 @@
-.understand {
+.h2>i {
   font-weight: 600;
 }
-.andMesureThe {
+.h2>span>span {
   font-weight: 300;
   font-family: var(--font-plus-jakarta-sans);
 }
-.lifestyleFactors {
+.h2>span>i {
   font-weight: 600;
   font-family: var(--font-lora);
-}
-.onTheOnset {
-  font-weight: 300;
-}
-.andMesureTheInfluenceOfLi {
-  font-size: var(--font-size-53xl);
-  font-family: var(--font-plus-jakarta-sans);
 }
 .h2 {
   align-self: stretch;
@@ -26,6 +19,10 @@
   flex-shrink: 0;
   mix-blend-mode: multiply;
   min-height: 34.44rem;
+}
+.h2>span{
+  font-size: var(--font-size-53xl);
+  font-family: var(--font-plus-jakarta-sans);
 }
 .box,
 .p4 {
@@ -47,9 +44,8 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: flex-start;
-  max-width: 100%;
 }
-.herounderstandlifestyle {
+.container {
   align-self: stretch;
   display: flex;
   flex-direction: column;
@@ -63,7 +59,14 @@
 }
 @media screen and (max-width: 1200px) {
   .h2 {
-    flex: 1;
+    font-size: 30px;
+    width: 21.44rem;
+  }
+  .h2>span{
+    font-size: 30px;
+  }
+  .h2>i {
+    font-size: var(--font-size-13xl);
   }
   .p4 {
     width: 100%;
@@ -76,7 +79,7 @@
     align-items: flex-end;
     justify-content: flex-end;
   }
-  .herounderstandlifestyle {
+  .container {
     padding: var(--padding-89xl) var(--padding-17xl) var(--padding-178xl)
       var(--padding-108xl);
     box-sizing: border-box;
@@ -90,7 +93,7 @@
     align-items: flex-start;
     justify-content: flex-start;
   }
-  .herounderstandlifestyle {
+  .container {
     padding-left: var(--padding-108xl);
     padding-right: var(--padding-17xl);
     box-sizing: border-box;
@@ -100,20 +103,23 @@
   .h2 {
     font-size: var(--font-size-13xl);
     width: 21.44rem;
+    min-height: 0;
   }
   .p4 {
     text-align: left;
     max-width: 15.81rem;
     flex: unset;
     align-self: stretch;
+    font-size: var(--font-size-base);
+    margin-left: auto;
   }
   .box {
     flex-direction: column;
-    gap: var(--gap-0);
+    gap: var(--gap-45xl);
     align-items: flex-end;
     justify-content: center;
   }
-  .herounderstandlifestyle {
+  .container {
     padding: var(--padding-80xl) var(--padding-base) var(--padding-110xl);
     box-sizing: border-box;
   }
