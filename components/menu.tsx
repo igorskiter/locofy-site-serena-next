@@ -1,34 +1,45 @@
+'use client'
+ 
+import { usePathname } from 'next/navigation';
+
 import type { NextPage } from "next";
-import { memo, useMemo, type CSSProperties } from "react";
 import Link from "next/link";
+import { memo, useMemo, type CSSProperties } from "react";
 import styles from "./menu.module.css";
 
 type MenuType = {
-  about?: string;
+  name?: string;
+  pathMenu: string;
 
   /** Style props */
   aboutLetterSpacing?: CSSProperties["letterSpacing"];
 
   /** Action props */
-  onAboutTextClick?: () => void;
+  onClick?: () => void;
+  selected?: boolean;
 };
 
 const Menu: NextPage<MenuType> = memo(
-  ({ about, onAboutTextClick, aboutLetterSpacing }) => {
+  ({ name, onClick, aboutLetterSpacing, pathMenu }) => {
+    const pathname = usePathname()
     const aboutStyle: CSSProperties = useMemo(() => {
       return {
         letterSpacing: aboutLetterSpacing,
       };
     }, [aboutLetterSpacing]);
 
+    const classNameMenu = pathname === pathMenu
+      ? `${styles.about} ${styles.selected}`
+      : styles.about;
+
     return (
       <Link
-        className={styles.about}
-        href="/about-us"
-        onClick={onAboutTextClick}
+        className={classNameMenu}
+        href={pathMenu}
+        onClick={onClick}
         style={aboutStyle}
       >
-        {about}
+        {name}
       </Link>
     );
   }

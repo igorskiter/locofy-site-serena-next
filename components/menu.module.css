@@ -7,8 +7,24 @@
   font-weight: 300;
   color: inherit;
 }
+
+.selected {
+  cursor: pointer;
+  text-decoration: none;
+  position: relative;
+  font-size: var(--font-size-39xl);
+  line-height: 130%;
+  font-style: italic;
+  font-weight: 700;
+  font-family: var(--font-lora);
+  color: inherit;
+}
+
 @media screen and (max-width: 420px) {
   .about {
     font-size: var(--font-size-13xl);
+  }
+  .selected {
+    font-size: var(--font-size-21xl);
   }
 }

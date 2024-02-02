@@ -1,9 +1,9 @@
 import type { NextPage } from "next";
-import { memo, useCallback, useEffect } from "react";
 import { useRouter } from "next/router";
-import MenuSelect from "./menu-select";
-import Menu from "./menu";
+import { memo, useCallback, useEffect } from "react";
 import styles from "./drawer.module.css";
+import Menu from "./menu";
+import MenuSelect from "./menu-select";
 
 type DrawerType = {
   onClose?: () => void;
@@ -12,26 +12,17 @@ type DrawerType = {
 const Drawer: NextPage<DrawerType> = memo(({ onClose }) => {
   const router = useRouter();
 
-  const onAboutClick = useCallback(() => {
-    router.push("/about-us");
-  }, [router]);
-
-  const onForDoctorsClick = useCallback(() => {
-    router.push("/doctors");
-  }, [router]);
+  const onClick = useCallback(
+    (route: string) => {
+      router.push(route);
+    },
+    [router]
+  );
 
   const onBlogClick = useCallback(() => {
     window.open("https://blog.serenacare.com.br/");
     onClose && onClose();
   }, []);
-
-  const onContactClick = useCallback(() => {
-    router.push("/contact");
-  }, [router]);
-
-  const onFAQClick = useCallback(() => {
-    router.push("/faq");
-  }, [router]);
 
   useEffect(() => {
     const scrollAnimElements = document.querySelectorAll(
@@ -69,26 +60,35 @@ const Drawer: NextPage<DrawerType> = memo(({ onClose }) => {
           <div className={styles.menu}>
             <div className={styles.left}>
               <div className={styles.menu1}>
-                <MenuSelect />
-                <Menu about="About" onAboutTextClick={onAboutClick} />
+                {/* <MenuSelect /> */}
+                <Menu name="Home" pathMenu="/" onClick={() => onClick("/")} />
                 <Menu
-                  about="For Doctors"
-                  onAboutTextClick={onForDoctorsClick}
+                  name="About"
+                  pathMenu="/about-us"
+                  onClick={() => onClick("/about-us")}
+                />
+                <Menu
+                  name="For Doctors"
+                  pathMenu="/doctors"
+                  onClick={() => onClick("/doctors")}
                   aboutLetterSpacing="unset"
                 />
                 <Menu
-                  about="Blog"
-                  onAboutTextClick={onClose}
+                  name="Blog"
+                  pathMenu=""
+                  onClick={onBlogClick}
                   aboutLetterSpacing="unset"
                 />
                 <Menu
-                  about="Contact"
-                  onAboutTextClick={onContactClick}
+                  name="Contact"
+                  pathMenu="/contact"
+                  onClick={() => onClick("/contact")}
                   aboutLetterSpacing="unset"
                 />
                 <Menu
-                  about="FAQ"
-                  onAboutTextClick={onFAQClick}
+                  name="FAQ"
+                  pathMenu="/faq"
+                  onClick={() => onClick("/faq")}
                   aboutLetterSpacing="unset"
                 />
               </div>
