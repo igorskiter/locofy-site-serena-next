@@ -22,7 +22,7 @@
   font-weight: 600;
   white-space: pre-wrap;
   display: inline-block;
-  max-width: 14.19rem;
+  max-width: 252px;
 }
 .p5 {
   align-self: stretch;
@@ -88,6 +88,7 @@
   align-items: flex-start;
   gap: var(--gap-13xl);
   max-width: 26.25rem;
+  width: auto;
 }
 .content,
 .content1,
@@ -217,6 +218,7 @@
     font-size: var(--font-size-13xl);
     width: 100%;
     max-width: 7.94rem;
+    min-width: inherit;
   }
   .p5 {
     font-size: var(--font-size-base);
@@ -233,6 +235,7 @@
   .p51 {
     font-size: var(--font-size-base);
     max-width: 21.44rem;
+    min-width: inherit;
   }
   .tile1 {
     align-self: stretch;
@@ -242,10 +245,12 @@
   }
   .chapeu22 {
     font-size: var(--font-size-13xl);
+    min-width: inherit;
   }
   .p52 {
     font-size: var(--font-size-base);
     max-width: 21.44rem;
+    min-width: inherit;
   }
   .tile2 {
     gap: var(--gap-5xl);

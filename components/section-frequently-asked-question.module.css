@@ -192,6 +192,7 @@
     gap: var(--gap-151xl);
   }
   .section {
+    padding: var(--padding-71xl) var(--padding-370xl) var(--padding-142xl);
     padding-left: var(--padding-8xl);
     padding-right: var(--padding-8xl);
     box-sizing: border-box;

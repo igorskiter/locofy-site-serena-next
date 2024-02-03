@@ -8,6 +8,7 @@
 .lineIcon {
   align-self: stretch;
   position: relative;
+  height: 2px;
 }
 .groupIcon,
 .vectorIcon {

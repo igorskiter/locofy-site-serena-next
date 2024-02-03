@@ -85,7 +85,6 @@
   justify-content: center;
 }
 .topics {
-  height: 20.69rem;
   gap: var(--gap-5xl);
 }
 .list {

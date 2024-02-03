@@ -59,6 +59,7 @@
   overflow: hidden;
   flex-direction: row;
   gap: var(--gap-127xl);
+  flex-direction: column-reverse;
 }
 .hero {
   flex-direction: column;
@@ -124,20 +125,20 @@
     gap: var(--gap-5xl);
   }
   .rightIcon {
-    width: 21.44rem;
-    height: 21.44rem;
+    width: 343px;
+    height: 343px;
     align-items: center;
     justify-content: center;
     border-radius: var(--br-base);
-    max-width: 100%;
+    min-width: 100%;
+    min-height: 100%;
   }
   .content,
   .hero {
     gap: var(--gap-5xl);
   }
   .content {
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-direction: column-reverse;
   }
   .hero {
     padding-top: var(--padding-2xl);

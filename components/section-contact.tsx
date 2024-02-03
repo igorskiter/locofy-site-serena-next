@@ -26,7 +26,7 @@ const SectionContact: NextPage = memo(() => {
                 id="name"
                 placeholder="Name*"
                 type="text"
-                required="true"
+                required={true}
               />
               <input
                 className={styles.input}
@@ -34,7 +34,7 @@ const SectionContact: NextPage = memo(() => {
                 id="surname"
                 placeholder="Surname*"
                 type="text"
-                required="true"
+                required={true}
               />
             </div>
             <input
@@ -43,7 +43,7 @@ const SectionContact: NextPage = memo(() => {
               id="email"
               placeholder="E-mail*"
               type="email"
-              requiered="true"
+              required={true}
             />
             <input
               className={styles.line1}
@@ -51,7 +51,7 @@ const SectionContact: NextPage = memo(() => {
               id="phone"
               placeholder="Phone number (Optional)"
               type="text"
-              required="true"
+              required={true}
             />
             <div className={styles.line3}>
               <div className={styles.input2}>
