@@ -1,22 +1,32 @@
-import type { NextPage } from "next";
-import { memo } from "react";
+import { useRouter } from "next/router";
+import { memo, useCallback } from "react";
 import styles from "./section-other-article.module.css";
 
-const SectionOtherArticle: NextPage = memo(() => {
+const SectionOtherArticleContact = memo(({ hasCantFindWhat = true }: any) => {
+  const router = useRouter();
+
+  const onArticleContainerClick = useCallback(() => {
+    router.push("/faq-article");
+  }, [router]);
+
+  const onButtonContainerClick = useCallback(() => {
+    router.push("/contact");
+  }, [router]);
+
   return (
     <div className={styles.section}>
       <div className={styles.otherArticles}>
         <div className={styles.h6}>Other articles</div>
         <div className={styles.articles}>
-          <div className={styles.article}>
+          <div className={styles.article} onClick={onArticleContainerClick}>
             <b className={styles.p6}>ACCOUNT</b>
             <div className={styles.p2}>
               <p className={styles.lostAccessTo}>Lost access to my account.</p>
             </div>
           </div>
-          <div className={styles.article1}>
-            <b className={styles.p61}>ACCOUNT</b>
-            <div className={styles.p21}>
+          <div className={styles.article} onClick={onArticleContainerClick}>
+            <b className={styles.p6}>ACCOUNT</b>
+            <div className={styles.p2}>
               <p className={styles.lostAccessTo}>
                 How do I change my account’s e-mail?
               </p>
@@ -30,13 +40,6 @@ const SectionOtherArticle: NextPage = memo(() => {
                 className={styles.iconcircleselected}
                 alt=""
                 src="/iconcircleselected.svg"
-              />
-            </button>
-            <button className={styles.buttoncircle}>
-              <img
-                className={styles.iconcircleselected}
-                alt=""
-                src="/iconcirclenonselected.svg"
               />
             </button>
             <button className={styles.buttoncircle}>
@@ -71,8 +74,18 @@ const SectionOtherArticle: NextPage = memo(() => {
           </div>
         </div>
       </div>
+      {hasCantFindWhat && (
+        <div className={styles.otherArticles}>
+          <div className={styles.cantFindWhat}>
+            Can’t find what you are looking for?
+          </div>
+          <div className={styles.button} onClick={onButtonContainerClick}>
+            <div className={styles.getInContact}>GET IN CONTACT</div>
+          </div>
+        </div>
+      )}
     </div>
   );
 });
 
-export default SectionOtherArticle;
+export default SectionOtherArticleContact;

@@ -1,10 +1,9 @@
 import type { NextPage } from "next";
+import Footer from "../components/footer";
 import Header from "../components/header";
 import SectionAskedQUestionSearch from "../components/section-asked-question-search";
 import SectionFrequentlyAskedQuestion from "../components/section-frequently-asked-question";
-import SectionOtherArticleContact from "../components/section-other-article-contact";
-import SideMenu from "../components/side-menu";
-import Footer from "../components/footer";
+import SectionOtherArticleContact from "../components/section-other-article";
 import styles from "./faq.module.css";
 
 const Home: NextPage = () => {
@@ -22,16 +21,6 @@ const Home: NextPage = () => {
       <SectionAskedQUestionSearch />
       <SectionFrequentlyAskedQuestion />
       <SectionOtherArticleContact />
-      <SideMenu
-        sideMenuBackgroundImage="url('/sidemenu@3x.png')"
-        sideMenuZIndex="4"
-        sERFOTOMOCKUPQUESTIONARIO="/ser-foto-mockup--questionario-11@2x.png"
-        socialItens="48x254x-1043458600"
-        sideMenuMargin="0 !important"
-        sideMenuPosition="absolute"
-        sideMenuTop="9.31rem"
-        sideMenuLeft="0.06rem"
-      />
       <Footer
         lINE="/line1.svg"
         vector="/Logo71@2x.png"

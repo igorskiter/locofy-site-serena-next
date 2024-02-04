@@ -1,8 +1,7 @@
 import type { NextPage } from "next";
-import Header from "../components/header";
-import SideMenu from "../components/side-menu";
-import SectionContact from "../components/section-contact";
 import Footer from "../components/footer";
+import Header from "../components/header";
+import SectionContact from "../components/section-contact";
 import styles from "./contact.module.css";
 
 const Contact: NextPage = () => {
@@ -16,16 +15,6 @@ const Contact: NextPage = () => {
         iconLogin="/IconLogin51@2x.png"
         logoTablet="/logotablet.svg"
         logoMobile="/logomobile.svg"
-      />
-      <SideMenu
-        sideMenuBackgroundImage="url('/sidemenu@3x.png')"
-        sideMenuZIndex="1"
-        sERFOTOMOCKUPQUESTIONARIO="/ser-foto-mockup--questionario-11@2x.png"
-        socialItens="48x254x-1043458600"
-        sideMenuMargin="0 !important"
-        sideMenuPosition="absolute"
-        sideMenuTop="9.31rem"
-        sideMenuLeft="0.06rem"
       />
       <SectionContact />
       <Footer

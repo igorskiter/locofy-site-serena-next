@@ -2,7 +2,6 @@ import type { NextPage } from "next";
 import Footer from "../components/footer";
 import Header from "../components/header";
 import SectionContactCompany from "../components/section-contact-company";
-import SideMenu from "../components/side-menu";
 import styles from "./index.module.css";
 
 const Home: NextPage = () => {
@@ -16,13 +15,6 @@ const Home: NextPage = () => {
         iconLogin="/IconLogin51@2x.png"
         logoTablet="/logotablet.svg"
         logoMobile="/logomobile.svg"
-      />
-      <SideMenu
-        sideMenuBackgroundImage="url('/sidemenu1@3x.png')"
-        sideMenuZIndex="1"
-        sERFOTOMOCKUPQUESTIONARIO="/ser-foto-mockup--questionario-11@2x.png"
-        socialItens="/socialitens.svg"
-
       />
       <SectionContactCompany />
       <Footer

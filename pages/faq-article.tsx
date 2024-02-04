@@ -1,9 +1,8 @@
 import type { NextPage } from "next";
+import Footer from "../components/footer";
 import Header from "../components/header";
 import SectionFaqDetail from "../components/section-faq-detail";
 import SectionOtherArticle from "../components/section-other-article";
-import SideMenu from "../components/side-menu";
-import Footer from "../components/footer";
 import styles from "./faq-article.module.css";
 
 const FAQARTICLE: NextPage = () => {
@@ -19,17 +18,7 @@ const FAQARTICLE: NextPage = () => {
         logoMobile="/logomobile.svg"
       />
       <SectionFaqDetail />
-      <SectionOtherArticle />
-      <SideMenu
-        sideMenuBackgroundImage="url('/sidemenu@3x.png')"
-        sideMenuZIndex="3"
-        sERFOTOMOCKUPQUESTIONARIO="/ser-foto-mockup--questionario-11@2x.png"
-        socialItens="48x254x-1043458600"
-        sideMenuMargin="0 !important"
-        sideMenuPosition="absolute"
-        sideMenuTop="9.31rem"
-        sideMenuLeft="0.06rem"
-      />
+      <SectionOtherArticle hasCantFindWhat={false} />
       <Footer
         lINE="/line.svg"
         vector="/Logo31@2x.png"

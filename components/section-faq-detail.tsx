@@ -1,12 +1,17 @@
 import type { NextPage } from "next";
-import { memo } from "react";
+import { useRouter } from "next/router";
+import { memo, useCallback } from "react";
 import styles from "./section-faq-detail.module.css";
 
 const SectionFaqDetail: NextPage = memo(() => {
+  const router = useRouter();
+  const onBack = useCallback(() => {
+    router.back();
+  }, [router]);
   return (
     <div className={styles.section}>
       <div className={styles.content}>
-        <div className={styles.backbutton}>
+        <div className={styles.backbutton} onClick={onBack}>
           <img
             className={styles.chevronleftIcon}
             alt=""
