@@ -1,13 +1,5 @@
-.contactcompany {
-  width: 100%;
-  position: relative;
-  height: 105.69rem;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  background-image: url(/contactcompany@3x.png);
+.home {
+  background-image: url(/BACKGROUND_GRADIENT.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
