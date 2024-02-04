@@ -58,10 +58,13 @@ const SectionContact: NextPage = memo(() => {
                 <div className={styles.companyName}>Company Name*</div>
               </div>
             </div>
-            <select className={styles.line4} required={true}>
-              <option value="teste1">teste1</option>
-              <option value="teste2">teste2</option>
-            </select>
+            <div className={styles.select}>
+              <select className={styles.line4} required={true}>
+                <option value="" disabled selected>Subject*</option>
+                <option value="teste1">teste1</option>
+                <option value="teste2">teste2</option>
+              </select>
+            </div>
             <textarea
               className={styles.line5}
               placeholder="Type your message here.*"

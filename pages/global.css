@@ -237,3 +237,6 @@ body {
 main{
   overflow-x: clip;
 }
+::-webkit-input-placeholder{
+  color: var(--low-contrast-gre);
+}

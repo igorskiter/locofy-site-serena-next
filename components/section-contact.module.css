@@ -111,18 +111,39 @@
   width: 42.66rem;
   display: none;
 }
+
+.select {
+  width: 100%;
+  margin: 8px 0;
+  border: none;
+  border-radius: var(--br-xs);
+  box-sizing: border-box;
+
+  padding: 0 var(--padding-lg);
+  background-color: var(--grey-25);
+}
+
 .line4 {
   align-self: stretch;
   border-radius: var(--br-xs);
-  background-color: var(--grey-25);
   border: 0;
-  display: flex;
-  padding: var(--padding-5xl) var(--padding-33xl);
   box-sizing: border-box;
   gap: var(--gap-3xs);
   font-size: var(--font-size-xl);
   color: var(--low-contrast-gre);
+  padding: var(--padding-base) var(--padding-6xl);
+  display: inline-block;
+  border: none;
+  outline: none;
+  appearance: none;
+  background: url(/select-angle-down.png) no-repeat center left ;
+  font-size: 15px;
+  padding-right: 20px;
+  width: 100%;
+  font-family: var(--font-plus-jakarta-sans);
+  font-size: var(--font-size-xl);
 }
+
 .line4,
 .line5,
 .send {
