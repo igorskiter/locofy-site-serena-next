@@ -163,52 +163,54 @@ const Drawer: NextPage<DrawerType> = memo(({ onClose }) => {
           >
             Privacy Policy
           </a>
-          <div className={styles.footersocial}>
-            <div className={styles.socialitens1}>
-              <a
-                className={styles.linksocial4}
-                href="https://blog.serenacare.com.br/"
-              >
-                <img
-                  className={styles.iconSocialMediaInstagram}
-                  alt=""
-                  src="/icon-social-media--instagram.svg"
-                />
-              </a>
-              <a
-                className={styles.linksocial5}
-                href="https://blog.serenacare.com.br/"
-              >
-                <img
-                  className={styles.iconSocialMediaInstagram}
-                  alt=""
-                  src="/icon-social-media--facebook.svg"
-                />
-              </a>
-              <a
-                className={styles.linksocial5}
-                href="https://blog.serenacare.com.br/"
-              >
-                <img
-                  className={styles.iconSocialMediaInstagram}
-                  alt=""
-                  src="/icon-social-media--linkedin.svg"
-                />
-              </a>
-              <a
-                className={styles.linksocial7}
-                href="https://blog.serenacare.com.br/"
-              >
-                <img
-                  className={styles.iconSocialMediaInstagram}
-                  alt=""
-                  src="/icon-social-media--spotify.svg"
-                />
-              </a>
+          <div className={styles.footerMobile}>
+            <div className={styles.footersocial}>
+              <div className={styles.socialitens1}>
+                <a
+                  className={styles.linksocial4}
+                  href="https://blog.serenacare.com.br/"
+                >
+                  <img
+                    className={styles.iconSocialMediaInstagram}
+                    alt=""
+                    src="/icon-social-media--instagram.svg"
+                  />
+                </a>
+                <a
+                  className={styles.linksocial5}
+                  href="https://blog.serenacare.com.br/"
+                >
+                  <img
+                    className={styles.iconSocialMediaInstagram}
+                    alt=""
+                    src="/icon-social-media--facebook.svg"
+                  />
+                </a>
+                <a
+                  className={styles.linksocial5}
+                  href="https://blog.serenacare.com.br/"
+                >
+                  <img
+                    className={styles.iconSocialMediaInstagram}
+                    alt=""
+                    src="/icon-social-media--linkedin.svg"
+                  />
+                </a>
+                <a
+                  className={styles.linksocial7}
+                  href="https://blog.serenacare.com.br/"
+                >
+                  <img
+                    className={styles.iconSocialMediaInstagram}
+                    alt=""
+                    src="/icon-social-media--spotify.svg"
+                  />
+                </a>
+              </div>
             </div>
-          </div>
-          <div className={styles.textSerenaCare}>
-            © Serena Care 2023 . Todos os direitos reservados
+            <div className={styles.textSerenaCare}>
+              © Serena Care 2023 . Todos os direitos reservados
+            </div>
           </div>
         </div>
       </div>
