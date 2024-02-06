@@ -5,24 +5,6 @@
       "title": "backlog",
       "cards": [
         {
-          "id": "afcfdcbf-32c8-4c40-a0ca-0261f123335a",
-          "listId": "58304c9c-ca84-4489-88e7-bd9aa8da7b27",
-          "title": "Check height of Drawer in Iphone SE",
-          "description": "",
-          "labels": [],
-          "checkboxes": [],
-          "comments": []
-        },
-        {
-          "id": "d5bc3c49-8583-42c5-b3f4-d4191e399926",
-          "listId": "58304c9c-ca84-4489-88e7-bd9aa8da7b27",
-          "title": "Create Rotate Carousel in Home Page",
-          "description": "",
-          "labels": [],
-          "checkboxes": [],
-          "comments": []
-        },
-        {
           "id": "411f6dfb-a12a-407e-8c15-3ce9b4979503",
           "listId": "58304c9c-ca84-4489-88e7-bd9aa8da7b27",
           "title": "Create Wave Animation",
@@ -79,9 +61,9 @@
       "title": "todo",
       "cards": [
         {
-          "id": "1d094c1a-81a1-4f82-9b7e-13566bc5efdd",
+          "id": "d5bc3c49-8583-42c5-b3f4-d4191e399926",
           "listId": "3ecf1828-0563-4cf9-a929-f98bb54b556e",
-          "title": "Check Reponsivenes of FAQ",
+          "title": "Create Rotate Carousel in Home Page",
           "description": "",
           "labels": [],
           "checkboxes": [],
@@ -98,6 +80,24 @@
       "id": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
       "title": "done",
       "cards": [
+        {
+          "id": "afcfdcbf-32c8-4c40-a0ca-0261f123335a",
+          "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
+          "title": "Check height of Drawer in Iphone SE",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "1d094c1a-81a1-4f82-9b7e-13566bc5efdd",
+          "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
+          "title": "Check Reponsivenes of FAQ",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
         {
           "id": "7de55d19-9f4a-4441-adfb-a91b14ed44c2",
           "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",

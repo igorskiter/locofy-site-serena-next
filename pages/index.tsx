@@ -9,6 +9,7 @@ import Footer from "../components/footer";
 import styles from "./index.module.css";
 
 const Home: NextPage = () => {
+  
   return (
     <main className={styles.home}>
       <Header

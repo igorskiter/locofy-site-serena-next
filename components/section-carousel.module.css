@@ -1,3 +1,81 @@
+.initHidden{
+  opacity: 0;
+  transition: opacity 1s linear;
+}
+.showHidden{
+  opacity: 1;
+}
+.boxPilar{
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  transition:all 1s linear;
+}
+.diet {
+  height: 14.63rem;
+  gap: var(--gap-3xs);
+  font-size: var(--font-size-35xl-1);
+  font-family: var(--font-lora);
+}
+.social {
+  gap: var(--gap-lgi);
+}
+.controltoxic {
+  gap: var(--gap-lg);
+  font-size: var(--font-size-5xl-1);
+}
+.sleepquality {
+  /* filter: blur(25.51px); */
+  height: 11.69rem;
+  gap: var(--gap-3xs);
+  font-size: var(--font-size-3xl-5);
+}
+.stressmanagement {
+  /* filter: blur(18.85px); */
+  align-items: flex-start;
+  justify-content: flex-start;
+  font-size: var(--font-size-4xl-6);
+}
+.physicalactivities {
+  gap: var(--gap-6xl);
+}
+.position0{
+  top: 37.35rem !important;
+  left: 19.74rem !important;
+  transition:all 1s linear;
+  filter: none !important;
+}
+.position1{
+  top: 30.13rem;
+  left: 35.83rem;
+  filter: blur(18.85px);
+}
+.position2{
+  top: 10.86rem;
+  left: 35.48rem;
+  filter: blur(18.85px);
+  transition:all 1s linear;
+}
+.position3{
+  top: 0;
+  left: 19.74rem;
+  filter: blur(18.85px);
+  transition:all 1s linear;
+}
+.position4{
+  top: 9.01rem;
+  left: 0.78rem;
+  filter: blur(18.85px);
+  transition:all 1s linear;
+}
+.position5{
+  top: 28.64rem;
+  left: 0;
+  filter: blur(18.85px);
+  transition:all 1s linear;
+}
 .understand {
   font-weight: 300;
 }
@@ -37,7 +115,7 @@
 }
 .blur {
   width: 10.75rem;
-  filter: blur(16.03px);
+  /* filter: blur(16.03px); */
   height: 8.19rem;
   overflow: hidden;
   flex-shrink: 0;
@@ -57,17 +135,6 @@
   height: 4.23rem;
   flex-shrink: 0;
 }
-.stressmanagement {
-  position: absolute;
-  top: 9.01rem;
-  left: 0.78rem;
-  filter: blur(18.85px);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  font-size: var(--font-size-4xl-6);
-}
 .iconsleepquality {
   width: 6.08rem;
   position: relative;
@@ -81,7 +148,7 @@
   width: 9.5rem;
 }
 .blur1 {
-  filter: blur(16.03px);
+  /* filter: blur(16.03px); */
   overflow: hidden;
   display: flex;
   flex-direction: row;
@@ -98,19 +165,6 @@
   height: 4.06rem;
   flex-shrink: 0;
 }
-.sleepquality {
-  position: absolute;
-  top: 0;
-  left: 18.55rem;
-  filter: blur(25.51px);
-  height: 11.69rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-3xs);
-  font-size: var(--font-size-3xl-5);
-}
 .iconphysicalactivities {
   width: 9.32rem;
   position: relative;
@@ -120,7 +174,7 @@
 .blur2,
 .p41 {
   flex-shrink: 0;
-  filter: blur(16.03px);
+  /* filter: blur(16.03px); */
 }
 .blur2 {
   width: 13.13rem;
@@ -141,16 +195,6 @@
   display: inline-block;
   height: 5.09rem;
 }
-.physicalactivities {
-  position: absolute;
-  top: 28.64rem;
-  left: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-6xl);
-}
 .blurIcon,
 .p42 {
   position: relative;
@@ -168,17 +212,7 @@
   font-weight: 500;
   display: inline-block;
   height: 4.16rem;
-  filter: blur(8.01px);
-}
-.social {
-  position: absolute;
-  top: 30.13rem;
-  left: 35.83rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-lgi);
+  /* filter: blur(8.01px); */
 }
 .blurIcon1,
 .p43 {
@@ -198,27 +232,10 @@
   font-weight: 600;
   height: 2.38rem;
 }
-.diet {
-  position: absolute;
-  top: 37.35rem;
-  left: 19.74rem;
-  height: 14.63rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-3xs);
-  font-size: var(--font-size-35xl-1);
-  font-family: var(--font-lora);
-}
 .iconcontroltoxic {
   width: 4.76rem;
   position: relative;
   height: 4.9rem;
-}
-.blur3,
-.p44 {
-  filter: blur(9.63px);
 }
 .blur3 {
   width: 9.31rem;
@@ -237,17 +254,6 @@
   height: 3.72rem;
   flex-shrink: 0;
 }
-.controltoxic {
-  position: absolute;
-  top: 10.86rem;
-  left: 35.48rem;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-lg);
-  font-size: var(--font-size-5xl-1);
-}
 .pilares {
   height: 51.98rem;
   width: 46.41rem;
@@ -260,9 +266,10 @@
 .carousel {
   display: flex;
   flex-direction: row;
-  align-items: center;
-  justify-content: center;
-  position: relative;
+  align-items: flex-start;
+  justify-content: flex-start;
+  position: sticky;
+  top: 0;
   gap: var(--gap-3xs);
 }
 .fromNutritionAndContainer,
@@ -289,15 +296,16 @@
   font-size: var(--font-size-5xl);
 }
 .box,
-.pilars,
+.content,
 .sectioncarousel {
   display: flex;
   align-items: center;
 }
-.pilars {
+.content {
   width: 100%;
   flex-direction: row;
   justify-content: space-between;
+  align-items: flex-start;
   max-width: 88.25rem;
 }
 .sectioncarousel {
@@ -312,7 +320,7 @@
 }
 @media screen and (max-width: 1200px) {
   .box,
-  .pilars {
+  .content {
     align-items: center;
   }
   .box {
@@ -322,14 +330,14 @@
     justify-content: flex-start;
     max-width: 22.5rem;
   }
-  .pilars {
+  .content {
     flex-direction: column;
     gap: 7.09rem;
     justify-content: center;
   }
 }
 @media screen and (max-width: 960px) {
-  .pilars {
+  .content {
     flex: 1;
     flex-direction: column;
     gap: var(--gap-81xl);
@@ -407,7 +415,7 @@
     box-sizing: border-box;
     max-width: 21.44rem;
   }
-  .pilars {
+  .content {
     flex-direction: column;
     gap: var(--gap-29xl);
     align-items: center;
