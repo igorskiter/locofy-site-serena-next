@@ -68,13 +68,13 @@ const Header: NextPage<HeaderType> = memo(
           </div>
           <div className={styles.right}>
             {/* <img className={styles.closeIcon} alt="" src={vector} /> */}
-            <div className={styles.buttonlogin}>
+            <div className={styles.buttonlogin} onClick={()=>{
+              window.location.replace('https://practitioner.serenacare.app/')
+            }}>
               <b className={styles.login}>Login</b>
-              <img
+              <div
                 className={styles.iconlogin}
-                alt="IconLogin"
                 id="IconLogin"
-                src={iconLogin}
               />
             </div>
           </div>

@@ -17,7 +17,7 @@ const Home: NextPage = () => {
         close1="/close.svg"
         logo="/logo1@2x.png"
         vector="/vector.svg"
-        iconLogin="/iconlogin1@2x.png"
+        iconLogin="/iconlogin1@2x.svg"
         logoTablet="/logotablet.svg"
         logoMobile="/logomobile.svg"
       />

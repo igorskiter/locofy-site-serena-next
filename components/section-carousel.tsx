@@ -1,6 +1,6 @@
 "use client";
 import type { NextPage } from "next";
-import { memo } from "react";
+import { memo, useEffect } from "react";
 import styles from "./section-carousel.module.css";
 
 const SectionCarousel: NextPage = memo(() => {
@@ -39,65 +39,69 @@ const SectionCarousel: NextPage = memo(() => {
 
     return newArray;
   };
+  useEffect(() => {
+    if (typeof window !== "undefined" && window.IntersectionObserver) {
+      const observer = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            const indexFirstPilar = pilars.indexOf(entry.target.id);
+            const newOrderPilar = moveIndicesToEnd(pilars, indexFirstPilar);
 
-  if (typeof window !== "undefined" && window.IntersectionObserver) {
-    const observer = new IntersectionObserver(
-      (entries) => {
-        entries.forEach((entry) => {
-          const indexFirstPilar = pilars.indexOf(entry.target.id);
-          const newOrderPilar = moveIndicesToEnd(pilars, indexFirstPilar);
+            document
+              .getElementById(newOrderPilar[0])
+              ?.classList.add(styles["showHidden"]);
 
-          document
-            .getElementById(newOrderPilar[0])
-            ?.classList.add(styles["showHidden"]);
+            if (entry.intersectionRatio >= 0.3 && entry.isIntersecting) {
+              const withWindow = window.innerWidth;
+              if (withWindow <= 420) {
+                var scrollDiv: number =
+                  document.getElementById(newOrderPilar[0])?.offsetTop || 0;
+                console.log(scrollDiv);
+                window.scrollTo({ top: scrollDiv, behavior: "smooth" });
+              }
 
-          if (entry.intersectionRatio >= 0.3 && entry.isIntersecting) {
-            const withWindow = window.innerWidth;
-            if(withWindow<=420){
-              var scrollDiv: number = document.getElementById(newOrderPilar[0])?.offsetTop || 0;
-              console.log(scrollDiv);
-              window.scrollTo({ top: scrollDiv, behavior: "smooth" });
-            }
-
-            newOrderPilar.forEach((res, index) => {
-              if (entry.target.id !== res) {
+              newOrderPilar.forEach((res, index) => {
+                if (entry.target.id !== res) {
+                  document
+                    .getElementById(`${res}Icon`)
+                    ?.classList.remove(styles["position0"]);
+                }
                 document
                   .getElementById(`${res}Icon`)
-                  ?.classList.remove(styles["position0"]);
-              }
-              document
-                .getElementById(`${res}Icon`)
-                ?.classList.remove(styles["position2"]);
-              document
-                .getElementById(`${res}Icon`)
-                ?.classList.remove(styles["position3"]);
-              document
-                .getElementById(`${res}Icon`)
-                ?.classList.remove(styles["position4"]);
-              document
-                .getElementById(`${res}Icon`)
-                ?.classList.remove(styles["position5"]);
-              document
-                .getElementById(`${res}Icon`)
-                ?.classList.remove(styles["position6"]);
+                  ?.classList.remove(styles["position2"]);
+                document
+                  .getElementById(`${res}Icon`)
+                  ?.classList.remove(styles["position3"]);
+                document
+                  .getElementById(`${res}Icon`)
+                  ?.classList.remove(styles["position4"]);
+                document
+                  .getElementById(`${res}Icon`)
+                  ?.classList.remove(styles["position5"]);
+                document
+                  .getElementById(`${res}Icon`)
+                  ?.classList.remove(styles["position6"]);
 
-              document
-                .getElementById(`${res}Icon`)
-                ?.classList.add(styles[`position${index}`]);
-            });
-            entry.target.classList.add(styles["showHidden"]);
-            return;
-          }
+                document
+                  .getElementById(`${res}Icon`)
+                  ?.classList.add(styles[`position${index}`]);
+              });
+              entry.target.classList.add(styles["showHidden"]);
+              return;
+            }
+          });
+        },
+        {
+          threshold: [0, 0.3, 1],
+        }
+      );
+      if (observer) {
+        pilars.forEach((pilar) => {
+          observer.observe(document.getElementById(pilar) as HTMLElement);
         });
-      },
-      {
-        threshold: [0, 0.3, 1],
       }
-    );
-    pilars.forEach((pilar) => {
-      observer.observe(document.getElementById(pilar) as HTMLElement);
-    });
-  }
+    }
+  }, []);
 
   return (
     <section className={styles.sectioncarousel} id={"SectionCarousel"}>

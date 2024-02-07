@@ -56,11 +56,22 @@
   width: 2.5rem;
   position: relative;
   height: 2.5rem;
-  object-fit: cover;
+  background-color: #44464D;
+  mask: url(/iconlogin1@2x.svg) no-repeat center / contain;
+  -webkit-mask: url(/iconlogin1@2x.svg) no-repeat center / contain;
 }
 .buttonlogin {
   justify-content: flex-start;
   gap: var(--gap-mini);
+  cursor: pointer;
+}
+.buttonlogin:hover{
+  color: #00C5C0;
+}
+.buttonlogin:hover > .iconlogin{
+
+  background-color: #00C5C0; /* defines the background color of the image */
+  color: #00C5C0;
 }
 .buttonlogin,
 .header,

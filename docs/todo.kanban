@@ -5,15 +5,6 @@
       "title": "backlog",
       "cards": [
         {
-          "id": "411f6dfb-a12a-407e-8c15-3ce9b4979503",
-          "listId": "58304c9c-ca84-4489-88e7-bd9aa8da7b27",
-          "title": "Create Wave Animation",
-          "description": "",
-          "labels": [],
-          "checkboxes": [],
-          "comments": []
-        },
-        {
           "id": "26476f3a-4c0c-4b55-b0da-3a4bc5ae15c9",
           "listId": "58304c9c-ca84-4489-88e7-bd9aa8da7b27",
           "title": "Adjusting component Button",
@@ -39,15 +30,6 @@
           "labels": [],
           "checkboxes": [],
           "comments": []
-        },
-        {
-          "id": "2cb14001-4a63-4d6c-a59d-8c2320ca3dcf",
-          "listId": "58304c9c-ca84-4489-88e7-bd9aa8da7b27",
-          "title": "Saber qual link abre ao clicar em login",
-          "description": "",
-          "labels": [],
-          "checkboxes": [],
-          "comments": []
         }
       ]
     },
@@ -61,9 +43,18 @@
       "title": "todo",
       "cards": [
         {
-          "id": "d5bc3c49-8583-42c5-b3f4-d4191e399926",
+          "id": "2cb14001-4a63-4d6c-a59d-8c2320ca3dcf",
           "listId": "3ecf1828-0563-4cf9-a929-f98bb54b556e",
-          "title": "Create Rotate Carousel in Home Page",
+          "title": "Saber qual link abre ao clicar em login",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
+        {
+          "id": "411f6dfb-a12a-407e-8c15-3ce9b4979503",
+          "listId": "3ecf1828-0563-4cf9-a929-f98bb54b556e",
+          "title": "Create Wave Animation",
           "description": "",
           "labels": [],
           "checkboxes": [],
@@ -80,6 +71,15 @@
       "id": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
       "title": "done",
       "cards": [
+        {
+          "id": "d5bc3c49-8583-42c5-b3f4-d4191e399926",
+          "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
+          "title": "Create Rotate Carousel in Home Page",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
         {
           "id": "afcfdcbf-32c8-4c40-a0ca-0261f123335a",
           "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
