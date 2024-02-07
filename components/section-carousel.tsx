@@ -44,21 +44,21 @@ const SectionCarousel: NextPage = memo(() => {
     const observer = new IntersectionObserver(
       (entries) => {
         entries.forEach((entry) => {
-          console.log(entry);
           const indexFirstPilar = pilars.indexOf(entry.target.id);
           const newOrderPilar = moveIndicesToEnd(pilars, indexFirstPilar);
 
           document
             .getElementById(newOrderPilar[0])
             ?.classList.add(styles["showHidden"]);
-          newOrderPilar.forEach((res, index)=>{
-            if(index !== 0){
-              document
-                .getElementById(res)
-                ?.classList.remove(styles["showHidden"]);
+
+          if (entry.intersectionRatio >= 0.3 && entry.isIntersecting) {
+            const withWindow = window.innerWidth;
+            if(withWindow<=420){
+              var scrollDiv: number = document.getElementById(newOrderPilar[0])?.offsetTop || 0;
+              console.log(scrollDiv);
+              window.scrollTo({ top: scrollDiv, behavior: "smooth" });
             }
-          })
-          if (entry.intersectionRatio >= 0.7 && entry.isIntersecting) {
+
             newOrderPilar.forEach((res, index) => {
               if (entry.target.id !== res) {
                 document
@@ -85,15 +85,13 @@ const SectionCarousel: NextPage = memo(() => {
                 .getElementById(`${res}Icon`)
                 ?.classList.add(styles[`position${index}`]);
             });
-
             entry.target.classList.add(styles["showHidden"]);
             return;
           }
-          // entry.target.classList.remove(styles["showHidden"]);
         });
       },
       {
-        threshold: 1,
+        threshold: [0, 0.3, 1],
       }
     );
     pilars.forEach((pilar) => {

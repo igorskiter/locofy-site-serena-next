@@ -401,4 +401,8 @@
   .pilars{
     /* margin-bottom: -20rem; */
   }
+  .fromNutritionAndContainer{
+    display: flex;
+    align-items: flex-end;
+  }
 }
