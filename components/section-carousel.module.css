@@ -355,15 +355,19 @@
     width: 100px;
     height: 122px;
   }
-  .diet, .sleepquality{
+  
+  .position0, .position3{
     left: 40%;
   }
-  .social, .controltoxic{
+  
+  .position1, .position2{
     left: 70%;
   }
-  .stressmanagement, .physicalactivities{
+  
+  .position4, .position5{
     left: 10%;
   }
+
   .blur3 {
     max-width: 6.94rem;
   }
