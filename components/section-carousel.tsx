@@ -13,9 +13,21 @@ const SectionCarousel: NextPage = memo(() => {
     "physicalactivities",
   ];
 
-  type MyArray = string[];
+  const pilarsDescription = {
+    diet: "The food we consume directly impacts our physical health, affecting everything from our energy levels and body weight to our risk of developing chronic diseases.",
+    social:
+      "Strong social connections can improve our mental health and increase longevity, while loneliness and isolation can lead to a decline in mental and physical health.",
+    controltoxic:
+      "Excessive use of substances like alcohol, tobacco, or drugs can lead to a range of health problems, including heart disease, liver disease, respiratory problems, and mental health disorders.",
+    stressmanagement:
+      "Chronic stress can negatively affect both our physical and mental increase longevity leading to conditions and isolation can lead to a decline in mental and physical health.",
+    sleepquality:
+      "Quality sleep is essential for our body’s to repair processes, cognitive function, and overall well-being. Chronic sleep deprivation can lead to various health issues, including heart disease, obesity, and depression.",
+    physicalactivities:
+      "Regular physical activity strengthens our heart and muscles, improves mental health, and reduces the risk of many health conditions, including heart disease and diabetes.",
+  };
 
-  const moveIndicesToEnd = (arr: MyArray, index: number): MyArray => {
+  const moveIndicesToEnd = (arr: string[], index: number): string[] => {
     if (index < 0 || index >= arr.length) {
       console.error("Índice inválido");
       return arr;
@@ -31,39 +43,57 @@ const SectionCarousel: NextPage = memo(() => {
   if (typeof window !== "undefined" && window.IntersectionObserver) {
     const observer = new IntersectionObserver(
       (entries) => {
-        console.log(entries[0].target.id);
-
         entries.forEach((entry) => {
-          if (entry.intersectionRatio >= 0.6 && entry.isIntersecting) {
-            const indexFirstPilar = pilars.indexOf(entry.target.id);
-            const newOrderPilar = moveIndicesToEnd(pilars, indexFirstPilar);
-            console.log(
-              newOrderPilar,
-              document.getElementById(entry.target.id)
-            );
+          console.log(entry);
+          const indexFirstPilar = pilars.indexOf(entry.target.id);
+          const newOrderPilar = moveIndicesToEnd(pilars, indexFirstPilar);
 
+          document
+            .getElementById(newOrderPilar[0])
+            ?.classList.add(styles["showHidden"]);
+          newOrderPilar.forEach((res, index)=>{
+            if(index !== 0){
+              document
+                .getElementById(res)
+                ?.classList.remove(styles["showHidden"]);
+            }
+          })
+          if (entry.intersectionRatio >= 0.7 && entry.isIntersecting) {
             newOrderPilar.forEach((res, index) => {
-              console.log(res)
-              if(entry.target.id !== res){
-                document.getElementById(`${res}Icon`)?.classList.remove(styles["position0"]);
+              if (entry.target.id !== res) {
+                document
+                  .getElementById(`${res}Icon`)
+                  ?.classList.remove(styles["position0"]);
               }
-              document.getElementById(`${res}Icon`)?.classList.remove(styles["position2"]);
-              document.getElementById(`${res}Icon`)?.classList.remove(styles["position3"]);
-              document.getElementById(`${res}Icon`)?.classList.remove(styles["position4"]);
-              document.getElementById(`${res}Icon`)?.classList.remove(styles["position5"]);
-              document.getElementById(`${res}Icon`)?.classList.remove(styles["position6"]);
+              document
+                .getElementById(`${res}Icon`)
+                ?.classList.remove(styles["position2"]);
+              document
+                .getElementById(`${res}Icon`)
+                ?.classList.remove(styles["position3"]);
+              document
+                .getElementById(`${res}Icon`)
+                ?.classList.remove(styles["position4"]);
+              document
+                .getElementById(`${res}Icon`)
+                ?.classList.remove(styles["position5"]);
+              document
+                .getElementById(`${res}Icon`)
+                ?.classList.remove(styles["position6"]);
 
-              document.getElementById(`${res}Icon`)?.classList.add(styles[`position${index}`]);
+              document
+                .getElementById(`${res}Icon`)
+                ?.classList.add(styles[`position${index}`]);
             });
+
             entry.target.classList.add(styles["showHidden"]);
             return;
           }
-
-          entry.target.classList.remove(styles["showHidden"]);
+          // entry.target.classList.remove(styles["showHidden"]);
         });
       },
       {
-        threshold: [0, 0.6, 1],
+        threshold: 1,
       }
     );
     pilars.forEach((pilar) => {
@@ -94,7 +124,7 @@ const SectionCarousel: NextPage = memo(() => {
                 id="IconDiet"
                 src="/IconDiet@2x.png"
               />
-              <i className={styles.p43}>Diet</i>
+              <i className={styles.p4}>Diet</i>
             </div>
             <div
               id="socialIcon"
@@ -106,7 +136,7 @@ const SectionCarousel: NextPage = memo(() => {
                 id="IconSocial"
                 src="/IconSocial@2x.png"
               />
-              <div className={styles.p42}>Conexões emocionais</div>
+              <div className={styles.p4}>Social Connections</div>
             </div>
             <div
               id="controltoxicIcon"
@@ -119,7 +149,7 @@ const SectionCarousel: NextPage = memo(() => {
                   src="/iconcontroltoxic.svg"
                 />
               </div>
-              <div className={styles.p44}>Controle de tóxicos</div>
+              <div className={styles.p4}>Substance Use</div>
             </div>
             <div
               id="sleepqualityIcon"
@@ -133,7 +163,7 @@ const SectionCarousel: NextPage = memo(() => {
                   src="/IconSleepQuality@2x.png"
                 />
               </div>
-              <div className={styles.p4}>Sono de qualidade</div>
+              <div className={styles.p4}>Sleep</div>
             </div>
             <div
               id="stressmanagementIcon"
@@ -147,7 +177,7 @@ const SectionCarousel: NextPage = memo(() => {
                   src="/IconStressManagement@2x.png"
                 />
               </div>
-              <div className={styles.manejoDoEstresse}>Manejo do estresse</div>
+              <div className={styles.p4}>Stress Management</div>
             </div>
             <div
               id="physicalactivitiesIcon"
@@ -161,12 +191,12 @@ const SectionCarousel: NextPage = memo(() => {
                   src="/IconPhysicalActivities@2x.png"
                 />
               </div>
-              <div className={styles.p41}>Atividades físicas</div>
+              <div className={styles.p4}>Exercise</div>
             </div>
           </div>
         </div>
         <div className={styles.pilars}>
-          {pilars.map((pilar) => (
+          {Object.keys(pilarsDescription).map((pilar) => (
             <div
               className={`${styles.box} ${styles.initHidden} `}
               key={pilar}
@@ -174,27 +204,7 @@ const SectionCarousel: NextPage = memo(() => {
             >
               <div className={styles.fromNutritionAndContainer}>
                 <p className={styles.understandAct}>
-                  From nutrition and physical activity to sleep
-                </p>
-                <p
-                  className={styles.understandAct}
-                >{`patterns and stress management, we delve `}</p>
-                <p className={styles.understandAct}>
-                  into various aspects of your daily life.
-                </p>
-              </div>
-              <div className={styles.withThisKnowledgeContainer}>
-                <p className={styles.understandAct}>
-                  With this knowledge, it is possible to identify
-                </p>
-                <p className={styles.understandAct}>
-                  potential risks early, make informed decisions,
-                </p>
-                <p className={styles.understandAct}>
-                  and transition from reactive healthcare to
-                </p>
-                <p className={styles.understandAct}>
-                  proactive, preventive care.
+                  {pilarsDescription[pilar]}
                 </p>
               </div>
             </div>

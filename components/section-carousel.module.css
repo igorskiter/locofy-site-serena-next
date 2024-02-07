@@ -5,6 +5,10 @@
 .showHidden{
   opacity: 1;
 }
+.showHidden:last-child{
+  /* position: sticky;
+  bottom: 0 */
+}
 .boxPilar{
   position: absolute;
   display: flex;
@@ -158,23 +162,23 @@
   box-sizing: border-box;
 }
 .p4 {
+  display: flex;
   position: relative;
-  line-height: 130%;
-  font-weight: 500;
-  display: inline-block;
+  line-height: 120%;
   height: 4.06rem;
   flex-shrink: 0;
+  font-family: Lora;
+  font-size: var(--font-size-35xl-1);
+  font-weight: 600;
+  font-style: italic;
+  text-align: center;
+  justify-content: center;
 }
 .iconphysicalactivities {
   width: 9.32rem;
   position: relative;
   height: 7.68rem;
   object-fit: cover;
-}
-.blur2,
-.p41 {
-  flex-shrink: 0;
-  /* filter: blur(16.03px); */
 }
 .blur2 {
   width: 13.13rem;
@@ -186,17 +190,9 @@
   justify-content: flex-start;
   padding: var(--padding-11xs) var(--padding-12xs);
   box-sizing: border-box;
+  flex-shrink: 0;
 }
-.p41 {
-  width: 12.98rem;
-  position: relative;
-  line-height: 130%;
-  font-weight: 500;
-  display: inline-block;
-  height: 5.09rem;
-}
-.blurIcon,
-.p42 {
+.blurIcon {
   position: relative;
   flex-shrink: 0;
 }
@@ -206,31 +202,13 @@
   overflow: hidden;
   object-fit: cover;
 }
-.p42 {
-  width: 10.58rem;
-  line-height: 130%;
-  font-weight: 500;
-  display: inline-block;
-  height: 4.16rem;
-  /* filter: blur(8.01px); */
-}
-.blurIcon1,
-.p43 {
-  position: relative;
-  flex-shrink: 0;
-}
 .blurIcon1 {
   width: 9.67rem;
   height: 11.66rem;
   overflow: hidden;
   object-fit: cover;
-}
-.p43 {
-  width: 9.75rem;
-  line-height: 120%;
-  display: inline-block;
-  font-weight: 600;
-  height: 2.38rem;
+  position: relative;
+  flex-shrink: 0;
 }
 .iconcontroltoxic {
   width: 4.76rem;
@@ -244,15 +222,6 @@
   flex-direction: row;
   align-items: center;
   justify-content: center;
-}
-.p44 {
-  width: 9.47rem;
-  position: relative;
-  line-height: 130%;
-  font-weight: 500;
-  display: inline-block;
-  height: 3.72rem;
-  flex-shrink: 0;
 }
 .pilares {
   height: 51.98rem;
@@ -326,17 +295,22 @@
   .box {
     width: auto;
     align-self: unset;
-    height: auto;
-    justify-content: flex-start;
+    height: 52.28rem;
+    justify-content: flex-end;
     max-width: 22.5rem;
   }
   .content {
-    flex-direction: column;
+    /* flex-direction: column; */
     gap: 7.09rem;
-    justify-content: center;
+    align-items: flex-start;
+
+    justify-content: flex-start !important;
   }
 }
 @media screen and (max-width: 960px) {
+  .carousel{
+    top: -35vh;
+  }
   .content {
     flex: 1;
     flex-direction: column;
@@ -344,13 +318,19 @@
     align-items: center;
     justify-content: space-between;
   }
+  .box{
+    height: 28rem;
+  }
+  .pilars{
+    margin-bottom: -18rem;
+  }
 }
 @media screen and (max-width: 420px) {
   .p1 {
     font-size: var(--font-size-39xl);
     text-align: left;
     max-width: 21rem;
-    left: initial;
+    left: 29% ;
   }
   .blur {
     max-width: 6.94rem;
@@ -367,14 +347,8 @@
   .blur2 {
     max-width: 6.94rem;
   }
-  .p41 {
-    font-size: var(--font-size-16xl);
-  }
   .blurIcon {
     max-width: 6.94rem;
-  }
-  .p42 {
-    font-size: var(--font-size-16xl);
   }
   .blurIcon1 {
     /* max-width: 6.94rem; */
@@ -390,14 +364,8 @@
   .stressmanagement, .physicalactivities{
     left: 10%;
   }
-  .p43 {
-    font-size: var(--font-size-16xl);
-  }
   .blur3 {
     max-width: 6.94rem;
-  }
-  .p44 {
-    font-size: var(--font-size-16xl);
   }
   .pilares {
     max-width: 100%;
@@ -409,7 +377,7 @@
     max-width: 21.44rem;
   }
   .box {
-    height: auto;
+    height: calc(100vh - 60px);
     gap: var(--gap-5xl);
     padding-bottom: var(--padding-108xl);
     box-sizing: border-box;
@@ -424,6 +392,9 @@
   .sectioncarousel {
     padding-top: 0;
     box-sizing: border-box;
-    padding-bottom: var(--padding-89xl);
+    padding-bottom: 12rem;
+  }
+  .pilars{
+    /* margin-bottom: -20rem; */
   }
 }
