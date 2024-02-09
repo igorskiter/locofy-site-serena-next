@@ -6,7 +6,7 @@
   max-width: 100%;
   height: 23.64rem;
   svg{
-    max-width: 100%;
+    width: 100%;
   }
 }
 .groupIcon{
@@ -360,4 +360,7 @@
       stroke-width: .5;
     }
   }
+}
+.iconSVG path{
+  transition: all .5s linear
 }
