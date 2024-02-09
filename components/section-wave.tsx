@@ -218,7 +218,11 @@ const SectionWave: NextPage = memo(() => {
                       : ""
                   }`}
                 >
-                  <div className={styles.parent}>
+                  <div className={`${styles.parent} ${
+                    waveContent[res].type === "scale"
+                      ? styles.parentScale
+                      : ""
+                  }`}>
                     {waveContent[res].type === "percent" && (
                       <div className={styles.percent}>
                         {waveContent[res].count}%

@@ -24,6 +24,9 @@
   flex-direction: row;
   /* gap: var(--gap-5xl); */
 }
+.parentScale{
+  flex-direction: row;
+}
 .waveInner {
   position: absolute;
   bottom: 15px;
