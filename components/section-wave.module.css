@@ -1,25 +1,4 @@
-.groupIcon {
-  position: absolute;
-  top: calc(50% - 144.45px);
-  /* left: calc(50% - 960px); */
-  width: 100%;
-
-  height: 23.64rem;
-}
-.waveChild {
-  position: absolute;
-  height: 1.3rem;
-  width: 1.3rem;
-  top: 32.83%;
-  right: 35.08%;
-  bottom: 63.1%;
-  left: 63.93%;
-  border-radius: 50%;
-  background-color: var(--color-gainsboro);
-  border: 3px solid var(--salmon-prime);
-  box-sizing: border-box;
-}
-.div,
+.percent,
 .ofPatientsWith {
   width: 7.25rem;
   position: relative;
@@ -40,9 +19,9 @@
 }
 .parent {
   width: 9.75rem;
-  height: 5.06rem;
   align-items: flex-start;
   justify-content: flex-start;
+  flex-direction: row;
   /* gap: var(--gap-5xl); */
 }
 .waveInner {
@@ -58,98 +37,95 @@
   width: 12.13rem;
   height: 7.81rem;
   align-items: center;
-  justify-content: flex-end;
-  padding: var(--padding-lg) 0;
+  justify-content: flex-start;
+  padding: var(--padding-5xs) 0;
   mix-blend-mode: normal;
+  opacity: 0;
+  transition: opacity .5s linear;
+}
+.waveInnerScale{
+  background-color: var(--grey-25) !important;
+  border: 2px solid var(--green-link) !important;
 }
 .waveItem {
   position: relative;
   height: 7px;
   width: 7px;
-  top: .65rem;
+  top: .75rem;
   /* right: 0; */
   /* bottom: 0; */
-  left: .65rem;
+  left: .75rem;
   border-radius: 50%;
   background-color: var(--salmon-prime);
   transform: rotate(180deg);
+  opacity: 0;
   transform-origin: 0 0;
 }
-.ellipseDiv,
+.waveItemScale{
+  background-color: var(--green-link) !important;
+}
+.waveChildScale{
+  border: 2px solid var(--green-link) !important;
+}
+.waveChild:hover {
+  height: 1.3rem !important;
+  width: 1.3rem !important;
+  transition: opacity .5s linear;
+}
+.waveChild:hover .waveItem, .waveChild:hover .waveInner{
+  opacity: 1;
+}
 .waveChild1,
 .waveChild2,
 .waveChild3,
 .waveChild4,
 .waveChild5,
 .waveChild6,
-.waveChild7 {
+.waveChild7,
+.waveChild8,
+.waveChild9 {
   position: absolute;
-  height: 2.14%;
-  width: 0.52%;
-  top: 70.8%;
-  right: 56.31%;
-  bottom: 27.06%;
-  left: 43.17%;
+  height: 7px;
+  width: 7px;
   border-radius: 50%;
   background-color: var(--color-gainsboro);
   border: 2px solid var(--green-link);
   box-sizing: border-box;
+  cursor: pointer;
+  transition: all 1s ease-in-out;
+  border: 2px solid var(--salmon-prime);
 }
-.waveChild1,
-.waveChild2,
-.waveChild3,
-.waveChild4,
-.waveChild5,
-.waveChild6,
-.waveChild7 {
+.waveChild1 {
   top: 54.76%;
   right: 77.92%;
   bottom: 43.1%;
   left: 21.56%;
-  border: 2px solid var(--salmon-prime);
 }
-.waveChild2,
-.waveChild3,
-.waveChild4,
-.waveChild5,
-.waveChild6,
-.waveChild7 {
+.waveChild2 {
   top: 42.57%;
   right: 16.41%;
   bottom: 55.29%;
   left: 83.07%;
-  border: 2px solid var(--green-link);
 }
-.waveChild3,
-.waveChild4,
-.waveChild5,
-.waveChild6,
-.waveChild7 {
+.waveChild3{
   top: 54.97%;
   right: 24.54%;
   bottom: 42.89%;
   left: 74.94%;
-  border: 2px solid var(--salmon-prime);
 }
-.waveChild4,
-.waveChild5,
-.waveChild6,
-.waveChild7 {
+.waveChild4{
   top: 44.06%;
   right: 54.95%;
   bottom: 53.8%;
   left: 44.53%;
 }
-.waveChild5,
-.waveChild6,
-.waveChild7 {
+.waveChild5 {
   top: 63.53%;
   right: 46.93%;
   bottom: 34.33%;
   left: 52.55%;
 }
-.waveChild6,
-.waveChild7 {
+.waveChild6 {
   top: 36.15%;
   right: 86.31%;
   bottom: 61.71%;
@@ -160,7 +136,18 @@
   right: 74.12%;
   bottom: 22.78%;
   left: 25.36%;
-  border: 2px solid var(--green-link);
+}
+.waveChild8 {
+  top: 60.08%;
+  right: 74.12%;
+  bottom: 22.78%;
+  left: 85.36%;
+}
+.waveChild9 {
+  top: 65.08%;
+  right: 34.12%;
+  bottom: 22.78%;
+  left: 45.36%;
 }
 .wave {
   width: 100%;
@@ -429,7 +416,7 @@
 }
 @media screen and (max-width: 1200px) {
   .wave {
-    display: none;
+    /* display: none; */
   }
   .wavetablet {
     display: flex;
@@ -437,14 +424,14 @@
 }
 @media screen and (max-width: 960px) {
   .wave {
-    display: none;
+    /* display: none; */
   }
   .wavetablet {
     display: flex;
   }
 }
 @media screen and (max-width: 420px) {
-  .wave,
+  /* .wave, */
   .wavetablet {
     display: none;
   }

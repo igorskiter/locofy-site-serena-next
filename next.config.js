@@ -1,9 +1,13 @@
 /** @type {import('next').NextConfig} */
-  const nextConfig = {
-    reactStrictMode: true,
-    typescript: {
-      ignoreBuildErrors: true,
-    },
-  }
+const path = require('path')
+const nextConfig = {
+  reactStrictMode: true,
+  typescript: {
+    ignoreBuildErrors: true,
+  },
+  sassOptions: {
+    includePaths: [path.join(__dirname, 'styles')],
+  },
+}
 
-  module.exports = nextConfig
+module.exports = nextConfig
