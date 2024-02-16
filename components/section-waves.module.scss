@@ -369,3 +369,12 @@
 .iconSVG path{
   transition: d 0.2s ease-in-out;
 }
+
+@media screen and (max-width: 420px) {
+  .groupIcon{
+    left: -60%;
+  }
+  .iconSVG{
+    width: 230% !important;
+  }
+}
