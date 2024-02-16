@@ -266,7 +266,7 @@ const SectionWave: NextPage = memo(() => {
               }`}
               ref={(e) => (waveLineRef[index + 1] = e)}
             >
-              {index + 1}
+              {/* {index + 1} */}
               <>
                 <div
                   className={`${styles.waveInner} ${
