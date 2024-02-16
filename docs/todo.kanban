@@ -43,21 +43,28 @@
       "title": "todo",
       "cards": [
         {
-          "id": "2cb14001-4a63-4d6c-a59d-8c2320ca3dcf",
-          "listId": "3ecf1828-0563-4cf9-a929-f98bb54b556e",
-          "title": "Saber qual link abre ao clicar em login",
-          "description": "",
-          "labels": [],
-          "checkboxes": [],
-          "comments": []
-        },
-        {
           "id": "411f6dfb-a12a-407e-8c15-3ce9b4979503",
           "listId": "3ecf1828-0563-4cf9-a929-f98bb54b556e",
           "title": "Create Wave Animation",
           "description": "",
           "labels": [],
-          "checkboxes": [],
+          "checkboxes": [
+            {
+              "id": "ceef693c-24f0-44b9-a420-f65a89d8add5",
+              "title": "Ajustar animação",
+              "checked": false
+            },
+            {
+              "id": "a2419297-3ed3-45fd-aafa-c1b9b1a3faf3",
+              "title": "Ajustar hover do ponto, está pegando a partir do cartão",
+              "checked": true
+            },
+            {
+              "id": "4e3459a9-ca24-4891-bb81-f485a73201f3",
+              "title": "Ajuste no mobile",
+              "checked": false
+            }
+          ],
           "comments": []
         }
       ]
@@ -71,6 +78,15 @@
       "id": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
       "title": "done",
       "cards": [
+        {
+          "id": "2cb14001-4a63-4d6c-a59d-8c2320ca3dcf",
+          "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",
+          "title": "Saber qual link abre ao clicar em login",
+          "description": "",
+          "labels": [],
+          "checkboxes": [],
+          "comments": []
+        },
         {
           "id": "d5bc3c49-8583-42c5-b3f4-d4191e399926",
           "listId": "a5e5bf6c-9c70-4551-a55b-8d1a9a52b974",

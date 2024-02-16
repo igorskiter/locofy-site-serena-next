@@ -45,6 +45,7 @@
   mix-blend-mode: normal;
   opacity: 0;
   transition: opacity .5s linear;
+  visibility: hidden;
 }
 .waveInnerScale{
   background-color: var(--grey-25) !important;
@@ -64,20 +65,26 @@
   opacity: 0;
   transform-origin: 0 0;
 }
+
 .waveItemScale{
   background-color: var(--green-link) !important;
 }
+
 .waveChildScale{
   border: 2px solid var(--green-link) !important;
 }
+
 .waveChild:hover {
   height: 1.3rem !important;
   width: 1.3rem !important;
   transition: opacity .5s linear;
 }
+
 .waveChild:hover .waveItem, .waveChild:hover .waveInner{
   opacity: 1;
+  visibility: inherit;
 }
+
 .waveChild1,
 .waveChild2,
 .waveChild3,
