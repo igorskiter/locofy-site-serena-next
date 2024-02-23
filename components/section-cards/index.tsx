@@ -23,15 +23,6 @@ const SectionCards: NextPage = memo(() => {
     <section className={styles.sectioncards} id="SectionCards">
       <div className={styles.cards}>
         <Card
-          onCardClick={onCardDoctorClick}
-          title={"DOCTORS"}
-          subTitle={"upgraded"}
-          subTitleEmphasis={`Your practice,`}
-          description={`Experience Serena Screening, a tool that provides instant understanding on how lifestyle factors impact your patients' health.`}
-          buttonText={"learn more"}
-          imageCard={"/doctors1@2x.png"}
-        />
-        <Card
           onCardClick={onCardPatientsClick}
           title={"PATIENTS"}
           subTitle={"your health."}
@@ -41,6 +32,15 @@ const SectionCards: NextPage = memo(() => {
           health.`}
           buttonText={"learn more"}
           imageCard={"/imagepatients@2x.png"}
+        />
+        <Card
+          onCardClick={onCardDoctorClick}
+          title={"DOCTORS"}
+          subTitle={"upgraded"}
+          subTitleEmphasis={`Your practice,`}
+          description={`Experience Serena Screening, a tool that provides instant understanding on how lifestyle factors impact your patients' health.`}
+          buttonText={"learn more"}
+          imageCard={"/doctors1@2x.png"}
         />
         <Card
           onCardClick={onCardCompaniesClick}
