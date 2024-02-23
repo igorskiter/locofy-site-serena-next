@@ -25,16 +25,19 @@ const Header: NextPage<HeaderType> = memo(
     const [isDrawerOpen, setDrawerOpen] = useState(false);
     const headerStyle: CSSProperties = useMemo(() => {
       return {
-        backgroundColor: isDrawerOpen ? "transparent" : "white"
+        backgroundColor: isDrawerOpen ? "transparent" : "white",
+        position:  isDrawerOpen ? "sticky" : "static",
       };
     }, [isDrawerOpen]);
 
     const openDrawer = useCallback(() => {
       setDrawerOpen(true);
+      document.body.style.overflow = "hidden";
     }, []);
 
     const closeDrawer = useCallback(() => {
       setDrawerOpen(false);
+      document.body.style.overflow = "auto";
     }, []);
 
     // const headerStyle = [styles.header]
@@ -68,14 +71,14 @@ const Header: NextPage<HeaderType> = memo(
           </div>
           <div className={styles.right}>
             {/* <img className={styles.closeIcon} alt="" src={vector} /> */}
-            <div className={styles.buttonlogin} onClick={()=>{
-              window.location.replace('https://practitioner.serenacare.app/')
-            }}>
+            <div
+              className={styles.buttonlogin}
+              onClick={() => {
+                window.location.replace("https://practitioner.serenacare.app/");
+              }}
+            >
               <b className={styles.login}>Login</b>
-              <div
-                className={styles.iconlogin}
-                id="IconLogin"
-              />
+              <div className={styles.iconlogin} id="IconLogin" />
             </div>
           </div>
         </header>

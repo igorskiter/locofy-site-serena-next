@@ -87,9 +87,9 @@
   gap: var(--gap-3xs);
 }
 .header {
-  position: sticky;
+  /* position: static; */
   top: 0;
-  z-index: 200;
+  z-index: 300;
   align-self: stretch;
   height: 9.38rem;
   justify-content: space-between;
