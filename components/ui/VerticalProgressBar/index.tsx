@@ -4,7 +4,7 @@ import { CSSProperties } from "react";
 const VerticalProgressBar = ({ percentage }) => {
   const progressBarStyle: CSSProperties = {
     width: `10px`,
-    minHeight: "100%",
+    minHeight: "98px",
     background: "#f0f0f0",
     position: "relative",
     borderRadius: "6px",

@@ -1,16 +1,16 @@
 import type { NextPage } from "next";
-import React from "react";
 import { memo, useEffect, useRef, useState } from "react";
 import pathLines from "./section-wave-lines";
-import styles from "./section-wave.module.css";
-import stylesWave from "./section-waves.module.scss";
+import styles from "./section-wave-lines.module.scss";
 import VerticalProgressBar from "./ui/VerticalProgressBar";
+
 type WaveContent = {
   bold?: string;
   description: string;
   count: number;
   type: "percent" | "scale";
 };
+
 const SectionWave: NextPage = memo(() => {
   const waveLineRef = useRef();
   const [wave, setWave] = useState(1);
@@ -69,6 +69,7 @@ const SectionWave: NextPage = memo(() => {
 
   const waveHoverHandler = (e, index) => {
     if (index <= 4) {
+      console.log(index + 1)
       setWave(index + 1);
     }
   };
@@ -95,12 +96,12 @@ const SectionWave: NextPage = memo(() => {
     const partsChanged = changed.d.split(" ");
     const partsTarget = [...partsOriginal];
 
-    console.log(partsChanged, "partsChanged");
-    console.log(partsOriginal, "partsOriginal");
-    console.log(
-      "___________________________________________________________________",
-      index
-    );
+    // console.log(partsChanged, "partsChanged");
+    // console.log(partsOriginal, "partsOriginal");
+    // console.log(
+    //   "___________________________________________________________________",
+    //   index
+    // );
     // console.log(partsTarget.join(" "), 'partsTarget');
   };
 
@@ -120,10 +121,10 @@ const SectionWave: NextPage = memo(() => {
 
   return (
     <section className={styles.sectionwave} id="SectionWave">
-      <div className={styles.wave}>
-        <div className={stylesWave.groupIcon} data-state={wave}>
+      <div className={styles.wave} data-state={wave}>
+        <div className={styles.groupIcon} data-state={wave}>
           <svg
-            className={stylesWave.iconSVG}
+            className={styles.iconSVG}
             width="1918"
             height="380"
             viewBox="0 0 1918 380"

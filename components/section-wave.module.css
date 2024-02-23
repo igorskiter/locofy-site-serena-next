@@ -165,18 +165,6 @@
   height: 29.22rem;
   max-width: 120rem;
 }
-.groupIcon1 {
-  position: absolute;
-  height: 80.9%;
-  width: 100%;
-  top: 19.1%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
-}
 .div1,
 .ofPatientsWith1 {
   position: absolute;
@@ -266,18 +254,6 @@
   position: relative;
   height: 29.22rem;
   display: none;
-}
-.groupIcon2 {
-  position: absolute;
-  height: 78.23%;
-  width: 100%;
-  top: 21.77%;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  max-width: 100%;
-  overflow: hidden;
-  max-height: 100%;
 }
 .groupChild {
   position: absolute;
