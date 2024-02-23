@@ -29,7 +29,7 @@ const Header: NextPage<HeaderType> = memo(
     const [isDrawerOpen, setDrawerOpen] = useState(false);
     const headerStyle: CSSProperties = useMemo(() => {
       return {
-        backgroundColor: isDrawerOpen ? "transparent" : "white",
+        backgroundColor: isDrawerOpen ? "transparent" : "transparent",
         position: isDrawerOpen ? "sticky" : "static",
       };
     }, [isDrawerOpen]);
