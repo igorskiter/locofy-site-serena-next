@@ -20,10 +20,14 @@ const card = ({
   imageCard,
 }: CardProps) => {
   const backgroundStyle = {
-    borderRadius: 37,
-    minHeight: '100%',
-    maxHeight: '17.94rem',
+    borderRadius: 'var(--br-xl)',
+    maxHeight: '51.13rem',
   };
+  /**
+   * max-height: 51.13rem;
+    background-color: #00000082;
+    border-radius: var(--br-xl);
+   */
   return (
     <div className={styles.card} onClick={onCardClick}>
       <div className={styles.cardcontent}>
