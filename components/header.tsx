@@ -1,7 +1,9 @@
 import type { NextPage } from "next";
+import { useRouter } from "next/router";
 import {
   memo,
   useCallback,
+  useEffect,
   useMemo,
   useState,
   type CSSProperties,
@@ -22,11 +24,13 @@ type HeaderType = {
 
 const Header: NextPage<HeaderType> = memo(
   ({ menuBurger, close1, logo, vector, iconLogin, logoTablet, logoMobile }) => {
+    const router = useRouter();
+
     const [isDrawerOpen, setDrawerOpen] = useState(false);
     const headerStyle: CSSProperties = useMemo(() => {
       return {
         backgroundColor: isDrawerOpen ? "transparent" : "white",
-        position:  isDrawerOpen ? "sticky" : "static",
+        position: isDrawerOpen ? "sticky" : "static",
       };
     }, [isDrawerOpen]);
 
@@ -40,6 +44,9 @@ const Header: NextPage<HeaderType> = memo(
       document.body.style.overflow = "auto";
     }, []);
 
+    useEffect(() => {
+      closeDrawer();
+    }, [router]);
     // const headerStyle = [styles.header]
 
     return (
