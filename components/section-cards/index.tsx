@@ -8,7 +8,7 @@ const SectionCards: NextPage = memo(() => {
   const router = useRouter();
 
   const onCardDoctorClick = useCallback(() => {
-    window.open("https://screening.serenacare.app/");
+    router.push("/doctors");
   }, []);
 
   const onCardPatientsClick = useCallback(() => {
