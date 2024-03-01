@@ -18,58 +18,48 @@ const SectionWave: NextPage = memo(() => {
 
   const waveContent: WaveContent[] = [
     {
-      description: "weight reduction among patients with weight-loss goals ",
-      count: 12,
+      description: "of patients with improved quality of life ",
+      count: 93,
       type: "percent",
     },
     {
-      description: "more weekly moderate-to-vigorous physical activity.",
-      count: 30,
-      type: "percent",
-    },
-    {
-      bold: "Lower anxiety and depression symptoms",
-      description: "after improving exercise and sleep scores.",
-      count: 20,
-      type: "scale",
-    },
-    {
-      description: "of patients reduced at least one medication",
+      description: "of patients reduced at least one medication ",
       count: 72,
       type: "percent",
     },
     {
-      description: "of patients with improved quality of life.",
-      count: 93,
-      type: "percent",
-    },
-    {
       bold: "Lower anxiety and depression symptoms",
       description: "after improving exercise and sleep scores.",
-      count: 20,
+      count: 80,
       type: "scale",
     },
     {
-      description: "of patients with improved quality of life.",
-      count: 93,
+      description: "of patients consumed more fruits and vegetables ",
+      count: 87,
       type: "percent",
     },
     {
-      description: "of patients with improved quality of life.",
-      count: 93,
+      description:
+        "reduction in LDL cholesterol in those with improved lifestyle scores ",
+      count: 15,
       type: "percent",
     },
     {
-      bold: "Lower anxiety and depression symptoms",
-      description: "after improving exercise and sleep scores.",
-      count: 20,
+      bold: "Better blood glucose values with improved",
+      description: "exercise scores by reducing sedentary time.",
+      count: 75,
       type: "scale",
+    },
+    {
+      description: " of patients showed improvements in mental health score",
+      count: 84,
+      type: "percent",
     },
   ];
 
   const waveHoverHandler = (e, index) => {
     if (index <= 4) {
-      console.log(index + 1)
+      console.log(index + 1);
       setWave(index + 1);
     }
   };
