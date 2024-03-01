@@ -59,7 +59,7 @@
   overflow: hidden;
   flex-direction: row;
   gap: var(--gap-127xl);
-  flex-direction: column-reverse;
+  flex-direction: row;
 }
 .hero {
   flex-direction: column;

@@ -23,7 +23,7 @@ const SectionDoctorFreeTrial: NextPage = memo(() => {
               <span>preventive care.</span>
             </div>
             <div className={styles.button} onClick={onButtonContainerClick}>
-              <div className={styles.startYourFree}>Start Your Free Trial</div>
+              <div className={styles.startYourFree}>GET STARTED NOW</div>
             </div>
           </div>
         </div>
