@@ -37,6 +37,7 @@
   justify-content: flex-start;
   gap: var(--gap-13xl);
   max-width: 26.25rem;
+  min-width: calc(33% - 10.13rem)
 }
 .strengthen {
   margin: 0;

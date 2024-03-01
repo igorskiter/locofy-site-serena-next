@@ -18,7 +18,7 @@ const SectionDoctorBenefits: NextPage = memo(() => {
               treat and prevent chronic conditions before they start.
             </div>
           </div>
-          <div className={styles.tile1}>
+          <div className={styles.tile}>
             <img
               className={styles.iconplans}
               alt=""
@@ -36,7 +36,7 @@ const SectionDoctorBenefits: NextPage = memo(() => {
               trust and collaboration.
             </div>
           </div>
-          <div className={styles.tile2}>
+          <div className={styles.tile}>
             <img className={styles.iconplans} alt="" src="/iconproactive.svg" />
             <div className={styles.chapeu22}>From Reactive to Proactive</div>
             <div className={styles.p52}>
