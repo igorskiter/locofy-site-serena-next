@@ -23,7 +23,7 @@ const FAQ: NextPage = () => {
       <HeroDoctors />
       <SectionDoctorFreeTrial />
       <SectionDoctorBenefits />
-      <SectionDoctorPricing />
+      {/* <SectionDoctorPricing /> */}
       <SectionDoctorCircle />
       <Footer
         lINE="/line1.svg"
