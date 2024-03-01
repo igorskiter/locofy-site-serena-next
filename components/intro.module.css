@@ -63,7 +63,7 @@
   color: var(--color-whitesmoke-100);
   font-family: var(--font-lora);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 960px) {
   .title1,
   .title2 {
     font-size: var(--font-size-67xl);

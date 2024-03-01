@@ -83,7 +83,7 @@
   color: var(--grey-prime);
   font-family: var(--font-plus-jakarta-sans);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 960px) {
   .chapeu2 {
     font-size: var(--font-size-5xl);
   }

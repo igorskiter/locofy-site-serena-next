@@ -57,7 +57,7 @@
   color: var(--grey-prime);
   font-family: var(--font-lora);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 960px) {
   .h2 {
     font-size: 30px;
     width: 21.44rem;

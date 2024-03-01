@@ -241,7 +241,7 @@
 .footerMobile{
   padding-bottom: var(--padding-base);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 960px) {
   .content1 {
     width: 40.13rem;
   }

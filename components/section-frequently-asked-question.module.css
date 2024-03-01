@@ -178,7 +178,7 @@
   color: var(--color-darkslategray-100);
   font-family: var(--font-plus-jakarta-sans);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 960px) {
   .columns {
     gap: var(--gap-35xl);
   }
