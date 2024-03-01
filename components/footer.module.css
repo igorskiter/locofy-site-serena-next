@@ -288,7 +288,7 @@
   color: var(--grey-prime);
   font-family: var(--font-plus-jakarta-sans);
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1200px) {
   .center,
   .footer1 {
     box-sizing: border-box;

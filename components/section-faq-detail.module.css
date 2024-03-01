@@ -69,7 +69,7 @@
   color: var(--grey-prime);
   font-family: var(--font-plus-jakarta-sans);
 }
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1200px) {
   .section {
     padding-left: var(--padding-77xl);
     padding-right: var(--padding-77xl);
