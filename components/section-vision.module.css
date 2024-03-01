@@ -121,7 +121,7 @@
     box-sizing: border-box;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .left {
     flex: unset;
     align-self: stretch;

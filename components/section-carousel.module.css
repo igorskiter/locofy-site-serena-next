@@ -325,7 +325,7 @@
     margin-bottom: -18rem;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .p1 {
     font-size: var(--font-size-39xl);
     text-align: left;

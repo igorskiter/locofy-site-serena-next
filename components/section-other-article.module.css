@@ -225,7 +225,7 @@
     display: none;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .otherArticles {
     gap: var(--gap-17xl);
   }

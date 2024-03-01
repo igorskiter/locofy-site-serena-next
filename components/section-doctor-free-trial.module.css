@@ -140,7 +140,7 @@
     box-sizing: border-box;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .button,
   .leftIcon {
     box-sizing: border-box;

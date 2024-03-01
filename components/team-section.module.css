@@ -108,7 +108,7 @@
     box-sizing: border-box;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .p2 {
     font-size: var(--font-size-5xl);
     width: 21.44rem;

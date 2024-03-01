@@ -120,7 +120,7 @@
     max-height: 28.13rem;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .left {
     gap: var(--gap-5xl);
   }

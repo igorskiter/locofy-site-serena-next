@@ -210,7 +210,7 @@
     padding-bottom: var(--padding-138xl);
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .iconplans {
     width: 3rem;
     height: 3rem;

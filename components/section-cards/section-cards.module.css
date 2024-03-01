@@ -226,7 +226,7 @@
     box-sizing: border-box;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 430px) {
   .sectioncards{
     padding-bottom: var(--padding-77xl);
   }
