@@ -328,7 +328,7 @@
     padding-right: 0;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 420px) {
   .left {
     width: 11.25rem;
   }

@@ -273,7 +273,7 @@
     box-sizing: border-box;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 420px) {
   .h1 {
     font-size: var(--font-size-29xl);
   }

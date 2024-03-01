@@ -23,7 +23,7 @@
   font-family: var(--font-plus-jakarta-sans);
 }
 
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 420px) {
   .style1{
     flex: 1;
     font-size: .65rem;

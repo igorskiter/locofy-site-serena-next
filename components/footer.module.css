@@ -341,7 +341,7 @@
     padding-right: var(--padding-11xl);
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 420px) {
   .logomobile {
     display: flex;
   }

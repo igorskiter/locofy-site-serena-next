@@ -181,7 +181,7 @@
     height: 23.75rem;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 420px) {
   .button,
   .description {
     align-self: stretch;

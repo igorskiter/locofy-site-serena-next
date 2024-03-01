@@ -130,7 +130,7 @@
     box-sizing: border-box;
   }
 }
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 420px) {
   .imageaboutushowIcon {
     width: 21.44rem;
     height: 21.44rem;
