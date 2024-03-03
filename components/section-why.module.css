@@ -83,7 +83,7 @@
   color: var(--grey-prime);
   font-family: var(--font-plus-jakarta-sans);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1279px) {
   .chapeu2 {
     font-size: var(--font-size-5xl);
   }
@@ -133,7 +133,7 @@
     box-sizing: border-box;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 575.98px) {
   .chapeu2 {
     font-size: var(--font-size-lgi);
   }

@@ -20,7 +20,7 @@
   color: inherit;
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 575.98px) {
   .about {
     font-size: var(--font-size-13xl);
   }

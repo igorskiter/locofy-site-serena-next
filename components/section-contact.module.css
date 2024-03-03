@@ -228,7 +228,7 @@
   color: var(--grey-prime);
   font-family: var(--font-lora);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1279px) {
   .h1 {
     font-size: var(--font-size-77xl);
   }
@@ -273,7 +273,7 @@
     box-sizing: border-box;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 575.98px) {
   .h1 {
     font-size: var(--font-size-29xl);
   }

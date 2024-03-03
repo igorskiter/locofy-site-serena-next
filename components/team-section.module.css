@@ -83,7 +83,7 @@
   color: var(--grey-prime);
   font-family: var(--font-lora);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1279px) {
   .p2 {
     font-size: var(--font-size-23xl);
     gap: var(--gap-41xl);
@@ -108,7 +108,7 @@
     box-sizing: border-box;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 575.98px) {
   .p2 {
     font-size: var(--font-size-5xl);
     width: 21.44rem;

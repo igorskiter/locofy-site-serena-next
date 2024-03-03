@@ -76,7 +76,7 @@
   color: var(--grey-prime);
   font-family: var(--font-plus-jakarta-sans);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1279px) {
   .leftIcon {
     width: 100%;
     height: 100%;
@@ -140,7 +140,7 @@
     box-sizing: border-box;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 575.98px) {
   .button,
   .leftIcon {
     box-sizing: border-box;

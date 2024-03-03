@@ -288,7 +288,7 @@
   color: var(--grey-prime);
   font-family: var(--font-plus-jakarta-sans);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1279px) {
   .center,
   .footer1 {
     box-sizing: border-box;
@@ -341,7 +341,7 @@
     padding-right: var(--padding-11xl);
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 575.98px) {
   .logomobile {
     display: flex;
   }

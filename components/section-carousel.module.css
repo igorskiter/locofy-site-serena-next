@@ -287,7 +287,7 @@
   color: var(--grey-prime);
   font-family: var(--font-plus-jakarta-sans);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1279px) {
   .box,
   .content {
     align-items: center;
@@ -305,6 +305,27 @@
     align-items: flex-start;
 
     justify-content: flex-start !important;
+  }
+  .p1{
+    margin: 0 auto;
+  }
+  .position0{
+    top: 20.35rem !important;
+  }
+  .position1{
+    top: 13.13rem;
+  }
+  .position2{
+    top: -7.86rem;
+  }
+  .position3{
+    top: -17rem;
+  }
+  .position4{
+    top: -8.01rem;
+  }
+  .position5{
+    top: 11.64rem;
   }
 }
 @media screen and (max-width: 960px) {
@@ -325,7 +346,7 @@
     margin-bottom: -18rem;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 575.98px) {
   .p1 {
     font-size: var(--font-size-39xl);
     text-align: left;

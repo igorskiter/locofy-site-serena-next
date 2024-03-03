@@ -79,7 +79,7 @@
   color: var(--grey-prime);
   font-family: var(--font-plus-jakarta-sans);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1279px) {
   .imageaboutushowIcon {
     flex: 1;
     align-self: stretch;
@@ -130,7 +130,7 @@
     box-sizing: border-box;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 575.98px) {
   .imageaboutushowIcon {
     width: 21.44rem;
     height: 21.44rem;

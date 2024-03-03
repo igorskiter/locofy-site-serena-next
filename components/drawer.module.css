@@ -241,7 +241,7 @@
 .footerMobile{
   padding-bottom: var(--padding-base);
 }
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1279px) {
   .content1 {
     width: 40.13rem;
   }
@@ -328,7 +328,7 @@
     padding-right: 0;
   }
 }
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 575.98px) {
   .left {
     width: 11.25rem;
   }
