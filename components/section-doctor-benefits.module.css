@@ -5,14 +5,14 @@
   font-weight: 700;
   mix-blend-mode: normal;
 }
-.iconplans {
+.icon {
   width: 7.63rem;
   height: 7.63rem;
   overflow: hidden;
   flex-shrink: 0;
 }
 .chapeu2,
-.iconplans,
+.icon,
 .p5 {
   position: relative;
 }
@@ -146,9 +146,13 @@
     padding-bottom: var(--padding-139xl);
     box-sizing: border-box;
   }
+  .icon {
+    width: 6rem;
+    height: 6rem;
+  }
 }
 @media screen and (max-width: 960px) {
-  .iconplans {
+  .icon {
     width: 4rem;
     height: 4rem;
   }
@@ -211,7 +215,7 @@
   }
 }
 @media screen and (max-width: 575.98px) {
-  .iconplans {
+  .icon {
     width: 3rem;
     height: 3rem;
   }

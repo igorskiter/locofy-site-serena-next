@@ -9,7 +9,7 @@ const SectionDoctorBenefits: NextPage = memo(() => {
         <i className={styles.chapeu1}>Benefits</i>
         <div className={styles.content1}>
           <div className={styles.tile}>
-            <img className={styles.iconplans} alt="" src="/iconplans.svg" />
+            <img className={styles.icon} alt="" src="/iconplans.svg" />
             <div className={styles.chapeu2}>Personalized Treatment Plans</div>
             <div className={styles.p5}>
               Understanding how lifestyle factors affect health allows you to
@@ -20,7 +20,7 @@ const SectionDoctorBenefits: NextPage = memo(() => {
           </div>
           <div className={styles.tile}>
             <img
-              className={styles.iconplans}
+              className={styles.icon}
               alt=""
               src="/iconrelationships.svg"
             />
@@ -37,7 +37,7 @@ const SectionDoctorBenefits: NextPage = memo(() => {
             </div>
           </div>
           <div className={styles.tile}>
-            <img className={styles.iconplans} alt="" src="/iconproactive.svg" />
+            <img className={styles.icon} alt="" src="/iconproactive.svg" />
             <div className={styles.chapeu22}>From Reactive to Proactive</div>
             <div className={styles.p52}>
               Serena Screening empowers you to shift from reactive to proactive
