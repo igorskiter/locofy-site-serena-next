@@ -58,10 +58,8 @@ const SectionWave: NextPage = memo(() => {
   ];
 
   const waveHoverHandler = (e, index) => {
-    if (index <= 4) {
-      console.log(index + 1);
-      setWave(index + 1);
-    }
+    
+    setWave(index + 1);
   };
 
   useEffect(() => {
