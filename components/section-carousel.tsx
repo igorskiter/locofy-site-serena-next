@@ -39,6 +39,7 @@ const SectionCarousel: NextPage = memo(() => {
 
     return newArray;
   };
+
   useEffect(() => {
     if (typeof window !== "undefined" && window.IntersectionObserver) {
       const observer = new IntersectionObserver(
@@ -53,12 +54,13 @@ const SectionCarousel: NextPage = memo(() => {
 
             if (entry.intersectionRatio >= 0.3 && entry.isIntersecting) {
               const withWindow = window.innerWidth;
-              if (withWindow <= 420) {
-                var scrollDiv: number =
-                  document.getElementById(newOrderPilar[0])?.offsetTop || 0;
-                console.log(scrollDiv);
-                window.scrollTo({ top: scrollDiv, behavior: "smooth" });
-              }
+              // if (withWindow <= 420) {
+              // console.log(entry);
+              var scrollDiv: number =
+                document.getElementById(newOrderPilar[0])?.offsetTop || 0;
+              console.log(scrollDiv);
+              window.scrollTo({ top: scrollDiv, behavior: "smooth" });
+              // }
 
               newOrderPilar.forEach((res, index) => {
                 if (entry.target.id !== res) {
@@ -108,12 +110,13 @@ const SectionCarousel: NextPage = memo(() => {
       <div className={styles.content}>
         <div className={styles.carousel}>
           <div className={styles.p1} id="p1">
-            <p className={styles.understandAct}>
+            <span className={styles.understandAct}>
               <span className={styles.understand}>{`Understand. `}</span>
               <i className={styles.act}>Act.</i>
               <i className={styles.i}>{` `}</i>
-            </p>
-            <p className={styles.prevent}>Prevent.</p>
+              <br />
+              <span className={styles.prevent}>Prevent.</span>
+            </span>
           </div>
           <div className={styles.pilares} id="pilares">
             <div
