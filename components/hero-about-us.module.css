@@ -1,5 +1,6 @@
 .shiftingParadigmsTowards {
   font-weight: 200;
+  font-family: var(--font-plus-jakarta-sans);
 }
 .preventiveHealth {
   font-weight: 500;
@@ -36,6 +37,16 @@
   font-size: var(--font-size-77xl);
   color: var(--white-prime);
   font-family: var(--font-plus-jakarta-sans);
+}
+.newHero{
+  color: var(--color-darkslategray-full);
+  font-family: var(--font-lora);
+  position: relative;
+  z-index: 100;
+}
+.newHero > .content{
+  background-image: initial;
+  height: calc(100vh - 150px);
 }
 @media screen and (max-width: 1279px) {
   .content {

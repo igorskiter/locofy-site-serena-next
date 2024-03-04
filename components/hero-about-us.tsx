@@ -4,13 +4,13 @@ import styles from "./hero-about-us.module.css";
 
 const HeroAboutUs: NextPage = memo(() => {
   return (
-    <section className={styles.hero}>
+    <section className={`${styles.hero} ${styles.newHero}`}>
       <div className={styles.content}>
         <div className={styles.title}>
           <span
             className={styles.shiftingParadigmsTowards}
-          >{`Shifting paradigms towards `}</span>
-          <i className={styles.preventiveHealth}>preventive health</i>
+          >{`Shifting paradigms towards`}</span>
+          <i className={styles.preventiveHealth}> preventive health</i>
         </div>
       </div>
     </section>

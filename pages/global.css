@@ -52,6 +52,7 @@ body {
   --color-gray-200: #838383;
   --black-text: #252525;
   --grey-prime: #44464d;
+  --color-darkslategray-full: rgba(68, 70, 77, 1);
   --color-darkslategray-100: rgba(68, 70, 77, 0.9);
   --color-darkslategray-200: rgba(68, 70, 77, 0.7);
   --grey-25: rgba(68, 70, 77, 0.1);

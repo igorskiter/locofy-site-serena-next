@@ -62,6 +62,22 @@
   font-size: var(--font-size-145xl);
   color: var(--color-whitesmoke-100);
   font-family: var(--font-lora);
+  position: relative;
+  z-index: 100;
+}
+.newHero{
+  color: var(--color-darkslategray-full);
+  font-family: var(--font-lora);
+  position: relative;
+  z-index: 100;
+  height: initial;
+}
+.newHero > .content{
+  background-image: initial;
+  height: calc(100vh - 150px);
+}
+.newHero > .content > .buttons{
+  opacity: 0;
 }
 @media screen and (max-width: 1279px) {
   .title1,
