@@ -314,6 +314,30 @@
     margin: 0 auto;
   }
 } 
+@media (max-height: 590px) {
+  .p1{
+    top: 1%;
+  }
+  .position0{
+    top: 20.35rem !important;
+  }
+  .position1{
+    top: 13.13rem;
+  }
+  .position2{
+    top: -7.86rem;
+  }
+  .position3{
+    top: -17rem;
+  }
+  .position4{
+    top: -8.01rem;
+  }
+  .position5{
+    top: 11.64rem;
+  }
+}
+
 @media screen and (max-width: 960px) {
   .p1{
     top: 17.94%;
