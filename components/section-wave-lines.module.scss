@@ -571,6 +571,17 @@
   visibility: inherit;
 }
 
+.waveChildActive {
+  height: 1.3rem !important;
+  width: 1.3rem !important;
+  transition: opacity .5s linear;
+}
+
+.waveChildActive .waveItem, .waveChildActive .waveInner{
+  opacity: 1;
+  visibility: inherit;
+}
+
 .waveChild1,
 .waveChild2,
 .waveChild3,

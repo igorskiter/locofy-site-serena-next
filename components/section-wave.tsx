@@ -111,8 +111,8 @@ const SectionWave: NextPage = memo(() => {
 
   return (
     <section className={styles.sectionwave} id="SectionWave">
-      <div className={styles.wave} data-state={wave}>
-        <div className={styles.groupIcon} data-state={wave}>
+      <div className={styles.wave} data-state={1}>
+        <div className={styles.groupIcon} data-state={1}>
           <svg
             className={styles.iconSVG}
             width="1918"
@@ -252,6 +252,7 @@ const SectionWave: NextPage = memo(() => {
               key={`waveChild${index + 1}`}
               id={`waveChild${index + 1}`}
               className={`${styles[`waveChild${index + 1}`]} ${styles.waveChild}
+              ${wave === index + 1 ? styles.waveChildActive : ""}
               ${
                 waveContent[res].type === "scale" ? styles.waveChildScale : ""
               }`}
