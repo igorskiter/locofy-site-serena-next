@@ -66,6 +66,10 @@
 }
 .line {
   gap: var(--gap-base);
+  max-width: 100%;
+  .input{
+    max-width: 100%;
+  }
 }
 .line1 {
   border: 0;
@@ -162,6 +166,7 @@
   justify-content: flex-start;
   padding: var(--padding-5xl) var(--padding-lg);
   color: var(--low-contrast-gre);
+  height: 748px;
 }
 .send {
   position: relative;
@@ -288,9 +293,10 @@
     gap: var(--gap-36xl);
   }
   .section {
-    padding-left: var(--padding-2xl);
-    padding-right: var(--padding-2xl);
+    padding-left: var(--padding-base);
+    padding-right: var(--padding-base);
     padding-bottom: var(--padding-96xl);
+    padding-top: var(--padding-27xl);
     box-sizing: border-box;
     max-width: 100%;
   }

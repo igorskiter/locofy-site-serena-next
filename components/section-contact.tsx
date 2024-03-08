@@ -19,24 +19,22 @@ const SectionContact: NextPage = memo(() => {
         </div>
         <div className={styles.right}>
           <div className={styles.form}>
-            <div className={styles.line}>
-              <input
-                className={styles.input}
-                name="name"
-                id="name"
-                placeholder="Name*"
-                type="text"
-                required={true}
-              />
-              <input
-                className={styles.input}
-                name="surname"
-                id="surname"
-                placeholder="Surname*"
-                type="text"
-                required={true}
-              />
-            </div>
+            <input
+              className={styles.line1}
+              name="name"
+              id="name"
+              placeholder="Name*"
+              type="text"
+              required={true}
+            />
+            <input
+              className={styles.line1}
+              name="surname"
+              id="surname"
+              placeholder="Surname*"
+              type="text"
+              required={true}
+            />
             <input
               className={styles.line1}
               name="email"
@@ -60,7 +58,9 @@ const SectionContact: NextPage = memo(() => {
             </div>
             <div className={styles.select}>
               <select className={styles.line4} required={true}>
-                <option value="" disabled selected>Subject*</option>
+                <option value="" disabled selected>
+                  Subject*
+                </option>
                 <option value="teste1">teste1</option>
                 <option value="teste2">teste2</option>
               </select>
