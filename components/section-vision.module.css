@@ -125,6 +125,7 @@
   .left {
     flex: unset;
     align-self: stretch;
+    max-width: 100%;
   }
   .p2 {
     font-size: var(--font-size-6xl);
@@ -141,6 +142,7 @@
   }
   .section {
     padding-left: var(--padding-base);
+    padding-right: var(--padding-base);
     padding-top: var(--padding-80xl);
     padding-bottom: var(--padding-61xl);
     box-sizing: border-box;

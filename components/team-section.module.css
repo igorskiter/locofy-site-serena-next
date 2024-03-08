@@ -46,13 +46,16 @@
   background-color: var(--purple-prime);
   flex-direction: row;
   justify-content: space-between;
-  padding: var(--padding-lgi) var(--padding-92xl);
+  padding: var(--padding-lgi) 0;
   box-sizing: border-box;
   cursor: pointer;
   text-align: center;
   font-size: var(--font-size-base);
   color: var(--white-prime);
   font-family: var(--font-plus-jakarta-sans);
+}
+.text{
+  margin: 0 auto;
 }
 .box,
 .content,
@@ -70,6 +73,7 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
+  gap: var(--padding-23xl);
 }
 .content,
 .section {
@@ -130,5 +134,17 @@
     padding-left: 0;
     padding-right: 0;
     padding-bottom: var(--padding-80xl);
+  }
+  .description{
+    height: initial;
+    .p2{
+      max-width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 575.98px) {
+  .box{
+    height: 40.69rem;
   }
 }
