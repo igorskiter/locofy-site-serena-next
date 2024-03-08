@@ -152,8 +152,7 @@
     padding-right: 0;
   }
   .button {
-    padding-left: var(--padding-37xl);
-    padding-right: var(--padding-37xl);
+    height: 58px;
     min-width: 100%;
   }
   .description {

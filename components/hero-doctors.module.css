@@ -43,7 +43,7 @@
 }
 .rightIcon {
   border-radius: var(--br-5xl);
-  max-width: 53.25rem;
+  max-width: 100%;
   overflow: hidden;
   max-height: 53.25rem;
   object-fit: cover;
@@ -116,13 +116,13 @@
   .rightIcon {
     width: auto;
     align-self: unset;
-    max-width: 28.13rem;
     max-height: 28.13rem;
   }
 }
 @media screen and (max-width: 575.98px) {
   .left {
     gap: var(--gap-5xl);
+    padding-right: 0;
   }
   .rightIcon {
     width: 343px;
@@ -141,8 +141,10 @@
     flex-direction: column-reverse;
   }
   .hero {
-    padding-top: var(--padding-2xl);
+    padding-top: 5px;
     padding-bottom: var(--padding-2xl);
+    padding-left: var(--padding-base);
+    padding-right: var(--padding-base);
     box-sizing: border-box;
   }
 }
