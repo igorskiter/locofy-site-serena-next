@@ -61,4 +61,13 @@
     padding-right: var(--padding-8xl);
     box-sizing: border-box;
   }
+  .content{
+    gap: var(--gap-7xl);
+  }
+}
+@media screen and (max-width: 575.98px) {
+  .section {
+    padding-left: var(--padding-base);
+    padding-right: var(--padding-base);
+  }
 }

@@ -169,10 +169,10 @@
 }
 .cantFindWhat {
   width: 37rem;
+  max-width: 100%;
   position: relative;
   line-height: 110%;
   display: inline-block;
-  height: 1.68rem;
   flex-shrink: 0;
   mix-blend-mode: multiply;
 }
@@ -226,6 +226,10 @@
   }
 }
 @media screen and (max-width: 575.98px) {
+  .section{
+    padding-left: var(--padding-base) !important;
+    padding-right: var(--padding-base) !important;
+  }
   .otherArticles {
     gap: var(--gap-17xl);
   }
@@ -243,7 +247,12 @@
   .article {
     height: auto;
     height: 166px;
-    width: 364px;
+    .p2{
+      max-width: 240px;
+    }
+  }
+  .lostAccessTo{
+    width: 240px !important;
   }
   .article1 {
     display: none;
@@ -264,8 +273,6 @@
     gap: var(--gap-0);
     align-items: center;
     justify-content: center;
-    padding-left: var(--padding-60xl);
-    padding-right: var(--padding-60xl);
   }
   .section {
     padding-left: var(--padding-8xl);

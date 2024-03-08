@@ -212,5 +212,7 @@
   }
   .section{
     padding-bottom: var(--padding-71xl);
+    padding-left: var(--padding-base);
+    padding-right: var(--padding-base);
   }
 }
