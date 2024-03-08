@@ -21,7 +21,7 @@ const SectionFaqDetail: NextPage = memo(() => {
         </div>
         <div className={styles.description}>
           <b className={styles.h6}>What is Serena Screening?</b>
-          <img className={styles.lnIcon} alt="" src="/ln.svg" />
+          <div className={styles.lnIcon} />
           <div className={styles.p4}>
             <p className={styles.serenaScreeningIs}>
               Serena Screening is a digital health platform that provides
