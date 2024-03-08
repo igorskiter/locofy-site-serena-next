@@ -29,8 +29,8 @@ const Menu: NextPage<MenuType> = memo(
     }, [aboutLetterSpacing]);
 
     const classNameMenu = pathname === pathMenu
-      ? `${styles.about} ${styles.selected}`
-      : styles.about;
+      ? `${styles.menu} ${styles.selected}`
+      : styles.menu;
 
     return (
       <Link

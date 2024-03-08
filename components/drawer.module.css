@@ -19,11 +19,11 @@
 .menu1 {
   justify-content: space-between;
   /* gap: var(--gap-21xl); */
+  padding: 0 0 var(--padding-base);
 }
 .left {
   align-self: stretch;
   justify-content: flex-end;
-  padding: 0 0 var(--padding-base);
   height: -webkit-fill-available;
   min-height: 100%;
 }
@@ -320,7 +320,7 @@
   }
   .content,
   .navmenu {
-    padding-top: 17,44rem;
+    /* padding-top: 17.44rem; */
     box-sizing: border-box;
   }
   .content {
@@ -334,8 +334,16 @@
   }
 }
 @media screen and (max-width: 575.98px) {
+  .navmenu {
+    padding-top: 5.625rem;
+    box-sizing: border-box;
+  }
+  .menu1{
+    justify-content: center;
+  }
   .left {
-    width: 11.25rem;
+    min-width: 100%;
+    margin: auto 0;
   }
   .serFotoMockupQuestionario {
     width: 9rem;
@@ -346,32 +354,34 @@
   }
   .content1 {
     width: 9rem;
+    padding-top: 0;
     flex: 1;
   }
   .center {
-    display: flex;
-    width: auto;
-    align-self: stretch;
-    height: auto;
-    align-items: flex-end;
-    justify-content: flex-start;
-    max-width: 9rem;
+    display: none;
   }
   .right {
     display: none;
   }
   .menu {
+    min-width: 100%;
     gap: var(--gap-21xl);
   }
   .menu1{
-    margin-bottom: 90px;
-    margin-top: 80px;
+    margin: auto 0;
   }
   .socialitens1 {
     flex: 1;
+    gap: initial;
+    margin: 0 30px;
+    justify-content: space-between;
+  }
+  .footerMobile{
+    width: 100%;
   }
   .footersocial {
     display: flex;
+    width: 100%;
     /* padding-top: var(--padding-77xl); */
     padding-bottom: var(--padding-29xl);
     box-sizing: border-box;

@@ -118,6 +118,7 @@
     display: none;
   }
   .header {
+    height: initial;
     padding: var(--padding-5xl) var(--padding-base);
     box-sizing: border-box;
   }

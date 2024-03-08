@@ -1,4 +1,4 @@
-.about {
+.menu {
   cursor: pointer;
   text-decoration: none;
   position: relative;
@@ -6,6 +6,7 @@
   line-height: 130%;
   font-weight: 300;
   color: inherit;
+  margin: auto 0;
 }
 
 .selected {
@@ -21,7 +22,7 @@
 }
 
 @media screen and (max-width: 575.98px) {
-  .about {
+  .menu {
     font-size: var(--font-size-13xl);
   }
   .selected {
