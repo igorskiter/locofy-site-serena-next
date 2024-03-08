@@ -1,6 +1,5 @@
 import type { NextPage } from "next";
 import { memo, useEffect, useRef, useState } from "react";
-import pathLines from "./section-wave-lines";
 import styles from "./section-wave-lines.module.scss";
 import VerticalProgressBar from "./ui/VerticalProgressBar";
 
@@ -13,8 +12,9 @@ type WaveContent = {
 
 const SectionWave: NextPage = memo(() => {
   const waveLineRef = useRef();
+  const waveInnerRef = useRef();
   const [wave, setWave] = useState(1);
-  const [init, setInit] = useState(false);
+  const [wavePosition, setWavePosition] = useState("right");
 
   const waveContent: WaveContent[] = [
     {
@@ -58,8 +58,9 @@ const SectionWave: NextPage = memo(() => {
   ];
 
   const waveHoverHandler = (e, index) => {
-    
+    // console.log("waveHoverHandler", index + 1);
     setWave(index + 1);
+    setWavePosition(verificarLargura(index + 1));
   };
 
   useEffect(() => {
@@ -71,46 +72,31 @@ const SectionWave: NextPage = memo(() => {
         waveHoverHandler(e, index)
       );
     });
-    setInit(true);
   }, []);
-  function sleep(ms) {
-    return new Promise((resolve) => setTimeout(resolve, ms));
-  }
-  const changeLineWave = async (original, index, changed) => {
-    const partsOriginal = original?.attributes
-      ?.getNamedItem("d")
-      .value.split(" ");
 
-    const partsChanged = changed.d.split(" ");
-    const partsTarget = [...partsOriginal];
-
-    // console.log(partsChanged, "partsChanged");
-    // console.log(partsOriginal, "partsOriginal");
-    // console.log(
-    //   "___________________________________________________________________",
-    //   index
-    // );
-    // console.log(partsTarget.join(" "), 'partsTarget');
-  };
-
-  useEffect(() => {
-    if (wave <= 5 && init) {
-      Array(17)
-        .fill(null)
-        .forEach((_, index) => {
-          const line = document.getElementById(`lineWave${index + 1}`);
-          // console.log(line,  pathLines[wave]);
-          if (line) {
-            changeLineWave(line, index, pathLines[wave][index]);
-          }
-        });
+  const verificarLargura = (waveInner) => {
+    if (!waveInnerRef[waveInner]) {
+      return "right";
     }
-  }, [wave, init]);
+
+    const elemento = waveInnerRef[waveInner];
+    if (elemento) {
+      const larguraElemento = elemento.offsetWidth;
+      const posicaoElemento = elemento.getBoundingClientRect().left;
+      const larguraJanela = window.innerWidth;
+
+      const estaForaDaLargura =
+        posicaoElemento + larguraElemento >= larguraJanela - 20;
+      return estaForaDaLargura ? "left" : "right";
+    }
+    
+    return "right";
+  };
 
   return (
     <section className={styles.sectionwave} id="SectionWave">
       <div className={styles.wave} data-state={1}>
-        <div className={styles.groupIcon} data-state={1}>
+        <div className={styles.groupIcon} data-state={wave}>
           <svg
             className={styles.iconSVG}
             width="1918"
@@ -242,63 +228,66 @@ const SectionWave: NextPage = memo(() => {
               strokeMiterlimit="10"
             />
           </svg>
-        </div>
 
-        {Object.keys(waveContent).map((res, index) => {
-          return (
-            <div
-              key={`waveChild${index + 1}`}
-              id={`waveChild${index + 1}`}
-              className={`${styles[`waveChild${index + 1}`]} ${styles.waveChild}
-              ${wave === index + 1 ? styles.waveChildActive : ""}
-              ${
-                waveContent[res].type === "scale" ? styles.waveChildScale : ""
-              }`}
-              ref={(e) => (waveLineRef[index + 1] = e)}
-            >
-              {/* {index + 1} */}
-              <>
-                <div
-                  className={`${styles.waveInner} ${
-                    waveContent[res].type === "scale"
-                      ? styles.waveInnerScale
-                      : ""
-                  }`}
-                >
+          {Object.keys(waveContent).map((res, index) => {
+            return (
+              <div
+                key={`waveChild${index + 1}`}
+                id={`waveChild${index + 1}`}
+                className={`${styles[`waveChild${index + 1}`]} ${
+                  styles.waveChild
+                }
+                ${wave === index + 1 ? styles.waveChildActive : ""}
+                ${
+                  waveContent[res].type === "scale" ? styles.waveChildScale : ""
+                }`}
+                ref={(e) => (waveLineRef[index + 1] = e)}
+              >
+                {/* {index + 1} */}
+                <>
                   <div
-                    className={`${styles.parent} ${
+                    ref={(e) => (waveInnerRef[index + 1] = e)}
+                    className={`${styles.waveInner} ${
                       waveContent[res].type === "scale"
-                        ? styles.parentScale
+                        ? styles.waveInnerScale
+                        : ""
+                    } ${wavePosition === "left" ? styles.waveInnerRever : ""}`}
+                  >
+                    <div
+                      className={`${styles.parent} ${
+                        waveContent[res].type === "scale"
+                          ? styles.parentScale
+                          : ""
+                      }`}
+                    >
+                      {waveContent[res].type === "percent" && (
+                        <div className={styles.percent}>
+                          {waveContent[res].count}%
+                        </div>
+                      )}
+                      <div className={styles.ofPatientsWith}>
+                        <b>{waveContent[res].bold}</b>
+                        {waveContent[res].description}
+                      </div>
+                      {waveContent[res].type === "scale" && (
+                        <VerticalProgressBar
+                          percentage={waveContent[res].count}
+                        />
+                      )}
+                    </div>
+                  </div>
+                  <div
+                    className={`${styles.waveItem}  ${
+                      waveContent[res].type === "scale"
+                        ? styles.waveItemScale
                         : ""
                     }`}
-                  >
-                    {waveContent[res].type === "percent" && (
-                      <div className={styles.percent}>
-                        {waveContent[res].count}%
-                      </div>
-                    )}
-                    <div className={styles.ofPatientsWith}>
-                      <b>{waveContent[res].bold}</b>
-                      {waveContent[res].description}
-                    </div>
-                    {waveContent[res].type === "scale" && (
-                      <VerticalProgressBar
-                        percentage={waveContent[res].count}
-                      />
-                    )}
-                  </div>
-                </div>
-                <div
-                  className={`${styles.waveItem}  ${
-                    waveContent[res].type === "scale"
-                      ? styles.waveItemScale
-                      : ""
-                  }`}
-                />
-              </>
-            </div>
-          );
-        })}
+                  />
+                </>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </section>
   );

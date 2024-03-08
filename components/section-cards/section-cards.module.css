@@ -78,7 +78,7 @@
   letter-spacing: 0.03em;
   line-height: 150%;
   display: inline-block;
-  height: 7.88rem;
+  min-height: 7.88rem;
   flex-shrink: 0;
 }
 .description {
@@ -88,7 +88,7 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-start;
-  padding: 0 0 var(--padding-123xl) var(--padding-3xl);
+  padding: var(--padding-base) 0 var(--padding-123xl) var(--padding-3xl);
   box-sizing: border-box;
   z-index: 3;
   font-size: var(--font-size-5xl);
@@ -229,14 +229,79 @@
 @media screen and (max-width: 575.98px) {
   .sectioncards{
     padding-bottom: var(--padding-77xl);
+    padding-left: 0;
+    padding-right: 0;
   }
   .cards {
     flex-direction: row;
     gap: var(--gap-lg);
     align-items: center;
     justify-content: flex-start;
+    width: 100%;
   }
   .card{
-    min-width: 100%;
+    align-items: center;
+    min-width: 78%;
+  }
+  .card:last-child{
+    margin-right: var(--padding-base);
+  }
+  .card:first-child{
+    margin-left: var(--padding-base);
+  }
+  .card, .cardcontent{
+    max-width: 269px !important;
+  }
+  .cardtitle{
+    gap: var(--gap-5xs)
+  }
+  .subTitleEmphasis{
+    font-size: var(--font-size-17xl);
+  }
+  .description{
+    font-size: var(--font-size-base);
+    padding-bottom: 0;
+    height: auto;
+  }
+  .card, .imagegradient{
+    height: 27.41rem;
+  }
+  .button{
+    height: 1.875rem;
+    padding-bottom: var(--padding-base);
+  }
+  .ctaText{
+    font-size: 9.65px;
+    font-weight: 700;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .cards{
+    height: 33rem;
+  }
+  .card{
+    height: 33rem;
+  }
+  .cardcontent{
+    /* justify-content: space-evenly; */
+    .cardtitle{
+      padding: 0 0 var(--padding-35xl) var(--padding-3xl);
+    }
+  }
+  .cardtitle{
+    height: initial;
+    min-height: initial;
+    .h4{
+      height: initial;
+    }
+  }
+  .cardcontent:hover{
+    .cardtitle{
+      padding: 0 0 0 var(--padding-3xl);
+    }
+  }
+  .imagegradient{
+    height: 33rem;
   }
 }

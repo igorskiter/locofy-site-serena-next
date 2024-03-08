@@ -396,6 +396,10 @@
     justify-content: flex-end;
     padding-right: 0;
   }
+  .right{
+    justify-content: space-between;
+    height: 100%;
+  }
   .box {
     flex-direction: column;
   }
@@ -413,5 +417,16 @@
     padding-left: var(--padding-base);
     padding-right: var(--padding-base);
     box-sizing: border-box;
+  }
+  .buttonssocial1{
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    /* gap: var(--gap-21xl); */
+  }
+  .menu6{
+    font-size: 11px;
   }
 }

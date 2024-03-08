@@ -102,7 +102,7 @@
 @media screen and (max-width: 575.98px) {
   .h2 {
     font-size: var(--font-size-13xl);
-    width: 21.44rem;
+    width: inherit;
     min-height: 0;
   }
   .p4 {

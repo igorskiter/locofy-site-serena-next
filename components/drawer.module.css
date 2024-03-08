@@ -340,6 +340,7 @@
   }
   .menu1{
     justify-content: center;
+    padding-left: var(--padding-base);
   }
   .left {
     min-width: 100%;
