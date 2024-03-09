@@ -85,9 +85,6 @@
     font-size: var(--font-size-67xl);
     width: 100%;
   }
-  .title2 {
-    font-size: var(--font-size-62xl);
-  }
   .buttons {
     display: flex;
   }

@@ -6,9 +6,10 @@
   max-height: 100%;
 }
 .lineIcon {
-  align-self: stretch;
   position: relative;
+  min-width: 100%;
   height: 2px;
+  background-color: rgba(68, 70, 77, 1);
 }
 .groupIcon,
 .vectorIcon {
@@ -289,16 +290,27 @@
   font-family: var(--font-plus-jakarta-sans);
 }
 @media screen and (max-width: 1440px) {
+  .footer{
+    padding: 0;
+  }
+  .content{
+    margin: 0 auto;
+  }
   .center,
   .footer1 {
     box-sizing: border-box;
   }
   .center {
     padding-left: var(--padding-61xl);
+    max-width: 487px;
+    padding-right: var(--padding-61xl);
   }
   .footer1 {
     padding-left: 0;
     padding-right: 0;
+  }
+  .button{
+    width: 185px;
   }
 }
 @media screen and (max-width: 960px) {

@@ -49,6 +49,10 @@
   height: calc(100vh - 150px);
 }
 @media screen and (max-width: 1440px) {
+  .title {
+    font-size: var(--font-size-67xl);
+    width: 100%;
+  }
   .content {
     padding-left: var(--padding-5xl);
     padding-right: var(--padding-5xl);

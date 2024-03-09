@@ -25,7 +25,7 @@ const Footer: NextPage<FooterType> = memo(
     return (
       <section className={styles.footer} id="Footer" style={footerStyle}>
         <div className={styles.content}>
-          <img className={styles.lineIcon} alt="" src={lINE} />
+          <div className={styles.lineIcon} />
           <div className={styles.logomobile}>
             <img className={styles.groupIcon} alt="" src="/group.svg" />
             <img className={styles.vectorIcon} alt="" src="/vector1.svg" />
