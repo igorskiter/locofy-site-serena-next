@@ -208,6 +208,9 @@
     padding-right: var(--padding-5xl);
     box-sizing: border-box;
   }
+  .cardtitle, .h4{
+    height: initial;
+  }
 }
 @media screen and (max-width: 960px) {
   .button:hover {
