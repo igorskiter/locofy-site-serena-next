@@ -5,6 +5,7 @@
   height: 23.64rem;
   .iconSVG{
     width: 100%;
+    scale: 1.2;
   }
 }
 .groupIcon {
@@ -566,6 +567,9 @@
   transition: opacity 1s linear;
 }
 
+.waveChildActive{
+  // transform: translate(10px, 10px) !important;
+}
 .waveChild:hover .waveItem, .waveChild:hover .waveInner{
   opacity: 1;
   visibility: inherit;
@@ -604,54 +608,45 @@
   z-index: 9999;
 }
 .waveChild1 {
-  top: 44.76%;
   right: 77.92%;
-  bottom: 43.1%;
+  bottom: 27.2%;
   left: 21.56%;
 }
 .waveChild2 {
-  top: 42.57%;
   right: 16.41%;
-  bottom: 55.29%;
+  bottom: 41.29%;
   left: 83.07%;
 }
 .waveChild3{
-  top: 45.97%;
   right: 24.54%;
-  bottom: 42.89%;
+  bottom: 73.89%;
   left: 74.94%;
 }
 .waveChild4{
-  top: 36.06%;
-  right: 54.95%;
-  bottom: 53.8%;
+  bottom: 23.5%;
   left: 44.35%;
 }
 .waveChild5 {
-  top: 52.53%;
   right: 46.93%;
-  bottom: 34.33%;
+  bottom: 73.33%;
   left: 52.55%;
 }
 .waveChild6 {
   right: 86.31%;
-  bottom: 9.51%;
+  bottom: 44.31%;
   left: 15.17%;
 }
 .waveChild7 {
-  top: 65.08%;
   right: 74.12%;
-  bottom: 22.78%;
-  left: 25.36%;
+  bottom: 35.5%;
+  left: 33.36%;
 }
 .waveChild8 {
-  top: 60.08%;
   right: 74.12%;
   bottom: 22.78%;
   left: 85.36%;
 }
 .waveChild9 {
-  top: 57.58%;
   right: 34.12%;
   bottom: 22.78%;
   left: 42.56%;
@@ -978,7 +973,7 @@
     svg{
       max-height: 380px;
       position: absolute;
-      scale: 2.1;
+      scale: 2.1 !important;
     }
   }
   .waveChild1 {
@@ -1043,7 +1038,7 @@
     svg{
       position: absolute;
       max-height: 380px;
-      scale: 2;
+      scale: 2 !important;
       // left: calc(100vw - 735px + 735px / 2);
       // width: 735px !important;
       // scale: 2;
