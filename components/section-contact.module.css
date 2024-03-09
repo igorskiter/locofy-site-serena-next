@@ -236,10 +236,10 @@
 }
 @media screen and (max-width: 1440px) {
   .h1 {
-    font-size: var(--font-size-77xl);
+    font-size: var(--font-size-53xl);
   }
   .p3 {
-    font-size: var(--font-size-9xl);
+    font-size: var(--font-size-xl);
   }
   .left {
     flex: 1;
