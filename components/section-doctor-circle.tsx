@@ -15,7 +15,7 @@ const SectionDoctorCircle: NextPage = memo(() => {
             <i className={styles.chapeu1}>Serena Circle</i>
             <div className={styles.h2}>
               <span className={styles.joinThe}>{`Join the `}</span>
-              <i className={styles.comMunity}>com munity.</i>
+              <i className={styles.comMunity}>community.</i>
             </div>
             <div className={styles.p4}>
               Connect, collaborate, and share insights with other doctors using
