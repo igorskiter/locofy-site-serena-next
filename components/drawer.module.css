@@ -246,22 +246,38 @@
     width: 85.13rem;
   }
 }
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1440px) {
+  .menu1, .left{
+    max-height: calc(100vh - 150px);
+  }
+  .redefiningOurRelationshipContainer {
+    font-size: var(--font-size-29xl);
+    width: 100%;
+  }
   .content1 {
-    width: 40.13rem;
+    width: 36.13rem;
+    height: 23.56rem;
   }
   .center {
+    margin-top: 150px;
     width: auto;
     align-self: unset;
-    max-width: 50%;
+    max-width: 70%;
   }
   .content {
     gap: var(--gap-0);
   }
   .navmenu {
-    padding-top: 9.38rem;
+    padding-top: 0;
     padding-right: var(--padding-7xl);
     box-sizing: border-box;
+    justify-content: center;
+  }
+  .privacyPolicy{
+    padding: 0;
+  }
+  .h2, .redefining, .ourRelationship{
+    font-size: 48px !important;
   }
 }
 @media screen and (max-width: 960px) {

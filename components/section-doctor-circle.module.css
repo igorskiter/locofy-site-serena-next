@@ -133,7 +133,7 @@
   color: var(--grey-prime);
   font-family: var(--font-plus-jakarta-sans);
 }
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1440px) {
   .content {
     gap: var(--gap-5xl);
   }

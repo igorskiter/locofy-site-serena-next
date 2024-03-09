@@ -125,7 +125,7 @@
   color: var(--grey-prime);
   font-family: var(--font-lora);
 }
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1440px) {
   .tile {
     min-width: 33%;
   }

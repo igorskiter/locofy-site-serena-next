@@ -20,6 +20,15 @@
   font-family: var(--font-lora);
   color: inherit;
 }
+@media screen and (max-width: 1440px) {
+  .menu {
+    font-size: var(--font-size-13xl);
+  }
+
+  .selected{
+    font-size: var(--font-size-29xl);
+  }
+}
 
 @media screen and (max-width: 575.98px) {
   .menu {

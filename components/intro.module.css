@@ -79,7 +79,7 @@
 .newHero > .content > .buttons{
   opacity: 0;
 }
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1440px) {
   .title1,
   .title2 {
     font-size: var(--font-size-67xl);

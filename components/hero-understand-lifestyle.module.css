@@ -57,7 +57,7 @@
   color: var(--grey-prime);
   font-family: var(--font-lora);
 }
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1440px) {
   .h2 {
     font-size: 30px;
     width: 21.44rem;
@@ -78,6 +78,7 @@
     gap: var(--gap-0);
     align-items: flex-end;
     justify-content: flex-end;
+    max-height: 100vh;
   }
   .container {
     padding: var(--padding-89xl) var(--padding-17xl) var(--padding-178xl)

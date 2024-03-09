@@ -196,7 +196,7 @@
   color: var(--white-prime);
   font-family: var(--font-plus-jakarta-sans);
 }
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1440px) {
   .cards {
     flex-direction: row;
     gap: var(--gap-lg);

@@ -401,7 +401,7 @@
   width: 100%;
   max-width: 100%;
 }
-@media screen and (max-width: 1279px) {
+@media screen and (max-width: 1440px) {
   .wave {
     /* display: none; */
   }
