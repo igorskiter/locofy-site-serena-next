@@ -15,6 +15,7 @@
   display: inline-block;
 }
 .h1 {
+  font-family: var(--font-lora);
   letter-spacing: -0.02em;
   line-height: 100%;
   mix-blend-mode: multiply;
@@ -256,9 +257,13 @@
 @media screen and (max-width: 960px) {
   .h1 {
     min-width: 100%;
+    font-size: var(--font-size-29xl);
+    font-weight: 500 !important;
   }
   .p3 {
+    font-size: var(--font-size-base);
     max-width: 100%;
+    font-weight: 400 !important;
   }
   .left {
     gap: var(--gap-22xl);
@@ -270,12 +275,23 @@
   }
   .content {
     flex-direction: column;
+    width: 100%;
+    max-width: 582px;
+    margin: 0 auto;
   }
   .section {
-    padding-left: var(--padding-117xl);
-    padding-top: 0;
-    padding-right: var(--padding-156xl);
+    padding-left: 0;
+    padding-top: var(--padding-39xl);
+    padding-right: 0;
+    padding-bottom: var(--padding-134xl);
     box-sizing: border-box;
+    justify-content: center;
+  }
+  .button{
+    margin-top: 16px;
+  }
+  .line4{
+    color: var(--color-darkslategray-full);
   }
 }
 @media screen and (max-width: 575.98px) {

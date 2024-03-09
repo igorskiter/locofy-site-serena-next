@@ -239,6 +239,15 @@ body {
 main{
   overflow-x: clip;
 }
-::-webkit-input-placeholder{
+::placeholder{
   color: var(--low-contrast-gre);
+}
+
+@media screen and (max-width: 960px) {
+  ::placeholder{
+    color: var(--color-darkslategray-full);
+  }
+  option:disabled {
+    color: var(--color-darkslategray-full);
+  }
 }
