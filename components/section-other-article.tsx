@@ -21,13 +21,15 @@ const SectionOtherArticleContact = memo(({ hasCantFindWhat = true }: any) => {
           <div className={styles.article} onClick={onArticleContainerClick}>
             <b className={styles.p6}>ACCOUNT</b>
             <div className={styles.p2}>
-              <p className={styles.lostAccessTo}>Lost access to my account.</p>
+              <p className={styles.descriptionArticle}>
+                Lost access to my account.
+              </p>
             </div>
           </div>
           <div className={styles.article} onClick={onArticleContainerClick}>
             <b className={styles.p6}>ACCOUNT</b>
             <div className={styles.p2}>
-              <p className={styles.lostAccessTo}>
+              <p className={styles.descriptionArticle}>
                 How do I change my account’s e-mail?
               </p>
             </div>
@@ -75,7 +77,9 @@ const SectionOtherArticleContact = memo(({ hasCantFindWhat = true }: any) => {
         </div>
       </div>
       {hasCantFindWhat && (
-        <div className={styles.otherArticles}>
+        <div
+          className={`${styles.otherArticles} ${styles.otherArticlesContact}`}
+        >
           <div className={styles.cantFindWhat}>
             Can’t find what you are looking for?
           </div>

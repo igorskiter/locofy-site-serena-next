@@ -64,7 +64,7 @@ const SectionFrequentlyAskedQuestion: NextPage = memo(() => {
               </span>
             </div>
           </div>
-          <div className={styles.article3}>
+          <div className={styles.article}>
             <div className={styles.chapeu23}>
               How can Serena Screening help patients?
             </div>
@@ -121,7 +121,7 @@ const SectionFrequentlyAskedQuestion: NextPage = memo(() => {
               </b>
             </div>
           </div>
-          <div className={styles.article6}>
+          <div className={styles.article}>
             <div className={styles.chapeu26}>How is data privacy ensured?</div>
             <div className={styles.p72} onClick={onTextClick}>
               <span>

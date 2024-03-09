@@ -11,7 +11,7 @@
   display: flex;
   align-items: center;
 }
-.lostAccessTo {
+.descriptionArticle {
   margin: 0;
 }
 .p2 {
@@ -97,9 +97,9 @@
   width: 0.75rem;
   position: relative;
   height: 0.75rem;
+  margin-right: 24px;
 }
 .selection {
-  width: 5.25rem;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -221,8 +221,31 @@
   }
 }
 @media screen and (max-width: 960px) {
+  .section {
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+    gap: var(--gap-110xl);
+    padding-bottom: var(--padding-133xl);
+  }
   .buttons {
     display: none;
+  }
+  .article{
+    height: 350px;
+    min-height: 100%;
+    box-sizing: border-box;
+  }
+  .p2{
+    min-width: initial;
+  }
+  .descriptionArticle{
+    font-size: var(--font-size-17xl);
+    font-weight: 300;
+  }
+  .otherArticlesContact{
+    justify-content: center;
+    align-items: center;
   }
 }
 @media screen and (max-width: 575.98px) {
@@ -251,7 +274,7 @@
       max-width: 240px;
     }
   }
-  .lostAccessTo{
+  .descriptionArticle{
     width: 240px !important;
   }
   .article1 {
@@ -280,7 +303,7 @@
     padding-bottom: var(--padding-117xl);
     gap: var(--gap-127xl);
   }
-  .lostAccessTo{
+  .descriptionArticle{
     width: 364px;
   }
 }
