@@ -319,7 +319,7 @@
     box-sizing: border-box;
   }
   .right1 {
-    padding-right: var(--padding-61xl);
+    padding-right: 0;
   }
   .box {
     padding-right: 0;
@@ -339,6 +339,13 @@
     height: auto;
     padding-left: var(--padding-11xl);
     padding-right: var(--padding-11xl);
+  }
+  
+  .center {
+    padding-left: 0;
+  }
+  .logotablet{
+    padding: 0;
   }
 }
 @media screen and (max-width: 575.98px) {

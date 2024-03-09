@@ -225,6 +225,43 @@
     padding-right: var(--padding-5xl);
     box-sizing: border-box;
   }
+  .card, .cardcontent, .cardsgradient, .imagegradient{
+    max-height: 416px;
+  }
+  .button{
+    padding-bottom: var(--padding-base);
+  }
+  .cardtitle{
+    height: initial;
+    padding: 0 0 0 var(--padding-3xl);
+    gap: var(--gap-5xs);
+    padding-bottom: var(--padding-base);
+  }
+  .cardcontent:hover > .cardtitle{
+    padding-bottom: 0;
+  }
+  .cardtitle > .h4{
+    height: initial;
+    font-size: var(--font-size-16xl);
+  }
+  .description{
+    padding: var(--padding-base) 0 0 var(--padding-3xl);
+    height: auto;
+  }
+  .descriptionText{
+    font-size: var(--font-size-sm);
+    min-height: auto;
+  }
+  .button{
+    height: auto;
+  }
+  .buttonprimary{
+    height: 2.25rem;
+  }
+  .ctaText{
+    font-size: 9px;
+    font-weight: 700;
+  }
 }
 @media screen and (max-width: 575.98px) {
   .sectioncards{

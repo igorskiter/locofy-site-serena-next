@@ -94,9 +94,17 @@
     justify-content: flex-start;
   }
   .container {
-    padding-left: var(--padding-108xl);
-    padding-right: var(--padding-17xl);
+    padding-left: 0;
+    /* padding-right: var(--padding-17xl); */
     box-sizing: border-box;
+    align-items: flex-end;
+  }
+  .p4{
+    font-size: var(--font-size-base);
+    max-width: 270px;
+  }
+  .h2{
+    max-width: 394px;
   }
 }
 @media screen and (max-width: 575.98px) {
