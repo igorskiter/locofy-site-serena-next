@@ -48,7 +48,7 @@ const SectionFrequentlyAskedQuestion: NextPage = memo(() => {
             </div>
           </div>
           <div className={styles.article}>
-            <div className={styles.chapeu22}>
+            <div className={styles.chapeu2}>
               What scientific evidence supports Serena Screening?
             </div>
             <div className={styles.p72} onClick={onTextClick}>
@@ -65,7 +65,7 @@ const SectionFrequentlyAskedQuestion: NextPage = memo(() => {
             </div>
           </div>
           <div className={styles.article}>
-            <div className={styles.chapeu23}>
+            <div className={styles.chapeu2}>
               How can Serena Screening help patients?
             </div>
             <div className={styles.p72} onClick={onTextClick}>
@@ -82,7 +82,7 @@ const SectionFrequentlyAskedQuestion: NextPage = memo(() => {
             </div>
           </div>
           <div className={styles.article}>
-            <div className={styles.chapeu24}>
+            <div className={styles.chapeu2}>
               How can Serena Screening help companies?
             </div>
             <div className={styles.p72} onClick={onTextClick}>
@@ -102,7 +102,7 @@ const SectionFrequentlyAskedQuestion: NextPage = memo(() => {
             </div>
           </div>
           <div className={styles.article}>
-            <div className={styles.chapeu25}>
+            <div className={styles.chapeu2}>
               How can this platform assist doctors and practitioners ?
             </div>
             <div className={styles.p75} onClick={onTextClick}>
@@ -122,7 +122,7 @@ const SectionFrequentlyAskedQuestion: NextPage = memo(() => {
             </div>
           </div>
           <div className={styles.article}>
-            <div className={styles.chapeu26}>How is data privacy ensured?</div>
+            <div className={styles.chapeu2}>How is data privacy ensured?</div>
             <div className={styles.p72} onClick={onTextClick}>
               <span>
                 We take data privacy very seriously. We comply with all relevant
@@ -137,7 +137,7 @@ const SectionFrequentlyAskedQuestion: NextPage = memo(() => {
             </div>
           </div>
           <div className={styles.article}>
-            <div className={styles.chapeu27}>
+            <div className={styles.chapeu2}>
               How accurate is the AI used in the platform?
             </div>
             <div className={styles.p72} onClick={onTextClick}>
@@ -154,7 +154,7 @@ const SectionFrequentlyAskedQuestion: NextPage = memo(() => {
             </div>
           </div>
           <div className={styles.article}>
-            <div className={styles.chapeu27}>
+            <div className={styles.chapeu2}>
               What support is available to users?
             </div>
             <div className={styles.p72} onClick={onTextClick}>

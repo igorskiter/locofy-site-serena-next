@@ -75,19 +75,19 @@ const SectionOtherArticleContact = memo(({ hasCantFindWhat = true }: any) => {
             </button>
           </div>
         </div>
+        {hasCantFindWhat && (
+          <div
+            className={`${styles.otherArticles} ${styles.otherArticlesContact}`}
+          >
+            <div className={styles.cantFindWhat}>
+              Can’t find what you are looking for?
+            </div>
+            <div className={styles.button} onClick={onButtonContainerClick}>
+              <div className={styles.getInContact}>GET IN CONTACT</div>
+            </div>
+          </div>
+        )}
       </div>
-      {hasCantFindWhat && (
-        <div
-          className={`${styles.otherArticles} ${styles.otherArticlesContact}`}
-        >
-          <div className={styles.cantFindWhat}>
-            Can’t find what you are looking for?
-          </div>
-          <div className={styles.button} onClick={onButtonContainerClick}>
-            <div className={styles.getInContact}>GET IN CONTACT</div>
-          </div>
-        </div>
-      )}
     </div>
   );
 });
