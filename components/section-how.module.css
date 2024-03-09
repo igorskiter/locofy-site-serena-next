@@ -135,7 +135,7 @@
   .imageaboutushowIcon {
     width: 21.44rem;
     height: 21.44rem;
-    min-width: initial;
+    min-width: 100%;
     max-width: initial;
   }
   .chapeu2 {

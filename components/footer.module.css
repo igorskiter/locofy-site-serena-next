@@ -131,7 +131,7 @@
 }
 .home {
   font-size: var(--font-size-5xl);
-  font-weight: 700;
+  /* font-weight: 700; */
 }
 .about {
   font-weight: 500;
@@ -353,8 +353,8 @@
   }
   .footer {
     height: auto;
-    padding-left: var(--padding-11xl);
-    padding-right: var(--padding-11xl);
+    padding-left: 0;
+    padding-right: 0;
   }
   
   .center {
@@ -392,6 +392,7 @@
   }
   .center {
     padding-left: 0;
+    padding-right: 0;
     box-sizing: border-box;
     flex: unset;
   }
@@ -425,11 +426,12 @@
   }
   .box {
     flex-direction: column;
+    width: 100% !important;
   }
   .box,
   .content,
   .footer {
-    align-self: stretch;
+    align-self: center;
     width: auto;
   }
   .content {
@@ -437,8 +439,8 @@
   }
   .footer {
     height: auto;
-    padding-left: var(--padding-base);
-    padding-right: var(--padding-base);
+    padding-left: 0;
+    padding-right: 0;
     box-sizing: border-box;
   }
   .buttonssocial1{

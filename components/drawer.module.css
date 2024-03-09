@@ -353,6 +353,12 @@
   .right{
     padding-bottom: 15%;
   }
+  .left{
+    max-height: 70vh;
+  }
+  .center{
+    height: 90%;
+  }
 }
 @media screen and (max-width: 575.98px) {
   .navmenu {
