@@ -248,7 +248,7 @@
 }
 @media screen and (max-width: 1440px) {
   .menu1, .left{
-    max-height: calc(100vh - 150px);
+    max-height: calc(100vh - 190px);
   }
   .redefiningOurRelationshipContainer {
     font-size: var(--font-size-29xl);
