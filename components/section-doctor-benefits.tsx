@@ -10,7 +10,7 @@ const SectionDoctorBenefits: NextPage = memo(() => {
         <div className={styles.content1}>
           <div className={styles.tile}>
             <img className={styles.icon} alt="" src="/iconplans.svg" />
-            <div className={styles.chapeu2}>Personalized Treatment Plans</div>
+            <div className={styles.chapeu2}>Personalized <br/>Treatment <br/>Plans</div>
             <div className={styles.p5}>
               Understanding how lifestyle factors affect health allows you to
               create personalized treatment plans. With Serena Screening, you
@@ -38,7 +38,7 @@ const SectionDoctorBenefits: NextPage = memo(() => {
           </div>
           <div className={styles.tile}>
             <img className={styles.icon} alt="" src="/iconproactive.svg" />
-            <div className={styles.chapeu22}>From Reactive to Proactive</div>
+            <div className={styles.chapeu22}>From <br/>Reactive to<br/> Proactive</div>
             <div className={styles.p52}>
               Serena Screening empowers you to shift from reactive to proactive
               healthcare. By identifying potential health risks early, you can

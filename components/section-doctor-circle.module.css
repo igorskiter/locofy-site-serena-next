@@ -134,6 +134,15 @@
   font-family: var(--font-plus-jakarta-sans);
 }
 @media screen and (max-width: 1440px) {
+  .description{
+    gap: var(--gap-5xl);
+  }
+  .chapeu1{
+    font-size: var(--font-size-5xl);
+  }
+  .comMunity, .joinThe {
+    font-size: var(--font-size-39xl);
+  }
   .content {
     gap: var(--gap-5xl);
   }
@@ -142,6 +151,19 @@
     padding-right: var(--padding-5xl);
     padding-bottom: var(--padding-143xl);
     box-sizing: border-box;
+  }
+  .left{
+    gap: var(--gap-5xl);
+  }
+  .right, .left{
+    max-width: 50%;
+    max-height: 450px;
+  }
+  .subtractIcon{
+    width: 37.56rem;
+  }
+  .p4{
+   font-size: 20px; 
   }
 }
 @media screen and (max-width: 960px) {

@@ -294,11 +294,15 @@
     padding: 0;
   }
   .content{
-    margin: 0 auto;
+    margin: 0 24px;
+    min-width: 90vw;
   }
   .center,
   .footer1 {
     box-sizing: border-box;
+  }
+  .box{
+    justify-content: space-between;
   }
   .center {
     padding-left: var(--padding-61xl);

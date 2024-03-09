@@ -89,7 +89,7 @@
 }
 @media screen and (max-width: 1440px) {
   .p2 {
-    font-size: var(--font-size-23xl);
+    font-size: var(--font-size-13xl);
     gap: var(--gap-41xl);
     width: initial;
   }
@@ -99,6 +99,9 @@
     height: 47rem;
     justify-content: flex-end;
     gap: var(--padding-30xl);
+  }
+  .description{
+    height: 21.08rem;
   }
 }
 @media screen and (max-width: 960px) {

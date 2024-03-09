@@ -10,6 +10,7 @@ const HeroDoctors: NextPage = memo(() => {
           <div className={styles.h1}>
             <p className={styles.discoverUnderstand}>
               <span className={styles.discover}>{`Discover. `}</span>
+              <br/>
               <i className={styles.understand}>Understand</i>
               <i className={styles.i}>.</i>
             </p>

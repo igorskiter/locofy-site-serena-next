@@ -82,6 +82,7 @@
     height: 100%;
     min-width: 28.13rem;
     min-height: 28.13rem;
+    max-width: 50%;
   }
   .withSerenaScreeningContainer {
     font-size: var(--font-size-5xl);
