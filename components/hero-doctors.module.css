@@ -102,6 +102,13 @@
   }
 }
 @media screen and (max-width: 960px) {
+  .hero{
+    padding-top: 24px;
+  }
+  .content{
+    gap: var(--gap-base);
+    justify-content: space-between;
+  }
   .h1,
   .p3 {
     font-size: var(--font-size-29xl);
@@ -112,11 +119,14 @@
   }
   .left {
     gap: var(--gap-17xl);
+    max-width: 281px;
+    padding: 0;
   }
   .rightIcon {
     width: auto;
     align-self: unset;
     max-height: 28.13rem;
+    min-width: auto;
   }
 }
 @media screen and (max-width: 575.98px) {

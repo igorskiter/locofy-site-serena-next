@@ -25,7 +25,7 @@ const SectionDoctorCircle: NextPage = memo(() => {
             </div>
           </div>
           <div className={styles.button} onClick={onButtonContainerClick}>
-            <div className={styles.joinTheCommunity}>JOBS AT SERENA</div>
+            <div className={styles.joinTheCommunity}>SIGN-UP</div>
           </div>
         </div>
         <div className={styles.right}>

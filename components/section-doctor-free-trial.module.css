@@ -98,8 +98,20 @@
   }
 }
 @media screen and (max-width: 960px) {
+  .section {
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-bottom: var(--padding-127xl);
+    box-sizing: border-box;
+  }
+  .content {
+    align-items: flex-end;
+    justify-content: space-between;
+    gap:var(--gap-base)
+  }
   .leftIcon {
-    max-width: 23.13rem;
+    max-width: 371px;
+    min-width: 371px;
     max-height: 53.25rem;
   }
   .withSerenaScreeningContainer {
@@ -118,10 +130,11 @@
   }
   .description {
     gap: var(--gap-15xl);
+    align-items: center;
   }
-  .content,
   .right {
     justify-content: flex-start;
+    padding-right: 28px;
   }
   .right {
     align-items: flex-start;
@@ -129,15 +142,6 @@
     padding-bottom: 0;
     box-sizing: border-box;
     max-width: 20.63rem;
-  }
-  .content {
-    align-items: flex-end;
-  }
-  .section {
-    padding-left: 0;
-    padding-right: 0;
-    padding-bottom: var(--padding-127xl);
-    box-sizing: border-box;
   }
 }
 @media screen and (max-width: 575.98px) {
