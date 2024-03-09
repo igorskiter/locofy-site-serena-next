@@ -4,7 +4,7 @@
   border-radius: var(--br-5xl);
   height: 55.63rem;
   object-fit: cover;
-  max-width: 100% !important;
+  max-width: 50% !important;
 }
 .chapeu2 {
   position: relative;
@@ -115,12 +115,9 @@
   .imageaboutushowIcon {
     width: 23.88rem;
   }
-  .description {
-    min-width: 17.88rem;
-  }
   .content {
     flex-direction: row;
-    gap: var(--gap-154xl);
+    gap: var(--gap-base);
     align-items: center;
     justify-content: space-between;
   }
@@ -129,6 +126,9 @@
     padding-right: var(--padding-5xl);
     padding-bottom: var(--padding-88xl);
     box-sizing: border-box;
+  }
+  .description{
+    max-width: 286px;
   }
 }
 @media screen and (max-width: 575.98px) {

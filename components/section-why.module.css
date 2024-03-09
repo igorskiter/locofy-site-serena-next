@@ -125,6 +125,7 @@
   .content {
     align-items: center;
     justify-content: space-between;
+    gap: var(--gap-base);
   }
   .section {
     padding-left: var(--padding-5xl);
