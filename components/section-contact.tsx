@@ -9,6 +9,7 @@ const SectionContact: NextPage = memo(() => {
         <div className={styles.left}>
           <div className={styles.h1}>
             <span className={styles.weWantTo}>{`We want to `}</span>
+            <br/>
             <i className={styles.hearFromYou}>hear from you</i>
             <i className={styles.i}>.</i>
           </div>

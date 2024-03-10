@@ -2,10 +2,11 @@
   position: absolute;
   width: 100%;
   max-width: 100%;
-  height: 23.64rem;
+  // height: 23.64rem;
   .iconSVG{
     width: 100%;
-    scale: 1.2;
+    scale: 1;
+    min-height: 380px;
   }
 }
 .groupIcon {
@@ -615,26 +616,26 @@
 }
 .waveChild1 {
   right: 77.92%;
-  bottom: 27.2%;
-  left: 21.56%;
+  bottom: 34.2%;
+  left: 19.56%;
 }
 .waveChild2 {
   right: 16.41%;
-  bottom: 41.29%;
+  bottom: 43.29%;
   left: 83.07%;
 }
 .waveChild3{
   right: 24.54%;
-  bottom: 73.89%;
+  bottom: 69.89%;
   left: 74.94%;
 }
 .waveChild4{
-  bottom: 23.5%;
+  bottom: 28.5%;
   left: 44.35%;
 }
 .waveChild5 {
   right: 46.93%;
-  bottom: 73.33%;
+  bottom: 71.33%;
   left: 52.55%;
 }
 .waveChild6 {
@@ -644,7 +645,7 @@
 }
 .waveChild7 {
   right: 74.12%;
-  bottom: 35.5%;
+  bottom:  39.5%;
   left: 33.36%;
 }
 .waveChild8 {
@@ -892,11 +893,13 @@
   font-size: var(--font-size-17xl);
   color: var(--salmon-prime);
   font-family: var(--font-plus-jakarta-sans);
+  padding-bottom: 180px;
+
 }
 
 .sectionwave>div {
   width: 100%;
-  max-width: 100%;
+  max-width: 1920px;
 }
 
 .waveInnerRever{
@@ -904,6 +907,9 @@
 }
 
 @media screen and (max-width: 1440px) {
+  .groupIcon{
+    height: 23.64rem;
+  }
   .wave {
     /* display: none; */
   }
@@ -979,7 +985,7 @@
     svg{
       max-height: 380px;
       position: absolute;
-      scale: 2.1 !important;
+      scale: 2 !important;
     }
   }
   .waveChild1 {

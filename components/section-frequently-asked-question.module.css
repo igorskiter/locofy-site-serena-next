@@ -211,7 +211,8 @@
     box-sizing: border-box;
   }
   .article{
-    max-width: 27%;
+    max-width: 35% !important;
+    flex-basis: 50%;
   }
 }
 @media screen and (max-width: 960px) {

@@ -29,7 +29,10 @@
 }
 .content {
   align-items: flex-start;
-  gap: var(--gap-41xl);
+  gap: var(--gap-41xl);    
+  max-width: 71.5rem;
+  margin: 0 auto;
+  width: 100%;
 }
 .section {
   align-items: center;

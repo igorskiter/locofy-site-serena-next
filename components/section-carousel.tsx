@@ -52,15 +52,24 @@ const SectionCarousel: NextPage = memo(() => {
               .getElementById(newOrderPilar[0])
               ?.classList.add(styles["showHidden"]);
 
+            setTimeout(() => {}, 5000);
+
             if (entry.intersectionRatio >= 0.3 && entry.isIntersecting) {
               const withWindow = window.innerWidth;
-              // if (withWindow <= 420) {
-              // console.log(entry);
-              var scrollDiv: number =
-                document.getElementById(newOrderPilar[0])?.offsetTop || 0;
-              console.log(scrollDiv);
-              window.scrollTo({ top: scrollDiv, behavior: "smooth" });
-              // }
+              // if (withWindow <= 960) {
+              if (
+                (withWindow > 960 && entry.intersectionRatio >= 0.6) ||
+                (withWindow > 575.97 &&
+                  withWindow <= 960 &&
+                  entry.intersectionRatio >= 0.4)
+              ) {
+                console.log(entry);
+
+                var scrollDiv: number =
+                  document.getElementById(newOrderPilar[0])?.offsetTop || 0;
+                console.log(scrollDiv);
+                // window.scrollTo({ top: scrollDiv, behavior: "smooth" });
+              }
 
               newOrderPilar.forEach((res, index) => {
                 if (entry.target.id !== res) {

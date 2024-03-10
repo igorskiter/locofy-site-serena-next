@@ -138,6 +138,10 @@
   .left {
     gap: var(--gap-5xl);
     padding-right: 0;
+    max-width: 100%;width: 100%;
+  }
+  .h1, .p3{
+    max-width: 100% !important;width: 100%;
   }
   .rightIcon {
     width: 343px;
@@ -145,8 +149,10 @@
     align-items: center;
     justify-content: center;
     border-radius: var(--br-base);
-    min-width: 100%;
-    min-height: 100%;
+    max-height: 450.08px;
+    max-width: 100%;
+    min-height: auto;
+    min-width: auto;
   }
   .content,
   .hero {
