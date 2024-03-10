@@ -280,6 +280,20 @@
     font-size: 48px !important;
   }
 }
+/* iPads (landscape) ----------- */
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
+  .navmenu {
+    margin-top: 150px;
+  }
+  .center{
+    position: relative;
+    height: 100vh ;
+  }
+}
+
 @media screen and (max-width: 960px) {
   .menu1 {
     /* gap: var(--gap-21xl); */
