@@ -82,7 +82,7 @@
 @media screen and (max-width: 1440px) {
   .title1,
   .title2 {
-    font-size: var(--font-size-67xl);
+    font-size: 7.875rem;
     width: 100%;
   }
   .buttons {
