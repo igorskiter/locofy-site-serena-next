@@ -70,7 +70,7 @@
   padding: 0 0 var(--padding-35xl);
   box-sizing: border-box;
   background-image: url(/box@3x.png);
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat;
   background-position: top;
   gap: var(--padding-23xl);
@@ -91,19 +91,32 @@
   .p2 {
     font-size: 28px;
     gap: var(--gap-12xl);
-    width: 75%;
+    width: 62%;
   }
   .box{
     padding-left: 72px;
     padding-right: 72px;
     height: 41rem;
     justify-content: flex-end;
+    gap: 0;
+    background-size: 756px 28rem;
+    background-repeat: no-repeat;
+    background-position: bottom;
   }
   .description{
-    height: 21.08rem;
+    height: 19.08rem;
+    gap: 32px;
   }
   .button{
-    width: 20rem;
+    width: 17rem;
+    height: 2.3rem !important;
+    font-size: 10px;
+    border-radius: 0.5rem;
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+  .chapeu2{
+    font-size: 26px;
   }
 }
 @media screen and (max-width: 960px) {

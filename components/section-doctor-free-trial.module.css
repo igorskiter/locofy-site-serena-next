@@ -82,13 +82,17 @@
     height: 100%;
     min-width: 28.13rem;
     min-height: 28.13rem;
-    max-width: 50%;
+    max-width: 47%;
   }
   .withSerenaScreeningContainer {
-    font-size: var(--font-size-5xl);
+    font-size: 30px;
+    width: 80%;
+  }
+  .description{
+    gap: 42px;
   }
   .content {
-    gap: var(--gap-5xl);
+    gap: 72px;
   }
   .section {
     gap: var(--gap-62xl);
@@ -96,6 +100,18 @@
     padding-top: var(--padding-35xl);
     padding-right: var(--padding-33xl);
     box-sizing: border-box;
+  }
+  .right{
+    justify-content: flex-end;
+    padding: 0 0 72px 0;
+  }
+  .button{
+    width: 17rem;
+    height: 2.3rem !important;
+    font-size: 10px;
+    border-radius: 0.5rem;
+    padding-top: 0;
+    padding-bottom: 0;
   }
 }
 @media screen and (max-width: 960px) {

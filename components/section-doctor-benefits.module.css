@@ -126,12 +126,20 @@
   font-family: var(--font-lora);
 }
 @media screen and (max-width: 1440px) {
+  .chapeu1{
+    font-size: 24px;
+  }
+  .content{
+    gap: var(--gap-62xl);
+    width: 85%;
+  }
   .content1{
     justify-content: space-between;
   }
   .tile {
     min-width: 25%;
     max-width: 30%;
+    gap: 0;
   }
   .tile1 {
     max-width: 26.25rem;
@@ -151,14 +159,17 @@
     box-sizing: border-box;
   }
   .icon {
-    width: 6rem;
-    height: 6rem;
+    width: 5rem;
+    height: 5rem;
   }
   .chapeu2, .chapeu21, .chapeu22{
     font-size: var(--font-size-3xl-5);
+    margin-top: 32px;
   }
   .p5, .p51, .p52{
-   font-size: 20px; 
+   font-size: 12px; 
+   margin-top: 16px;    
+   max-width: 280px;
   }
 }
 @media screen and (max-width: 960px) {
