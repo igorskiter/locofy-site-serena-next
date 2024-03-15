@@ -5,7 +5,7 @@
   font-weight: 300;
   font-family: var(--font-plus-jakarta-sans);
 }
-.h2>span>i {
+.h2>span>span>i {
   font-weight: 600;
   font-family: var(--font-lora);
 }
@@ -59,26 +59,27 @@
 }
 @media screen and (max-width: 1440px) {
   .h2 {
-    font-size: 54px;
-    width: 50%;
-    line-height: 110%;
-    min-height: 29.44rem;
+    font-size: 46px;
+    width: initial;
+    line-height: 130%;
+    min-height: 23.44rem;
   }
   .h2>span{
-    font-size: 54px;
+    font-size: 46px;
   }
   .h2>i {
-    font-size: 54px;
+    font-size: 50px;
   }
   .p4 {
     width: 100%;
     align-self: stretch;
     height: auto;
-    max-width: 42%;
+    /* max-width: 44%; */
+    font-size: 16px;
   }
   .box {
     flex-direction: row;
-    gap: var(--gap-0);
+    gap: var(--gap-21xl);
     align-items: flex-end;
     justify-content: center;
     max-height: 100vh;

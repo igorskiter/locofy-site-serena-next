@@ -101,13 +101,33 @@
   font-family: var(--font-plus-jakarta-sans);
 }
 
-@media screen and (max-width: 960px) {
+@media screen and (max-width: 1440px) {
+  .header{
+    padding: var(--padding-6xl) 0 var(--padding-39xl) 0;
+    height: initial;
+    margin: 0 auto;
+    max-width: calc(100vw - 10%);
+  }
+  .menuburgerIcon{
+    object-fit: contain;
+    height: 1.3rem;
+  }
+  .login{
+    font-size: 10px;
+    font-weight: 400;
+  }
+  .iconlogin{
+    width: 1.6rem;
+  }
+  .logotabletIcon{
+    display: flex;
+    width: 9.31rem;
+  }
   .logoIcon {
     display: none;
   }
-  .logotabletIcon {
-    display: flex;
-  }
+}
+@media screen and (max-width: 960px) {
   .header {
     padding: var(--padding-11xl) var(--padding-7xl);
     box-sizing: border-box;

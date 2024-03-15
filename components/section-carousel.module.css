@@ -20,14 +20,12 @@
   position: absolute;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  align-items: center !important;
+  justify-content: center !important;
   transition:all 1s linear;
 }
 .diet {
-  height: 14.63rem;
   gap: var(--gap-3xs);
-  font-size: var(--font-size-35xl-1);
   font-family: var(--font-lora);
 }
 .social {
@@ -39,12 +37,11 @@
 }
 .sleepquality {
   /* filter: blur(25.51px); */
-  height: 11.69rem;
   gap: var(--gap-3xs);
   font-size: var(--font-size-3xl-5);
 }
 .stressmanagement {
-  /* filter: blur(18.85px); */
+  filter: blur(3.85px);
   align-items: flex-start;
   justify-content: flex-start;
   font-size: var(--font-size-4xl-6);
@@ -54,38 +51,42 @@
 }
 .position0{
   top: 37.35rem !important;
-  left: 19.74rem !important;
+  left: calc(50% - 105px) !important;
   transition:all 1s linear;
   filter: none !important;
 }
 .position1{
-  top: 30.13rem;
-  left: 35.83rem;
-  filter: blur(18.85px);
+  top: 28.64rem;
+  left: calc(90% - 75.5px);
+  filter: blur(3.85px);
 }
 .position2{
   top: 10.86rem;
-  left: 35.48rem;
-  filter: blur(18.85px);
+  left: calc(90% - 75.5px);
+  filter: blur(3.85px);
   transition:all 1s linear;
 }
 .position3{
   top: 0;
-  left: 19.74rem;
-  filter: blur(18.85px);
+  left: calc(50% - 105px) !important;
+  filter: blur(3.85px);
   transition:all 1s linear;
 }
 .position4{
   top: 9.01rem;
   left: 0.78rem;
-  filter: blur(18.85px);
+  filter: blur(3.85px);
   transition:all 1s linear;
 }
 .position5{
   top: 28.64rem;
   left: 0;
-  filter: blur(18.85px);
+  filter: blur(3.85px);
   transition:all 1s linear;
+}
+.boxPilar{
+  min-width: 210px;
+  min-height: 192px;
 }
 .understand {
   font-weight: 300;
@@ -119,12 +120,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-}
-.iconstressmanagement {
-  width: 5.5rem;
-  position: relative;
-  height: 6.13rem;
-  object-fit: cover;
+  z-index: 999;
+  
 }
 .blur {
   width: 10.75rem;
@@ -148,12 +145,39 @@
   height: 4.23rem;
   flex-shrink: 0;
 }
+.icondiet {
+  width: 7.67rem;
+  overflow: hidden;
+  object-fit: cover;
+  position: relative;
+  flex-shrink: 0;
+}
+.iconsocialconnections {
+  position: relative;
+  flex-shrink: 0;
+  width: 10.02rem;
+  overflow: hidden;
+  object-fit: cover;
+}
+.iconcontroltoxic {
+  width: 4.76rem;
+  position: relative;
+}
 .iconsleepquality {
   width: 6.08rem;
   position: relative;
-  height: 6.31rem;
   overflow: hidden;
   flex-shrink: 0;
+  object-fit: cover;
+}
+.iconstressmanagement {
+  width: 6.08rem;
+  position: relative;
+  object-fit: cover;
+}
+.iconphysicalactivities {
+  width: 9.32rem;
+  position: relative;
   object-fit: cover;
 }
 .blur1,
@@ -161,8 +185,6 @@
   width: 9.5rem;
 }
 .blur1 {
-  /* filter: blur(16.03px); */
-  overflow: hidden;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -170,7 +192,7 @@
   padding: 0 var(--padding-6xs);
   box-sizing: border-box;
 }
-.p4 {
+.position0 .p4 {
   display: flex;
   position: relative;
   line-height: 120%;
@@ -183,15 +205,11 @@
   text-align: center;
   justify-content: center;
 }
-.iconphysicalactivities {
-  width: 9.32rem;
-  position: relative;
-  height: 7.68rem;
-  object-fit: cover;
+.position0 img{
+  /* transform: scale(1.2); */
 }
 .blur2 {
   width: 13.13rem;
-  height: 7.94rem;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -200,29 +218,6 @@
   padding: var(--padding-11xs) var(--padding-12xs);
   box-sizing: border-box;
   flex-shrink: 0;
-}
-.blurIcon {
-  position: relative;
-  flex-shrink: 0;
-}
-.blurIcon {
-  width: 10.02rem;
-  height: 6.49rem;
-  overflow: hidden;
-  object-fit: cover;
-}
-.blurIcon1 {
-  width: 9.67rem;
-  height: 11.66rem;
-  overflow: hidden;
-  object-fit: cover;
-  position: relative;
-  flex-shrink: 0;
-}
-.iconcontroltoxic {
-  width: 4.76rem;
-  position: relative;
-  height: 4.9rem;
 }
 .blur3 {
   width: 9.31rem;
@@ -293,49 +288,142 @@
   font-family: var(--font-plus-jakarta-sans);
 }
 @media screen and (max-width: 1440px) {
+  .carousel{
+    max-width: 59%;
+  }
   .box,
   .content {
     align-items: center;
   }
   .box {
     width: auto;
-    align-self: unset;
+    align-self: flex-end;
+    justify-content: flex-end;
     /* height: 52.28rem;
     justify-content: flex-end; */
     max-width: 22.5rem;
   }
   .content {
     /* flex-direction: column; */
-    gap: 7.09rem;
+    gap: 0;
     align-items: flex-start;
 
     justify-content: flex-start !important;
-  }
-  .p1{
     margin: 0 auto;
+    width: initial;
   }
-} 
-@media (max-height: 590px) {
+  .fromNutritionAndContainer{
+    max-width: 380px !important;
+  }
   .p1{
-    top: 1%;
+    top: calc(50vh - 130px);
+    margin: 0 auto;
+    width: 100%;
+    left: initial;
+    align-items: center;
+    justify-content: center;
   }
+  span.understandAct{
+    font-size: 62px;
+    line-height: 95%;
+  }
+  .understandAct{
+    font-size: 16px;    
+    line-height: 32px;
+  }
+  .pilares{
+    width: 50vw;
+    max-width: 6742.55px;
+    max-height: 842.96px;
+  }
+  .position0 .p4{
+    font-size: 2.5rem !important;
+    height: inherit;
+  }
+  .p4{
+    height: inherit;
+  }
+  .pilars{
+    max-width: 50%;
+  }
+  .position0 .icondiet {
+    width: 6.25rem;
+  }
+  .position0 .iconsocialconnections {
+    width: 10.02rem;
+  }
+  .position0 .iconcontroltoxic {
+    width: 4.76rem;
+  }
+  .position0 .iconsleepquality {
+    width: 6.08rem;
+  }
+  .position0 .iconstressmanagement {
+    width: 6.08rem;
+  }
+  .position0 .iconphysicalactivities {
+    width: 9.32rem;
+  }
+  .position0 .iconphysicalactivities{
+    width: 7.32rem;
+  }
+  .icondiet {
+    width: 6.25rem;
+  }
+  .iconsocialconnections {
+    width: 6.02rem;
+  }
+  .iconcontroltoxic {
+    width: 3.76rem;
+  }
+  .iconsleepquality {
+    width: 4.08rem;
+  }
+  .iconstressmanagement {
+    width: 4.08rem;
+  }
+  .iconphysicalactivities {
+    width: 7.32rem;
+  }
+  .iconphysicalactivities{
+    width: 5.32rem;
+  }
+
   .position0{
-    top: 20.35rem !important;
+    top: calc(50vh + 170px) !important;
   }
   .position1{
-    top: 13.13rem;
-  }
-  .position2{
-    top: -7.86rem;
+    top: calc(50vh + 45px);
+    left: calc(77% - 75px);
   }
   .position3{
-    top: -17rem;
+    top: calc(50vh - 285px);
+    left: calc(77% - 75px);
+  }
+  .position2{
+    top: calc(50vh - 145px);
+    left: calc(77% - 75px);
   }
   .position4{
-    top: -8.01rem;
+    top: calc(50vh - 145px);
+    left: 0;
   }
   .position5{
-    top: 11.64rem;
+    top: calc(50vh + 45px);
+    left: 0;
+    gap: var(--gap-0);
+  }
+} 
+@media (max-height: 590px) or (max-width: 1024px) {
+  .p1{ 
+    top: calc(50vh - 130px);
+  }
+  .position0{
+    top: calc(50vh + 90px) !important;
+  }
+  .position0 .p4{
+    font-size: 1.5rem !important;
+    height: inherit;
   }
 }
 
@@ -351,11 +439,15 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : landscape){
   .p1{
-    top: 17.94%;
+    top: 30%;
     left: 50%;
     max-width: 100vw;
     transform: translate(-50%, -50%);
     width: initial;
+  }
+  .carousel{
+    max-width: inherit;
+    width: 100%;
   }
   .carousel{
     /* top: -35vh; */
@@ -366,36 +458,49 @@ and (orientation : landscape){
     gap: var(--gap-81xl);
     align-items: center;
     justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
   }
   .box{
     justify-content: flex-end;
     padding-bottom: 10vh;
     /* height: 28rem; */
   }
+  .pilares{
+    width: 100%;
+  }
   .pilars{
     margin-bottom: 0;
     padding-bottom: 0;
+    max-width: initial;
   }
   .fromNutritionAndContainer{
     width: 100%;
   }
+  
   .position0{
-    top: 20.35rem !important;
+    top: 50vh !important;
   }
   .position1{
-    top: 13.13rem;
-  }
-  .position2{
-    top: -7.86rem;
+    top: 35vh;
+    left: 60%;
   }
   .position3{
-    top: -17rem;
+    top: 0;
+    left: calc(77% - 75px);
+  }
+  .position2{
+    top: 10vh;
+    left: 60%;
   }
   .position4{
-    top: -8.01rem;
+    top: 10vh;
+    left: 0;
   }
   .position5{
-    top: 11.64rem;
+    top: 35vh;
+    left: 0;
+    gap: var(--gap-0);
   }
   .sectioncarousel{
     padding-bottom: 0;
@@ -427,10 +532,10 @@ and (orientation : landscape){
   .blur2 {
     max-width: 6.94rem;
   }
-  .blurIcon {
+  .iconsocialconnections {
     max-width: 6.94rem;
   }
-  .blurIcon1 {
+  .icondiet {
     /* max-width: 6.94rem; */
     width: 100px;
     height: 122px;

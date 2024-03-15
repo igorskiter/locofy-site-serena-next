@@ -909,6 +909,25 @@
 @media screen and (max-width: 1440px) {
   .groupIcon{
     height: 23.64rem;
+    svg{
+      scale: 1;
+    }
+  }
+  .waveInner{
+    width: auto;
+    min-height: initial;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+  .percent{
+    font-size: 22px;
+  }
+  .parent{
+    max-width: 7.25rem;
+  }
+  .ofPatientsWith{
+    font-size: 10px;
+    width: 7.25rem;
   }
   .wave {
     /* display: none; */

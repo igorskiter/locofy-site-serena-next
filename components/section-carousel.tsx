@@ -14,7 +14,7 @@ const SectionCarousel: NextPage = memo(() => {
   ];
 
   const pilarsDescription = {
-    diet: "The food we consume directly impacts our physical health, affecting everything from our energy levels and body weight to our risk of developing chronic diseases.",
+    diet: "From nutrition and physical activity to sleep patterns and stress management, we delve  into various aspects of your daily life.",
     social:
       "Strong social connections can improve our mental health and increase longevity, while loneliness and isolation can lead to a decline in mental and physical health.",
     controltoxic:
@@ -121,6 +121,7 @@ const SectionCarousel: NextPage = memo(() => {
           <div className={styles.p1} id="p1">
             <span className={styles.understandAct}>
               <span className={styles.understand}>{`Understand. `}</span>
+              <br />
               <i className={styles.act}>Act.</i>
               <i className={styles.i}>{` `}</i>
               <br />
@@ -133,7 +134,7 @@ const SectionCarousel: NextPage = memo(() => {
               className={`${styles.boxPilar}  ${styles.position0} ${styles.diet}`}
             >
               <img
-                className={styles.blurIcon1}
+                className={styles.icondiet}
                 alt="IconDiet"
                 id="IconDiet"
                 src="/IconDiet@2x.png"
@@ -145,7 +146,7 @@ const SectionCarousel: NextPage = memo(() => {
               className={`${styles.boxPilar}  ${styles.position1} ${styles.social}`}
             >
               <img
-                className={styles.blurIcon}
+                className={styles.iconsocialconnections}
                 alt="IconSocial"
                 id="IconSocial"
                 src="/IconSocial@2x.png"
@@ -166,22 +167,8 @@ const SectionCarousel: NextPage = memo(() => {
               <div className={styles.p4}>Substance Use</div>
             </div>
             <div
-              id="sleepqualityIcon"
-              className={`${styles.boxPilar} ${styles.position3} ${styles.sleepquality}`}
-            >
-              <div className={styles.blur1}>
-                <img
-                  className={styles.iconsleepquality}
-                  alt="IconSleepQuality"
-                  id="IconSleepQuality"
-                  src="/IconSleepQuality@2x.png"
-                />
-              </div>
-              <div className={styles.p4}>Sleep</div>
-            </div>
-            <div
               id="stressmanagementIcon"
-              className={`${styles.boxPilar} ${styles.position4} ${styles.stressmanagement}`}
+              className={`${styles.boxPilar} ${styles.position3} ${styles.stressmanagement}`}
             >
               <div className={styles.blur}>
                 <img
@@ -192,6 +179,20 @@ const SectionCarousel: NextPage = memo(() => {
                 />
               </div>
               <div className={styles.p4}>Stress Management</div>
+            </div>
+            <div
+              id="sleepqualityIcon"
+              className={`${styles.boxPilar} ${styles.position4} ${styles.sleepquality}`}
+            >
+              <div className={styles.blur1}>
+                <img
+                  className={styles.iconsleepquality}
+                  alt="IconSleepQuality"
+                  id="IconSleepQuality"
+                  src="/IconSleepQuality@2x.png"
+                />
+              </div>
+              <div className={styles.p4}>Sleep</div>
             </div>
             <div
               id="physicalactivitiesIcon"
