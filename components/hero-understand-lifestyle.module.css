@@ -60,7 +60,9 @@
 @media screen and (max-width: 1440px) {
   .h2 {
     font-size: 54px;
-    width: 46%;
+    width: 50%;
+    line-height: 110%;
+    min-height: 29.44rem;
   }
   .h2>span{
     font-size: 54px;
@@ -72,7 +74,7 @@
     width: 100%;
     align-self: stretch;
     height: auto;
-    max-width: 40%;
+    max-width: 42%;
   }
   .box {
     flex-direction: row;
