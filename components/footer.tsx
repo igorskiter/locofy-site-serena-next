@@ -107,7 +107,7 @@ const Footer: NextPage<FooterType> = memo(
               <div className={styles.center}>
                 <div className={styles.links}>
                   <div className={styles.right}>
-                    <Link className={styles.home} href="/">
+                    <Link className={styles.about} href="/">
                       Home
                     </Link>
                     <Link className={styles.about} href="/about-us">
@@ -119,7 +119,7 @@ const Footer: NextPage<FooterType> = memo(
                   </div>
                   <div className={styles.right}>
                     <a
-                      className={styles.blog}
+                      className={styles.about}
                       href="https://blog.serenacare.com.br/"
                     >
                       Blog
@@ -128,7 +128,7 @@ const Footer: NextPage<FooterType> = memo(
                       FAQ
                     </Link>
                     <a
-                      className={styles.blog}
+                      className={styles.about}
                       href="https://blog.serenacare.com.br/"
                     >
                       Privacy Policy
