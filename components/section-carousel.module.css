@@ -416,10 +416,19 @@
 } 
 @media (max-height: 590px) or (max-width: 1024px) {
   .p1{ 
-    top: calc(50vh - 130px);
+    top: calc(50vh - 155px);
   }
   .position0{
     top: calc(50vh + 90px) !important;
+  }
+  .position3{
+    top: calc(50vh - 285px) !important;
+  }
+  .position4, .position2{
+    top: calc(50vh - 190px)  !important
+  }
+  .position5, .position1{
+    top: calc(50vh + 15px)
   }
   .position0 .p4{
     font-size: 1.5rem !important;
