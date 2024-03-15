@@ -59,30 +59,31 @@
 }
 @media screen and (max-width: 1440px) {
   .h2 {
-    font-size: 30px;
-    width: 21.44rem;
+    font-size: 54px;
+    width: 46%;
   }
   .h2>span{
-    font-size: 30px;
+    font-size: 54px;
   }
   .h2>i {
-    font-size: var(--font-size-13xl);
+    font-size: 54px;
   }
   .p4 {
     width: 100%;
     align-self: stretch;
     height: auto;
+    max-width: 40%;
   }
   .box {
     flex-direction: row;
     gap: var(--gap-0);
     align-items: flex-end;
-    justify-content: flex-end;
+    justify-content: center;
     max-height: 100vh;
   }
   .container {
-    padding: var(--padding-89xl) var(--padding-17xl) var(--padding-178xl)
-      var(--padding-108xl);
+    padding: var(--padding-89xl) 0 var(--padding-178xl)
+      0;
     box-sizing: border-box;
   }
 }
