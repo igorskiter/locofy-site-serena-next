@@ -68,16 +68,20 @@
   .left {
     align-self: stretch;
     height: auto;
-    min-width: 50%;
+    min-width: 40%;
+    flex: initial;
+    background-position: center;
   }
   .p2 {
-    font-size: var(--font-size-5xl);
+    font-size: 22px;
+    max-width: 55%;
+    flex: initial;
   }
   .right {
     height: 34rem;
   }
   .content {
-    gap: var(--gap-5xl);
+    gap: var(--gap-20xl);
   }
   .section {
     padding-top: var(--padding-86xl);

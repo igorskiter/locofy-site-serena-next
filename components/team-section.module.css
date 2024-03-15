@@ -89,19 +89,21 @@
 }
 @media screen and (max-width: 1440px) {
   .p2 {
-    font-size: var(--font-size-13xl);
-    gap: var(--gap-41xl);
-    width: initial;
+    font-size: 28px;
+    gap: var(--gap-12xl);
+    width: 75%;
   }
   .box{
     padding-left: 72px;
     padding-right: 72px;
-    height: 47rem;
+    height: 41rem;
     justify-content: flex-end;
-    gap: var(--padding-30xl);
   }
   .description{
     height: 21.08rem;
+  }
+  .button{
+    width: 20rem;
   }
 }
 @media screen and (max-width: 960px) {

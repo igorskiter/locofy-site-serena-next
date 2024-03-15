@@ -82,11 +82,10 @@
 }
 @media screen and (max-width: 1440px) {
   .imageaboutushowIcon {
-    flex: 1;
     align-self: stretch;
     height: auto;
-    min-width: 24.06rem;
-    max-width: 50%;
+    max-width: 35%;
+    max-height: calc(100vh - 68px);
   }
   .chapeu2 {
     font-size: var(--font-size-5xl);
@@ -98,7 +97,8 @@
     font-size: var(--font-size-base);
   }
   .description {
-    max-width: 20.38rem;
+    max-width: 34%;
+    gap: 18px;
   }
   .content {
     flex-direction: row;
