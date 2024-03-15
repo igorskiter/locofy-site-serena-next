@@ -57,57 +57,65 @@ const Drawer: NextPage<DrawerType> = memo(({ onClose }) => {
       <div className={styles.navmenu}>
         <div className={styles.content}>
           <div className={styles.menu}>
-            <div className={styles.left}>
-              <div className={styles.menu1}>
-                {/* <MenuSelect /> */}
-                <Menu name="Home" pathMenu="/" onClick={() => onClick("/")} />
-                <Menu
-                  name="About"
-                  pathMenu="/about-us"
-                  onClick={() => onClick("/about-us")}
-                />
-                <Menu
-                  name="For Doctors"
-                  pathMenu="/doctors"
-                  onClick={() => onClick("/doctors")}
-                  aboutLetterSpacing="unset"
-                />
-                <Menu
-                  name="Blog"
-                  pathMenu=""
-                  onClick={onBlogClick}
-                  aboutLetterSpacing="unset"
-                />
-                <Menu
-                  name="Contact"
-                  pathMenu="/contact"
-                  onClick={() => onClick("/contact")}
-                  aboutLetterSpacing="unset"
-                />
-                <Menu
-                  name="FAQ"
-                  pathMenu="/faq"
-                  onClick={() => onClick("/faq")}
-                  aboutLetterSpacing="unset"
-                />
+            <div
+              style={{
+                display: "flex",
+                gap: 80,
+                paddingRight: 60,
+              }}
+            >
+              <div className={styles.left}>
+                <div className={styles.menu1}>
+                  {/* <MenuSelect /> */}
+                  <Menu name="Home" pathMenu="/" onClick={() => onClick("/")} />
+                  <Menu
+                    name="About"
+                    pathMenu="/about-us"
+                    onClick={() => onClick("/about-us")}
+                  />
+                  <Menu
+                    name="For Doctors"
+                    pathMenu="/doctors"
+                    onClick={() => onClick("/doctors")}
+                    aboutLetterSpacing="unset"
+                  />
+                  <Menu
+                    name="Blog"
+                    pathMenu=""
+                    onClick={onBlogClick}
+                    aboutLetterSpacing="unset"
+                  />
+                  <Menu
+                    name="Contact"
+                    pathMenu="/contact"
+                    onClick={() => onClick("/contact")}
+                    aboutLetterSpacing="unset"
+                  />
+                  <Menu
+                    name="FAQ"
+                    pathMenu="/faq"
+                    onClick={() => onClick("/faq")}
+                    aboutLetterSpacing="unset"
+                  />
+                </div>
               </div>
-            </div>
-            <div className={styles.center}>
-              <div className={styles.content1}>
-                <img
-                  className={styles.serFotoMockupQuestionario}
-                  alt=""
-                  src="/ser-foto-mockup--questionario-1@2x.png"
-                />
-                <div className={styles.h2}>
-                  <div className={styles.redefiningOurRelationshipContainer}>
-                    <p className={styles.redefining}>{`Redefining `}</p>
-                    <p className={styles.ourRelationshipWithHealth}>
-                      <span className={styles.ourRelationship}>
-                        our relationship
-                      </span>
-                      <i className={styles.withHealth}> with health</i>
-                    </p>
+              <div className={styles.center}>
+                <div className={styles.content1}>
+                  <img
+                    className={styles.serFotoMockupQuestionario}
+                    alt=""
+                    src="/ser-foto-mockup--questionario-1@2x.png"
+                  />
+                  <div className={styles.h2}>
+                    <div className={styles.redefiningOurRelationshipContainer}>
+                      <p className={styles.redefining}>{`Redefining `}</p>
+                      <p className={styles.ourRelationshipWithHealth}>
+                        <span className={styles.ourRelationship}>
+                          our relationship
+                        </span>
+                        <i className={styles.withHealth}> with health</i>
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>

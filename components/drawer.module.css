@@ -250,6 +250,10 @@
   .menu1, .left{
     max-height: calc(100vh - 190px);
   }
+  .menu1{
+    gap: 12px;
+    height: initial;
+  }
   .redefiningOurRelationshipContainer {
     font-size: var(--font-size-29xl);
     width: 100%;
@@ -257,15 +261,17 @@
   .content1 {
     width: 36.13rem;
     height: 23.56rem;
+    margin-top: -20px;
   }
   .center {
-    margin-top: 150px;
+    /* margin-top: 150px; */
     width: auto;
     align-self: unset;
     max-width: 70%;
   }
   .content {
     gap: var(--gap-0);
+    height: 100%;
   }
   .navmenu {
     padding-top: 0;
@@ -273,11 +279,37 @@
     box-sizing: border-box;
     justify-content: center;
   }
+  .menu{
+    padding-top: 120px;
+    align-items: center;
+    /* max-height: 350px; */
+  }
+  .left{
+    justify-content: flex-start;
+    height: max-content;
+    min-height: initial;
+  }
+  .right{
+    justify-content: center;
+  }
   .privacyPolicy{
     padding: 0;
   }
   .h2, .redefining, .ourRelationship{
     font-size: 48px !important;
+  }
+  .linksocial{
+
+    width: 1.88rem;
+  }
+  .linksocial1,
+  .linksocial3 {
+    width: 1.75rem;
+    height: 1.75rem;
+  }
+  .linksocial3 {
+    width: 2rem;
+    height: 2rem;
   }
 }
 /* iPads (landscape) ----------- */

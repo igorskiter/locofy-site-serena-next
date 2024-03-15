@@ -112,6 +112,9 @@
     object-fit: contain;
     height: 1.3rem;
   }
+  .closeIcon{
+    height: 1.3rem;
+  }
   .login{
     font-size: 10px;
     font-weight: 400;
