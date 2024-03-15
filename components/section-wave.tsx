@@ -14,7 +14,7 @@ const SectionWave: NextPage = memo(() => {
   const waveLineRef = useRef();
   const waveInnerRef = useRef();
   const [wave, setWave] = useState(1);
-  const [wavePosition, setWavePosition] = useState("right");
+  const [wavePosition, setWavePosition] = useState({});
 
   const waveContent: WaveContent[] = [
     {
@@ -57,24 +57,7 @@ const SectionWave: NextPage = memo(() => {
     },
   ];
 
-  const waveHoverHandler = (e, index) => {
-    // console.log("waveHoverHandler", index + 1);
-    setWave(index + 1);
-    setWavePosition(verificarLargura(index + 1));
-  };
-
-  useEffect(() => {
-    Object.keys(waveContent).map((_, index) => {
-      waveLineRef[index + 1].addEventListener("click", (e) =>
-        waveHoverHandler(e, index)
-      );
-      waveLineRef[index + 1].addEventListener("mouseover", (e) =>
-        waveHoverHandler(e, index)
-      );
-    });
-  }, []);
-
-  const verificarLargura = (waveInner) => {
+  const verificarLargura = (waveInner): "right" | "left" => {
     if (!waveInnerRef[waveInner]) {
       return "right";
     }
@@ -89,9 +72,36 @@ const SectionWave: NextPage = memo(() => {
         posicaoElemento + larguraElemento >= larguraJanela - 20;
       return estaForaDaLargura ? "left" : "right";
     }
-    
+
     return "right";
   };
+  console.log(wavePosition);
+
+  const waveHoverHandler = (e, index) => {
+    // console.log("waveHoverHandler", index + 1);
+    setWave(index + 1);
+
+    setWavePosition((prevState) => {
+      if (prevState[index + 1]) {
+        return prevState;
+      }
+      return {
+        ...prevState,
+        [index + 1]: verificarLargura(index + 1),
+      };
+    });
+  };
+
+  useEffect(() => {
+    Object.keys(waveContent).map((_, index) => {
+      waveLineRef[index + 1].addEventListener("click", (e) =>
+        waveHoverHandler(e, index)
+      );
+      waveLineRef[index + 1].addEventListener("mouseover", (e) =>
+        waveHoverHandler(e, index)
+      );
+    });
+  }, []);
 
   return (
     <section className={styles.sectionwave} id="SectionWave">
@@ -251,7 +261,11 @@ const SectionWave: NextPage = memo(() => {
                       waveContent[res].type === "scale"
                         ? styles.waveInnerScale
                         : ""
-                    } ${wavePosition === "left" ? styles.waveInnerRever : ""}`}
+                    } ${
+                      wavePosition[index + 1] === "left"
+                        ? styles.waveInnerRever
+                        : ""
+                    }`}
                   >
                     <div
                       className={`${styles.parent} ${
