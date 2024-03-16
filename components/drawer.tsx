@@ -58,10 +58,12 @@ const Drawer: NextPage<DrawerType> = memo(({ onClose }) => {
         <div className={styles.content}>
           <div className={styles.menu}>
             <div
+              className={styles.contentMenu}
               style={{
                 display: "flex",
                 gap: 80,
-                paddingRight: 60,
+                padding: '60px 0 60px 10%',
+                height: "-webkit-fill-available",
               }}
             >
               <div className={styles.left}>

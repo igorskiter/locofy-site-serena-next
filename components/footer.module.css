@@ -425,6 +425,7 @@
     box-sizing: border-box;
   }
   .content {
+    margin: 0 auto;
     gap: var(--gap-35xl);
     padding-left: 0;
   }

@@ -62,7 +62,7 @@
     font-size: 46px;
     width: initial;
     line-height: 130%;
-    min-height: 23.44rem;
+    min-height: 26.44rem;
   }
   .h2>span{
     font-size: 46px;
@@ -92,11 +92,11 @@
 }
 @media screen and (max-width: 960px) {
   .box {
-    height: auto;
     flex-direction: row;
     gap: var(--gap-0);
     align-items: flex-start;
-    justify-content: flex-start;
+    justify-content: center;
+    width: 100%;
   }
   .container {
     padding-left: 0;
@@ -104,12 +104,21 @@
     box-sizing: border-box;
     align-items: flex-end;
   }
+  .h2>span{
+    font-size: 36px;
+  }
+  .h2>i {
+    font-size: 36px;
+  }
   .p4{
     font-size: var(--font-size-base);
     max-width: 270px;
   }
   .h2{
     max-width: 394px;
+    font-size: 36px;
+    font-weight: 300;
+    min-height: 22.44rem;
   }
 }
 @media screen and (max-width: 575.98px) {

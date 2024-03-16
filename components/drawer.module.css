@@ -318,17 +318,17 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : landscape) {
   .navmenu {
-    margin-top: 150px;
+    /* margin-top: 150px; */
   }
   .center{
-    position: relative;
-    height: 100vh ;
+    /* position: relative; */
+    /* height: 100vh ; */
   }
 }
 
 @media screen and (max-width: 960px) {
   .menu1 {
-    /* gap: var(--gap-21xl); */
+    gap: var(--gap-21xl);
   }
   .serFotoMockupQuestionario {
     width: 18rem;
@@ -342,6 +342,8 @@ and (orientation : landscape) {
     width: 22.56rem;
   }
   .center {
+
+    margin-top: -50px;
     max-width: 30%;
     height: 100%;
     justify-content: flex-start;
@@ -364,8 +366,12 @@ and (orientation : landscape) {
     box-sizing: border-box;
   }
   .menu {
-    align-items: flex-end;
+    align-items: flex-start;
     justify-content: center;
+  }
+  .contentMenu{
+    height: auto !important;
+    /* background-color: aqua; */
   }
   .privacyPolicy {
     display: none;

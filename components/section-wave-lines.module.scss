@@ -572,6 +572,7 @@
 .waveChildActive{
   transform: scale(1.5);
   border-width: 2px !important;
+  z-index: 9999 !important;
 }
 .waveChild:hover .waveItem, .waveChild:hover .waveInner{
   opacity: 1;
@@ -611,7 +612,7 @@
   cursor: pointer;
   transition: all 1s ease-in-out;
   border: 2px solid var(--salmon-prime);
-  z-index: 9999;
+  z-index: 1000;
   transform: scale(.5);
 }
 .waveChild1 {

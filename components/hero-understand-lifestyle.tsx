@@ -12,20 +12,26 @@ const HeroUnderstandLifestyle: NextPage = memo(() => {
             <span>
               {` and mesure`} <br />
               {`the influence of `}
-            <i>
-              {`lifestyle`} <br />
-              {`factors `}
-            </i>
+              <i>
+                {`lifestyle`} <br />
+                {`factors `}
+              </i>
               on the onset of <br />
               disease and chronic <br /> conditions.
             </span>
           </span>
         </div>
         <div className={styles.p4}>
-          With the Serena Screening technology we are <br />
+          With the Serena Screening high <br />
+          technology we are empowering <br />
+          both practitioners and patients <br />
+          with information that will help take <br />
+          preventative measures against <br />
+          potential health issues.
+          {/* With the Serena Screening technology we are <br />
           empowering both practitioners and patients with <br />
           information that will help take preventative <br />
-          measures against potential health issues.
+          measures against potential health issues. */}
         </div>
       </div>
     </section>
