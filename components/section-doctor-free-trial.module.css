@@ -138,6 +138,7 @@
   }
   .withSerenaScreeningContainer {
     font-size: var(--font-size-5xl);
+    width: 100%;
   }
   .startYourFree {
     font-size: var(--font-size-sm);
@@ -153,17 +154,19 @@
   .description {
     gap: var(--gap-15xl);
     align-items: center;
+    width: 330px;
   }
   .right {
-    justify-content: flex-start;
+    justify-content: center;
     padding-right: 28px;
+    max-width: 330px;
+    width: 100%;
   }
   .right {
     align-items: flex-start;
     padding-top: var(--padding-27xl);
     padding-bottom: 0;
     box-sizing: border-box;
-    max-width: 20.63rem;
   }
 }
 @media screen and (max-width: 575.98px) {

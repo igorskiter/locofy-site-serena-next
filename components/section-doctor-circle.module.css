@@ -225,15 +225,16 @@
   .left {
     gap: var(--gap-20xl);
   }
-  .subtractIcon {
-    width: 21.31rem;
+  .subtractIcon { 
+    width: 19.56rem;
+    height: 20.88rem;
   }
   .logoSerenaCircle {
     width: 7.56rem;
     height: 0.88rem;
   }
   .subtractParent {
-    width: 21.31rem;
+    width: 13.31rem;
     height: 20.06rem;
   }
   .right {
@@ -241,6 +242,18 @@
     height: 23.75rem;
     width: 23.75rem !important;
     max-width: 23.75rem !important;
+  }
+  .logoSerenaCircle{
+    top: 10.19rem;
+    left: 3rem;
+  }
+}
+@media screen and (max-width: 689px) {
+  .left{
+    max-width: 35%;
+  }
+  .p4{
+    max-width: 80%;
   }
 }
 @media screen and (max-width: 575.98px) {
