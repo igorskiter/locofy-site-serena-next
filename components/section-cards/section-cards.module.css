@@ -220,6 +220,9 @@
   .cardtitle, .h4{
     height: initial;
   }
+  .cardcontent{
+    max-height: 51.13rem !important;
+  }
 }
 @media screen and (max-width: 960px) {
   .button:hover {
@@ -238,7 +241,7 @@
     box-sizing: border-box;
   }
   .card, .cardcontent, .cardsgradient, .imagegradient{
-    max-height: 416px;
+    max-height: 416px !important;
   }
   .button{
     padding-bottom: var(--padding-base);
