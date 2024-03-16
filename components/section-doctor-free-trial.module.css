@@ -114,9 +114,13 @@
     padding-bottom: 0;
   }
 }
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1025px),
+only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) 
+and (orientation : landscape) {
   .withSerenaScreeningContainer{
-    font-size: 24px;
+    font-size: 24px !important;
   }
 }
 @media screen and (max-width: 960px) {
@@ -137,7 +141,7 @@
     max-height: 53.25rem;
   }
   .withSerenaScreeningContainer {
-    font-size: var(--font-size-5xl);
+    font-size: 24px;
     width: 100%;
   }
   .startYourFree {
