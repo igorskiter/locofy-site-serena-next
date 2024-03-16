@@ -416,7 +416,7 @@
     gap: var(--gap-0);
   }
 } 
-@media (max-height: 590px) or (961px > width < 1024px) {
+@media (max-height: 670px) or (961px > width < 1024px) {
   .p1{ 
     top: calc(50vh - 155px);
   }
