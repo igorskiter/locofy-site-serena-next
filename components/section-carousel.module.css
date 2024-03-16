@@ -51,7 +51,7 @@
 }
 .position0{
   top: 37.35rem !important;
-  left: calc(50% - 105px) !important;
+  left: calc(50% - 75px) !important;
   transition:all 1s linear;
   filter: none !important;
 }
@@ -68,7 +68,7 @@
 }
 .position3{
   top: 0;
-  left: calc(50% - 105px) !important;
+  left: calc(50% - 75px) !important;
   filter: blur(3.85px);
   transition:all 1s linear;
 }
@@ -317,7 +317,7 @@
     max-width: 380px !important;
   }
   .p1{
-    top: calc(50vh - 130px);
+    top: calc(50vh - 105px);
     margin: 0 auto;
     width: 100%;
     left: initial;
@@ -392,18 +392,19 @@
 
   .position0{
     top: calc(50vh + 170px) !important;
+    left: calc(50% - 100px) !important;
   }
   .position1{
     top: calc(50vh + 45px);
-    left: calc(77% - 75px);
+    left: calc(77% - 60px);
   }
   .position3{
     top: calc(50vh - 285px);
-    left: calc(77% - 75px);
+    left: calc(50% - 100px) !important;
   }
   .position2{
     top: calc(50vh - 145px);
-    left: calc(77% - 75px);
+    left: calc(77% - 60px);
   }
   .position4{
     top: calc(50vh - 145px);
@@ -415,7 +416,7 @@
     gap: var(--gap-0);
   }
 } 
-@media (max-height: 590px) or (max-width: 1024px) {
+@media (max-height: 590px) or (961px > width < 1024px) {
   .p1{ 
     top: calc(50vh - 155px);
   }
@@ -423,13 +424,10 @@
     top: calc(50vh + 90px) !important;
   }
   .position3{
-    top: calc(50vh - 285px) !important;
+    /* top: calc(50vh - 285px) !important; */
   }
   .position4, .position2{
-    top: calc(50vh - 190px)  !important
-  }
-  .position5, .position1{
-    top: calc(50vh + 15px)
+    top: 10vh  !important
   }
   .position0 .p4{
     font-size: 1.5rem !important;
@@ -449,7 +447,7 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : landscape){
   .p1{
-    top: 30%;
+    top: calc(15vh + 135px) !important;
     left: 50%;
     max-width: 100vw;
     transform: translate(-50%, -50%);
@@ -489,15 +487,16 @@ and (orientation : landscape){
   }
   
   .position0{
-    top: 50vh !important;
+    top: 45vh !important;
+    left: calc(50% - 105px) !important;
   }
   .position1{
-    top: 35vh;
+    top: 27vh;
     left: 60%;
   }
   .position3{
     top: 0;
-    left: calc(77% - 75px);
+    left: calc(50% - 105px) !important;
   }
   .position2{
     top: 10vh;
@@ -508,7 +507,7 @@ and (orientation : landscape){
     left: 0;
   }
   .position5{
-    top: 35vh;
+    top: 27vh;
     left: 0;
     gap: var(--gap-0);
   }
@@ -516,6 +515,55 @@ and (orientation : landscape){
     padding-bottom: 0;
   }
 }
+@media screen and (max-width: 1024px) and (orientation : portrait){
+  .position0{
+    top: 40vh !important;
+    left: calc(50% - 105px) !important;
+  }
+}
+@media screen and (max-width: 1024px) and (orientation : landscape){
+  .p1{
+    top: calc(15% + 135px) !important;
+  }
+  .position1{
+    top: 0  !important;
+  }
+  .position4, .position2{
+    top: 10vh  !important;
+  }
+  .position5, .position1{
+    top: 35vh !important;
+  }
+  .position3{
+    left: calc(50% - 105px) !important;
+  }
+  .position0{
+    top: 50vh !important;
+    left: calc(50% - 105px) !important;
+  }
+  /* .p1{ 
+    top: calc(50vh + 155px);
+  }
+  .position0{
+    top: calc(50vh + 90px) !important;
+  }
+  .position3{
+    top: calc(50vh - 285px) !important;
+  }
+  .position4, .position2{
+    top: 15vh  !important;
+  }
+  .position1, .position5{
+    top: 35vh  !important;
+    left: 60%;
+  }
+  .position0{
+    top: 40vh !important;
+  }
+  .position0 .p4{
+    height: inherit;
+  }*/
+} 
 @media screen and (max-width: 575.98px) {
   .p1 {
     top: 17.94%;

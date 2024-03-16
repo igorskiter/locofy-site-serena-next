@@ -72,11 +72,12 @@ const SectionCarousel: NextPage = memo(() => {
               }
 
               newOrderPilar.forEach((res, index) => {
-                if (entry.target.id !== res) {
-                  document
-                    .getElementById(`${res}Icon`)
-                    ?.classList.remove(styles["position0"]);
-                }
+                document
+                  .getElementById(`${res}Icon`)
+                  ?.classList.remove(styles["position0"]);
+                document
+                  .getElementById(`${res}Icon`)
+                  ?.classList.remove(styles["position1"]);
                 document
                   .getElementById(`${res}Icon`)
                   ?.classList.remove(styles["position2"]);
