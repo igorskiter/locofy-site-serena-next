@@ -234,7 +234,7 @@
   color: var(--grey-prime);
   font-family: var(--font-lora);
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
   .h1 {
     font-size: var(--font-size-53xl);
   }

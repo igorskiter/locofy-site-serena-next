@@ -198,7 +198,7 @@
   margin-bottom: 101px;
   max-width: 30%;
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
   .chapeu2{
     width: inherit;
   }

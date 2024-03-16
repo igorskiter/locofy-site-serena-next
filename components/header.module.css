@@ -101,7 +101,7 @@
   font-family: var(--font-plus-jakarta-sans);
 }
 
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
   .header{
     padding: var(--padding-6xl) 0 var(--padding-39xl) 0;
     height: initial;

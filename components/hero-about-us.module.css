@@ -48,7 +48,7 @@
   background-image: initial;
   height: calc(100vh - 150px);
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
   .title {
     font-size: 64px;
     width: 80%;

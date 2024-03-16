@@ -288,7 +288,7 @@
   color: var(--grey-prime);
   font-family: var(--font-plus-jakarta-sans);
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
   .carousel{
     max-width: 59%;
   }

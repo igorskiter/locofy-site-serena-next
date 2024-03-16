@@ -125,7 +125,7 @@
   color: var(--grey-prime);
   font-family: var(--font-lora);
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
   .chapeu1{
     font-size: 24px;
   }

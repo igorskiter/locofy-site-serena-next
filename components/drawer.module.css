@@ -246,7 +246,7 @@
     width: 85.13rem;
   }
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
   .menu1, .left{
     max-height: calc(100vh - 190px);
   }
