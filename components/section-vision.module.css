@@ -98,8 +98,12 @@
     width: 14.13rem;
     height: 14.13rem;
   }
+  .p2{
+    font-size: 24px;
+  }
   .left {
     width: 24.06rem;
+    max-width: 45%;
     height: 25.25rem;
   }
   .p2 {

@@ -80,7 +80,7 @@
   color: var(--grey-prime);
   font-family: var(--font-plus-jakarta-sans);
 }
-@media screen and (max-width: 1440px) {
+@media screen and (max-width: 1920px) {
   .imageaboutushowIcon {
     align-self: stretch;
     height: auto;
@@ -128,7 +128,10 @@
     box-sizing: border-box;
   }
   .description{
-    max-width: initial;
+    max-width: 278px;
+  }
+  .h1{
+    max-width: 264px;
   }
 }
 @media screen and (max-width: 575.98px) {
