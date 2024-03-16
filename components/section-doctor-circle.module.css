@@ -135,6 +135,7 @@
 }
 @media screen and (max-width: 1920px) {
   .description{
+    width: initial;
     gap: var(--gap-5xl);
   }
   .chapeu1{
@@ -144,7 +145,7 @@
     font-size: var(--font-size-39xl);
   }
   .content {
-    gap: var(--gap-5xl);
+    gap: 10%;
     justify-content: center;
   }
   .section {
@@ -157,12 +158,9 @@
     gap: var(--gap-5xl);
   }
   .right{
-    max-width: 40%;
-    max-height: calc(100vh - 72px);
-  }
-  .subtractIcon{
-    width: 37.56rem;
-    height: 17.88rem;
+    /* height: auto; */
+    max-width: 450px !important;
+    max-height: 450px;
   }
   .h2, .p4{
     width: 320px;
@@ -183,7 +181,22 @@
   }
   .logoSerenaCircle{
     top: 8.19rem;
-    left: 6rem;
+    left: 0rem;
+  }
+  .subtractIcon{
+    width: 21.56rem;
+    height: 17.88rem;
+  }
+  .subtractParent{
+    width: 14.56rem;
+    position: relative;
+    height: 16.88rem;
+  }
+  .vectorIcon{
+    width: 6rem;
+  }
+  .groupIcon{
+    width: 1.79rem;
   }
 }
 @media screen and (max-width: 960px) {
