@@ -97,14 +97,14 @@
     font-size: var(--font-size-base);
   }
   .description {
-    max-width: 40%;
+    max-width: 430px;
     gap: 18px;
   }
   .imageabouturwhyIcon {
     align-self: stretch;
     height: auto;
-    max-width: 35%;
-    max-height: calc(100vh - 68px);
+    max-width: 450px;
+    max-height: 100vh;
   }
   .content {
     width: 100%;
@@ -112,8 +112,8 @@
     gap: var(--gap-56xl);
   }
   .section {
-    padding-left: var(--padding-93xl);
-    padding-right: var(--padding-12xs);
+    padding-left: 0;
+    padding-right: 0;
     box-sizing: border-box;
   }
 }

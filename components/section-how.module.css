@@ -80,12 +80,12 @@
   color: var(--grey-prime);
   font-family: var(--font-plus-jakarta-sans);
 }
-@media screen and (max-width: 1920px) {
+@media screen and (max-width: 1440px) {
   .imageaboutushowIcon {
     align-self: stretch;
     height: auto;
-    max-width: 35%;
-    max-height: calc(100vh - 68px);
+    max-width: 450px !important;
+    max-height: 100vh;
   }
   .chapeu2 {
     font-size: var(--font-size-5xl);
@@ -97,7 +97,7 @@
     font-size: var(--font-size-base);
   }
   .description {
-    max-width: 34%;
+    max-width: 350px;
     gap: 18px;
   }
   .content {

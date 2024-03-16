@@ -104,8 +104,9 @@
     background-position: bottom;
   }
   .description{
-    height: 19.08rem;
+    height: auto;
     gap: 32px;
+    margin-bottom: 38px;
   }
   .button{
     width: 17rem;
