@@ -10,7 +10,7 @@
   transition: opacity 1s linear;
 }
 .showHidden{
-  opacity: 1;
+  /* opacity: 1; */
 }
 .showHidden:last-child{
   /* position: sticky;
@@ -244,6 +244,8 @@
   position: sticky;
   top: 0;
   gap: var(--gap-3xs);
+  min-height: 100vh;
+  z-index: 200;
 }
 .fromNutritionAndContainer {
   width: 100%;
@@ -257,7 +259,9 @@
 }
 .box {
   height: 100vh;
-  max-height: calc(100vh - 32px);
+  max-height: 100vh;
+  width: 100%;
+  max-width: 100% !important;
   flex-direction: column;
   justify-content: center;
   /* padding: 0 0 var(--padding-93xl); */
@@ -299,7 +303,7 @@
   .box {
     width: auto;
     align-self: flex-end;
-    justify-content: flex-end;
+    justify-content: center;
     /* height: 52.28rem;
     justify-content: flex-end; */
     max-width: 22.5rem;

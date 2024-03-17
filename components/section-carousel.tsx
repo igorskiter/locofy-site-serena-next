@@ -1,9 +1,14 @@
 "use client";
 import type { NextPage } from "next";
-import { memo, useEffect } from "react";
+import { memo, useEffect, useRef, useState } from "react";
+import ReactPageScroller from "../react-page-scroller-igorskiter/src";
 import styles from "./section-carousel.module.css";
 
 const SectionCarousel: NextPage = memo(() => {
+  const [currentPage, setCurrentPage] = useState(0);
+  const [isMobileResponsive, setIsMobileResponsive] = useState(false);
+
+  const pilarsRef = useRef();
   const pilars = [
     "diet",
     "social",
@@ -40,83 +45,60 @@ const SectionCarousel: NextPage = memo(() => {
     return newArray;
   };
 
+  const handlePageChange = (number) => {
+    setCurrentPage(number);
+  };
+
   useEffect(() => {
-    if (typeof window !== "undefined" && window.IntersectionObserver) {
-      const observer = new IntersectionObserver(
-        (entries) => {
-          entries.forEach((entry) => {
-            const indexFirstPilar = pilars.indexOf(entry.target.id);
-            const newOrderPilar = moveIndicesToEnd(pilars, indexFirstPilar);
-
-            document
-              .getElementById(newOrderPilar[0])
-              ?.classList.add(styles["showHidden"]);
-
-            setTimeout(() => {}, 5000);
-
-            if (entry.intersectionRatio >= 0.3 && entry.isIntersecting) {
-              const withWindow = window.innerWidth;
-              // if (withWindow <= 960) {
-              if (
-                (withWindow > 960 && entry.intersectionRatio >= 0.6) ||
-                (withWindow > 575.97 &&
-                  withWindow <= 960 &&
-                  entry.intersectionRatio >= 0.4)
-              ) {
-                console.log(entry);
-
-                var scrollDiv: number =
-                  document.getElementById(newOrderPilar[0])?.offsetTop || 0;
-                console.log(scrollDiv);
-                // window.scrollTo({ top: scrollDiv, behavior: "smooth" });
-              }
-
-              newOrderPilar.forEach((res, index) => {
-                document
-                  .getElementById(`${res}Icon`)
-                  ?.classList.remove(styles["position0"]);
-                document
-                  .getElementById(`${res}Icon`)
-                  ?.classList.remove(styles["position1"]);
-                document
-                  .getElementById(`${res}Icon`)
-                  ?.classList.remove(styles["position2"]);
-                document
-                  .getElementById(`${res}Icon`)
-                  ?.classList.remove(styles["position3"]);
-                document
-                  .getElementById(`${res}Icon`)
-                  ?.classList.remove(styles["position4"]);
-                document
-                  .getElementById(`${res}Icon`)
-                  ?.classList.remove(styles["position5"]);
-                document
-                  .getElementById(`${res}Icon`)
-                  ?.classList.remove(styles["position6"]);
-
-                document
-                  .getElementById(`${res}Icon`)
-                  ?.classList.add(styles[`position${index}`]);
-              });
-              entry.target.classList.add(styles["showHidden"]);
-              return;
-            }
-          });
-        },
-        {
-          threshold: [0, 0.3, 1],
-        }
+    if (window) {
+      window.addEventListener("resize", () =>
+        setIsMobileResponsive(window.innerWidth < 768)
       );
-      if (observer) {
-        pilars.forEach((pilar) => {
-          observer.observe(document.getElementById(pilar) as HTMLElement);
-        });
-      }
     }
   }, []);
 
+  useEffect(() => {
+    const newOrderPilar = moveIndicesToEnd(pilars, currentPage);
+    console.log(newOrderPilar);
+    newOrderPilar.forEach((res, index) => {
+      document
+        .getElementById(`${res}Icon`)
+        ?.classList.remove(styles["position0"]);
+      document
+        .getElementById(`${res}Icon`)
+        ?.classList.remove(styles["position1"]);
+      document
+        .getElementById(`${res}Icon`)
+        ?.classList.remove(styles["position2"]);
+      document
+        .getElementById(`${res}Icon`)
+        ?.classList.remove(styles["position3"]);
+      document
+        .getElementById(`${res}Icon`)
+        ?.classList.remove(styles["position4"]);
+      document
+        .getElementById(`${res}Icon`)
+        ?.classList.remove(styles["position5"]);
+      document
+        .getElementById(`${res}Icon`)
+        ?.classList.remove(styles["position6"]);
+
+      document
+        .getElementById(`${res}Icon`)
+        ?.classList.add(styles[`position${index}`]);
+    });
+
+    if (currentPage > 0 && currentPage < 5) {
+      // document.body.style.overflow = "hidden";
+      return;
+    }
+    document.body.style.overflow = "auto";
+  }, [currentPage]);
+
+  console.log(isMobileResponsive, "isMobileResponsive");
+
   return (
-    <section className={styles.sectioncarousel} id={"SectionCarousel"}>
+    <section className={styles.sectioncarousel}>
       <div className={styles.content}>
         <div className={styles.carousel}>
           <div className={styles.p1} id="p1">
@@ -211,20 +193,84 @@ const SectionCarousel: NextPage = memo(() => {
             </div>
           </div>
         </div>
-        <div className={styles.pilars}>
-          {Object.keys(pilarsDescription).map((pilar) => (
-            <div
-              className={`${styles.box} ${styles.initHidden} `}
-              key={pilar}
-              id={pilar}
-            >
+        <div
+          id={"SectionCarousel"}
+          style={{
+            position: "sticky",
+            top: 0,
+            right: 0,
+            left: 0,
+            bottom: 0,
+            minWidth: isMobileResponsive ? "100vw" : "100%",
+            zIndex: 1000
+          }}
+        >
+          <ReactPageScroller
+            pageOnChange={handlePageChange}
+            customPageNumber={currentPage}
+            renderAllPagesOnFirstRender={true}
+            containerHeight="100vh"
+            containerWidth={isMobileResponsive ? "100vw" : "100%"}
+            animationTimer={500}
+            animationTimerBuffer={100}
+            handleScrollUnavailable={() => {
+              document.body.style.overflow = "auto";
+            }}
+            onBeforePageScroll={() => {
+              document.getElementById("SectionCarousel")?.scrollIntoView({
+                behavior: "smooth",
+                inline: "center",
+                block: "center",
+              });
+              if (currentPage > 0 && currentPage < 5) {
+                document.body.style.overflow = "hidden";
+                return;
+              }
+            }}
+          >
+            <div className={`${styles.box}`} id={"diet"}>
               <div className={styles.fromNutritionAndContainer}>
                 <p className={styles.understandAct}>
-                  {pilarsDescription[pilar]}
+                  {pilarsDescription["diet"]}
                 </p>
               </div>
             </div>
-          ))}
+            <div className={`${styles.box}`} id={"social"}>
+              <div className={styles.fromNutritionAndContainer}>
+                <p className={styles.understandAct}>
+                  {pilarsDescription["social"]}
+                </p>
+              </div>
+            </div>
+            <div className={`${styles.box}`} id={"controltoxic"}>
+              <div className={styles.fromNutritionAndContainer}>
+                <p className={styles.understandAct}>
+                  {pilarsDescription["controltoxic"]}
+                </p>
+              </div>
+            </div>
+            <div className={`${styles.box}`} id={"stressmanagement"}>
+              <div className={styles.fromNutritionAndContainer}>
+                <p className={styles.understandAct}>
+                  {pilarsDescription["stressmanagement"]}
+                </p>
+              </div>
+            </div>
+            <div className={`${styles.box}`} id={"sleepquality"}>
+              <div className={styles.fromNutritionAndContainer}>
+                <p className={styles.understandAct}>
+                  {pilarsDescription["sleepquality"]}
+                </p>
+              </div>
+            </div>
+            <div className={`${styles.box}`} id={"physicalactivities"}>
+              <div className={styles.fromNutritionAndContainer}>
+                <p className={styles.understandAct}>
+                  {pilarsDescription["physicalactivities"]}
+                </p>
+              </div>
+            </div>
+          </ReactPageScroller>
         </div>
       </div>
     </section>
