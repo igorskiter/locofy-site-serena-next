@@ -1,9 +1,11 @@
 import { useRouter } from "next/router";
-import { memo, useCallback } from "react";
-import styles from "./section-other-article.module.css";
+import { memo, useCallback, useRef, useState } from "react";
+import styles from "./section-other-article.module.scss";
 
 const SectionOtherArticleContact = memo(({ hasCantFindWhat = true }: any) => {
   const router = useRouter();
+  let cardsRef = useRef();
+  const [cardSelection, setCarSelection] = useState(0);
 
   const onArticleContainerClick = useCallback(() => {
     router.push("/faq-article");
@@ -13,11 +15,27 @@ const SectionOtherArticleContact = memo(({ hasCantFindWhat = true }: any) => {
     router.push("/contact");
   }, [router]);
 
+  const scrollCard = (index: number) => {
+    if (cardsRef[0]) {
+      const containerWidth = cardsRef[0].clientWidth;
+      const cardWidth = cardsRef[0].children[0].clientWidth;
+
+      cardsRef[0].scrollTo({
+        left: +(
+          index * cardWidth -
+          (containerWidth - cardWidth) / 2 +
+          26
+        ).toFixed(0),
+        behavior: "smooth",
+      });
+    }
+  };
+
   return (
     <div className={styles.section}>
       <div className={styles.otherArticles}>
         <div className={styles.h6}>Other articles</div>
-        <div className={styles.articles}>
+        <div ref={(ref) => (cardsRef[0] = ref)} className={styles.articles}>
           <div className={styles.article} onClick={onArticleContainerClick}>
             <b className={styles.p6}>ACCOUNT</b>
             <div className={styles.p2}>
@@ -35,7 +53,26 @@ const SectionOtherArticleContact = memo(({ hasCantFindWhat = true }: any) => {
             </div>
           </div>
         </div>
-        <div className={styles.footer}>
+
+        <div className={styles.bullets}>
+          <div
+            data-selection={cardSelection === 0}
+            className={styles.bullet}
+            onClick={() => {
+              scrollCard(0);
+              setCarSelection(0);
+            }}
+          ></div>
+          <div
+            data-selection={cardSelection === 1}
+            className={styles.bullet}
+            onClick={() => {
+              scrollCard(1);
+              setCarSelection(1);
+            }}
+          ></div>
+        </div>
+        {/* <div className={styles.footer}>
           <div className={styles.selection}>
             <button className={styles.buttoncircle}>
               <img
@@ -74,7 +111,7 @@ const SectionOtherArticleContact = memo(({ hasCantFindWhat = true }: any) => {
               />
             </button>
           </div>
-        </div>
+        </div> */}
         {hasCantFindWhat && (
           <div
             className={`${styles.otherArticles} ${styles.otherArticlesContact}`}
