@@ -599,18 +599,23 @@ and (orientation : landscape){
     height: 122px;
   }
   .position0 {
-    top: 13rem !important;
+    top: 45vh !important;
   }
+
   .position0, .position3{
-    left: 40% !important;
+    left: calc(50% - 105px) !important;
   }
   
+  .position1, .position5{
+    top: 35vh !important;
+  }
+
   .position1, .position2{
-    left: 70%;
+    left: 70% !important;
   }
   
   .position4, .position5{
-    left: 10%;
+    left: -20% !important;
   }
 
   .blur3 {

@@ -414,16 +414,27 @@ and (orientation : landscape) {
 }
 @media screen and (max-width: 575.98px) {
   .navmenu {
-    padding-top: 5.625rem;
+    padding-top: 0;
     box-sizing: border-box;
+  }
+  .menu{
+    min-height: calc(100vh - 214px);
+    justify-content: flex-start;
+    padding: 0;
   }
   .menu1{
     justify-content: center;
     padding-left: var(--padding-base);
   }
+  .contentMenu{
+    padding-top: 94px !important;
+    height: 100% !important;
+  }
   .left {
     min-width: 100%;
-    margin: auto 0;
+    height: 100% !important;
+    justify-content: flex-start;
+    align-items: flex-start;
   }
   .serFotoMockupQuestionario {
     width: 9rem;
@@ -448,7 +459,8 @@ and (orientation : landscape) {
     gap: var(--gap-21xl);
   }
   .menu1{
-    margin: auto 0;
+    gap: 0;
+    height: 100%;
   }
   .socialitens1 {
     flex: 1;
@@ -468,5 +480,6 @@ and (orientation : landscape) {
   }
   .content {
     gap: var(--gap-0);
+    height: 100vh;
   }
 }

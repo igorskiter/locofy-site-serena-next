@@ -33,6 +33,7 @@
 @media screen and (max-width: 575.98px) {
   .menu {
     font-size: var(--font-size-13xl);
+    margin: auto 0;
   }
   .selected {
     font-size: var(--font-size-21xl);

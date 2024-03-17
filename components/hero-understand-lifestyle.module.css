@@ -127,6 +127,12 @@
     width: inherit;
     min-height: 0;
   }
+  .h2>span{
+    font-size: 30px;
+  }
+  .h2>i {
+    font-size: 32px;
+  }
   .p4 {
     text-align: left;
     max-width: 15.81rem;
