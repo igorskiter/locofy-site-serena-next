@@ -154,6 +154,7 @@
     align-self: stretch;
   }
   .imageabouturwhyIcon {
+    display: none;
     height: 21.44rem;
     flex: unset;
     align-self: stretch;

@@ -140,6 +140,9 @@
   }
 }
 @media screen and (max-width: 575.98px) {
+  .chapeu2{
+    font-size: 36px;
+  }
   .p2 {
     font-size: var(--font-size-5xl);
     width: 21.44rem;
@@ -167,6 +170,11 @@
     .p2{
       max-width: 100%;
     }
+  }
+  .button{
+    height: 58px !important;
+    font-size: 16px;
+    font-weight: 600;
   }
 }
 

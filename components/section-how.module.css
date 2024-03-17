@@ -139,13 +139,14 @@
     width: 21.44rem;
     height: 21.44rem;
     min-width: 100%;
-    max-width: initial;
+    max-width: 100% !important;
   }
   .chapeu2 {
     font-size: var(--font-size-lgi);
   }
   .h1 {
     font-size: var(--font-size-17xl);
+    max-width: 290px;
   }
   .p3 {
     font-size: var(--font-size-base);
@@ -154,6 +155,7 @@
     gap: var(--gap-13xl);
     flex: unset;
     align-self: stretch;
+    max-width: 100%;
   }
   .content {
     flex-direction: column;
