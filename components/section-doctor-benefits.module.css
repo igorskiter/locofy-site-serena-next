@@ -236,6 +236,9 @@
   }
 }
 @media screen and (max-width: 575.98px) {
+  .chapeu1{
+    font-size: 36px;
+  }
   .icon {
     width: 3rem;
     height: 3rem;
@@ -289,6 +292,7 @@
     box-sizing: border-box;
   }
   .content {
+    width: 100%;
     gap: var(--gap-41xl);
   }
   .section {

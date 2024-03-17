@@ -271,6 +271,10 @@
   .left {
     flex: 1;
     padding: var(--padding-15xl) 0;
+    max-width: initial;
+  }
+  .p4{
+    max-width: initial;
   }
   .subtractIcon {
     width: 18.75rem;
@@ -290,6 +294,7 @@
     height: 0.75rem;
     gap: var(--gap-0);
     align-items: center;
+    left: 8rem;
     justify-content: flex-end;
   }
   .subtractParent {
@@ -315,5 +320,10 @@
     padding-right: var(--padding-base);
     padding-bottom: var(--padding-121xl);
     box-sizing: border-box;
+  }
+  .button{
+    height: 58px !important;
+    font-size: 16px;
+    font-weight: 600;
   }
 }
