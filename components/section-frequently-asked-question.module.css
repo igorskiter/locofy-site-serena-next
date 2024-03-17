@@ -240,9 +240,10 @@
   .article{
     min-width: 100%;
     max-width: initial;
+    margin-bottom: 0;
   }
   .columns {
-    gap: var(--gap-17xl);
+    gap: 32px;
   }
   .section{
     padding-bottom: var(--padding-71xl);

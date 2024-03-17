@@ -266,6 +266,7 @@
   }
   .otherArticles {
     gap: var(--gap-17xl);
+    max-width: 100%;
   }
   .article,
   .p2 {
@@ -324,5 +325,9 @@
   }
   .descriptionArticle{
     width: 364px;
+  }
+  .articles{
+    overflow: hidden;
+    scrollbar-width: thin;
   }
 }

@@ -196,7 +196,7 @@
   flex-direction: row;
   justify-content: center;
   gap: var(--gap-lg);
-  scrollbar-width: thin;
+  overflow: hidden;
 }
 
 .sectioncards {padding-bottom: var(--padding-221xl);
