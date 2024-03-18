@@ -23,12 +23,19 @@ const SectionVision: NextPage = memo(() => {
             <span>{`Our `}</span>
             <i className={styles.vision}>{`vision `}</i>
             <span>
-              {`is to improve people's lives by redefining`}
+              {`is to improve`}
+              <br />
+              {`people's lives by redefining`}
               <br />
               {` their `}
             </span>
-            <i className={styles.vision}>relationship with health</i>
-            <span>{`. We aim to help foster the culture that will lead to a proactive `}</span>
+            <i className={styles.vision}>relationship with health.</i>
+              <br />
+            <span>{`We aim to help foster the `}</span>
+              <br />
+            <span>{`culture that will lead to a`}</span>
+              <br />
+            <span>{`proactive `}</span>
             <i className={styles.vision}>healthcare system</i>
             <span>.</span>
           </div>

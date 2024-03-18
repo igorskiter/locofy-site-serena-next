@@ -253,6 +253,13 @@
     padding-right: var(--padding-77xl);
     box-sizing: border-box;
   }
+  .line1{
+    /* padding: var(--padding-5xl) var(--padding-lg); */
+    height: 0.94rem;
+  }
+  .line5{
+    height: 100px;
+  }
 }
 @media screen and (max-width: 960px) {
   .h1 {

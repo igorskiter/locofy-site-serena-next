@@ -137,8 +137,8 @@
     justify-content: space-between;
   }
   .tile {
-    min-width: 25%;
-    max-width: 30%;
+    min-width: 20%;
+    max-width: fit-content;
     gap: 0;
   }
   .tile1 {
@@ -167,9 +167,9 @@
     margin-top: 32px;
   }
   .p5, .p51, .p52{
-   font-size: 12px; 
+   font-size: 16px; 
    margin-top: 16px;    
-   max-width: 280px;
+   max-width: 360px;
   }
 }
 @media screen and (max-width: 960px) {
