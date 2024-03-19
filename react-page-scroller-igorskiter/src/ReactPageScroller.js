@@ -26,7 +26,7 @@ const DEFAULT_COMPONENTS_TO_RENDER_LENGTH = 0;
 const DEFAULT_ANIMATION_TIMER_BUFFER = 200;
 const KEY_UP = 38;
 const KEY_DOWN = 40;
-const MINIMAL_DELTA_Y_DIFFERENCE = 1;
+const MINIMAL_DELTA_Y_DIFFERENCE = 2;
 const DISABLED_CLASS_NAME = "";
 
 let previousTouchMove = null;
@@ -120,24 +120,28 @@ export const ReactPageScroller = ({
   }, [addNextComponent, children, positions, renderAllPagesOnFirstRender]);
 
   const disableScroll = useCallback(() => {
-    console.log('disableScroll')
     if (isBodyScrollEnabled) {
-      // isBodyScrollEnabled = false;
-      // // window.scrollTo({
-      // //   left: 0,
-      // //   top: 0,
-      // //   behavior: "smooth",
-      // // });
+      console.log('disableScroll')
+      isBodyScrollEnabled = false;
+      scrollContainer.current.scrollTo({
+        left: 0,
+        top: 0,
+        behavior: "smooth",
+      });
       // // document.body.classList.add(DISABLED_CLASS_NAME);
       // // document.documentElement.classList.add(DISABLED_CLASS_NAME);
+
+      document.body.style.overflow = "hidden";
     }
   }, []);
 
   const enableDocumentScroll = useCallback(() => {
     if (!isBodyScrollEnabled) {
       isBodyScrollEnabled = true;
-      document.body.classList.remove(DISABLED_CLASS_NAME);
-      document.documentElement.classList.remove(DISABLED_CLASS_NAME);
+      // document.body.classList.remove(DISABLED_CLASS_NAME);
+      // document.documentElement.classList.remove(DISABLED_CLASS_NAME);
+
+      document.body.style.overflow = "auto";
     }
   }, []);
 

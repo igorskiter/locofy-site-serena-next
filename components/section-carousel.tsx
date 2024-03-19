@@ -7,8 +7,9 @@ import styles from "./section-carousel.module.css";
 const SectionCarousel: NextPage = memo(() => {
   const [currentPage, setCurrentPage] = useState(0);
   const [isMobileResponsive, setIsMobileResponsive] = useState(false);
+  const [isCentered, setIsCentered] = useState(false);
+  const divRef = useRef<HTMLDivElement>(null);
 
-  const pilarsRef = useRef();
   const pilars = [
     "diet",
     "social",
@@ -55,11 +56,29 @@ const SectionCarousel: NextPage = memo(() => {
         setIsMobileResponsive(window.innerWidth < 768)
       );
     }
+    const handleScroll = () => {
+      if (divRef.current && !isMobileResponsive) {
+        const rect = divRef.current.getBoundingClientRect();
+        const centerY = window.innerHeight / 2;
+
+        if (rect.top <= centerY && rect.bottom >= centerY && !isCentered) {
+          document.body.style.overflow = "hidden";
+          return;
+        }
+
+        document.body.style.overflow = "auto";
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
 
   useEffect(() => {
     const newOrderPilar = moveIndicesToEnd(pilars, currentPage);
-    console.log(newOrderPilar);
+
     newOrderPilar.forEach((res, index) => {
       document
         .getElementById(`${res}Icon`)
@@ -87,15 +106,7 @@ const SectionCarousel: NextPage = memo(() => {
         .getElementById(`${res}Icon`)
         ?.classList.add(styles[`position${index}`]);
     });
-
-    if (currentPage > 0 && currentPage < 5) {
-      // document.body.style.overflow = "hidden";
-      return;
-    }
-    document.body.style.overflow = "auto";
   }, [currentPage]);
-
-  console.log(isMobileResponsive, "isMobileResponsive");
 
   return (
     <section className={styles.sectioncarousel}>
@@ -194,7 +205,9 @@ const SectionCarousel: NextPage = memo(() => {
           </div>
         </div>
         <div
+          ref={divRef}
           id={"SectionCarousel"}
+          className={styles.sectioncarouselcontent}
           style={{
             position: "sticky",
             top: 0,
@@ -202,19 +215,31 @@ const SectionCarousel: NextPage = memo(() => {
             left: 0,
             bottom: 0,
             minWidth: isMobileResponsive ? "100vw" : "100%",
-            zIndex: 1000
+            zIndex: 1000,
           }}
         >
           <ReactPageScroller
             pageOnChange={handlePageChange}
             customPageNumber={currentPage}
-            renderAllPagesOnFirstRender={true}
+            renderAllPagesOnFirstRender={false}
             containerHeight="100vh"
             containerWidth={isMobileResponsive ? "100vw" : "100%"}
             animationTimer={500}
             animationTimerBuffer={100}
             handleScrollUnavailable={() => {
               document.body.style.overflow = "auto";
+              setIsCentered(false);
+              if (divRef) {
+                const rect = divRef?.current?.getBoundingClientRect();
+                if (rect && currentPage === 0) {
+                  document.body.scrollTo(0, rect.height + 2000);
+                }
+                if (rect && currentPage === 5) {
+                  document.body.scrollTo(0, rect.height + 2000);
+                }
+
+                console.log(currentPage, "isMobileResponsive");
+              }
             }}
             onBeforePageScroll={() => {
               document.getElementById("SectionCarousel")?.scrollIntoView({
@@ -222,10 +247,11 @@ const SectionCarousel: NextPage = memo(() => {
                 inline: "center",
                 block: "center",
               });
-              if (currentPage > 0 && currentPage < 5) {
-                document.body.style.overflow = "hidden";
-                return;
-              }
+              setIsCentered(true);
+              // if (currentPage > 0 && currentPage < 5) {
+              //   document.body.style.overflow = "hidden";
+              //   return;
+              // }
             }}
           >
             <div className={`${styles.box}`} id={"diet"}>
