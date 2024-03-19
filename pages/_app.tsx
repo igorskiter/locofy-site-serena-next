@@ -42,7 +42,7 @@ function MyApp({ Component, pageProps }: AppProps) {
         />
       </Head>
       <div className="gradient-bg">
-        {/* <svg xmlns="http://www.w3.org/2000/svg">
+        <svg xmlns="http://www.w3.org/2000/svg">
           <defs>
             <filter id="goo">
               <feGaussianBlur
@@ -59,7 +59,7 @@ function MyApp({ Component, pageProps }: AppProps) {
               <feBlend in="SourceGraphic" in2="goo" />
             </filter>
           </defs>
-        </svg> */}
+        </svg>
         <div className="gradients-container">
           <div className="g1"></div>
           <div className="g2"></div>
