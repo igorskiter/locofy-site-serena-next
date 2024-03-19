@@ -420,17 +420,23 @@ and (orientation : landscape) {
   .menu{
     min-height: calc(100vh - 214px);
     justify-content: flex-start;
-    padding: 0;
+    padding: 94px 0 0 0;
+    align-items: flex-end;
+    position: relative;
   }
   .menu1{
     justify-content: center;
     padding-left: var(--padding-base);
   }
   .contentMenu{
-    padding-top: 94px !important;
+    padding-top: 0 !important;
     height: 100% !important;
+    max-height: calc(100% - 127px) !important;
+    /* background-color: red; */
   }
   .left {
+    /* margin-top: 34px; */
+    /* background-color: blue; */
     min-width: 100%;
     height: 100% !important;
     justify-content: flex-start;

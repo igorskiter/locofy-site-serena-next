@@ -142,8 +142,9 @@
     display: none;
   }
   .header {
-    height: initial;
+    height: 94px !important;
     padding: var(--padding-5xl) var(--padding-base);
     box-sizing: border-box;
+    /* background-color: green !important; */
   }
 }
