@@ -1,6 +1,6 @@
 "use client";
 import type { NextPage } from "next";
-import { memo, useEffect, useRef, useState } from "react";
+import { memo, useCallback, useEffect, useRef, useState } from "react";
 import ReactPageScroller from "../react-page-scroller-igorskiter/src";
 import styles from "./section-carousel.module.css";
 
@@ -59,14 +59,14 @@ const SectionCarousel: NextPage = memo(() => {
     const handleScroll = () => {
       if (divRef.current && !isMobileResponsive) {
         const rect = divRef.current.getBoundingClientRect();
-        const centerY = window.innerHeight / 2;
-
-        if (rect.top <= centerY && rect.bottom >= centerY && !isCentered) {
+        const centerY = rect.height / 2;
+        console.log(isCentered, rect.top, rect.bottom, centerY, centerY + 380);
+        if (rect.top <= 0 && rect.bottom >= centerY + 380 && !isCentered) {
+          console.log("setIsCentered true");
+          setIsCentered(true);
           document.body.style.overflow = "hidden";
           return;
         }
-
-        document.body.style.overflow = "auto";
       }
     };
 
@@ -106,6 +106,25 @@ const SectionCarousel: NextPage = memo(() => {
         .getElementById(`${res}Icon`)
         ?.classList.add(styles[`position${index}`]);
     });
+  }, [currentPage]);
+
+  const handleScrollUnavailable = useCallback(() => {
+    document.body.style.overflow = "auto";
+
+    if (divRef) {
+      const rect = divRef?.current?.getBoundingClientRect();
+      if (rect && currentPage === 0) {
+        document.body.scrollTo(0, rect.height + 2000);
+        setIsCentered(false);
+      }
+      if (rect && currentPage === 5) {
+        document.body.scrollTo(0, rect.height + 2000);
+        setIsCentered(false);
+      }
+      document.body.style.overflow = "auto";
+
+      console.log(currentPage, "isMobileResponsive");
+    }
   }, [currentPage]);
 
   return (
@@ -226,28 +245,15 @@ const SectionCarousel: NextPage = memo(() => {
             containerWidth={isMobileResponsive ? "100vw" : "100%"}
             animationTimer={500}
             animationTimerBuffer={100}
-            handleScrollUnavailable={() => {
-              document.body.style.overflow = "auto";
-              setIsCentered(false);
-              if (divRef) {
-                const rect = divRef?.current?.getBoundingClientRect();
-                if (rect && currentPage === 0) {
-                  document.body.scrollTo(0, rect.height + 2000);
-                }
-                if (rect && currentPage === 5) {
-                  document.body.scrollTo(0, rect.height + 2000);
-                }
-
-                console.log(currentPage, "isMobileResponsive");
-              }
-            }}
+            handleScrollUnavailable={handleScrollUnavailable}
+            blockScrollUp={!isCentered}
+            blockScrollDown={!isCentered}
             onBeforePageScroll={() => {
               document.getElementById("SectionCarousel")?.scrollIntoView({
                 behavior: "smooth",
                 inline: "center",
                 block: "center",
               });
-              setIsCentered(true);
               // if (currentPage > 0 && currentPage < 5) {
               //   document.body.style.overflow = "hidden";
               //   return;

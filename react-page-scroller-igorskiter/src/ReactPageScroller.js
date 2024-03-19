@@ -123,10 +123,10 @@ export const ReactPageScroller = ({
     if (isBodyScrollEnabled) {
       console.log('disableScroll')
       isBodyScrollEnabled = false;
-      scrollContainer.current.scrollTo({
-        left: 0,
-        top: 0,
+      scrollContainer.current.scrollIntoView({
         behavior: "smooth",
+        inline: "center",
+        block: "center",
       });
       // // document.body.classList.add(DISABLED_CLASS_NAME);
       // // document.documentElement.classList.add(DISABLED_CLASS_NAME);
