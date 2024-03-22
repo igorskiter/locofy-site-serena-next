@@ -7,10 +7,14 @@
 }
 .initHidden{
   opacity: 0;
-  transition: opacity .5s linear;
+  transition: opacity 1s linear;
 }
 .showHidden{
-  opacity: 1;
+  /* opacity: 1; */
+}
+.showHidden:last-child{
+  /* position: sticky;
+  bottom: 0 */
 }
 .boxPilar{
   position: absolute;
@@ -242,6 +246,9 @@
   gap: var(--gap-3xs);
   min-height: 100vh;
   z-index: 200;
+  width: 794px;
+  max-width: 794px;
+  left: 15%
 }
 .fromNutritionAndContainer {
   width: 100%;
@@ -257,13 +264,16 @@
   height: 100vh;
   max-height: 100vh;
   width: 100%;
-  /* max-width: 100% !important; */
+  max-width: 100% !important;
   flex-direction: column;
   justify-content: center;
   /* padding: 0 0 var(--padding-93xl); */
   box-sizing: border-box;
   /* gap: var(--gap-xs); */
   font-size: var(--font-size-5xl);
+  max-width: 22.5rem;
+  max-width: 29.5rem !important;
+  margin: 0 auto 0 calc(15% + 794px + 124px);
 }
 .box,
 .content,
@@ -277,6 +287,11 @@
   justify-content: space-between;
   align-items: flex-start;
   max-width: 88.25rem;
+
+  position: relative;
+  /* margin: 0 auto; */
+  width: 100vw;
+  max-width: 100vw;
 }
 .sectioncarousel {
   align-self: stretch;
@@ -288,14 +303,22 @@
   color: var(--grey-prime);
   font-family: var(--font-plus-jakarta-sans);
 }
-.p4{
-  align-items: center;
-  display: flex;
-  justify-content: center;
+.sectioncarouselcontent, .carousel{
+  position: absolute;
+}
+@media screen and (max-width: 1440px) {
+  .carousel{
+    left: 5% !important;
+  }
+  .box {
+    margin: 0  7% 0 auto !important;
+  }
 }
 @media screen and (max-width: 1920px) {
   .carousel{
-    max-width: 59%;
+    width: 794px;
+    max-width: 794px;
+    left: 15%
   }
   .box,
   .content {
@@ -308,6 +331,8 @@
     /* height: 52.28rem;
     justify-content: flex-end; */
     max-width: 22.5rem;
+    max-width: 29.5rem !important;
+    margin: 0 auto 0 calc(15% + 794px + 24px);
   }
   .content {
     /* flex-direction: column; */
@@ -315,8 +340,7 @@
     align-items: flex-start;
 
     justify-content: flex-start !important;
-    margin: 0 auto;
-    width: initial;
+    height: 100vh;
   }
   .fromNutritionAndContainer{
     max-width: 380px !important;
@@ -341,7 +365,6 @@
     width: 50vw;
     max-width: 6742.55px;
     max-height: 842.96px;
-    height: auto;
   }
   .position0 .p4{
     font-size: 2.5rem !important;
@@ -352,8 +375,6 @@
   }
   .pilars{
     max-width: 50%;
-    padding-top: 120px;
-    /* margin-bottom: 120px; */
   }
   .position0 .icondiet {
     width: 6.25rem;
@@ -424,11 +445,6 @@
     gap: var(--gap-0);
   }
 } 
-@media (max-height: 670px){
-  .sectioncarousel{
-    padding-bottom: 15rem;
-  }
-}
 @media (max-height: 670px) or (961px > width < 1024px) {
   .p1{ 
     top: calc(50vh - 155px);
@@ -460,7 +476,7 @@ and (min-device-width : 768px)
 and (max-device-width : 1024px) 
 and (orientation : landscape){
   .p1{
-    top: calc(5vh + 135px) !important;
+    top: calc(15vh + 135px) !important;
     left: 50%;
     max-width: 100vw;
     transform: translate(-50%, -50%);
@@ -472,6 +488,8 @@ and (orientation : landscape){
   }
   .carousel{
     /* top: -35vh; */
+    left: initial;
+    position: sticky;
   }
   .content {
     flex: 1;
@@ -481,10 +499,14 @@ and (orientation : landscape){
     justify-content: space-between;
     width: 100%;
     max-width: 600px;
+    position: initial !important;
   }
   .box{
     justify-content: flex-end;
     padding-bottom: 10vh;
+    margin: 0;
+    width: 100vw;
+    max-width: initial !important;
     /* height: 28rem; */
   }
   .pilares{
@@ -500,27 +522,27 @@ and (orientation : landscape){
   }
   
   .position0{
-    top: 35vh !important;
+    top: 45vh !important;
     left: calc(50% - 105px) !important;
   }
   .position1{
-    top: 17vh;
+    top: 27vh;
     left: 60%;
   }
   .position3{
-    top: -10vh;
+    top: 0;
     left: calc(50% - 105px) !important;
   }
   .position2{
-    top: 0;
+    top: 10vh;
     left: 60%;
   }
   .position4{
-    top: 0;
+    top: 10vh;
     left: 0;
   }
   .position5{
-    top: 17vh;
+    top: 27vh;
     left: 0;
     gap: var(--gap-0);
   }
@@ -529,38 +551,9 @@ and (orientation : landscape){
   }
 }
 @media screen and (max-width: 1024px) and (orientation : portrait){
-  .p1{
-    top: calc(15vh + 135px) !important;
-    left: 50%;
-    max-width: 100vw;
-    transform: translate(-50%, -50%);
-    width: initial;
-  }
-  
   .position0{
     top: 40vh !important;
     left: calc(50% - 105px) !important;
-  }
-  .position1{
-    top: 27vh;
-    left: 60%;
-  }
-  .position3{
-    top: 0;
-    left: calc(50% - 105px) !important;
-  }
-  .position2{
-    top: 10vh;
-    left: 60%;
-  }
-  .position4{
-    top: 10vh;
-    left: 0;
-  }
-  .position5{
-    top: 27vh;
-    left: 0;
-    gap: var(--gap-0);
   }
 }
 @media screen and (max-width: 1024px) and (orientation : landscape){
@@ -608,7 +601,7 @@ and (orientation : landscape){
 } 
 @media screen and (max-width: 575.98px) {
   .p1 {
-    top: 135px !important;
+    top: 17.94%;
     font-size: var(--font-size-39xl);
     text-align: left;
     padding-left: 21px;
@@ -640,13 +633,16 @@ and (orientation : landscape){
     width: 100px;
     height: 122px;
   }
+  .position0 {
+    top: 45vh !important;
+  }
 
   .position0, .position3{
     left: calc(50% - 105px) !important;
   }
   
   .position1, .position5{
-    top: 25vh !important;
+    top: 35vh !important;
   }
 
   .position1, .position2{
@@ -656,28 +652,7 @@ and (orientation : landscape){
   .position4, .position5{
     left: -20% !important;
   }
-  
-  .position0{
-    top: 30vh !important;
-    left: calc(50% - 105px) !important;
-  }
-  .position3{
-    top: -15vh;
-    left: calc(50% - 105px) !important;
-  }
-  .position2{
-    top: -5vh;
-    left: 60%;
-  }
-  .position4{
-    top: -5vh;
-    left: 0;
-  }
-  .position5{
-    top: 27vh;
-    left: 0;
-    gap: var(--gap-0);
-  }
+
   .blur3 {
     max-width: 6.94rem;
   }
@@ -711,7 +686,7 @@ and (orientation : landscape){
   }
   .pilars{
     margin-bottom: 0;
-    padding-bottom: 0rem;
+    padding-bottom: 20ren;
   }
   .fromNutritionAndContainer{
     display: flex;
