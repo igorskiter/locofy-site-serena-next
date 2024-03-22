@@ -61,7 +61,9 @@ const SectionWave: NextPage = memo(() => {
     if (!waveInnerRef[waveInner]) {
       return "right";
     }
-
+    if ([2, 4, 5].includes(waveInner)) {
+      return "left";
+    }
     const elemento = waveInnerRef[waveInner];
     if (elemento) {
       const larguraElemento = elemento.offsetWidth;
