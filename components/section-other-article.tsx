@@ -35,7 +35,20 @@ const SectionOtherArticleContact = memo(({ hasCantFindWhat = true }: any) => {
     <div className={styles.section}>
       <div className={styles.otherArticles}>
         <div className={styles.h6}>Other articles</div>
-        <div ref={(ref) => (cardsRef[0] = ref)} className={styles.articles}>
+        <div
+          ref={(ref) => (cardsRef[0] = ref)}
+          className={styles.articles}
+          onScroll={(e) => {
+            const containerWidth = cardsRef[0].clientWidth;
+            const cardWidth = cardsRef[0].children[0].clientWidth;
+            const position = +(
+              e.currentTarget.scrollLeft /
+              (cardWidth - (containerWidth - cardWidth) / 2 + 26)
+            ).toFixed(0);
+
+            setCarSelection(position);
+          }}
+        >
           <div className={styles.article} onClick={onArticleContainerClick}>
             <b className={styles.p6}>ACCOUNT</b>
             <div className={styles.p2}>

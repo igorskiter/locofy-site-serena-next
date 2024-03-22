@@ -96,6 +96,7 @@
 .articles {
   align-self: stretch;
   overflow-x: auto;
+  scrollbar-width: thin;
   flex-direction: row;
   gap: var(--gap-6xl);
   font-size: var(--font-size-base);
@@ -263,7 +264,6 @@
   }
   .articles{
     min-width: calc(100% + 24px);
-    overflow: hidden;
   }
   .article:last-child{
     margin-right: 24px !important;
@@ -356,9 +356,5 @@
   }
   .descriptionArticle{
     width: 364px;
-  }
-  .articles{
-    overflow: hidden;
-    scrollbar-width: thin;
   }
 }
