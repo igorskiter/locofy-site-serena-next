@@ -6,7 +6,7 @@
   scroll-snap-align: start; */
 }
 .initHidden{
-  opacity: 0;
+  /* opacity: 0; */
   transition: opacity .5s linear;
 }
 .showHidden{
@@ -97,6 +97,9 @@
 }
 .understandAct {
   margin: 0;
+}
+.understandActTitle {
+  margin-bottom: 16px;
 }
 .prevent {
   margin: 0;
@@ -197,7 +200,6 @@
   font-family: Lora;
   font-size: var(--font-size-35xl-1);
   font-weight: 600;
-  font-style: italic;
   text-align: center;
   justify-content: center;
 }
@@ -243,7 +245,7 @@
   min-height: 100vh;
   z-index: 200;
 }
-.fromNutritionAndContainer {
+.pilarContainer {
   width: 100%;
   position: relative;
   letter-spacing: 0.01em;
@@ -292,6 +294,8 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  font-family: Lora;
+  font-style: italic !important;
 }
 @media screen and (max-width: 1920px) {
   .carousel{
@@ -318,11 +322,11 @@
     margin: 0 auto;
     width: initial;
   }
-  .fromNutritionAndContainer{
+  .pilarContainer{
     max-width: 380px !important;
   }
   .p1{
-    top: calc(50vh - 105px);
+    top: calc(40vh - 105px);
     margin: 0 auto;
     width: 100%;
     left: initial;
@@ -352,7 +356,7 @@
   }
   .pilars{
     max-width: 50%;
-    padding-top: 120px;
+    /* padding-top: 120px; */
     /* margin-bottom: 120px; */
   }
   .position0 .icondiet {
@@ -399,27 +403,27 @@
   }
 
   .position0{
-    top: calc(50vh + 170px) !important;
+    top: calc(40vh + 170px) !important;
     left: calc(50% - 100px) !important;
   }
   .position1{
-    top: calc(50vh + 45px);
+    top: calc(40vh + 45px);
     left: calc(77% - 60px);
   }
   .position3{
-    top: calc(50vh - 285px);
+    top: calc(40vh - 285px);
     left: calc(50% - 100px) !important;
   }
   .position2{
-    top: calc(50vh - 145px);
+    top: calc(40vh - 145px);
     left: calc(77% - 60px);
   }
   .position4{
-    top: calc(50vh - 145px);
+    top: calc(40vh - 145px);
     left: 0;
   }
   .position5{
-    top: calc(50vh + 45px);
+    top: calc(40vh + 45px);
     left: 0;
     gap: var(--gap-0);
   }
@@ -434,7 +438,22 @@
     top: calc(50vh - 155px);
   }
   .position0{
-    top: calc(50vh + 90px) !important;
+    top: calc(40vh + 90px) !important;
+  }
+  .position1{
+    top: calc(40vh + 45px);
+  }
+  .position3{
+    top: calc(40vh - 285px);
+  }
+  .position2{
+    top: calc(40vh - 145px);
+  }
+  .position4{
+    top: calc(40vh - 145px);
+  }
+  .position5{
+    top: calc(40vh + 45px);
   }
   .position3{
     /* top: calc(50vh - 285px) !important; */
@@ -445,6 +464,9 @@
   .position0 .p4{
     font-size: 1.5rem !important;
     height: inherit;
+  }
+  .pilarContainerIntro {
+    margin-top: 0 !important;
   }
 }
 
@@ -495,7 +517,7 @@ and (orientation : landscape){
     padding-bottom: 0;
     max-width: initial;
   }
-  .fromNutritionAndContainer{
+  .pilarContainer{
     width: 100%;
   }
   
@@ -526,6 +548,9 @@ and (orientation : landscape){
   }
   .sectioncarousel{
     padding-bottom: 0;
+  }
+  .pilarContainerIntro {
+    margin-top: -100vh;
   }
 }
 @media screen and (max-width: 1024px) and (orientation : portrait){
@@ -685,10 +710,14 @@ and (orientation : landscape){
     max-width: 100%;
     height: 100vh;
   }
-  .fromNutritionAndContainer {
+  .pilarContainer {
     font-size: var(--font-size-base);
     flex: 1;
     max-width: 21.44rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    flex-direction: column;
   }
   .box {
     height: 100vh;
@@ -713,13 +742,21 @@ and (orientation : landscape){
     margin-bottom: 0;
     padding-bottom: 0rem;
   }
-  .fromNutritionAndContainer{
-    display: flex;
-    align-items: flex-end;
+  .pilarContainerIntro {
+    margin-top: -100vh;
   }
 }
 @media screen and (max-height: 670px) {
+  .box:first-child{
+    padding-bottom: 0;
+  }
   .box{
-    padding-bottom: 3vh;
+    padding-bottom: 10vh;
+  }
+  .understandActTitle{
+    margin-bottom: 8px;
+  }
+  .pilarContainerIntro {
+    margin-top: -100vh;
   }
 }

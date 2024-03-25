@@ -8,8 +8,8 @@
   justify-content: flex-start;
 }
 .bullet{
-  width: 9px;
-  height: 9px;
+  width: 8px;
+  height: 8px;
   border: 2px solid var(--color-darkslategray-full);
   border-radius: 50%;
   &[data-selection="true"] {

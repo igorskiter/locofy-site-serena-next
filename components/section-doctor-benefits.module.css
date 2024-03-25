@@ -248,6 +248,7 @@
     width: 100%;
     max-width: 7.94rem;
     min-width: inherit;
+    margin-top: 0;
   }
   .p5 {
     font-size: var(--font-size-base);

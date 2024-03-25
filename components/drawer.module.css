@@ -489,3 +489,9 @@ and (orientation : landscape) {
     height: 100vh;
   }
 }
+
+@media screen and (max-height: 670px) {
+  .contentMenu{
+    padding: 0 !important;
+  }
+}
