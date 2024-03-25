@@ -224,7 +224,7 @@
   overflow: hidden;
   align-items: flex-start;
   justify-content: flex-end;
-  background-image: url(/drawer@3x.png);
+  /* background-image: url(/drawer@3x.png); */
   background-color: white;
   background-size: cover;
   background-repeat: no-repeat;
