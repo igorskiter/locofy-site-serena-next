@@ -179,6 +179,7 @@
   display: flex;
   justify-content: flex-end;
   position: relative;
+  max-height: calc(100vh - 115px) !important
 }
 
 .cardcontent:hover .gradient {
@@ -198,8 +199,8 @@
   max-width: 34.44rem;
   height: calc(100vh - 32px) !important;
   flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
+  align-items: center;
+  justify-content: center;
   cursor: pointer;
 }
 .cards,
@@ -242,6 +243,7 @@
   }
   .cardcontent{
     max-height: 51.13rem !important;
+    max-width: 82%;
   }
 }
 @media screen and (max-width: 960px) {
@@ -259,6 +261,10 @@
     padding-left: var(--padding-5xl);
     padding-right: var(--padding-5xl);
     box-sizing: border-box;
+  }
+  .cardcontent{
+    max-height: 51.13rem !important;
+    max-width: 100%;
   }
   .card, .cardcontent, .cardsgradient, .imagegradient{
     max-height: 416px !important;
@@ -373,6 +379,9 @@
       height: initial;
     }
   }
+  .cardcontent{
+    max-width: 100%;
+  }
   .cardcontent:hover{
     .cardtitle{
       padding: 0 0 0 var(--padding-3xl);
@@ -380,6 +389,54 @@
   }
   .imagegradient{
     height: 33rem;
+  }
+}
+@media screen and (max-height: 670px) {
+  .sectioncards {
+    padding-bottom: var(--padding-127xl);
+    padding-left: var(--padding-5xl);
+    padding-right: var(--padding-5xl);
+    box-sizing: border-box;
+  }
+  .card, .cardcontent, .cardsgradient, .imagegradient{
+    max-height: 416px !important;
+  }
+  .cardcontent{
+    max-width: 100%;
+  }
+  .button{
+    padding-bottom: var(--padding-base);
+  }
+  .cardtitle{
+    height: initial;
+    padding: 0 0 0 var(--padding-3xl);
+    gap: var(--gap-5xs);
+    padding-bottom: var(--padding-base);
+  }
+  .cardcontent:hover > .cardtitle{
+    padding-bottom: 0;
+  }
+  .cardtitle > .h4{
+    height: initial;
+    font-size: var(--font-size-16xl);
+  }
+  .description{
+    padding: var(--padding-base) 0 0 var(--padding-3xl);
+    height: auto;
+  }
+  .descriptionText{
+    font-size: var(--font-size-sm);
+    min-height: auto;
+  }
+  .button{
+    height: auto;
+  }
+  .buttonprimary{
+    height: 2.25rem;
+  }
+  .ctaText{
+    font-size: 9px;
+    font-weight: 700;
   }
 }
 
