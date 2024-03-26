@@ -71,6 +71,7 @@ const SectionCarousel: NextPage = memo(() => {
 
   useEffect(() => {
     let lastScrollY = window.scrollY;
+    let scrollDietDown = false;
 
     const onScroll = () => {
       if (
@@ -103,30 +104,37 @@ const SectionCarousel: NextPage = memo(() => {
           beforePosition === -1 &&
           positionRound === 0 &&
           nextPosition === 1 &&
+          !scrollDietDown &&
           direction === "down"
         ) {
           console.log("GO TO DIEAT");
+          scrollDietDown = true;
+          
           window.scrollTo({
             behavior: "smooth",
             top: initialPosition["diet"],
           });
+
+          setTimeout(() => {
+            scrollDietDown = false;
+          }, 500);
         }
 
-        if (
-          window.innerWidth < 1024 &&
-          top >= 0 &&
-          top <= 130 &&
-          beforePosition === -1 &&
-          positionRound === 0 &&
-          nextPosition === 1 &&
-          direction === "up"
-        ) {
-          console.log("GO TO DIEAT");
-          window.scrollTo({
-            behavior: "smooth",
-            top: initialPosition["diet"] - height,
-          });
-        }
+        // if (
+        //   window.innerWidth < 1024 &&
+        //   top >= 0 &&
+        //   top <= 130 &&
+        //   beforePosition === -1 &&
+        //   positionRound === 0 &&
+        //   nextPosition === 1 &&
+        //   direction === "up"
+        // ) {
+        //   console.log("GO TO DIEAT");
+        //   window.scrollTo({
+        //     behavior: "smooth",
+        //     top: initialPosition["diet"] - height,
+        //   });
+        // }
 
         if (
           positionRound !== nextPosition ||
